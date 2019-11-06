@@ -5,6 +5,7 @@ from core._color_data import ALL_COLORS
 from core.models import PermissionLevel
 
 class Say(commands.Cog):
+    """o"""
     def __init__(self, bot):
         self.bot = bot
         
