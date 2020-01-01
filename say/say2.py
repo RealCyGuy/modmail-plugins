@@ -11,4 +11,4 @@ class Say2(commands.Cog):
         await ctx.message.delete()
 
 def setup(bot):
-    bot.add_cog(Say(bot))
+    bot.add_cog(Say2(bot))
