@@ -5,6 +5,7 @@ class Say(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         
+    @commands.command()
     async def say(self, ctx, *, message):
         await ctx.send(message)
 
