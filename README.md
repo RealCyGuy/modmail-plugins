@@ -1,1 +1,1 @@
-# modmail-plugins
+# RealCyGuy's Modmail Plugins
