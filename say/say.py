@@ -8,6 +8,7 @@ class Say(commands.Cog):
     @commands.command()
     async def say(self, ctx, *, message):
         await ctx.send(message)
+        await message.delete(ctx.message)
 
 def setup(bot):
     bot.add_cog(Say(bot))
