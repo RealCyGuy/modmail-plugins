@@ -7,6 +7,7 @@ class Say(commands.Cog):
         
     @commands.command()
     async def say2(self, ctx, *, message):
+        """hi"""
         await ctx.send(message)
         await ctx.message.delete()
 
