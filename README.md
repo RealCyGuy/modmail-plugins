@@ -3,4 +3,4 @@
 ## List of Plugins
 |Plugin Name|Description|Use|Install|
 |--|--|--|--|
-|Say Plugin|Modmail says what you want it to say!|?say 'text'|?plugin add realcyguy/modmail-plugins/say|
+|Say Plugin 2|Modmail says what you want it to say!|?say 'text'|?plugin add realcyguy/modmail-plugins/say|
