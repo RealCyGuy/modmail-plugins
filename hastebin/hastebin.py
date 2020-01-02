@@ -8,7 +8,9 @@ class Hastebin(commands.Cog):
 
     @commands.command(aliases = ['haste'])
     async def hastebin(self, ctx, *, text):
-        """Puts text in hastebin"""
+        """
+        Puts text in hastebin.
+        """
         async with aiohttp.ClientSession() as session:
             async with session.post("https://hastebin/documents", data=text) as response:
                 json = await response.json
