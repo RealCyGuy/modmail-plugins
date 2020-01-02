@@ -7,7 +7,7 @@ class Say(commands.Cog):
         
     @commands.command()
     async def say2(self, ctx, *, message):
-        """hi"""
+        """ModMail says what you want it to say."""
         await ctx.send(message)
         await ctx.message.delete()
 
