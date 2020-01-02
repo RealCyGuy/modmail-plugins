@@ -15,4 +15,4 @@ class Hastebin(commands.Cog):
                 await ctx.send(f"https://hastebin.com/{json['key']}")
 
 def setup(bot):
-    bot.add_cog(Hastebin(Bot))
+    bot.add_cog(Hastebin(bot))
