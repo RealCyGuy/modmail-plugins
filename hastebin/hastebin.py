@@ -6,7 +6,7 @@ class Hastebin(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(aliases = 'haste', 'hasty', 'yummyyummyhaste')
+    @commands.command(aliases = ['haste', 'hasty', 'yummyyummyhaste'])
     async def hastebin(self, ctx, *, text):
         """Puts text in hastebin"""
         async with aiohttp.ClientSession() as session:
