@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-import os
+import aiohttp
 
 class Hastebin(commands.Cog):
     def __init__(self, bot):
