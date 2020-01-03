@@ -38,8 +38,10 @@ class eightball(commands.Cog):
         'You think I\'m a magic 8 ball or something?',
         'Yes, yes, yes yes yes. The gods say: no.',
         'Yes sir. (or ma\'am or whatever you prefered to be called.)',
-        '\"Bzzt- We got incoming. New message. \"What is it?\" \"No.\""',
-        'Watermelons.'
+        '\"Bzzzzt- We got incoming. New message. Message: \'No.\'',
+        'Let it go, let it goooooo! Can\'t hold it back any— Um... This is awkward... \"Ask again later."',
+        'Repeat your question.',
+        'Does not compute.'
     ]
 
     @commands.command()
@@ -48,7 +50,7 @@ class eightball(commands.Cog):
         Ask ModMail 8-Ball a question and get a response!
         """
         choice = random.choice(self.balllist)
-        embed=discord.Embed(title="Question:", description=question, color=0x51eaff)
+        embed=discord.Embed(title=f"Question by {ctx.user}:", description=question, color=0x51eaff)
         embed.set_author(name="8-Ball", url="https://github.com/realcyguy/modmail-plugins/", icon_url="https://media.istockphoto.com/photos/pool-ball-picture-id491993923?k=6&m=491993923&s=612x612&w=0&h=u6SNe9jYA1ZidZ_vfU1LHpaDVNnrbUFivOKxazcrNCI=")
         embed.add_field(name="Answer:", value=choice, inline=False)
         embed.set_footer(text="?plugin add realcyguy/modmail-plugins/8ball")
