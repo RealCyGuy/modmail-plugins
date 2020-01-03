@@ -60,7 +60,10 @@ class EightBall(commands.Cog):
         'Most likely.',
         'It is decidedly so.',
         'Not now, maybe when you\'re older.',
-        'The wise gods say... *suspenceful music plays* \"No.\"'
+        'The wise gods say... *suspenceful music plays* \"No.\"',
+        'Yes!!!',
+        '\"Hello, TotallyNotFakeCyGuy here and your answer is—\" What is he doing here?! GET OUT! And for you... \"try again later\"',
+        'New message recieved: Yes'
     ]
 
     @commands.command(aliases = ['ateball', '8bl'])
