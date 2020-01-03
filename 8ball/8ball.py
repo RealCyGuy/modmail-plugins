@@ -34,7 +34,7 @@ class eightball(commands.Cog):
     @commands.command()
     async def eightball(self, ctx, *, question):
         """Ask ModMail 8 Ball a question."""
-        choice = random.choice(balllist)
+        choice = random.choice(self.balllist)
         await ctx.send(f'Question: {question}\nAnswer: {choice}')
 
 def setup(bot):
