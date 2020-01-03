@@ -28,16 +28,33 @@ class eightball(commands.Cog):
         'Why are you asking me?',
         'Noooooooooooooooooooooooooooo.',
         'Error 404, response not found. Ask again later.',
-        'I see \'Yes\' in your future.'
+        'I see \'Yes\' in your future.',
+        'Only you know the answer... unless someone else knows.',
+        'Why are you asking me questions, don\'t you have something better to do?',
+        'The answer you are seeking is not available at the moment.',
+        'Definitely, no.',
+        'Stars aligned, I don\'t know what that means',
+        'Saturn is bright today (or night).',
+        'You think I\'m a magic 8 ball or something?',
+        'Yes, yes, yes yes yes. The gods say: no.',
+        'Yes sir. (or ma\'am or whatever you prefered to be called.)',
+        '\"Bzzzzt- We got incoming. New message. Message: \'No.\'',
+        'Let it go, let it goooooo! Can\'t hold it back any— Um... This is awkward... \"Ask again later."',
+        'Repeat your question.',
+        'Does not compute.',
+        'Thy answer is aye.',
+        'Prithee, asketh again.',
+        'Error 63.84e45: Question overload! System failure. Try again later.',
+        'You shall ask again. LISTEN TO ME!'
     ]
 
-    @commands.command()
+    @commands.command(aliases = ['ateball'])
     async def eightball(self, ctx, *, question):
         """
         Ask ModMail 8-Ball a question and get a response!
         """
         choice = random.choice(self.balllist)
-        embed=discord.Embed(title="Question:", description=question, color=0x51eaff)
+        embed=discord.Embed(title=f"Question by {ctx.author}:", description=question, color=0x51eaff)
         embed.set_author(name="8-Ball", url="https://github.com/realcyguy/modmail-plugins/", icon_url="https://media.istockphoto.com/photos/pool-ball-picture-id491993923?k=6&m=491993923&s=612x612&w=0&h=u6SNe9jYA1ZidZ_vfU1LHpaDVNnrbUFivOKxazcrNCI=")
         embed.add_field(name="Answer:", value=choice, inline=False)
         embed.set_footer(text="?plugin add realcyguy/modmail-plugins/8ball")
