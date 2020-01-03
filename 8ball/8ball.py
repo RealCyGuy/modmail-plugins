@@ -39,7 +39,7 @@ class eightball(commands.Cog):
         choice = random.choice(self.balllist)
         await ctx.send(f'Question: {question}\nAnswer: {choice}')
         embed=discord.Embed(title="Question:", description=question, color=0x51eaff)
-        embed.set_author(name="8-Ball", url="https://github.com/realcyguy/modmail-plugins/",, icon_url="https://media.istockphoto.com/photos/pool-ball-picture-id491993923?k=6&m=491993923&s=612x612&w=0&h=u6SNe9jYA1ZidZ_vfU1LHpaDVNnrbUFivOKxazcrNCI=")
+        embed.set_author(name="8-Ball", url="https://github.com/realcyguy/modmail-plugins/", icon_url="https://media.istockphoto.com/photos/pool-ball-picture-id491993923?k=6&m=491993923&s=612x612&w=0&h=u6SNe9jYA1ZidZ_vfU1LHpaDVNnrbUFivOKxazcrNCI=")
         embed.add_field(name="Answer:", value=choice, inline=False)
         embed.set_footer(text="?plugin add realcyguy/modmail-plugins/8ball")
         await self.bot.say(embed=embed)
