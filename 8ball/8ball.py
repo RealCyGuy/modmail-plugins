@@ -41,7 +41,11 @@ class eightball(commands.Cog):
         '\"Bzzzzt- We got incoming. New message. Message: \'No.\'',
         'Let it go, let it goooooo! Can\'t hold it back any— Um... This is awkward... \"Ask again later."',
         'Repeat your question.',
-        'Does not compute.'
+        'Does not compute.',
+        'Thy answer is aye.',
+        'Prithee, asketh again.',
+        'Error 63.84e45: Question overload! System failure. Try again later.',
+        'You shall ask again. LISTEN TO ME!'
     ]
 
     @commands.command(aliases = ['ateball'])
