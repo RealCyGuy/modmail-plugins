@@ -3,6 +3,9 @@ from discord.ext import commands
 import random
 
 class eightball(commands.Cog):
+    """
+    Ask ModMail a question and get an answer from a ever-growing list of answers.
+    """
     def __init__(self, bot):
         self.bot = bot
 
@@ -48,10 +51,12 @@ class eightball(commands.Cog):
         'You shall ask again. LISTEN TO ME!'
     ]
 
-    @commands.command(aliases = ['ateball'])
+    @commands.command(aliases = ['ateball', '8bl'])
     async def eightball(self, ctx, *, question):
         """
         Ask ModMail 8-Ball a question and get a response!
+
+        Usage [prefix]eightball <question>
         """
         choice = random.choice(self.balllist)
         embed=discord.Embed(title=f"Question by {ctx.author}:", description=question, color=0x51eaff)
