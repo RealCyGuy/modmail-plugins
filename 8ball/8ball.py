@@ -44,7 +44,7 @@ class eightball(commands.Cog):
         'Does not compute.'
     ]
 
-    @commands.command(aliases = [ateball])
+    @commands.command(aliases = ['ateball'])
     async def eightball(self, ctx, *, question):
         """
         Ask ModMail 8-Ball a question and get a response!
