@@ -28,7 +28,18 @@ class eightball(commands.Cog):
         'Why are you asking me?',
         'Noooooooooooooooooooooooooooo.',
         'Error 404, response not found. Ask again later.',
-        'I see \'Yes\' in your future.'
+        'I see \'Yes\' in your future.',
+        'Only you know the answer... unless someone else knows.',
+        'Why are you asking me questions, don\'t you have something better to do?',
+        'The answer you are seeking is not available at the moment.',
+        'Definitely, no.',
+        'Stars aligned, I don\'t know what that means',
+        'Saturn is bright today (or night).',
+        'You think I\'m a magic 8 ball or something?',
+        'Yes, yes, yes yes yes. The gods say: no.',
+        'Yes sir. (or ma\'am or whatever you prefered to be called.)',
+        '\"Bzzt- We got incoming. New message. \"What is it?\" \"No.\""',
+        'Watermelons.'
     ]
 
     @commands.command()
