@@ -12,7 +12,7 @@ class eightball(commands.Cog):
         'Of course.',
         'Good luck making that happen.',
         'It may happen.',
-        'The chance of that happening is as likely as dolphins singing \'Happy Birthday all of a sudden.\'',
+        'The chance of that happening is as likely as dolphins singing \'Happy Birthday\' all of a sudden.',
         'No, just... no.',
         'The magic sources say yes, don\'t ask me who they are!',
         'Ask again later, or never, it is not my decision.',
