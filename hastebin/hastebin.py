@@ -11,10 +11,13 @@ class Hastebin(commands.Cog):
         """
         Puts text in hastebin.
         """
-        async with aiohttp.ClientSession() as session:
-            async with self.bot.session.post("https://hastebin/documents", data=text) as response:
-                json = await response.json
-                await ctx.send(f"https://hastebin.com/{json['key']}")
+        try:
+            async with aiohttp.ClientSession() as session:
+                async with self.bot.session.post("https://hastebin/documents", data=text) as response:
+                    json = await response.json
+                    await ctx.send(f"https://hastebin.com/{json['key']}")
+        except:
+            ctx.send("There was an error.")            
 
 def setup(bot):
     bot.add_cog(Hastebin(bot))
