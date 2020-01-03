@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 import asyncio
 
-class dm-all-members(commands.Cog):
+class dmallmembers(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
@@ -21,4 +21,4 @@ class dm-all-members(commands.Cog):
 
 
 def setup(bot):
-    bot.add_cog(dm-all-members(bot))
+    bot.add_cog(dmallmembers(bot))
