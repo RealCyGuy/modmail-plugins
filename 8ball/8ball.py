@@ -53,7 +53,17 @@ class EightBall(commands.Cog):
         'Prithee, asketh again.',
         'Error 63.84e45: Question overload! System failure. Try again later.',
         'You shall ask again. LISTEN TO ME!',
-        'Yeet.'
+        'Yeet.',
+        'It\'s obviously no—just kidding, it\'s yes.',
+        'Affirmative.',
+        'Whatever you say.',
+        'Most likely.',
+        'It is decidedly so.',
+        'Not now, maybe when you\'re older.',
+        'The wise gods say... *suspenceful music plays* \"No.\"',
+        'Yes!!!',
+        '\"Hello, TotallyNotFakeCyGuy here and your answer is—\" What is he doing here?! GET OUT! And for you... \"try again later\"',
+        'New message recieved: Yes'
     ]
 
     @commands.command(aliases = ['ateball', '8bl'])
