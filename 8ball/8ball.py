@@ -5,6 +5,10 @@ import random
 class EightBall(commands.Cog):
     """
     Ask ModMail a question and get an answer from a ever-growing list of answers.
+
+    Disclaimer: These answers are jokes and should be taken as jokes.
+    For legal advice, talk to a lawyer.
+    For general advice, don't take it from a bot.
     """
     def __init__(self, bot):
         self.bot = bot
@@ -48,7 +52,8 @@ class EightBall(commands.Cog):
         'Thy answer is aye.',
         'Prithee, asketh again.',
         'Error 63.84e45: Question overload! System failure. Try again later.',
-        'You shall ask again. LISTEN TO ME!'
+        'You shall ask again. LISTEN TO ME!',
+        'Yeet.'
     ]
 
     @commands.command(aliases = ['ateball', '8bl'])
