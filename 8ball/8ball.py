@@ -56,7 +56,7 @@ class EightBall(commands.Cog):
         """
         Ask ModMail 8-Ball a question and get a response!
 
-        Usage [prefix]eightball <question>
+        Usage: [prefix]eightball <question>
         """
         choice = random.choice(self.balllist)
         embed=discord.Embed(title=f"Question by {ctx.author}:", description=question, color=0x51eaff)
