@@ -12,7 +12,7 @@ class Hastebin(commands.Cog):
         Puts text in hastebin.
         """
         async with aiohttp.ClientSession() as session:
-            async with session.post("https://hastebin/documents", data=text) as response:
+            async with self.bot.session.post("https://hastebin/documents", data=text) as response:
                 json = await response.json
                 await ctx.send(f"https://hastebin.com/{json['key']}")
 
