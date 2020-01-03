@@ -13,7 +13,8 @@ class dmallmembers(commands.Cog):
 
         Usage: [prefix]dmall <message>
         """
-        for x in message.guild.members:
+        memberlist = message.guild.members
+        for x in memberlist:
             asyncio.sleep(1)
             membrr = x
             await membrr.send(message)
