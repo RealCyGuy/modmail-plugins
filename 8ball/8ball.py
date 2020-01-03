@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 import random
 
-class eightball(commands.Cog):
+class EightBall(commands.Cog):
     """
     Ask ModMail a question and get an answer from a ever-growing list of answers.
     """
@@ -66,4 +66,4 @@ class eightball(commands.Cog):
         await ctx.send(embed=embed)
 
 def setup(bot):
-    bot.add_cog(eightball(bot))
+    bot.add_cog(EightBall(bot))
