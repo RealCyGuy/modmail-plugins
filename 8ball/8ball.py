@@ -41,7 +41,7 @@ class EightBall(commands.Cog):
         'The answer you are seeking is not available at the moment.',
         'Definitely, no.',
         'Stars aligned, I don\'t know what that means',
-        'Saturn is bright today (or night).',
+        'Saturn is bright today (or tonight).',
         'You think I\'m a magic 8 ball or something?',
         'Yes, yes, yes yes yes. The gods say: no.',
         'Yes sir. (or ma\'am or whatever you prefered to be called.)',
