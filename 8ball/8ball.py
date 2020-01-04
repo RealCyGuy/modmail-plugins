@@ -62,10 +62,20 @@ class EightBall(commands.Cog):
         'Not now, maybe when you\'re older.',
         'The wise gods say... *suspenceful music plays* \"No.\"',
         'Yes!!!',
-        '\"Hello, TotallyNotFakeCyGuy here and your answer is—\" What is he doing here?! GET OUT! And for you... \"try again later\"',
+        '\"Hello, TotallyNotFakeCyGuy here and your answer is—\" What is he doing here?! GET OUT! And for you... \"Please try again later.\"',
         'New message recieved: Yes',
         'Of course... not. Jkjk, yes...or is it? It isn\'t not of course not not the opposite of not no. Confusion: 1000. Ask again later.',
-        'Try again ~~later~~ right now.'
+        'Try again ~~later~~ right now.',
+        '[REDACTED]',
+        'Let\'s leave the answer into the unknown, into the unknown.',
+        'godTransmissionError: Evil intercepted. Please try again.',
+        '\"Don\'t take advice from a bot\" - Abraham Lincoln',
+        'Ask again in 3.8 minutes.',
+        '~~Yes, definitely.~~',
+        'Sorry for the interruption: If you would like to add this plugin to your ModMail bot, use the command below! Now, the answer you\'ve been waiting for: [Please try again later.]',
+        'Yes. WAHOO!!! Wait, that\'s good, right?',
+        'Message recieved. Message: [Error 6.88e8: Message not recieved, try again later.]',
+        '<insert answer here>'
     ]
 
     @commands.command(aliases = ['ateball', '8bl'])
