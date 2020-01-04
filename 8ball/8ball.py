@@ -63,7 +63,9 @@ class EightBall(commands.Cog):
         'The wise gods say... *suspenceful music plays* \"No.\"',
         'Yes!!!',
         '\"Hello, TotallyNotFakeCyGuy here and your answer is—\" What is he doing here?! GET OUT! And for you... \"try again later\"',
-        'New message recieved: Yes'
+        'New message recieved: Yes',
+        'Of course... not. Jkjk, yes...or is it? It isn\'t not of course not not the opposite of not no. Confusion: 1000. Ask again later.',
+        'Try again ~~later~~ right now.'
     ]
 
     @commands.command(aliases = ['ateball', '8bl'])
