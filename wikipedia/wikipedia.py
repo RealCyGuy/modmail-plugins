@@ -9,19 +9,7 @@ class Wikipedia(commands.Cog):
     @commands.command()
     async def wikipedia(self, ctx, *, search):
         """Searches on the english Wikipedia"""
-        results = wikipedia.search(search)
-
-        for result in results:
-            try:
-                page = wikipedia.page(result)
-            except wikipedia.exceptions.DisambiguationError:
-                ctx.send('DisambiguationError')
-                continue
-            except wikipedia.exceptions.PageError:
-                ctx.send(f'PageError for result: {result}')
-                continue
-
-        ctx.send(page.content.encode('utf-8'))
+        ctx.send(wikipedia.summary(search, sentences=1))
 
 def setup(bot):
     bot.add_cog(Wikipedia(bot))
