@@ -22,3 +22,6 @@ class Wikipedia(commands.Cog):
                 continue
 
         ctx.send(page.summary.encode('utf-8'))
+
+def setup(bot):
+    bot.add_cog(Wikipedia(bot))
