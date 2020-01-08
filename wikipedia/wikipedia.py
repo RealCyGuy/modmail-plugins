@@ -12,13 +12,13 @@ class Wikipedia(commands.Cog):
         results = wikipedia.search(search)
 
         for result in results:
-        try:
-            page = wikipedia.page(result)
-        except wikipedia.exceptions.DisambiguationError:
-            ctx.send('DisambiguationError')
-            continue
-        except wikipedia.exceptions.PageError:
-            ctx.send(f'PageError for result: {result}')
-            continue
+            try:
+                page = wikipedia.page(result)
+            except wikipedia.exceptions.DisambiguationError:
+                ctx.send('DisambiguationError')
+                continue
+            except wikipedia.exceptions.PageError:
+                ctx.send(f'PageError for result: {result}')
+                continue
 
         ctx.send(page.summary.encode('utf-8'))
