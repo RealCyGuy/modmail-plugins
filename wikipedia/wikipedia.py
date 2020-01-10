@@ -21,7 +21,7 @@ class Wikipedia(commands.Cog):
                 ctx.send('PageError for result: ' + result)
                 continue
 
-            print(page.summary.encode('utf-8'))
+            ctx.send(page.summary.encode('utf-8'))
 
 def setup(bot):
     bot.add_cog(Wikipedia(bot))
