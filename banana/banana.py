@@ -7,7 +7,7 @@ class Banana(commands.Cog):
 
     @commands.Cog.listener()
     async def on_message(self, message):
-        if 'banana' in message:
+        if 'BANANA' in message.content.upper():
             await message.channel.send('hi')
 
 def setup(bot):
