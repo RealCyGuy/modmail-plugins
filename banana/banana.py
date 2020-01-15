@@ -8,7 +8,7 @@ class Banana(commands.Cog):
     @commands.Cog.listener()
     async def on_message(self, message):
         if 'BANANA' in message.content.upper():
-            await message.channel.send('hi')
+            await message.add_reaction('N{BANANA}')
 
 def setup(bot):
     bot.add_cog(Banana(bot))
