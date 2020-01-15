@@ -6,7 +6,7 @@ class Banana(commands.Cog):
         self.bot = bot
 
     @commands.Cog.listener()
-    async def on_message(message):
+    async def on_message(self, message):
         if 'banana' in message:
             await message.channel.send('hi')
 
