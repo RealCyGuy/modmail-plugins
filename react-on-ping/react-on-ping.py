@@ -8,7 +8,7 @@ class ReactOnPing(commands.Cog):
 
     @commands.Cog.listener()
     async def on_message(self, message):
-        if 'BANANA' in message.content.upper():
+        if '@' in message.content.upper():
             await message.add_reaction('<:ping:667602017530937354>')
 
 def setup(bot):
