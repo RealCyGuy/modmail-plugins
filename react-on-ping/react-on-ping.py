@@ -8,7 +8,7 @@ class ReactOnPing(commands.Cog):
 
     @commands.Cog.listener()
     async def on_message(self, message):
-        emoji = bot.get_emoji(667602017530937354)
+        emoji = client.get_emoji(667602017530937354)
         if '<@' in message.content.upper():
             await message.add_reaction(emoji)
 
