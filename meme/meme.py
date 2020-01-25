@@ -27,7 +27,7 @@ class WildMemes(commands.Cog):
 
         elif random.randint(0, 100) < 25:
             async with message.channel.typing():
-                chosen_sub = random.choice(subreddits)
+                chosen_sub = random.choice(self.subreddits)
                 r = requests.get("https://api.reddit.com/r/{chosen_sub}/top.json?sort=top&t=day&limit=500",
                              headers={'User-agent': 'Super Bot 9000'})
                 r = r.json()
