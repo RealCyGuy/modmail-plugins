@@ -22,7 +22,7 @@ class WildMemes(commands.Cog):
 
     @commands.Cog.listener()
     async def on_message(self, message):
-        if message.author == bot.user:
+        if message.author == self.bot.user:
             return
 
         elif random.randint(0, 100) < 25:
