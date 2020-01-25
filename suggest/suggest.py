@@ -18,7 +18,7 @@ class Suggest(commands.Cog):
         )
         embed=discord.Embed(title=f'Set suggestion channel to {channel}.', color=0x15d649)
         embed.set_author(name="Success!")
-        embed.set_footer(text="Task failed = no.")
+        embed.set_footer(text="Task succeeded successfully.")
         await ctx.send(embed=embed)
 
     @commands.command()
