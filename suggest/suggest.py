@@ -29,7 +29,6 @@ class Suggest(commands.Cog):
                 await ctx.send('Suggestion channel not set.')
             else:
                 suggestion_channel = self.bot.get_channel(int(config["suggestion-channel"]["channel"]))
-                await ctx.send(suggestion_channel)
 
                 embed=discord.Embed(title=suggestion, color=0x71b8d7)
                 embed.set_author(name=f"Suggestion by {ctx.author}:", icon_url=ctx.author.avatar_url)
