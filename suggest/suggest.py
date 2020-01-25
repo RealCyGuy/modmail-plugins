@@ -13,7 +13,7 @@ class Suggest(commands.Cog):
     async def setsuggestchannel(self, ctx, channel: discord.TextChannel):
         await self.coll.find_one_and_update(
             {"_id": "config"},
-            {"$set": {"suggestion-channel": {"channel": channel}}},
+            {"$set": {"suggestion-channel": {"channel": str(channel)}}},
             upsert=True,
         )
 
