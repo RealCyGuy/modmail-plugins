@@ -9,7 +9,8 @@ class ReactOnPing(commands.Cog):
     @commands.Cog.listener()
     async def on_message(self, message):
         if '<@' in message.content.upper():
-            await message.add_reaction('<:ping:667602017530937354>')
+            # await message.add_reaction(emoji)
+            await message.channel.send(list(self.bot.get_all_emojis()))
 
 def setup(bot):
     bot.add_cog(ReactOnPing(bot))
