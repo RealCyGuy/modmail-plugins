@@ -16,7 +16,7 @@ class Suggest(commands.Cog):
             {"$set": {"suggestion-channel": {"channel": str(channel.id)}}},
             upsert=True,
         )
-        embed=discord.Embed(title=f'Set suggestion channel to {channel}.', color=0x15d649)
+        embed=discord.Embed(title=f'Set suggestion channel to {channel}.', color=0x4dff73)
         embed.set_author(name="Success!")
         embed.set_footer(text="Task succeeded successfully.")
         await ctx.send(embed=embed)
@@ -26,7 +26,10 @@ class Suggest(commands.Cog):
         async with ctx.channel.typing():
             config = await self.coll.find_one({"_id": "config"})
             if config is None:
-                await ctx.send('Suggestion channel not set.')
+                embed=discord.Embed(title="Suggestion channel not set.", color=self.bot.error_colour)
+                embed.set_author(name="Error.")
+                embed.set_footer("Task failed successfully.")
+                await ctx.send(embed=embed)
             else:
                 suggestion_channel = self.bot.get_channel(int(config["suggestion-channel"]["channel"]))
 
