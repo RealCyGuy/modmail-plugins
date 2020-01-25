@@ -4,6 +4,9 @@ from core import checks
 from core.models import PermissionLevel
 
 class Suggest(commands.Cog):
+    """
+    Let's you send a suggestion to a designated channel.
+    """
     def __init__(self, bot):
         self.bot = bot
         self.coll = bot.plugin_db.get_partition(self)
@@ -11,6 +14,9 @@ class Suggest(commands.Cog):
     @commands.command(aliases = ['ssc'])
     @checks.has_permissions(PermissionLevel.ADMIN)
     async def setsuggestchannel(self, ctx, channel: discord.TextChannel):
+        """
+        Set the channel where suggestions go.
+        """
         await self.coll.find_one_and_update(
             {"_id": "config"},
             {"$set": {"suggestion-channel": {"channel": str(channel.id)}}},
@@ -23,6 +29,9 @@ class Suggest(commands.Cog):
 
     @commands.command()
     async def suggest(self, ctx, *, suggestion):
+        """
+        Suggest something!
+        """
         async with ctx.channel.typing():
             config = await self.coll.find_one({"_id": "config"})
             if config is None:
