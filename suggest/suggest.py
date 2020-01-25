@@ -32,7 +32,7 @@ class Suggest(commands.Cog):
 
                 embed=discord.Embed(title=suggestion, color=0x71b8d7)
                 embed.set_author(name=f"Suggestion by {ctx.author}:", icon_url=ctx.author.avatar_url)
-                await ctx.send(embed=embed)
+                await channel.send(embed=embed)
 
 def setup(bot):
     bot.add_cog(Suggest(bot))
