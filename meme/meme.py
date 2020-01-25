@@ -31,7 +31,7 @@ class WildMemes(commands.Cog):
                 r = requests.get("https://api.reddit.com/r/{chosen_sub}/top.json?sort=top&t=day&limit=500",
                              headers={'User-agent': 'Super Bot 9000'})
                 r = r.json()
-                boxed = Box(r)
+                boxed = box.Box(r)
                 data = (random.choice(boxed.data.children)).data
                 image = data.url
                 upvotes = data.ups
