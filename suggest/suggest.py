@@ -13,7 +13,7 @@ class Suggest(commands.Cog):
     async def setsuggestchannel(self, ctx, channel: discord.TextChannel):
         await self.coll.find_one_and_update(
             {"_id": "config"},
-            {"$set": {"suggestion-channel": {"channel": str(channel)}}},
+            {"$set": {"suggestion-channel": {"channel": str(channel.id)}}},
             upsert=True,
         )
         embed=discord.Embed(title=f'Set suggestion channel to {channel}.', color=0x15d649)
