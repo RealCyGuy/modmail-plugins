@@ -22,7 +22,7 @@ class Suggest(commands.Cog):
         async with ctx.channel.typing():
             config = await self.coll.find_one({"_id": "config"})
             if config is None:
-                ctx.send('Suggestion channel not set.')
+                await ctx.send('Suggestion channel not set.')
             else:
                 channel = config["suggestion-channel"]["channel"]
 
