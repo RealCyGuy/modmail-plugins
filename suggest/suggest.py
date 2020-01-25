@@ -16,7 +16,7 @@ class Suggest(commands.Cog):
             {"$set": {"suggestion-channel": {"channel": str(channel)}}},
             upsert=True,
         )
-        embed=discord.Embed(title=f'Set suggestion channel to {channel}.' color=0x15d649)
+        embed=discord.Embed(title=f'Set suggestion channel to {channel}.', color=0x15d649)
         embed.set_author(name="Success!")
         embed.set_footer(text="Task failed = no.")
         await ctx.send(embed=embed)
