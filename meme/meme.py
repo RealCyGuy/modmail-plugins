@@ -14,7 +14,12 @@ class WildMemes(commands.Cog):
     "adviceanimals",
     "memes",
     "terriblefacebookmemes",
-    "funny"
+    "historymemes",
+    "me_irl",
+    "2meirl4meirl",
+    "starterpacks",
+    "fellowkids",
+    "tumblr"
     ]
 
     def __init__(self, bot):
