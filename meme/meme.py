@@ -17,7 +17,6 @@ class WildMemes(commands.Cog):
     "historymemes",
     "me_irl",
     "2meirl4meirl",
-    "starterpacks",
     "fellowkids",
     "tumblr"
     ]
