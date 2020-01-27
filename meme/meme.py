@@ -11,7 +11,6 @@ class WildMemes(commands.Cog):
     subreddits = [
     "dankmemes",
     "wholesomememes",
-    "adviceanimals",
     "memes",
     "terriblefacebookmemes",
     "historymemes",
