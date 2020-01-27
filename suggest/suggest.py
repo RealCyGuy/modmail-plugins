@@ -33,7 +33,7 @@ class Suggest(commands.Cog):
         """Displays the suggestion channel."""
         config = await self.coll.find_one({"_id": "config"})
         suggestion_channel = self.bot.get_channel(int(config["suggestion-channel"]["channel"]))
-        embed=discord.Embed(title=f'The suggestion channel is: {suggestion_channel}', description=f'To change it, use {self.prefix}setsuggetchannel.',color=0x4dff73)
+        embed=discord.Embed(title=f'The suggestion channel is: {suggestion_channel}', description='To change it, use [p]setsuggetchannel.',color=0x4dff73)
         await ctx.send(embed=embed)
 
     @checks.has_permissions(PermissionLevel.MOD)
