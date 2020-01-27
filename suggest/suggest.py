@@ -33,7 +33,7 @@ class Suggest(commands.Cog):
         """Displays the suggestion channel."""
         config = await self.coll.find_one({"_id": "config"})
         suggestion_channel = self.bot.get_channel(int(config["suggestion-channel"]["channel"]))
-        embed=discord.Embed(title=f'The suggestion channel is: {suggestion_channel}', description='To change it, use [p]setsuggetchannel.',color=0x4dff73)
+        embed=discord.Embed(title=f'The suggestion channel is: #{suggestion_channel}', description='To change it, use [p]setsuggetchannel.',color=0x4dff73)
         await ctx.send(embed=embed)
 
     @checks.has_permissions(PermissionLevel.MOD)
@@ -60,6 +60,7 @@ class Suggest(commands.Cog):
                 {"$set": {"users": list()}},
                 upsert=True
             )
+        mod = await self.coll.find_one({"_id": "mod"})
         self.banlist = mod.get("users", list())
         if userid not in self.banlist:
             self.banlist.append(userid)
@@ -87,6 +88,7 @@ class Suggest(commands.Cog):
                 {"$set": {"users": list()}},
                 upsert=True
             )
+        mod = await self.coll.find_one({"_id": "mod"})
         self.banlist = mod.get("users", list())
         if userid in self.banlist:
             self.banlist.remove(userid)
