@@ -39,12 +39,11 @@ class Suggest(commands.Cog):
     @checks.has_permissions(PermissionLevel.MOD)
     @commands.group(invoke_without_command=True)
     async def suggestmod(self, ctx: commands.Context):
-        """Let's you ban people from using the suggest command."""
+        """Let's you block and unblock people from using the suggest command."""
         await ctx.send_help(ctx.command)
 
     @suggestmod.command()
     @checks.has_permissions(PermissionLevel.MOD)
-    """Block from using the suggest command."""
     async def block(self, ctx, user: discord.User):
         mod = await self.coll.find_one({"_id": "mod"})
         userid = str(user.id)
@@ -65,7 +64,6 @@ class Suggest(commands.Cog):
 
     @suggestmod.command()
     @checks.has_permissions(PermissionLevel.MOD)
-    """Unblock someone from using the suggest command."""
     async def unblock(self, ctx, user: discord.User):
         mod = await self.coll.find_one({"_id": "mod"})
         userid = str(user.id)
