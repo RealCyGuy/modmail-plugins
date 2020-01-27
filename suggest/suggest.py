@@ -22,7 +22,7 @@ class Suggest(commands.Cog):
             {"$set": {"suggestion-channel": {"channel": str(channel.id)}}},
             upsert=True,
         )
-        embed=discord.Embed(title=f'Set suggestion channel to {channel}.', color=0x4dff73)
+        embed=discord.Embed(title=f'Set suggestion channel to #{channel}.', color=0x4dff73)
         embed.set_author(name="Success!")
         embed.set_footer(text="Task succeeded successfully.")
         await ctx.send(embed=embed)
@@ -33,7 +33,7 @@ class Suggest(commands.Cog):
         """Displays the suggestion channel."""
         config = await self.coll.find_one({"_id": "config"})
         suggestion_channel = self.bot.get_channel(int(config["suggestion-channel"]["channel"]))
-        embed=discord.Embed(title=f'The suggestion channel is: {suggestion_channel}', description='To change it, use {self}setsuggetchannel.',color=0x4dff73)
+        embed=discord.Embed(title=f'The suggestion channel is: {suggestion_channel}', description=f'To change it, use {self.prefix}setsuggetchannel.',color=0x4dff73)
         await ctx.send(embed=embed)
 
     @checks.has_permissions(PermissionLevel.MOD)
