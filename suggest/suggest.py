@@ -28,6 +28,63 @@ class Suggest(commands.Cog):
         await ctx.send(embed=embed)
 
     @commands.command()
+    @checks.has_permissions(PermissionLevel.ADMIN)
+    async def suggestchannel(self, ctx):
+        """Displays the suggestion channel."""
+        config = await self.coll.find_one({"_id": "config"})
+        suggestion_channel = self.bot.get_channel(int(config["suggestion-channel"]["channel"]))
+        embed=discord.Embed(title=f'The suggestion channel is: {suggestion_channel}', description='To change it, use {self}setsuggetchannel.',color=0x4dff73)
+        await ctx.send(embed=embed)
+
+    @checks.has_permissions(PermissionLevel.MOD)
+    @commands.group(invoke_without_command=True)
+    async def suggestmod(self, ctx: commands.Context):
+        """Let's you ban people from using the suggest command."""
+        await ctx.send_help(ctx.command)
+
+    @suggestmod.command()
+    @checks.has_permissions(PermissionLevel.MOD)
+    """Block from using the suggest command."""
+    async def block(self, ctx, user: discord.User):
+        mod = await self.coll.find_one({"_id": "mod"})
+        userid = str(user.id)
+        if mod is None:
+            await self.coll.find_one_and_update(
+                {"_id": "banned"},
+                {"$set": {"users": list()}},
+                upsert=True
+            )
+        self.banlist = mod.get("users", list())
+        if userid not in self.banlist:
+            self.banlist.append(userid)
+            await self.coll.find_one_and_update(
+                {"_id": "mod"},
+                {"$set": {"banned": {"users": self.banlist}}},
+                upsert=True,
+            )
+
+    @suggestmod.command()
+    @checks.has_permissions(PermissionLevel.MOD)
+    """Unblock someone from using the suggest command."""
+    async def unblock(self, ctx, user: discord.User):
+        mod = await self.coll.find_one({"_id": "mod"})
+        userid = str(user.id)
+        if mod is None:
+            await self.coll.find_one_and_update(
+                {"_id": "banned"},
+                {"$set": {"users": list()}},
+                upsert=True
+            )
+        self.banlist = mod.get("users", list())
+        if userid in self.banlist:
+            self.banlist.remove(userid)
+            await self.coll.find_one_and_update(
+                {"_id": "mod"},
+                {"$set": {"banned": {"users": self.banlist}}},
+                upsert=True,
+            )
+
+    @commands.command()
     async def suggest(self, ctx, *, suggestion):
         """
         Suggest something!
