@@ -42,9 +42,16 @@ class Suggest(commands.Cog):
         """Let's you block and unblock people from using the suggest command."""
         await ctx.send_help(ctx.command)
 
-    @suggestmod.command()
+    @suggestmod.command(aliases = ['ban'])
     @checks.has_permissions(PermissionLevel.MOD)
     async def block(self, ctx, user: discord.User):
+        """
+        Block a user from using the suggest command.
+
+        **Examples:**
+        [p]suggestmod block @RealCyGuy
+        [p]suggestmod ban 543225108135673877
+        """
         mod = await self.coll.find_one({"_id": "mod"})
         userid = str(user.id)
         if mod is None:
@@ -62,9 +69,16 @@ class Suggest(commands.Cog):
                 upsert=True,
             )
 
-    @suggestmod.command()
+    @suggestmod.command(aliases = ['unban'])
     @checks.has_permissions(PermissionLevel.MOD)
     async def unblock(self, ctx, user: discord.User):
+        """
+        Unblock a user from using the suggest command.
+
+        **Examples:**
+        [p]suggestmod unblock @RealCyGuy
+        [p]suggestmod unban 543225108135673877
+        """
         mod = await self.coll.find_one({"_id": "mod"})
         userid = str(user.id)
         if mod is None:
