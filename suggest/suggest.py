@@ -60,8 +60,7 @@ class Suggest(commands.Cog):
                 {"$set": {"users": list()}},
                 upsert=True
             )
-        mod = await self.coll.find_one({"_id": "mod"})
-        self.banlist = mod.get("users", list())
+        self.banlist = await self.coll.find_one({"_id": "mod"}, {"$set": "users"})
         if userid not in self.banlist:
             self.banlist.append(userid)
             await self.coll.find_one_and_update(
@@ -88,8 +87,7 @@ class Suggest(commands.Cog):
                 {"$set": {"users": list()}},
                 upsert=True
             )
-        mod = await self.coll.find_one({"_id": "mod"})
-        self.banlist = mod.get("users", list())
+        self.banlist = await self.coll.find_one({"_id": "mod"}, {"$set": "users"})
         if userid in self.banlist:
             self.banlist.remove(userid)
             await self.coll.find_one_and_update(
