@@ -61,6 +61,7 @@ class Suggest(commands.Cog):
                 upsert=True
             )
         self.banlist = await self.coll.find_one({"_id": "mod"}, {"$set": "users"})
+        await ctx.send(self.banlist)
         if userid not in self.banlist:
             self.banlist.append(userid)
             await self.coll.find_one_and_update(
