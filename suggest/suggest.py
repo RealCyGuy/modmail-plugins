@@ -60,7 +60,7 @@ class Suggest(commands.Cog):
                 {"$set": {"users": list()}},
                 upsert=True
             )
-        self.banlist = await self.coll.find_one({"_id": "mod"}, {"$set": "users"})
+        self.banlist = await self.mod.get('users', [])
         self.banlist.append(userid)
         await self.coll.find_one_and_update(
             {"_id": "mod"},
