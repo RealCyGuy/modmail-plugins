@@ -52,9 +52,9 @@ class Suggest(commands.Cog):
         [p]suggestmod block @RealCyGuy
         [p]suggestmod ban 543225108135673877
         """
-        mod = await self.coll.find_one({"_id": "mod"})
+        self.mod = await self.coll.find_one({"_id": "mod"})
         userid = str(user.id)
-        if mod is None:
+        if self.mod is None:
             await self.coll.find_one_and_update(
                 {"_id": "banned"},
                 {"$set": {"users": list()}},
