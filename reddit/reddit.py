@@ -15,7 +15,8 @@ class RedditScroller(commands.Cog):
     @commands.command()
     async def cursedimages(self, ctx):
         """Scroll through cursed images."""
-        r = requests.get("https://api.reddit.com/r/cursedimages/top.json?sort=top&t=day&limit=10", headers={'User Agent': 'Super Bot 9000'})
+        r = requests.get("https://api.reddit.com/r/cursedimages/top.json?sort=top&t=day&limit=10",
+                     headers={'User Agent': 'Super Bot 9000'})
         r = r.json()
         r = Box(r)
 
