@@ -19,11 +19,11 @@ class RedditScroller(commands.Cog):
         r = requests.get(f"https://api.reddit.com/r/{subreddit}/top.json?sort=top&t=day&limit=10",
                      headers={'User Agent': 'Super Bot 9000'}).json()
         ctx.send(r)
-        r = Box(r)
+        boxed = Box(r)
 
         embeds = []
 
-        for data in r.data.children.data:
+        for data in boxed.data.children.data:
             ctx.send(data)
 
 def setup(bot):
