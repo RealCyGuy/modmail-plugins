@@ -26,5 +26,20 @@ class RedditScroller(commands.Cog):
         for data in boxed.data.children.data:
             ctx.send(data)
 
+    @commands.command()
+    async def paginator(self, ctx):
+        embeds = []
+        pages = ['I like watermelon', 'Do you?', 'I do!']
+        for page in pages:
+            embed = discord.Embed(
+                title="Watermelon",
+                color=self.bot.main_color,
+                description=page,
+                )
+            embeds.append(embed)
+
+        session = EmbedPaginatorSession(ctx, *embeds)
+        await session.run()
+
 def setup(bot):
     bot.add_cog(RedditScroller(bot))
