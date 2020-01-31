@@ -19,7 +19,6 @@ class CursedImages(commands.Cog):
         r = requests.get(f"https://api.reddit.com/r/{subreddit}/top.json?sort=top&t=day&limit=10",
                              headers={'User-agent': 'Super Bot 9000'})
         r = r.json()
-        await ctx.send(r)
         boxed = Box(r)
 
         embeds = []
@@ -31,6 +30,11 @@ class CursedImages(commands.Cog):
             embed = discord.Embed(title=title, color=0x22ddbbff)
             embed.set_image(image)
             embed.set_author(name=ctx.author.name, icon_url=ctx.author.avatar_url)
+
+            embeds.append(embed)
+
+            session = EmbedPaginatorSession(ctx, *embeds)
+            session.run()
 
 def setup(bot):
     bot.add_cog(CursedImages(bot))
