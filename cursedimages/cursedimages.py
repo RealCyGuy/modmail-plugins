@@ -26,15 +26,17 @@ class CursedImages(commands.Cog):
         for data in boxed.data.children.data:
             title = data.title
             image = data.url
+            upvotes = data.upvotes
 
             embed = discord.Embed(title=title, color=0x22ddbbff)
             embed.set_image(image)
             embed.set_author(name=ctx.author.name, icon_url=ctx.author.avatar_url)
+            embed.add_field(description=f"{upvotes} upvotes.")
 
             embeds.append(embed)
 
             session = EmbedPaginatorSession(ctx, *embeds)
-            session.run()
+            await session.run()
 
 def setup(bot):
     bot.add_cog(CursedImages(bot))
