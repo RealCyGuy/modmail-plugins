@@ -34,9 +34,9 @@ class CursedImages(commands.Cog):
             embed.add_field(description=f"{upvotes} upvotes.")
 
             embeds.append(embed)
-
-            session = EmbedPaginatorSession(ctx, *embeds)
-            await session.run()
+            
+        session = EmbedPaginatorSession(ctx, *embeds)
+        await session.run()
 
 def setup(bot):
     bot.add_cog(CursedImages(bot))
