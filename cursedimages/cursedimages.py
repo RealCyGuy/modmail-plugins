@@ -23,7 +23,9 @@ class CursedImages(commands.Cog):
 
         embeds = []
 
-        for data in boxed.data.children.data:
+        for post in boxed.data.children:
+            data = post.data
+            
             title = data.title
             image = data.url
             upvotes = data.ups
