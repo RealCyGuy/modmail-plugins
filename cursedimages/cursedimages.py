@@ -8,7 +8,7 @@ from box import Box
 from core.paginator import EmbedPaginatorSession
 
 class CursedImages(commands.Cog):
-    """See cursed images"""
+    """See cursed images."""
     def __init__(self, bot):
         self.bot = bot
 
