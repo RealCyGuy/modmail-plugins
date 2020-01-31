@@ -26,7 +26,7 @@ class CursedImages(commands.Cog):
         for data in boxed.data.children.data:
             title = data.title
             image = data.url
-            upvotes = data.upvotes
+            upvotes = data.ups
 
             embed = discord.Embed(title=title, color=0x22ddbbff)
             embed.set_image(image)
