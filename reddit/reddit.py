@@ -17,7 +17,8 @@ class RedditScroller(commands.Cog):
         """Scroll through cursed images."""
         subreddit = "cursedimages"
         r = requests.get(f"https://api.reddit.com/r/{subreddit}/top.json?sort=top&t=day&limit=10",
-                             headers={'User-agent': 'Super Bot 9000'}).json()
+                             headers={'User-agent': 'Super Bot 9000'})
+        r = r.json()
         await ctx.send(r)
         boxed = Box(r)
 
