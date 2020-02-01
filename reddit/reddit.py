@@ -7,15 +7,14 @@ from box import Box
 
 from core.paginator import EmbedPaginatorSession
 
-class CursedImages(commands.Cog):
-    """See cursed images."""
+class RedditScroller(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
     @commands.command()
-    async def cursedimages(self, ctx):
-        """Scroll through cursed images."""
-        subreddit = "cursedimages"
+    async def memescroller(self, ctx):
+        """Scroll through r/dankmemes."""
+        subreddit = "dankmemes"
         r = requests.get(f"https://api.reddit.com/r/{subreddit}/top.json?sort=top&t=day&limit=10",
                              headers={'User-agent': 'Super Bot 9000'})
         r = r.json()
@@ -33,7 +32,7 @@ class CursedImages(commands.Cog):
             embed = discord.Embed(title=title, color=0x9fdcf7)
             embed.set_image(url=image)
             embed.set_author(name=ctx.author.name, icon_url=ctx.author.avatar_url)
-            embed.add_field(name="u200b", value=f"{upvotes} upvotes.", inline=False)
+            embed.add_field(name="", value=f"{upvotes} upvotes.", inline=False)
 
             embeds.append(embed)
             
@@ -41,4 +40,4 @@ class CursedImages(commands.Cog):
         await session.run()
 
 def setup(bot):
-    bot.add_cog(CursedImages(bot))
+    bot.add_cog(RedditScroller(bot))
