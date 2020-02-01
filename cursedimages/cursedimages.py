@@ -30,7 +30,7 @@ class CursedImages(commands.Cog):
             image = data.url
             upvotes = data.ups
 
-            embed = discord.Embed(title=title, color=0x22ddbbff)
+            embed = discord.Embed(title=title, color=0x9fdcf7)
             embed.set_image(url=image)
             embed.set_author(name=ctx.author.name, icon_url=ctx.author.avatar_url)
             embed.add_field(name="u200b", value=f"{upvotes} upvotes.", inline=False)
