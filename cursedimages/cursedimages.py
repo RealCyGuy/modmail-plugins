@@ -25,13 +25,13 @@ class CursedImages(commands.Cog):
 
         for post in boxed.data.children:
             data = post.data
-            
+
             title = data.title
             image = data.url
             upvotes = data.ups
 
             embed = discord.Embed(title=title, color=0x22ddbbff)
-            embed.set_image(image)
+            embed.set_image(url=image)
             embed.set_author(name=ctx.author.name, icon_url=ctx.author.avatar_url)
             embed.add_field(description=f"{upvotes} upvotes.")
 
