@@ -33,7 +33,7 @@ class RedditScroller(commands.Cog):
             embed = discord.Embed(title=title, color=0x9fdcf7)
             embed.set_image(url=image)
             embed.set_author(name=ctx.author.name, icon_url=ctx.author.avatar_url)
-            embed.add_field(name="On {subreddit} with {upvotes} upvotes.", value="\u200b", inline=False)
+            embed.add_field(name=f"On {subreddit} with {upvotes} upvotes.", value="\u200b", inline=False)
 
             embeds.append(embed)
             
