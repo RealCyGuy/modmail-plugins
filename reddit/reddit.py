@@ -19,6 +19,9 @@ class RedditScroller(commands.Cog):
         **Usage**:
         [p]memescroll 12 (returns 12 memes)
         [p]memescroll (returns 30 memes)
+
+        **Note**:
+        The maximum amount of memes is 100.
         """
         subreddit = "dankmemes"
         r = requests.get(f"https://api.reddit.com/r/{subreddit}/top.json?sort=top&t=day&limit={max}",
