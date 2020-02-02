@@ -11,11 +11,11 @@ class RedditScroller(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
+    @commands.command(aliases = ['memescroll'])
     async def memescroller(self, ctx):
         """Scroll through r/dankmemes."""
         subreddit = "dankmemes"
-        r = requests.get(f"https://api.reddit.com/r/{subreddit}/top.json?sort=top&t=day&limit=10",
+        r = requests.get(f"https://api.reddit.com/r/{subreddit}/top.json?sort=top&t=day&limit=30",
                              headers={'User-agent': 'Super Bot 9000'})
         r = r.json()
         boxed = Box(r)
