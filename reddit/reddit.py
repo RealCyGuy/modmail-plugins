@@ -21,7 +21,7 @@ class RedditScroller(commands.Cog):
         [p]memescroll (returns 30 memes)
         """
         subreddit = "dankmemes"
-        r = requests.get(f"https://api.reddit.com/r/{subreddit}/top.json?sort=top&t=day&limit=30",
+        r = requests.get(f"https://api.reddit.com/r/{subreddit}/top.json?sort=top&t=day&limit={max}",
                              headers={'User-agent': 'Super Bot 9000'})
         r = r.json()
         boxed = Box(r)
