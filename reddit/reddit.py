@@ -12,7 +12,7 @@ class RedditScroller(commands.Cog):
         self.bot = bot
 
     @commands.command(aliases = ['memescroll'])
-    async def memescroller(self, ctx):
+    async def memescroller(self, ctx, max: int):
         """Scroll through r/dankmemes."""
         subreddit = "dankmemes"
         r = requests.get(f"https://api.reddit.com/r/{subreddit}/top.json?sort=top&t=day&limit=30",
