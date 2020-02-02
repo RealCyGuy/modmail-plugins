@@ -22,6 +22,7 @@ class RedditScroller(commands.Cog):
 
         **Note**:
         The maximum amount of memes is 100.
+        The default amount of memes is 30 (without specifying number).
         """
         subreddit = "dankmemes"
         r = requests.get(f"https://api.reddit.com/r/{subreddit}/top.json?sort=top&t=day&limit={max}",
