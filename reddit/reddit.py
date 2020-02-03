@@ -11,6 +11,9 @@ class RedditScroller(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
+    @commands.command(aliases = ['reddit'])
+    async def redditscroller(self, type, subreddit, max=30)
+
     @commands.command(aliases = ['memescroll'])
     async def memescroller(self, ctx, max=30):
         """
