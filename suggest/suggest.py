@@ -75,7 +75,7 @@ class Suggest(commands.Cog):
         """
         await self.coll.find_one_and_update(
             {'_id': 'config'},
-            {'$set': {'emojis': [i.id for i in emojis]}},
+            {'$set': {"react-emojis": {'emojis': [i.id for i in emojis]}}},
             upsert=True
         )
 
