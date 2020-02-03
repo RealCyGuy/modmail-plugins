@@ -35,7 +35,7 @@ class Suggest(commands.Cog):
                 suggestion = await suggestion_channel.send(embed=embed)
                 await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
 
-                for r in self.config['emojis']:
+                for r in config["emojis"]:
                     await suggest.add_reaction(discord.utils.get(message.guild.emojis, id=r))
                     await asyncio.sleep(0.1)
 
