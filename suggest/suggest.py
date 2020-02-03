@@ -66,7 +66,7 @@ class Suggest(commands.Cog):
 
     @commands.command(aliases = ['sse'])
     @checks.has_permissions(PermissionLevel.ADMIN)
-    async def setsuggestemojis(self, ctx, *, emojis: discord.Emoji):
+    async def setsuggestemojis(self, ctx, *emojis: discord.Emoji):
         """
         Set the emojis it reacts with.
 
