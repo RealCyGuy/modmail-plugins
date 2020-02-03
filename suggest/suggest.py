@@ -73,7 +73,7 @@ class Suggest(commands.Cog):
         **Usage**:
         [p]setsuggestemojis :white_check_mark: :x: 
         """
-        self.config = await self.coll.find_one_and_update(
+        await self.coll.find_one_and_update(
             {'_id': 'config'},
             {'$set': {'emojis': [i.id for i in emojis]}},
             upsert=True
