@@ -146,7 +146,7 @@ class TranslateToLanguage(commands.Cog):
         embed.title = "Use the code on the right for the translate command."
         embed.color = 0x1ED4E0FF
         embed.description = desc
-        ctx.send(embed=Embed)
+        ctx.send(embed=embed)
 
 def setup(bot):
     bot.add_cog(TranslateToLanguage(bot))
