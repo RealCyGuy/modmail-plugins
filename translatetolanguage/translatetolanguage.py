@@ -126,7 +126,7 @@ class TranslateToLanguage(commands.Cog):
         try:
             tmsg = self.translator.translate(message, dest=language)
             embed = discord.Embed()
-            embed.color = 4388013
+            embed.color = 0x1ED4E0
             embed.description = tmsg.text
         except ValueError:
             embed = discord.Embed()
@@ -143,7 +143,7 @@ class TranslateToLanguage(commands.Cog):
 
         embed = discord.Embed()
         embed.title = "Use the code on the right for the translate command."
-        embed.color = 0x1ED4E0FF
+        embed.color = 0x1ED4E0
         embed.description = desc
         await ctx.send(embed=embed)
 
