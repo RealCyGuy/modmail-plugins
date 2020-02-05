@@ -11,7 +11,7 @@ class TranslateToLanguage(commands.Cog):
         self.bot = bot
         self.translator = Translator()
 
-    self.languagelist = {
+    languagelist = {
         "afrikaans": "af",
         "albanian": "sq",
         "amharic": "am",
