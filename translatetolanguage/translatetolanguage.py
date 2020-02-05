@@ -129,7 +129,7 @@ class TranslateToLanguage(commands.Cog):
             embed.color = 4388013
             embed.description = tmsg.text
         except ValueError:
-            embed = discord.Embed
+            embed = discord.Embed()
             embed.color = self.bot.error_color
             embed.title = 'Invalid language. Use [p]languages for the usable languages.'
         finally:
