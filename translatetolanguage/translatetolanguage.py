@@ -6,7 +6,7 @@ from googletrans import Translator
 
 
 class TranslateToLanguage(commands.Cog):
-    """I translate text."""
+    """I translate text to specified languages."""
     def __init__(self, bot):
         self.bot = bot
         self.translator = Translator()
