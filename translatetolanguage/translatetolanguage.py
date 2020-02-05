@@ -132,8 +132,7 @@ class TranslateToLanguage(commands.Cog):
             embed = discord.Embed()
             embed.color = self.bot.error_color
             embed.title = 'Invalid language. Use [p]languages for the usable languages.'
-        finally:
-            ctx.send(embed=embed)
+        await ctx.send(embed=embed)
 
     @commands.command()
     async def languages(self, ctx):
@@ -146,7 +145,7 @@ class TranslateToLanguage(commands.Cog):
         embed.title = "Use the code on the right for the translate command."
         embed.color = 0x1ED4E0FF
         embed.description = desc
-        ctx.send(embed=embed)
+        await ctx.send(embed=embed)
 
 def setup(bot):
     bot.add_cog(TranslateToLanguage(bot))
