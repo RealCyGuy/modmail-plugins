@@ -7,6 +7,7 @@ from googletrans import Translator
 
 class TranslateToLanguage(commands.Cog):
     """I translate text to specified languages."""
+
     def __init__(self, bot):
         self.bot = bot
         self.translator = Translator()
@@ -131,7 +132,7 @@ class TranslateToLanguage(commands.Cog):
         except ValueError:
             embed = discord.Embed()
             embed.color = self.bot.error_color
-            embed.title = 'Invalid language. Use [p]languages for the usable languages.'
+            embed.title = "Invalid language. Use [p]languages for the usable languages."
         await ctx.send(embed=embed)
 
     @commands.command()
@@ -146,6 +147,7 @@ class TranslateToLanguage(commands.Cog):
         embed.color = 0x1ED4E0
         embed.description = desc
         await ctx.send(embed=embed)
+
 
 def setup(bot):
     bot.add_cog(TranslateToLanguage(bot))
