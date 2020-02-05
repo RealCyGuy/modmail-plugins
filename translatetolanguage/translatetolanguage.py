@@ -139,7 +139,7 @@ class TranslateToLanguage(commands.Cog):
         """List of languages."""
         desc = ""
         for lang in self.languagelist:
-            desc += f"`{lang}`: `{self.languagelist[lang]}`"
+            desc += f"`{lang}`: `{self.languagelist[lang]}`\n"
 
         embed = discord.Embed()
         embed.title = "Use the code on the right for the translate command."
