@@ -24,7 +24,11 @@ class UrbanDictionary(commands.Cog):
             embed.title = "There is nothing here, try again."
             await ctx.send(embed=embed)
         else:
+            pages = []
             for definition in data.list:
+                page = discord.Embed()
+                page.set_author = (name=ctx.author.name, icon_url=ctx.author.avatar_url)
+
 
 
 def setup(bot):
