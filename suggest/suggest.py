@@ -25,18 +25,18 @@ class Suggest(commands.Cog):
             if config is None:
                 embed=discord.Embed(title="Suggestion channel not set.", color=self.bot.error_colour)
                 embed.set_author(name="Error.")
-                embed.set_footer("Task failed successfully.")
+                embed.set_footer(text="Task failed successfully.")
                 await ctx.send(embed=embed)
             else:
                 suggestion_channel = self.bot.get_channel(int(config["suggestion-channel"]["channel"]))
 
                 embed=discord.Embed(title=suggestion, color=0x59e9ff)
                 embed.set_author(name=f"Suggestion by {ctx.author}:", icon_url=ctx.author.avatar_url)
-                suggestion = await suggestion_channel.send(embed=embed)
+                sent_suggestion = await suggestion_channel.send(embed=embed)
                 await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
 
                 for r in config["emojis"]:
-                    await suggestion.add_reaction(discord.utils.get(ctx.message.guild.emojis, id=r))
+                    await sent_suggestion.add_reaction(discord.utils.get(ctx.message.guild.emojis, id=r))
                     await asyncio.sleep(0.1)
 
     @commands.command(aliases = ['ssc'])
@@ -44,6 +44,11 @@ class Suggest(commands.Cog):
     async def setsuggestchannel(self, ctx, channel: discord.TextChannel):
         """
         Set the channel where suggestions go.
+
+        **Usage**:
+        [p]setsuggestchannel #suggestions
+        [p]ssc suggestions
+        [p]ssc 515085600047628288
         """
         await self.coll.find_one_and_update(
             {"_id": "config"},
@@ -72,6 +77,7 @@ class Suggest(commands.Cog):
 
         **Usage**:
         [p]setsuggestemojis :white_check_mark: :x: 
+        [p]sse :smile: :frowning:
         """
         await self.coll.find_one_and_update(
             {'_id': 'config'},
