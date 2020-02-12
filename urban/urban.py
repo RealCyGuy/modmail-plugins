@@ -16,9 +16,9 @@ class UrbanDictionary(commands.Cog):
     
     @commands.command()
     async def urban(self, ctx, *, search):
-    """
-    Search on the urban dictionary!
-    """
+        """
+        Search on the urban dictionary!
+        """
         r = requests.get(f"https://api.urbandictionary.com/v0/define?term={search}",
                              headers={'User-agent': 'Super Bot 9000'})
         r = r.json()
