@@ -27,7 +27,7 @@ class UrbanDictionary(commands.Cog):
             pages = []
             for definition in data.list:
                 page = discord.Embed()
-                page.set_author = (name=ctx.author.name, icon_url=ctx.author.avatar_url)
+                page.set_author(name=ctx.author.name, icon_url=ctx.author.avatar_url)
 
 
 
