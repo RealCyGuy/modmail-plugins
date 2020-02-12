@@ -5,7 +5,7 @@ import requests
 
 from box import Box
 
-from core.models import EmbedPaginatorSession
+from core.paginator import EmbedPaginatorSession
 
 class UrbanDictionary(commands.Cog):
     def __init__(self, bot):
