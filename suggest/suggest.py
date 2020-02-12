@@ -36,7 +36,7 @@ class Suggest(commands.Cog):
                 await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
 
                 for r in config["emojis"]:
-                    await suggest.add_reaction(discord.utils.get(message.guild.emojis, id=r))
+                    await suggestion.add_reaction(discord.utils.get(ctx.message.guild.emojis, id=r))
                     await asyncio.sleep(0.1)
 
     @commands.command(aliases = ['ssc'])
@@ -66,7 +66,7 @@ class Suggest(commands.Cog):
 
     @commands.command(aliases = ['sse'])
     @checks.has_permissions(PermissionLevel.ADMIN)
-    async def setsuggestemojis(self, ctx, *emojis: discord.Emoji):
+    async def setsuggestemojis(self, ctx, *, emojis: discord.Emoji):
         """
         Set the emojis it reacts with.
 
