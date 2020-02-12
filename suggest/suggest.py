@@ -32,12 +32,8 @@ class Suggest(commands.Cog):
 
                 embed=discord.Embed(title=suggestion, color=0x59e9ff)
                 embed.set_author(name=f"Suggestion by {ctx.author}:", icon_url=ctx.author.avatar_url)
-                sent_suggestion = await suggestion_channel.send(embed=embed)
+                await suggestion_channel.send(embed=embed)
                 await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
-
-                for r in config["emojis"]:
-                    await sent_suggestion.add_reaction(discord.utils.get(ctx.message.guild.emojis, id=r))
-                    await asyncio.sleep(0.1)
 
     @commands.command(aliases = ['ssc'])
     @checks.has_permissions(PermissionLevel.ADMIN)
@@ -68,22 +64,6 @@ class Suggest(commands.Cog):
         suggestion_channel = self.bot.get_channel(int(config["suggestion-channel"]["channel"]))
         embed=discord.Embed(title=f'The suggestion channel is: #{suggestion_channel}', description='To change it, use [p]setsuggetchannel.',color=0x4dff73)
         await ctx.send(embed=embed)
-
-    @commands.command(aliases = ['sse'])
-    @checks.has_permissions(PermissionLevel.ADMIN)
-    async def setsuggestemojis(self, ctx, *, emojis: discord.Emoji):
-        """
-        Set the emojis it reacts with.
-
-        **Usage**:
-        [p]setsuggestemojis :white_check_mark: :x: 
-        [p]sse :smile: :frowning:
-        """
-        await self.coll.find_one_and_update(
-            {'_id': 'config'},
-            {'$set': {"react-emojis": {'emojis': [i.id for i in emojis]}}},
-            upsert=True
-        )
 
     # @checks.has_permissions(PermissionLevel.MOD)
     # @commands.group(invoke_without_command=True)
