@@ -147,6 +147,7 @@ class TranslateToLanguage(commands.Cog):
         embed.color = 0x1ED4E0
         embed.description = desc
         await ctx.author.send(embed=embed)
+        await ctx.send(f"{ctx.author.mention}, sent you a dm with the list!")
 
 
 def setup(bot):
