@@ -8,11 +8,17 @@ from box import Box
 from core.paginator import EmbedPaginatorSession
 
 class UrbanDictionary(commands.Cog):
+    """
+    Let's you search on the urban dictionary.
+    """
     def __init__(self, bot):
         self.bot = bot
     
     @commands.command()
     async def urban(self, ctx, *, search):
+    """
+    Search on the urban dictionary!
+    """
         r = requests.get(f"https://api.urbandictionary.com/v0/define?term={search}",
                              headers={'User-agent': 'Super Bot 9000'})
         r = r.json()
@@ -25,9 +31,20 @@ class UrbanDictionary(commands.Cog):
             await ctx.send(embed=embed)
         else:
             pages = []
-            for definition in data.list:
-                page = discord.Embed()
+            for entry in data.list:
+                entry_contents = data.list
+
+                definition = entry_contents.definition.strip("[]")
+                example = entry_contents.example.strip("[]")
+
+
+                page = discord.Embed(title=search)
                 page.set_author(name=ctx.author.name, icon_url=ctx.author.avatar_url)
+                page.add_field(name=f"Definition: {definition}", value=f"Example: {example}")
+
+                pages.append(page)
+            session = EmbedPaginatorSession(ctx, *pages)
+            await session.run()
 
 
 

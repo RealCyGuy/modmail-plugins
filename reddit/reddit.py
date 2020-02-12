@@ -23,6 +23,7 @@ class RedditScroller(commands.Cog):
         **Usage**:
         [p]memescroll 12 (returns 12 memes)
         [p]memescroll (returns 30 memes)
+        [p]memescroll 3457345 (returns 100 memes)
 
         **Note**:
         The maximum amount of memes is 100.
