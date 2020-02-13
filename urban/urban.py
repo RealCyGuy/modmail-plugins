@@ -32,10 +32,8 @@ class UrbanDictionary(commands.Cog):
         else:
             pages = []
             for entry in data.list:
-                entry_contents = data.list
-
-                definition = entry_contents.definition.strip("[]")
-                example = entry_contents.example.strip("[]")
+                definition = entry.definition.strip("[]")
+                example = entry.example.strip("[]")
 
 
                 page = discord.Embed(title=search)
