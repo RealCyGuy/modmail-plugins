@@ -7,3 +7,5 @@
 |--|--|--|--|
 |Say Plugin|Modmail says what you want it to say!|?say2 (text)|?plugin add realcyguy/modmail-plugins/say|
 |8-Ball|Ask the 8 ball a question and it will answer.|?8bl (question)|?plugin add realcyguy/modmail-plugins/8ball|
+# Contributers
+![GitHub contributers](https://contributors-img.firebaseapp.com/image?repo=realcyguy/modmail-plugins)
