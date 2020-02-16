@@ -36,7 +36,9 @@ class UrbanDictionary(commands.Cog):
                     in_bracket = True
                 elif char == "]":
                     changes += text[previous_tracked : location + 1]
-                    changes += f"(https://www.urbandictionary.com/define.php?term={word})"
+                    changes += f"(https://www.urbandictionary.com/define.php?term={word})".replace(
+                        " ", "%20"
+                    )
 
                     in_bracket = False
                     word = ""
