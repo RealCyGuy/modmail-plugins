@@ -36,7 +36,7 @@ class UrbanDictionary(commands.Cog):
                     in_bracket = True
                 elif char == "]":
                     changes += text[previous_tracked : location + 1]
-                    changes += f"(https://{word}.urbanup.com)"
+                    changes += f"(https://www.urbandictionary.com/define.php?term={word})"
 
                     in_bracket = False
                     word = ""
