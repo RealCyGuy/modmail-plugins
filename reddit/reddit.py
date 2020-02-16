@@ -11,6 +11,10 @@ class RedditScroller(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
+    @commands.command(aliases = ['reddit'])
+    async def redditscroller(self, type, subreddit, max=30):
+        pass
+
     @commands.command(aliases = ['memescroll'])
     async def memescroller(self, ctx, max=30):
         """
@@ -19,6 +23,7 @@ class RedditScroller(commands.Cog):
         **Usage**:
         [p]memescroll 12 (returns 12 memes)
         [p]memescroll (returns 30 memes)
+        [p]memescroll 3457345 (returns 100 memes)
 
         **Note**:
         The maximum amount of memes is 100.

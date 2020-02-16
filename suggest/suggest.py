@@ -11,11 +11,40 @@ class Suggest(commands.Cog):
         self.bot = bot
         self.coll = bot.plugin_db.get_partition(self)
 
+    @commands.command()
+    @checks.has_permissions(PermissionLevel.REGULAR)
+    async def suggest(self, ctx, *, suggestion):
+        """
+        Suggest something!
+
+        **Usage**:
+        [p]suggest more plugins!
+        """
+        async with ctx.channel.typing():
+            config = await self.coll.find_one({"_id": "config"})
+            if config is None:
+                embed=discord.Embed(title="Suggestion channel not set.", color=self.bot.error_colour)
+                embed.set_author(name="Error.")
+                embed.set_footer(text="Task failed successfully.")
+                await ctx.send(embed=embed)
+            else:
+                suggestion_channel = self.bot.get_channel(int(config["suggestion-channel"]["channel"]))
+
+                embed=discord.Embed(title=suggestion, color=0x59e9ff)
+                embed.set_author(name=f"Suggestion by {ctx.author}:", icon_url=ctx.author.avatar_url)
+                await suggestion_channel.send(embed=embed)
+                await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
+
     @commands.command(aliases = ['ssc'])
     @checks.has_permissions(PermissionLevel.ADMIN)
     async def setsuggestchannel(self, ctx, channel: discord.TextChannel):
         """
         Set the channel where suggestions go.
+
+        **Usage**:
+        [p]setsuggestchannel #suggestions
+        [p]ssc suggestions
+        [p]ssc 515085600047628288
         """
         await self.coll.find_one_and_update(
             {"_id": "config"},
@@ -102,26 +131,6 @@ class Suggest(commands.Cog):
     #             {"$set": {"banned": {"users": self.banlist}}},
     #             upsert=True,
     #         )
-
-    @commands.command()
-    async def suggest(self, ctx, *, suggestion):
-        """
-        Suggest something!
-        """
-        async with ctx.channel.typing():
-            config = await self.coll.find_one({"_id": "config"})
-            if config is None:
-                embed=discord.Embed(title="Suggestion channel not set.", color=self.bot.error_colour)
-                embed.set_author(name="Error.")
-                embed.set_footer("Task failed successfully.")
-                await ctx.send(embed=embed)
-            else:
-                suggestion_channel = self.bot.get_channel(int(config["suggestion-channel"]["channel"]))
-
-                embed=discord.Embed(title=suggestion, color=0x59e9ff)
-                embed.set_author(name=f"Suggestion by {ctx.author}:", icon_url=ctx.author.avatar_url)
-                await suggestion_channel.send(embed=embed)
-                await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
 
 def setup(bot):
     bot.add_cog(Suggest(bot))
