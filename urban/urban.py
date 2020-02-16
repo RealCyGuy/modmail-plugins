@@ -48,6 +48,7 @@ class UrbanDictionary(commands.Cog):
                 elif in_bracket:
                     word += char
                 location += 1
+            changes += text[previous_tracked:]
             return changes
 
         r = requests.get(
