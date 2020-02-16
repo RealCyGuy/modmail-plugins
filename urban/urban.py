@@ -7,20 +7,51 @@ from box import Box
 
 from core.paginator import EmbedPaginatorSession
 
+
 class UrbanDictionary(commands.Cog):
     """
     Let's you search on the urban dictionary.
     """
+
     def __init__(self, bot):
         self.bot = bot
-    
+
     @commands.command()
     async def urban(self, ctx, *, search):
         """
         Search on the urban dictionary!
         """
-        r = requests.get(f"https://api.urbandictionary.com/v0/define?term={search}",
-                             headers={'User-agent': 'Super Bot 9000'})
+
+        def replace_with_link(text):
+            location = 0
+
+            previous_tracked = 0
+
+            word = ""
+            in_bracket = False
+            changes = ""
+
+            for char in text:
+                if char == "[":
+                    in_bracket = True
+                elif char == "]":
+                    changes += text[previous_tracked : location + 1]
+                    changes += f"(https://{word}.urbanup.com)"
+
+                    in_bracket = False
+                    word = ""
+
+                    previous_tracked = location + 1
+                    tracked = 0
+                elif in_bracket:
+                    word += char
+                location += 1
+            return changes
+
+        r = requests.get(
+            f"https://api.urbandictionary.com/v0/define?term={search}",
+            headers={"User-agent": "Super Bot 9000"},
+        )
         r = r.json()
         data = Box(r)
 
@@ -32,18 +63,22 @@ class UrbanDictionary(commands.Cog):
         else:
             pages = []
             for entry in data.list:
-                definition = entry.definition.strip("[]")
-                example = entry.example.strip("[]")
+                definition = replace_with_link(entry.definition)
+                example = replace_with_link(entry.example)
 
+                ups = entry.thumbs_up
+                downs = entry.thumbs_down
 
                 page = discord.Embed(title=search)
                 page.set_author(name=ctx.author.name, icon_url=ctx.author.avatar_url)
-                page.add_field(name=f"Definition: {definition}", value=f"Example: {example}")
+                page.add_field(name="Definition:", value=definition, inline=False)
+                page.add_field(name="Example:", value=example, inline=False)
+                page.add_field(name="Upvotes:", value=ups, inline=True)
+                page.add_field(name="Downvotes:", value=downs, inline=True)
 
                 pages.append(page)
             session = EmbedPaginatorSession(ctx, *pages)
             await session.run()
-
 
 
 def setup(bot):
