@@ -24,7 +24,7 @@ class MessageManager(commands.Cog):
         if amount < 1:
             await ctx.send(
                 embed=discord.Embed(
-                    title="Too small! Please try again.", colour=self.bot.error_color
+                    title="{amount} is too small! Please try again.", colour=self.bot.error_color
                 )
             )
         else:
