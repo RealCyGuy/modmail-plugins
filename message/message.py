@@ -20,7 +20,7 @@ class MessageManager(commands.Cog):
     @checks.has_permissions(PermissionLevel.MOD)
     async def clear(self, ctx, amount: int):
         """Clear messages"""
-        if number < 1:
+        if amount < 1:
             await ctx.send(
                 embed=discord.Embed(
                     title="Too small! Please try again.", colour=self.bot.error_color
@@ -32,28 +32,31 @@ class MessageManager(commands.Cog):
 
             if message_number == 0:
                 embed = discord.Embed(
-                    title="No messages deleted.",
-                    colour=self.bot.error_color,
+                    title="No messages deleted.", colour=self.bot.error_color,
                 )
             else:
+                letter_s = "" if message_number < 2 else "s"
                 embed = discord.Embed(
-                    title=f"I have deleted {message_number} message{" " if message_number < 2 else " s "}!",
+                    title=f"I have deleted {message_number} message{letter_s}!",
                     colour=self.bot.main_color,
                 )
 
             confirm = await ctx.send(embed=embed)
             await asyncio.sleep(8)
             await confirm.delete()
-    
+
     @checks.has_permissions(PermissionLevel.MOD)
     @commands.group(invoke_without_command=True)
     async def advancedclear(self, ctx):
         """
         Clearing messages, but advanced.
         """
-        await ctx.send(embed=embed)
+        await ctx.send("hi")
 
+    @checks.has_permissions(PermissionLevel.MOD)
     @advancedclear.command()
+    async def link(self, ctx, link):
+        pass
 
 
 def setup(bot):
