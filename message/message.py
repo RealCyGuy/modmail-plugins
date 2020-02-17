@@ -56,11 +56,11 @@ class MessageManager(commands.Cog):
 
     @checks.has_permissions(PermissionLevel.ADMIN)
     @advancedclear.command()
-    async def contains(self, ctx, *,text):
+    async def contains(self, ctx, *, text):
         def is_in(m):
             return text.lower() in m.content
 
-        deleted_messages = await ctx.channel.purge(limit=amount + 1, check=is_in)
+        deleted_messages = await ctx.channel.purge(check=is_in)
         message_number = max(len(deleted_messages) - 1, 0)
 
         if message_number == 0:
