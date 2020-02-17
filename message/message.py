@@ -56,8 +56,27 @@ class MessageManager(commands.Cog):
 
     @checks.has_permissions(PermissionLevel.ADMIN)
     @advancedclear.command()
-    async def link(self, ctx, link):
-        pass
+    async def contains(self, ctx, *,text):
+        def is_in(m):
+            return text.lower() in m.content
+
+        deleted_messages = await ctx.channel.purge(limit=amount + 1, check=is_in)
+        message_number = max(len(deleted_messages) - 1, 0)
+
+        if message_number == 0:
+            embed = discord.Embed(
+                title="No messages deleted.", colour=self.bot.error_color,
+            )
+        else:
+            letter_s = "" if message_number < 2 else "s"
+            embed = discord.Embed(
+                title=f"I have deleted {message_number} message{letter_s}!",
+                colour=self.bot.main_color,
+            )
+
+        confirm = await ctx.send(embed=embed)
+        await asyncio.sleep(8)
+        await confirm.delete()
         
 
 
