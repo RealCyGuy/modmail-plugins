@@ -6,7 +6,7 @@ import asyncio
 from core import checks
 from core.models import PermissionLevel
 
-def clear_messages(self, ctx, amount, check=None):
+async def clear_messages(self, ctx, amount, check=None):
     deleted_messages = await ctx.channel.purge(limit=amount + 1, check=check)
     message_number = max(len(deleted_messages) - 1, 0)
 
