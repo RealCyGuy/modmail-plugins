@@ -53,7 +53,7 @@ class MessageManager(commands.Cog):
         """
         Clearing messages, but advanced.
         """
-        await ctx.send("hi")
+        await ctx.send_help(ctx.command)
 
     @checks.has_permissions(PermissionLevel.MOD)
     @advancedclear.command()
