@@ -1,10 +1,13 @@
 import discord
-from discord.ext import commands
+from discord.ext import commands, tasks
 
 import asyncio
 
 from core import checks
 from core.models import PermissionLevel
+
+import datetime
+
 
 class MessageManager(commands.Cog):
     """
@@ -24,7 +27,8 @@ class MessageManager(commands.Cog):
         if amount < 1:
             await ctx.send(
                 embed=discord.Embed(
-                    title=f"{amount} is too small! Please try again.", colour=self.bot.error_color
+                    title=f"{amount} is too small! Please try again.",
+                    colour=self.bot.error_color,
                 )
             )
         else:
@@ -47,7 +51,7 @@ class MessageManager(commands.Cog):
             await confirm.delete()
 
     @checks.has_permissions(PermissionLevel.ADMIN)
-    @commands.group(aliases = ["aclear"],invoke_without_command=True)
+    @commands.group(aliases=["aclear"], invoke_without_command=True)
     async def advancedclear(self, ctx):
         """
         Clearing messages, but advanced.
@@ -81,8 +85,46 @@ class MessageManager(commands.Cog):
     @checks.has_permissions(PermissionLevel.ADMIN)
     @commands.command()
     async def decay(self, ctx):
-        pass
-        
+        config = await self.db.find_one({"id": "config"})
+        if config is None:
+            channels = {}
+        else:
+            channels = config["decay-channels"]["channels"]
+
+        if str(ctx.channel.id) in channels:
+            channels.pop(str(ctx.channel.id))
+            msg = "Stopped decaying."
+        else:
+            channels[str(ctx.channel.id)] = 86400000
+            msg = "Decaying!"
+
+        await self.db.find_one_and_update(
+            {"_id": "config"},
+            {"$set": {"decay-channels": {"channels": channels}}},
+            upsert=True,
+        )
+        await ctx.send(msg)
+
+    @tasks.loop(seconds=5)
+    async def decay_loop(self):
+        def is_deleteable(m):
+            time_diff = m.created_at - datetime.datetime.now()
+            return not m.pinned and time_diff < delta
+
+        config = await self.db.find_one({"_id": "config"})
+        channels = config["decay-channels"]["channels"]
+        for channel, time in channels:
+            delta = datetime.timedelta(milliseconds=time)
+            d_channel = self.bot.get_channel(int(channel))
+
+            deleted_messages = await d_channel.purge(check=is_deleteable)
+            if deleted_messages > 0:
+                letter_s = "" if deleted_messages < 2 else "s"
+                confirm = await d_channel.send(
+                    f"I deleted {deleted_messages} message{letter_s}!"
+                )
+                await asyncio.sleep(8)
+                await confirm.delete()
 
 
 def setup(bot):
