@@ -80,14 +80,8 @@ class MessageManager(commands.Cog):
 
     @checks.has_permissions(PermissionLevel.ADMIN)
     @commands.command()
-    async def decay(self, ctx, channel=None):
-        if channel is None:
-            channel = ctx.channel
-        if type(channel) == discord.TextChannel:
-            await ctx.send(channel)
-        else:
-            await ctx.send(embed=discord.Embed(colour=self.bot.error_color, title="Not a valid channel. :("))
-        
+    async def decay(self, ctx):
+        pass
         
 
 
