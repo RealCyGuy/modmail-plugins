@@ -47,7 +47,7 @@ class MessageManager(commands.Cog):
             await confirm.delete()
 
     @checks.has_permissions(PermissionLevel.ADMIN)
-    @commands.group(invoke_without_command=True)
+    @commands.group(aliases = ["aclear"],invoke_without_command=True)
     async def advancedclear(self, ctx):
         """
         Clearing messages, but advanced.
@@ -77,6 +77,11 @@ class MessageManager(commands.Cog):
         confirm = await ctx.send(embed=embed)
         await asyncio.sleep(8)
         await confirm.delete()
+
+    @checks.has_permissions(PermissionLevel.ADMIN)
+    @commands.command()
+    async def decay(self, ctx, channel:discord.TextChannel=None):
+        await ctx.send(channel)
         
 
 
