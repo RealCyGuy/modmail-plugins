@@ -17,8 +17,8 @@ class MessageManager(commands.Cog):
         self.bot = bot
         self.db = bot.plugin_db.get_partition(self)
 
-    @commands.command()
     @checks.has_permissions(PermissionLevel.MOD)
+    @commands.command()
     async def clear(self, ctx, amount: int):
         """Clear messages."""
         if amount < 1:
