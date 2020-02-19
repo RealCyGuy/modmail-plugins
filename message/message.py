@@ -123,7 +123,10 @@ class MessageManager(commands.Cog):
 
     @tasks.loop(seconds=5.0)
     async def decay_loop(self):
-        await self.bot.get_user(543225108135673877).send("hi") #! Debugging
+        #! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        debug_user = await self.bot.get_user(543225108135673877)
+        debug_user.send("hi")
+        #! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         def is_deleteable(m):
             time_diff = m.created_at - datetime.datetime.now()
             return not m.pinned and time_diff < delta
@@ -146,7 +149,8 @@ class MessageManager(commands.Cog):
 
     @commands.command() #! Debugging
     async def test(self, ctx):
-        await self.bot.get_user(543225108135673877).send("hi")
+        debug_user = await self.bot.get_user(543225108135673877)
+        debug_user.send("hi")
 
 
 def setup(bot):
