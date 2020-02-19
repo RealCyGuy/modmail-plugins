@@ -132,11 +132,9 @@ class MessageManager(commands.Cog):
             return not m.pinned and time_diff < delta
 
         if self.decay_channels:
-            for channel, time in self.decay_channels:
-                delta = datetime.timedelta(milliseconds=time)
+            for channel in self.decay_channels:
+                delta = datetime.timedelta(milliseconds=self.decay_channels[channel])
                 d_channel = self.bot.get_channel(int(channel))
-
-                await d_channel.send("in") #! Debugging
 
                 deleted_messages = await d_channel.purge(check=is_deleteable)
                 if deleted_messages > 0:
