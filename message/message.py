@@ -124,7 +124,7 @@ class MessageManager(commands.Cog):
         #! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         def is_deleteable(m):
             time_diff = datetime.datetime.now() - m.created_at
-            return not m.pinned and time_diff < delta
+            return not m.pinned and time_diff > delta
 
         if self.decay_channels:
             for channel in self.decay_channels:
