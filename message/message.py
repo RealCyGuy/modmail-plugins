@@ -111,10 +111,10 @@ class MessageManager(commands.Cog):
     @commands.command()
     async def decay(self, ctx):     
         if str(ctx.channel.id) in self.decay_channels:
-            channels.pop(str(ctx.channel.id))
+            self.decay_channels.pop(str(ctx.channel.id))
             msg = "Stopped decaying."
         else:
-            channels[str(ctx.channel.id)] = 86400000
+            self.decay_channels[str(ctx.channel.id)] = 86400000
             msg = "Decaying!"
 
         await ctx.send(msg)
@@ -125,20 +125,19 @@ class MessageManager(commands.Cog):
             time_diff = m.created_at - datetime.datetime.now()
             return not m.pinned and time_diff < delta
 
-        config = await self.db.find_one({"_id": "config"})
-        channels = config["decay-channels"]["channels"]
-        for channel, time in channels:
-            delta = datetime.timedelta(milliseconds=time)
-            d_channel = self.bot.get_channel(int(channel))
+        if self.decay_channels:
+            for channel, time in channels:
+                delta = datetime.timedelta(milliseconds=time)
+                d_channel = self.bot.get_channel(int(channel))
 
-            deleted_messages = await d_channel.purge(check=is_deleteable)
-            if deleted_messages > 0:
-                letter_s = "" if deleted_messages < 2 else "s"
-                confirm = await d_channel.send(
-                    f"I deleted {deleted_messages} message{letter_s}!"
-                )
-                await asyncio.sleep(8)
-                await confirm.delete()
+                deleted_messages = await d_channel.purge(check=is_deleteable)
+                if deleted_messages > 0:
+                    letter_s = "" if deleted_messages < 2 else "s"
+                    confirm = await d_channel.send(
+                        f"I deleted {deleted_messages} message{letter_s}!"
+                    )
+                    await asyncio.sleep(8)
+                    await confirm.delete()
 
 
 def setup(bot):
