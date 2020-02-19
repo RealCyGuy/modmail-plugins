@@ -115,6 +115,7 @@ class MessageManager(commands.Cog):
             msg = "Stopped decaying."
         else:
             self.decay_channels[str(ctx.channel.id)] = 86400000
+            await ctx.send(self.decay_channels) #! Debugging
             msg = "Decaying!"
 
         await self._update_db()
