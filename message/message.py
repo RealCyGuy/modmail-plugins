@@ -117,7 +117,7 @@ class MessageManager(commands.Cog):
             self.decay_channels[str(ctx.channel.id)] = 86400000
             msg = "Decaying!"
 
-        await self._update_db
+        await self._update_db()
         await ctx.send(msg)
 
     @tasks.loop(seconds=5)
