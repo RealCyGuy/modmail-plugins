@@ -126,7 +126,7 @@ class MessageManager(commands.Cog):
             return not m.pinned and time_diff < delta
 
         if self.decay_channels:
-            for channel, time in channels:
+            for channel, time in self.decay_channels:
                 delta = datetime.timedelta(milliseconds=time)
                 d_channel = self.bot.get_channel(int(channel))
 
