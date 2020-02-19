@@ -88,8 +88,11 @@ class MessageManager(commands.Cog):
         config = await self.db.find_one({"id": "config"})
         if config is None:
             channels = {}
+            await ctx.send("It is none.") #! ~Debugging~
         else:
             channels = config["decay-channels"]["channels"]
+            
+        await ctx.send(channels + "\n" + type(channels)) #! ~Debugging~
 
         if str(ctx.channel.id) in channels:
             channels.pop(str(ctx.channel.id))
