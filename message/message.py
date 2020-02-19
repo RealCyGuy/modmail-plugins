@@ -131,6 +131,7 @@ class MessageManager(commands.Cog):
             for channel, time in self.decay_channels:
                 delta = datetime.timedelta(milliseconds=time)
                 d_channel = self.bot.get_channel(int(channel))
+                await d_channel.send("in") #! Debugging
 
                 deleted_messages = await d_channel.purge(check=is_deleteable)
                 if deleted_messages > 0:
