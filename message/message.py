@@ -44,8 +44,6 @@ class MessageManager(commands.Cog):
             return
 
         self.decay_channels = config["decay-channel"]
-        c = await self.bot.get_channel(678681992774025248) #! Debugging
-        await c.send("Set val.") #! Debugging
 
     @checks.has_permissions(PermissionLevel.MOD)
     @commands.command()
@@ -123,7 +121,7 @@ class MessageManager(commands.Cog):
         await self._update_db()
         await ctx.send(msg)
 
-    @tasks.loop(seconds=5)
+    @tasks.loop(seconds=5.0)
     async def decay_loop(self):
         def is_deleteable(m):
             time_diff = m.created_at - datetime.datetime.now()
