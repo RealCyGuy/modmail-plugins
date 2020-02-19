@@ -20,7 +20,7 @@ class MessageManager(commands.Cog):
         self.bot = bot
         self.db = bot.plugin_db.get_partition(self)
 
-        self.decay_channels = list()
+        self.decay_channels = dict()
 
         self.decay_loop.start()
         asyncio.create_task(self._set_val())
