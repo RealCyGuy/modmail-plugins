@@ -131,15 +131,7 @@ class MessageManager(commands.Cog):
                 delta = datetime.timedelta(milliseconds=self.decay_channels[channel])
                 d_channel = self.bot.get_channel(int(channel))
 
-                deleted_messages = await d_channel.purge(check=is_deleteable)
-                if deleted_messages > 0:
-                    letter_s = "" if deleted_messages < 2 else "s"
-                    confirm = await d_channel.send(
-                        f"I deleted {deleted_messages} message{letter_s}!"
-                    )
-                    await asyncio.sleep(8)
-                    await confirm.delete()
-
+                await d_channel.purge(check=is_deleteable)
 
 def setup(bot):
     bot.add_cog(MessageManager(bot))
