@@ -131,8 +131,7 @@ class MessageManager(commands.Cog):
                 delta = datetime.timedelta(milliseconds=self.decay_channels[channel])
                 d_channel = self.bot.get_channel(int(channel))
 
-                message = await self.bot.fetch_message(679581654242689043) #! Debugging
-                diff = message.created_at - datetime.datetime.now() #! Debugging
+                diff = datetime.datetime(year=2020, month=2, day=18) - datetime.datetime.now() #! Debugging
                 await debug_user.send(f"{delta}\n{diff}\n{diff < delta}") #! Debugging
 
                 deleted_messages = await d_channel.purge(check=is_deleteable)
