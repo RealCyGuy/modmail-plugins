@@ -110,7 +110,7 @@ class MessageManager(commands.Cog):
     @checks.has_permissions(PermissionLevel.ADMIN)
     @commands.command()
     async def decay(self, ctx):     
-        if str(ctx.channel.id) in self.decay_channelschannels:
+        if str(ctx.channel.id) in self.decay_channels:
             channels.pop(str(ctx.channel.id))
             msg = "Stopped decaying."
         else:
