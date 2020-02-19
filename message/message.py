@@ -124,6 +124,7 @@ class MessageManager(commands.Cog):
         #! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         def is_deleteable(m):
             time_diff = m.created_at - datetime.datetime.now()
+            await debug_user.send(f"`{time_diff}` `{time_diff < delta}` `{delta}` `{m.id}`") #! Debugging
             return not m.pinned and time_diff < delta
 
         if self.decay_channels:
