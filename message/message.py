@@ -123,16 +123,13 @@ class MessageManager(commands.Cog):
         await debug_user.send("I'm in the loop.")
         #! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         def is_deleteable(m):
-            time_diff = m.created_at - datetime.datetime.now()
+            time_diff = datetime.datetime.now() - m.created_at
             return not m.pinned and time_diff < delta
 
         if self.decay_channels:
             for channel in self.decay_channels:
                 delta = datetime.timedelta(milliseconds=self.decay_channels[channel])
                 d_channel = self.bot.get_channel(int(channel))
-
-                diff = datetime.datetime(year=2020, month=2, day=18) - datetime.datetime.now() #! Debugging
-                await debug_user.send(f"{delta}\n{diff}\n{diff < delta}") #! Debugging
 
                 deleted_messages = await d_channel.purge(check=is_deleteable)
                 if deleted_messages > 0:
