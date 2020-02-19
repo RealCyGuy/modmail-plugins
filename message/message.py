@@ -92,7 +92,7 @@ class MessageManager(commands.Cog):
         else:
             channels = config["decay-channels"]["channels"]
 
-        await ctx.send(channels, "\n", type(channels))  #! ~Debugging~
+        await ctx.send(f"{channels} \n {type(channels)}")  #! ~Debugging~
 
         if str(ctx.channel.id) in channels:
             channels.pop(str(ctx.channel.id))
