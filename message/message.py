@@ -146,6 +146,13 @@ class MessageManager(commands.Cog):
                     )
                     await asyncio.sleep(8)
                     await confirm.delete()
+    
+    @decay_loop.after_loop
+    async def post_loop(self):
+    if self.decay_loop.failed():
+        import traceback
+        error = self.your_task.exception()
+        traceback.print_exception(type(error), error, error.__traceback__)
 
 
 
