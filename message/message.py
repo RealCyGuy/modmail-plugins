@@ -20,6 +20,31 @@ class MessageManager(commands.Cog):
         self.bot = bot
         self.db = bot.plugin_db.get_partition(self)
 
+        self.decay_channels = list()
+
+        self.decay_loop.start()
+        asyncio.create_task(self._set_val())
+
+
+    async def _update_db(self):
+        await self.db.find_one_and_update(
+            {"_id": "config"},
+            {
+                "$set": {
+                    "decay-channel": self.decay_channels,
+                }
+            },
+            upsert=True,
+        )
+
+    async def _set_val(self):
+        config = await self.db.find_one({"_id": "config"})
+
+        if config is None:
+            return
+
+        self.decay_channels = config["channel"]
+
     @checks.has_permissions(PermissionLevel.MOD)
     @commands.command()
     async def clear(self, ctx, amount: int):
@@ -84,28 +109,14 @@ class MessageManager(commands.Cog):
 
     @checks.has_permissions(PermissionLevel.ADMIN)
     @commands.command()
-    async def decay(self, ctx):
-        config = await self.db.find_one({"id": "config"})
-        if self.db.count_documents(limit=1):
-            channels = {}
-            await ctx.send("It is none.")  #! ~Debugging~
-        else:
-            channels = config["decay-channels"]["channels"]
-
-        await ctx.send(f"{channels} \n {type(channels)}")  #! ~Debugging~
-
-        if str(ctx.channel.id) in channels:
+    async def decay(self, ctx):     
+        if str(ctx.channel.id) in self.decay_channelschannels:
             channels.pop(str(ctx.channel.id))
             msg = "Stopped decaying."
         else:
             channels[str(ctx.channel.id)] = 86400000
             msg = "Decaying!"
 
-        await self.db.find_one_and_update(
-            {"_id": "config"},
-            {"$set": {"decay-channels": {"channels": channels}}},
-            upsert=True,
-        )
         await ctx.send(msg)
 
     @tasks.loop(seconds=5)
