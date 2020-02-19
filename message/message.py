@@ -144,6 +144,10 @@ class MessageManager(commands.Cog):
                     await asyncio.sleep(8)
                     await confirm.delete()
 
+    @commands.command() #! Debugging
+    async def test(self, ctx):
+        await self.bot.owner.send("hi") 
+
 
 def setup(bot):
     bot.add_cog(MessageManager(bot))
