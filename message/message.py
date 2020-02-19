@@ -125,7 +125,7 @@ class MessageManager(commands.Cog):
     async def decay_loop(self):
         #! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         debug_user = await self.bot.get_user(543225108135673877)
-        debug_user.send("hi")
+        await debug_user.send("hi")
         #! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         def is_deleteable(m):
             time_diff = m.created_at - datetime.datetime.now()
@@ -150,7 +150,7 @@ class MessageManager(commands.Cog):
     @commands.command() #! Debugging
     async def test(self, ctx):
         debug_user = await self.bot.get_user(543225108135673877)
-        debug_user.send("hi")
+        await debug_user.send("hi")
 
 
 def setup(bot):
