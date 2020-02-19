@@ -127,12 +127,15 @@ class MessageManager(commands.Cog):
             return not m.pinned and time_diff < delta
 
         if self.decay_channels:
+            await debug_user.send("1st") #! Debugging
             for channel in self.decay_channels:
+                await debug_user.send("2nd") #! Debugging
                 delta = datetime.timedelta(milliseconds=self.decay_channels[channel])
                 d_channel = self.bot.get_channel(int(channel))
 
                 deleted_messages = await d_channel.purge(check=is_deleteable)
                 if deleted_messages > 0:
+                    await debug_user.send("3rd") #! Debugging
                     letter_s = "" if deleted_messages < 2 else "s"
                     confirm = await d_channel.send(
                         f"I deleted {deleted_messages} message{letter_s}!"
