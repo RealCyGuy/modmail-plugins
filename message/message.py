@@ -151,7 +151,7 @@ class MessageManager(commands.Cog):
     async def post_loop(self):
     if self.decay_loop.failed():
         import traceback
-        error = self.your_task.exception()
+        error = self.decay_loop.exception()
         traceback.print_exception(type(error), error, error.__traceback__)
 
 
