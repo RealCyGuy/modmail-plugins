@@ -25,15 +25,10 @@ class MessageManager(commands.Cog):
         self.decay_loop.start()
         asyncio.create_task(self._set_val())
 
-
     async def _update_db(self):
         await self.db.find_one_and_update(
             {"_id": "config"},
-            {
-                "$set": {
-                    "decay-channel": self.decay_channels,
-                }
-            },
+            {"$set": {"decay-channel": self.decay_channels,}},
             upsert=True,
         )
 
@@ -109,13 +104,13 @@ class MessageManager(commands.Cog):
 
     @checks.has_permissions(PermissionLevel.ADMIN)
     @commands.command()
-    async def decay(self, ctx):     
+    async def decay(self, ctx):
         if str(ctx.channel.id) in self.decay_channels:
             self.decay_channels.pop(str(ctx.channel.id))
             msg = "Stopped decaying."
         else:
             self.decay_channels[str(ctx.channel.id)] = 86400000
-            await ctx.send(self.decay_channels) #! Debugging
+            await ctx.send(self.decay_channels)  #! Debugging
             msg = "Decaying!"
 
         await self._update_db()
@@ -144,14 +139,6 @@ class MessageManager(commands.Cog):
                     )
                     await asyncio.sleep(8)
                     await confirm.delete()
-    
-    @decay_loop.after_loop
-    async def post_loop(self):
-        if self.decay_loop.failed():
-            import traceback
-            error = self.decay_loop.exception()
-            traceback.print_exception(type(error), error, error.__traceback__)
-
 
 
 def setup(bot):
