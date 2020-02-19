@@ -86,7 +86,7 @@ class MessageManager(commands.Cog):
     @commands.command()
     async def decay(self, ctx):
         config = await self.db.find_one({"id": "config"})
-        if config["decay-channels"]["channels"] is None:
+        if self.db.count_documents(limit=1):
             channels = {}
             await ctx.send("It is none.")  #! ~Debugging~
         else:
