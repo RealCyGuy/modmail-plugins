@@ -8,7 +8,7 @@ class Say(commands.Cog):
     @commands.command()
     async def say2(self, ctx, *, message):
         """ModMail says what you want it to say."""
-        await ctx.send(message.replace("@everyone", "@\u200beveryone").replace("@here", "@\u200bhere"))
+        await ctx.send(message.replace("@", "@\u200b"))
         await ctx.message.delete()
 
 def setup(bot):
