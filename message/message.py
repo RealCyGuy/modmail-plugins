@@ -44,6 +44,8 @@ class MessageManager(commands.Cog):
             return
 
         self.decay_channels = config["decay-channel"]
+        c = await self.bot.get_channel(678681992774025248) #! Debugging
+        await c.send("Set val.") #! Debugging
 
     @checks.has_permissions(PermissionLevel.MOD)
     @commands.command()
