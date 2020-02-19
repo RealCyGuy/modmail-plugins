@@ -43,7 +43,7 @@ class MessageManager(commands.Cog):
         if config is None:
             return
 
-        self.decay_channels = config["channel"]
+        self.decay_channels = config["decay-channel"]
 
     @checks.has_permissions(PermissionLevel.MOD)
     @commands.command()
