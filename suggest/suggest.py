@@ -62,7 +62,7 @@ class Suggest(commands.Cog):
                     await suggestion_channel.send(embed=embed)
                     await ctx.message.add_reaction("\N{WHITE HEAVY CHECK MARK}")
         else:
-            await ctx.send(embed=discord.Embed(color=self.bot.error_color, title=f"You have been blocked, {ctx.author.name}#{ctx.author.descriminator}.", description=f"Reason: {self.banlist[str(ctx.author.id)]}"))
+            await ctx.send(embed=discord.Embed(color=self.bot.error_color, title=f"You have been blocked, {ctx.author.name}#{ctx.author.discriminator}.", description=f"Reason: {self.banlist[str(ctx.author.id)]}"))
 
     @commands.command(aliases=["ssc"])
     @checks.has_permissions(PermissionLevel.ADMIN)
@@ -121,14 +121,14 @@ class Suggest(commands.Cog):
         if str(user.id) in self.banlist:
             embed = discord.Embed(
                 colour=self.bot.error_color,
-                title=f"{user.name}#{user.descriminator} is already blocked.",
+                title=f"{user.name}#{user.discriminator} is already blocked.",
                 description=f"Reason: {self.banlist[str(user.id)]}",
             )
         else:
             self.banlist[str(user.id)] = reason
             embed = discord.Embed(
                 colour=self.bot.main_color,
-                title=f"{user.name}#{user.descriminator} is now blocked.",
+                title=f"{user.name}#{user.discriminator} is now blocked.",
                 description=f"Reason: {reason}",
             )
 
@@ -148,13 +148,13 @@ class Suggest(commands.Cog):
         if str(user.id) not in self.banlist:
             embed = discord.Embed(
                 colour=self.bot.error_color,
-                title=f"{user.name}#{user.descriminator} is not blocked.",
+                title=f"{user.name}#{user.discriminator} is not blocked.",
                 description=f"Reason: {self.banlist[str(user.id)]}",
             )
         else:
             self.banlist.pop(str(user.id))
             embed = discord.Embed(
-                colour=self.bot.main_color, title=f"{user.name}#{user.descriminator} is now unblocked."
+                colour=self.bot.main_color, title=f"{user.name}#{user.discriminator} is now unblocked."
             )
 
         await self._update_mod_db()
