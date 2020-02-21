@@ -124,7 +124,7 @@ class MessageManager(commands.Cog):
             total = 0
 
             for channel in self.decay_channels:
-                total += self.decay_channels[total]
+                total += self.decay_channels[channel]
                 
             average = total / len(self.decay_channels)
 
