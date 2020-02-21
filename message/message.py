@@ -5,6 +5,7 @@ import asyncio
 
 from core import checks
 from core.models import PermissionLevel
+from core.paginator import EmbedPaginatorSession
 
 import datetime
 
@@ -104,24 +105,55 @@ class MessageManager(commands.Cog):
 
     @checks.has_permissions(PermissionLevel.ADMIN)
     @commands.command()
-    async def decay(self, ctx):
-        if str(ctx.channel.id) in self.decay_channels:
-            self.decay_channels.pop(str(ctx.channel.id))
-            msg = "Stopped decaying."
+    async def decay(self, ctx, channel=discord.TextChannel):
+        if str(channel.id) in self.decay_channels:
+            self.decay_channels.pop(str(channel.id))
+            msg = f"Stopped decaying in #{channel.name}."
         else:
-            self.decay_channels[str(ctx.channel.id)] = 86400000
-            await ctx.send(self.decay_channels)  #! Debugging
-            msg = "Decaying!"
+            self.decay_channels[str(channel.id)] = 86400000
+            msg = f"Decaying in #{channel.name}!"
 
         await self._update_db()
         await ctx.send(msg)
 
+    @checks.has_permissions(PermissionLevel.ADMIN)
+    @commands.command()
+    async def decayinfo(self, ctx):
+        if self.decay_channels:
+            pages = []
+
+            front = discord.Embed(color=self.bot.main_color, title="Decay info.")
+            front.add_field(
+                name="# of decay channels",
+                value=str(len(self.decay_channels)),
+                inline=True,
+            )
+            front.add_field(
+                name="To see channel specific info, use the reactions below.",
+                value="\u200b",
+                inline=False,
+            )
+            pages.append(front)
+
+            for channel in self.decay_channels:
+                d_channel = self.bot.get_channel(int(channel))
+                page = discord.Embed(color=self.bot.main_color, title=f"Decay info of: #{d_channel.name}")
+                page.add_field(name="Decay time:", value=f"{str(self.decay_channels[channel])}ms")
+
+                pages.append(page)
+
+            session = EmbedPaginatorSession(ctx, *pages)
+            await session.run()    
+
+        else:
+            embed = discord.Embed(
+                color=self.bot.error_color,
+                title="No channels are decaying, to decay a channel use the command: `[p]decay #channel`",
+            )
+            await ctx.send(embed=embed)
+
     @tasks.loop(seconds=5.0)
     async def decay_loop(self):
-        #! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        debug_user = self.bot.get_user(543225108135673877)
-        await debug_user.send("I'm in the loop.")
-        #! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         def is_deleteable(m):
             time_diff = datetime.datetime.now() - m.created_at
             return not m.pinned and time_diff > delta
@@ -132,6 +164,7 @@ class MessageManager(commands.Cog):
                 d_channel = self.bot.get_channel(int(channel))
 
                 await d_channel.purge(check=is_deleteable)
+
 
 def setup(bot):
     bot.add_cog(MessageManager(bot))
