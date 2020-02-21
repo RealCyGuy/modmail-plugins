@@ -1,9 +1,9 @@
-# Editors
+# Editors.
 .vscode
 .idea
 
 # Testing files.
 **/test.py
 
-# Misc
+# Misc.
 venv
