@@ -121,11 +121,22 @@ class MessageManager(commands.Cog):
     async def decayinfo(self, ctx):
         if self.decay_channels:
             pages = []
+            total = 0
 
-            front = discord.Embed(color=self.bot.main_color, title="Decay info.")
+            for channel in self.decay_channel:
+                total += self.decay_channels[total]
+                
+            average = total / len(self.decay_channels)
+
+            front = discord.Embed(color=self.bot.main_color, title="All decay info.")
             front.add_field(
-                name="# of decay channels",
+                name="Decay channels:",
                 value=str(len(self.decay_channels)),
+                inline=True,
+            )
+            front.add_field(
+                name="Average decay time:",
+                value=f"{str(average)}ms",
                 inline=True,
             )
             front.add_field(
