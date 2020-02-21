@@ -123,7 +123,7 @@ class MessageManager(commands.Cog):
             pages = []
             total = 0
 
-            for channel in self.decay_channel:
+            for channel in self.decay_channels:
                 total += self.decay_channels[total]
                 
             average = total / len(self.decay_channels)
