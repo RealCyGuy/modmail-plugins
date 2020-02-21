@@ -103,9 +103,15 @@ class MessageManager(commands.Cog):
         await asyncio.sleep(8)
         await confirm.delete()
 
-    @checks.has_permissions(PermissionLevel.ADMIN)
+    @checks.has_permissions(PermissionLevel.ADMIN) # TODO: Set your own decay time.
     @commands.command()
-    async def decay(self, ctx, channel:discord.TextChannel):
+    async def decay(self, ctx, channel: discord.TextChannel):
+        """
+        Deletes messages after some time in a channel except for pinned ones.
+
+        Right now, the only time is 1 day.
+        The only way to change it currently is through editing the database directly.
+        """
         if str(channel.id) in self.decay_channels:
             self.decay_channels.pop(str(channel.id))
             msg = f"Stopped decaying in #{channel.name}."
