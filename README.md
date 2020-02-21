@@ -7,8 +7,8 @@
 |Plugin Name|State|Stats|
 |--|--|--|
 
-## Contributers
-![Contributors](https://modmail-plugins.glitch.me/contributors)
+## Contributors
+![Contributors](https://contributors-img.firebaseapp.com/image?repo=realcyguy/modmail-plugins)
 
 ## License
 [MIT License](https://github.com/RealCyGuy/modmail-plugins/blob/master/LICENSE)
