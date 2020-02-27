@@ -170,7 +170,7 @@ class CaptchaVerification(commands.Cog):
     async def casesensitive(self, ctx, trueorfalse):
         if trueorfalse.lower() in self.true:
             self.casesensitive = True
-        elif trueorfalse.lower in self.false
+        elif trueorfalse.lower in self.false:
             self.casesensitive = False
         else:
             await ctx.send("I don't understand.")
