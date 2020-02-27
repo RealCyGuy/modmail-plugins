@@ -12,7 +12,7 @@ class RemoveSelfStars(commands.Cog):
 
     @commands.Cog.listener()
     async def on_reaction_add(self, reaction, user):
-        if reaction.Emoji == "⭐" and user == reaction.message.author:
+        if reaction.emoji == "⭐" and user == reaction.message.author:
             try:
                 await reaction.remove(user)
             except discord.Forbidden:
