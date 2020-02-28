@@ -142,7 +142,7 @@ class CaptchaVerification(commands.Cog):
         """
         role = str(self.role.get(str(ctx.guild.id), "No role specified."))
 
-        embed = discord.Embed(colour=self.bot.main_colour, description="These are the captcha settings.")
+        embed = discord.Embed(colour=self.bot.main_color, description="These are the captcha settings.")
         embed.set_author(name="Current captcha configs:", icon_url=self.bot.user.avatar_url)
         embed.add_field(name="Role", value=f"`{role}`", inline=False)
         embed.add_field(name="Code Length", value=f"`{self.length}`", inline=False)
