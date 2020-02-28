@@ -80,13 +80,14 @@ class CaptchaVerification(commands.Cog):
                     random.choices(string.ascii_letters + string.digits, k=self.length)
                 )
                 image = ImageCaptcha()
-                image.write(code, os.path.join(os.path.dirname(__file__), "out.png"))
+                image.write(code, os.path.join(os.path.dirname(__file__), "captcha.png"))
                 embed = discord.Embed(
                     colour=self.bot.main_color, title="Your embed, good sir (or ma'am)."
                 )
                 embed.set_footer(text=f"Use `{self.bot.prefix}captcha <code>` to solve it.")
-                embed.set_image(url="attachment://out.py")
-                await ctx.author.send(embed=embed)
+                embed.set_image(url="attachment://captcha.png")
+                file = discord.File(os.path.join(os.path.dirname(__file__), "captcha.png"), filename="captcha.png")
+                await ctx.author.send(file=file, embed=embed)
                 await ctx.send(
                     f"{ctx.author.mention}, sent you a DM containing the CAPTCHA!"
                 )
