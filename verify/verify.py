@@ -75,7 +75,7 @@ class CaptchaVerification(commands.Cog):
 
     @commands.command()
     async def captcha(self, ctx, code=None):
-        def replace_similar(text=" "):
+        def replace_similar(text):
             return text.replace("0", "o")
 
         if str(ctx.guild.id) in self.role:
