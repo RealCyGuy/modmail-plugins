@@ -26,8 +26,8 @@ class CaptchaVerification(commands.Cog):
 
         asyncio.create_task(self._set_val())
 
-        self.true = ["t", "true", "yes", "y"]
-        self.false = ["f", "false", "no", "n"]
+        self.true = ["t", "true", "yes", "y", "on"]
+        self.false = ["f", "false", "no", "n", "off"]
 
     async def _update_db(self):
         await self.db.find_one_and_update(
@@ -84,7 +84,7 @@ class CaptchaVerification(commands.Cog):
                 embed = discord.Embed(
                     colour=self.bot.main_color, title="Your embed, good sir (or ma'am)."
                 )
-                embed.set_footer(text=f"Use `{self.bot.prefix}captcha <code>` to solve it.")
+                embed.set_footer(text=f"Use {self.bot.prefix}captcha <code> in a channel (not this DM) to solve it.")
                 embed.set_image(url="attachment://captcha.png")
                 file = discord.File(os.path.join(os.path.dirname(__file__), "captcha.png"), filename="captcha.png")
                 await ctx.author.send(file=file, embed=embed)
@@ -110,12 +110,14 @@ class CaptchaVerification(commands.Cog):
                     )
                     solved = False
                 if solved:
-                    await ctx.send("Solved!")
                     try:
                         role = discord.utils.get(ctx.guild.roles, id=int(self.role[str(ctx.guild.id)]))
                         await ctx.author.add_roles(role)
+                        await ctx.send(f"You got the role: `{role.name}`")
                     except discord.Forbidden:
                         await ctx.send("I don't have the permissions to give you the role.")
+                    except:
+                        await ctx.send("I couldn't give you the role.")
                 self.captchas.pop(str(ctx.author.id))
 
             else:
@@ -154,32 +156,64 @@ class CaptchaVerification(commands.Cog):
     @checks.has_permissions(PermissionLevel.ADMIN)
     @captchaconfig.command()
     async def role(self, ctx, role: discord.Role):
+        """
+        Set the role you get when you complete the captcha.
+
+        **Usage**:
+        [p]captchaconfig role @Done
+        [p]captchaconfig role 682773117680091148
+        [p]captchaconfig role Verified Member
+        """
         self.role[str(ctx.guild.id)] = role.id
         await self._update_db()
         await ctx.send("Ok.")
 
     @checks.has_permissions(PermissionLevel.ADMIN)
     @captchaconfig.command()
-    async def length(self, ctx, length=7):
-        if length > 0 and length < 20:
+    async def length(self, ctx, length = 7):
+        """
+        Set the length of the randomly generated code.
+
+        **Usage**:
+        [p]captchaconfig length 2
+        [p]captchaconfig length 15
+
+        It has to be between 1 and 20
+        """
+        if length > 0 and length < 21:
             self.length = length
             await self._update_db()
             await ctx.send("Ok.")
         else:
-            await ctx.send("Too big or too small.")
+            await ctx.send("Too big or too small. 1-20 please.")
 
     @checks.has_permissions(PermissionLevel.ADMIN)
-    @captchaconfig.command()
+    @captchaconfig.command(aliases=["cs"])
     async def casesensitive(self, ctx, trueorfalse):
+        """
+        Set if codes are case sensitive.
+
+        **Usage**:
+        [p]captchaconfig cs true
+        [p]captchaconfig casesensitive fAlse
+
+        **True**:
+        t, true, y, yes, on
+
+        **False**:
+        f, false, n, no, off
+
+        True or falses are not case sensitive.
+        """
         if trueorfalse.lower() in self.true:
             self.casesensitive = True
-        elif trueorfalse.lower in self.false:
+        elif trueorfalse.lower() in self.false:
             self.casesensitive = False
         else:
             await ctx.send("I don't understand.")
             return
         await self._update_db
-        await ctx.send(f"Case sensative is now `{self.casesensitive}`")
+        await ctx.send(f"Case sensitive is now `{self.casesensitive}`")
 
 def setup(bot):
     bot.add_cog(CaptchaVerification(bot))
