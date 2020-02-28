@@ -170,7 +170,7 @@ class CaptchaVerification(commands.Cog):
             name="Case sensitive", value=f"`{self.casesensitive}`", inline=False
         )
         embed.set_footer(
-            text=f"To change use `{self.bot.prefix}captchaconfig <thing> <value>`. Use `{self.bot.prefix}help captchaconfig` for the list of things you want to change."
+            text=f"To change use {self.bot.prefix}captchaconfig <thing> <value>. Use {self.bot.prefix}help captchaconfig for the list of things you want to change."
         )
         await ctx.send(embed=embed)
 
