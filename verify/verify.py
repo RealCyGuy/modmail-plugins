@@ -207,13 +207,14 @@ class CaptchaVerification(commands.Cog):
         """
         if trueorfalse.lower() in self.true:
             self.casesensitive = True
+            await self._update_db
+            await ctx.send(f"Case sensitive is now set to `{self.casesensitive}`")
         elif trueorfalse.lower() in self.false:
             self.casesensitive = False
+            await self._update_db
+            await ctx.send(f"Case sensitive is now set to `{self.casesensitive}`")
         else:
             await ctx.send("I don't understand.")
-            return
-        await self._update_db
-        await ctx.send(f"Case sensitive is now `{self.casesensitive}`")
 
 def setup(bot):
     bot.add_cog(CaptchaVerification(bot))
