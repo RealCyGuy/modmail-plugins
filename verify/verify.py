@@ -75,11 +75,14 @@ class CaptchaVerification(commands.Cog):
 
     @commands.command()
     async def captcha(self, ctx, code=None):
+        def replace_similar(text=" "):
+            return text.replace("0", "o")
+
         if str(ctx.guild.id) in self.role:
             if code is None:
-                code = "".join(
+                code = replace_similar("".join(
                     random.choices(string.ascii_letters + string.digits, k=self.length)
-                )
+                ))
                 image = ImageCaptcha()
                 image.write(
                     code, os.path.join(os.path.dirname(__file__), "captcha.png")
@@ -101,17 +104,17 @@ class CaptchaVerification(commands.Cog):
                 )
                 self.captchas[str(ctx.author.id)] = code
             elif str(ctx.author.id) in self.captchas:
-                if code == self.captchas[str(ctx.author.id)]:
+                if replace_similar(code) == self.captchas[str(ctx.author.id)]:
                     solved = True
                 elif (
                     not self.casesensitive
-                    and code.lower() == self.captchas[str(ctx.author.id)].lower()
+                    and replace_similar(code.lower()) == self.captchas[str(ctx.author.id)].lower()
                 ):
                     solved = True
                 else:
                     await ctx.send(
                         embed=discord.Embed(
-                            title=f"That is incorrect. Please try again. `{self.bot.prefix}captcha`",
+                            title=f"That is incorrect. Please try again. Use `{self.bot.prefix}captcha`",
                             description=f"It is {None if self.casesensitive else 'not '}case-sensitive.",
                             colour=self.bot.error_color,
                         )
