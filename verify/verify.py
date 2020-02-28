@@ -12,6 +12,7 @@ import os
 from core import checks
 from core.models import PermissionLevel
 
+
 class CaptchaVerification(commands.Cog):
     """Add captcha verification to your server!"""
 
@@ -80,13 +81,20 @@ class CaptchaVerification(commands.Cog):
                     random.choices(string.ascii_letters + string.digits, k=self.length)
                 )
                 image = ImageCaptcha()
-                image.write(code, os.path.join(os.path.dirname(__file__), "captcha.png"))
+                image.write(
+                    code, os.path.join(os.path.dirname(__file__), "captcha.png")
+                )
                 embed = discord.Embed(
                     colour=self.bot.main_color, title="Your embed, good sir (or ma'am)."
                 )
-                embed.set_footer(text=f"Use {self.bot.prefix}captcha <code> in a channel (not this DM) to solve it.")
+                embed.set_footer(
+                    text=f"Use {self.bot.prefix}captcha <code> in a channel (not this DM) to solve it."
+                )
                 embed.set_image(url="attachment://captcha.png")
-                file = discord.File(os.path.join(os.path.dirname(__file__), "captcha.png"), filename="captcha.png")
+                file = discord.File(
+                    os.path.join(os.path.dirname(__file__), "captcha.png"),
+                    filename="captcha.png",
+                )
                 await ctx.author.send(file=file, embed=embed)
                 await ctx.send(
                     f"{ctx.author.mention}, sent you a DM containing the CAPTCHA!"
@@ -111,11 +119,15 @@ class CaptchaVerification(commands.Cog):
                     solved = False
                 if solved:
                     try:
-                        role = discord.utils.get(ctx.guild.roles, id=int(self.role[str(ctx.guild.id)]))
+                        role = discord.utils.get(
+                            ctx.guild.roles, id=int(self.role[str(ctx.guild.id)])
+                        )
                         await ctx.author.add_roles(role)
                         await ctx.send(f"You got the role: `{role.name}`")
                     except discord.Forbidden:
-                        await ctx.send("I don't have the permissions to give you the role.")
+                        await ctx.send(
+                            "I don't have the permissions to give you the role."
+                        )
                     except:
                         await ctx.send("I couldn't give you the role.")
                 self.captchas.pop(str(ctx.author.id))
@@ -133,7 +145,7 @@ class CaptchaVerification(commands.Cog):
                     colour=self.bot.error_color, title="No role set for doing captcha."
                 )
             )
-    
+
     @checks.has_permissions(PermissionLevel.ADMIN)
     @commands.group(invoke_without_command=True)
     async def captchaconfig(self, ctx):
@@ -146,11 +158,20 @@ class CaptchaVerification(commands.Cog):
         """
         role = str(self.role.get(str(ctx.guild.id), "No role specified."))
 
-        embed = discord.Embed(colour=self.bot.main_color, description="These are the captcha settings.")
-        embed.set_author(name="Current captcha configs:", icon_url=self.bot.user.avatar_url)
+        embed = discord.Embed(
+            colour=self.bot.main_color, description="These are the captcha settings."
+        )
+        embed.set_author(
+            name="Current captcha configs:", icon_url=self.bot.user.avatar_url
+        )
         embed.add_field(name="Role", value=f"`{role}`", inline=False)
         embed.add_field(name="Code Length", value=f"`{self.length}`", inline=False)
-        embed.add_field(name="Case sensitive", value=f"`{self.casesensitive}`", inline=False)
+        embed.add_field(
+            name="Case sensitive", value=f"`{self.casesensitive}`", inline=False
+        )
+        embed.set_footer(
+            text=f"To change use `{self.bot.prefix}captchaconfig <thing> <value>`. Use `{self.bot.prefix}help captchaconfig` for the list of things you want to change."
+        )
         await ctx.send(embed=embed)
 
     @checks.has_permissions(PermissionLevel.ADMIN)
@@ -170,7 +191,7 @@ class CaptchaVerification(commands.Cog):
 
     @checks.has_permissions(PermissionLevel.ADMIN)
     @captchaconfig.command()
-    async def length(self, ctx, length = 7):
+    async def length(self, ctx, length=7):
         """
         Set the length of the randomly generated code.
 
@@ -215,6 +236,7 @@ class CaptchaVerification(commands.Cog):
             await ctx.send(f"Case sensitive is now set to `{self.casesensitive}`")
         else:
             await ctx.send("I don't understand.")
+
 
 def setup(bot):
     bot.add_cog(CaptchaVerification(bot))
