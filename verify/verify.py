@@ -147,6 +147,7 @@ class CaptchaVerification(commands.Cog):
         embed.add_field(name="Role", value=f"`{role}`", inline=False)
         embed.add_field(name="Code Length", value=f"`{self.length}`", inline=False)
         embed.add_field(name="Case sensitive", value=f"`{self.casesensitive}`", inline=False)
+        await ctx.send(embed=embed)
 
     @checks.has_permissions(PermissionLevel.ADMIN)
     @captchaconfig.command()
