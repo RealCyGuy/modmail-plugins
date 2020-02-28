@@ -7,6 +7,7 @@ from captcha.image import ImageCaptcha
 
 import string
 import random
+import os
 
 from core import checks
 from core.models import PermissionLevel
@@ -79,7 +80,7 @@ class CaptchaVerification(commands.Cog):
                     random.choices(string.ascii_letters + string.digits, k=self.length)
                 )
                 image = ImageCaptcha()
-                image.write(code, "out.png")
+                image.write(code, os.path.join(os.path.dirname(__file__), "out.png"))
                 embed = discord.Embed(
                     colour=self.bot.main_color, title="Your embed, good sir (or ma'am)."
                 )
