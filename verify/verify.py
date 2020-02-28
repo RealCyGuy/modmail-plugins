@@ -88,7 +88,7 @@ class CaptchaVerification(commands.Cog):
                     code, os.path.join(os.path.dirname(__file__), "captcha.png")
                 )
                 embed = discord.Embed(
-                    colour=self.bot.main_color, title="Your embed, good sir (or ma'am)."
+                    colour=self.bot.main_color, title="Your captcha, good sir (or ma'am)."
                 )
                 embed.set_footer(
                     text=f"Use {self.bot.prefix}captcha <code> in a channel (not this DM) to solve it."
