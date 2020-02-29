@@ -20,10 +20,10 @@ class RemoveSelfStars(commands.Cog):
             message = await member.fetch_message(payload.message_id)
             if payload.emoji == "⭐" and payload.user_id == message.author.id:
                 try:
-                    await message.remove_reaction(payload.member, "⭐")
+                    await message.remove_reaction(member, "⭐")
                 except discord.Forbidden:
                     logger.error(
-                        f"I didn't have permissions to remove a self star from {payload.member.name}#{payload.member.discriminator}."
+                        f"I didn't have permissions to remove a self star from {member.name}#{member.discriminator}."
                     )
                 except Exception as e:
                     logger.error(e)
