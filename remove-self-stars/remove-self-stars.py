@@ -16,8 +16,11 @@ class RemoveSelfStars(commands.Cog):
     async def on_raw_reaction_add(self, payload):
         server = self.bot.get_guild(payload.guild_id)
         member = server.get_member(payload.user_id)
+        logger.debug(server)
+        logger.debug(member)
         try:
             message = await member.fetch_message(payload.message_id)
+            logger.debug(message)
             if payload.emoji == "⭐" and payload.user_id == message.author.id:
                 try:
                     await message.remove_reaction(member, "⭐")
