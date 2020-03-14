@@ -18,7 +18,7 @@ class RemoveSelfStars(commands.Cog):
             return
 
         channel = self.bot.get_channel(payload.channel_id)
-        message = channel.fetch_message(payload.message_id)
+        message = await channel.fetch_message(payload.message_id)
 
         user = self.bot.get_user(payload.user_id)
         if user is None or user.bot:
