@@ -26,7 +26,7 @@ class RemoveSelfStars(commands.Cog):
 
         if payload.user_id == message.author.id:
             try:
-                await message.remove_reaction(user, "\N{WHITE MEDIUM STAR}")
+                await message.remove_reaction("\N{WHITE MEDIUM STAR}", user)
             except discord.Forbidden:
                 logger.error(
                         f"I didn't have permissions to remove a self star from {user.name}#{user.discriminator}."
