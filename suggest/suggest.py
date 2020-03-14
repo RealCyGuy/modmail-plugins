@@ -97,7 +97,7 @@ class Suggest(commands.Cog):
         )
         embed = discord.Embed(
             title=f"The suggestion channel is: #{suggestion_channel}",
-            description="To change it, use [p]setsuggetchannel.",
+            description="To change it, use [p]setsuggestchannel.",
             color=0x4DFF73,
         )
         await ctx.send(embed=embed)
