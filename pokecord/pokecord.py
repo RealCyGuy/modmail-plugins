@@ -35,7 +35,7 @@ class Pokecord(commands.Cog):
                     pokemon = hashes[md]
                     await message.channel.send(f"My magical guessing powers guess it's a... {pokemon}.")
                 except KeyError:
-                    logger.info(f"Pokemon {md} not found.")
+                    logger.info("Pokemon not found.")
 
 def setup(bot):
     bot.add_cog(Pokecord(bot))
