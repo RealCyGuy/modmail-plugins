@@ -3,7 +3,7 @@
 .idea
 
 # Testing files.
-**/test.py
+**/test*.*
 
 # Misc.
 venv
