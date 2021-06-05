@@ -76,13 +76,18 @@ class Suggest(commands.Cog):
                         {
                             "$set": {
                                 "next_id": next_id + 1,
-                                str(next_id): {
-                                    "message_id": message.id,
-                                },
+                                str(next_id): {"message_id": message.id,},
                             }
                         },
                         upsert=True,
                     )
+                    re = config.get("reaction-emojis")
+                    if re:
+                        for r in re.get("emojis", []):
+                            await message.add_reaction(
+                                discord.utils.get(message.guild.emojis, id=r)
+                            )
+                            await asyncio.sleep(0.1)
                     await ctx.message.add_reaction("\N{WHITE HEAVY CHECK MARK}")
         else:
             await ctx.send(
@@ -94,8 +99,88 @@ class Suggest(commands.Cog):
             )
 
     @commands.command()
-    async def accept(self, ctx, *, message):
-        await ctx.send(message)
+    @checks.has_permissions(PermissionLevel.ADMIN)
+    async def approve(self, ctx, suggestion_id: int, *, message=None):
+        """
+        Approve an suggestion.
+
+        **Usage**:
+        [p]approve 5 That's a good idea and will be implemented soon (trademarked).
+        [p]approve 456 I agree.
+        """
+        await ctx.message.delete()
+        suggestions = await self.coll.find_one({"_id": "suggestions"})
+        suggestion = suggestions.get(str(suggestion_id), None)
+        if not suggestion:
+            embed = discord.Embed(
+                colour=self.bot.error_color,
+                title=f"Suggestion id #{suggestion_id} not found.",
+                description="Try something else lol.",
+            )
+            return await ctx.send(embed=embed)
+        s_message = None
+        for channel in ctx.guild.channels:
+            if not isinstance(channel, discord.TextChannel):
+                continue
+            try:
+                s_message = await channel.fetch_message(suggestion["message_id"])
+            except discord.NotFound:
+                continue
+        if not s_message:
+            embed = discord.Embed(
+                colour=self.bot.error_color,
+                title=f"Message not found.",
+                description="Make sure it's not deleted and that I have permissions to access it.",
+            )
+            return await ctx.send(embed=embed)
+        embed = s_message.embeds[0]
+        embed.color = discord.Colour.green()
+        embed.set_author(name=f"Suggestion #{suggestion_id}: Approved")
+        embed.remove_field(2)
+        embed.add_field(name="Response", value=message if message else "No response given.")
+        await s_message.edit(embed=embed)
+
+    @commands.command()
+    @checks.has_permissions(PermissionLevel.ADMIN)
+    async def deny(self, ctx, suggestion_id: int, *, message=None):
+        """
+        Deny an suggestion.
+
+        **Usage**:
+        [p]deny 27 That wouldn't work due to the way the thing in the works in contrast with the other thing.
+        [p]deny 78 You're stupid.
+        """
+        await ctx.message.delete()
+        suggestions = await self.coll.find_one({"_id": "suggestions"})
+        suggestion = suggestions.get(str(suggestion_id), None)
+        if not suggestion:
+            embed = discord.Embed(
+                colour=self.bot.error_color,
+                title=f"Suggestion id #{suggestion_id} not found.",
+                description="Try something else lol.",
+            )
+            return await ctx.send(embed=embed)
+        s_message = None
+        for channel in ctx.guild.channels:
+            if not isinstance(channel, discord.TextChannel):
+                continue
+            try:
+                s_message = await channel.fetch_message(suggestion["message_id"])
+            except discord.NotFound:
+                continue
+        if not s_message:
+            embed = discord.Embed(
+                colour=self.bot.error_color,
+                title=f"Message not found.",
+                description="Make sure it's not deleted and that I have permissions to access it.",
+            )
+            return await ctx.send(embed=embed)
+        embed = s_message.embeds[0]
+        embed.color = discord.Colour.red()
+        embed.set_author(name=f"Suggestion #{suggestion_id}: Denied")
+        embed.remove_field(2)
+        embed.add_field(name="Response", value=message if message else "No response given.")
+        await s_message.edit(embed=embed)
 
     @commands.command(aliases=["ssc"])
     @checks.has_permissions(PermissionLevel.ADMIN)
@@ -133,6 +218,26 @@ class Suggest(commands.Cog):
             description="To change it, use [p]setsuggestchannel.",
             color=0x4DFF73,
         )
+        await ctx.send(embed=embed)
+
+    @commands.command(aliases=["se"])
+    @checks.has_permissions(PermissionLevel.ADMIN)
+    async def setemojis(self, ctx, *emojis: discord.Emoji):
+        """
+        Set emojis to react to each suggestion with.
+
+        **Usage**:
+        [p]setemojis \N{WHITE HEAVY CHECK MARK} \N{CROSS MARK}
+        [p]se (custom emojis)
+        """
+        await self.coll.find_one_and_update(
+            {"_id": "config"},
+            {"$set": {"reaction-emojis": {"emojis": [i.id for i in emojis]}}},
+            upsert=True,
+        )
+        embed = discord.Embed(title=f"Set emojis.", color=0x4DFF73)
+        embed.set_author(name="Success!")
+        embed.set_footer(text="Task succeeded successfully.")
         await ctx.send(embed=embed)
 
     @checks.has_permissions(PermissionLevel.MOD)
