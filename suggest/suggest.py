@@ -32,6 +32,7 @@ class Suggest(commands.Cog):
         self.banlist = mod["banlist"]
 
     @commands.command()
+    @commands.cooldown(1, 20, commands.BucketType.member)
     @checks.has_permissions(PermissionLevel.REGULAR)
     async def suggest(self, ctx, *, suggestion):
         """
@@ -54,13 +55,34 @@ class Suggest(commands.Cog):
                     suggestion_channel = self.bot.get_channel(
                         int(config["suggestion-channel"]["channel"])
                     )
+                    suggestions = await self.coll.find_one({"_id": "suggestions"}) or {}
+                    next_id = suggestions.get("next_id", 1)
 
-                    embed = discord.Embed(title=suggestion, color=0x59E9FF)
-                    embed.set_author(
-                        name=f"Suggestion by {ctx.author}:",
-                        icon_url=ctx.author.avatar_url,
+                    embed = discord.Embed(color=0x59E9FF)
+                    embed.set_author(name=f"Suggestion #{next_id}: Waiting")
+                    embed.set_thumbnail(url=ctx.author.avatar_url)
+                    embed.add_field(
+                        name="Author",
+                        value=f"{ctx.author} (ID: {ctx.author.id})",
+                        inline=False,
                     )
-                    await suggestion_channel.send(embed=embed)
+                    embed.add_field(name="Suggestion", value=suggestion, inline=False)
+                    embed.add_field(
+                        name="Response", value="Waiting for response...", inline=False
+                    )
+                    message = await suggestion_channel.send(embed=embed)
+                    await self.coll.find_one_and_update(
+                        {"_id": "suggestions"},
+                        {
+                            "$set": {
+                                "next_id": next_id + 1,
+                                str(next_id): {
+                                    "message_id": message.id,
+                                },
+                            }
+                        },
+                        upsert=True,
+                    )
                     await ctx.message.add_reaction("\N{WHITE HEAVY CHECK MARK}")
         else:
             await ctx.send(
@@ -71,9 +93,13 @@ class Suggest(commands.Cog):
                 )
             )
 
+    @commands.command()
+    async def accept(self, ctx, *, message):
+        await ctx.send(message)
+
     @commands.command(aliases=["ssc"])
     @checks.has_permissions(PermissionLevel.ADMIN)
-    async def setsuggestchannel(self, ctx, channel: discord.TextChannel):
+    async def setsuggestchannel(self, ctx, *, channel: discord.TextChannel):
         """
         Set the channel where suggestions go.
 
@@ -94,7 +120,7 @@ class Suggest(commands.Cog):
         embed.set_footer(text="Task succeeded successfully.")
         await ctx.send(embed=embed)
 
-    @commands.command()
+    @commands.command(aliases=["sc"])
     @checks.has_permissions(PermissionLevel.ADMIN)
     async def suggestchannel(self, ctx):
         """Displays the suggestion channel."""
