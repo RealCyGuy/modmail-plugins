@@ -16,11 +16,11 @@ class Suggest(commands.Cog):
 
         self.banlist = dict()
 
-        asyncio.create_task(self._set_mod_val())
+        bot.loop.create_task(self._set_mod_val())
 
     async def _update_mod_db(self):
         await self.coll.find_one_and_update(
-            {"_id": "mod"}, {"$set": {"banlist": self.banlist,}}, upsert=True,
+            {"_id": "mod"}, {"$set": {"banlist": self.banlist}}, upsert=True,
         )
 
     async def _set_mod_val(self):
@@ -45,7 +45,7 @@ class Suggest(commands.Cog):
                 config = await self.coll.find_one({"_id": "config"})
                 if config is None:
                     embed = discord.Embed(
-                        title="Suggestion channel not set.", color=self.bot.error_colour
+                        title="Suggestion channel not set.", color=self.bot.error_color
                     )
                     embed.set_author(name="Error.")
                     embed.set_footer(text="Task failed successfully.")
