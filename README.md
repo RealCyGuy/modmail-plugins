@@ -3,10 +3,6 @@
 ![GitHub issues](https://img.shields.io/github/issues/realcyguy/modmail-plugins?style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/realcyguy/modmail-plugins?style=for-the-badge)
 
-## Plugin Stats
-|Plugin Name|State|Stats|
-|--|--|--|
-
 ## Contributors
 ![Contributors](https://contributors-img.firebaseapp.com/image?repo=realcyguy/modmail-plugins)
 
