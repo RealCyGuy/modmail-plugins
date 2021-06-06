@@ -67,9 +67,6 @@ class Suggest(commands.Cog):
                         inline=False,
                     )
                     embed.add_field(name="Suggestion", value=suggestion, inline=False)
-                    embed.add_field(
-                        name="Response", value="Waiting for response...", inline=False
-                    )
                     message = await suggestion_channel.send(embed=embed)
                     await self.coll.find_one_and_update(
                         {"_id": "suggestions"},
@@ -137,7 +134,8 @@ class Suggest(commands.Cog):
         fields = len(embed.fields)
         embed.color = discord.Colour.green()
         embed.set_author(name=f"Suggestion #{suggestion_id}: Approved")
-        embed.remove_field(2)
+        if fields > 2:
+            embed.remove_field(2)
         if fields == 4:
             embed.insert_field_at(
                 index=2,
@@ -198,7 +196,8 @@ class Suggest(commands.Cog):
         fields = len(embed.fields)
         embed.color = discord.Colour.red()
         embed.set_author(name=f"Suggestion #{suggestion_id}: Denied")
-        embed.remove_field(2)
+        if fields > 2:
+            embed.remove_field(2)
         if fields == 4:
             embed.insert_field_at(
                 index=2,
