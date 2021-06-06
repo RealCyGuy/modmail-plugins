@@ -219,7 +219,7 @@ class Suggest(commands.Cog):
         await s_message.edit(embed=embed)
         await s_message.clear_reactions()
 
-    @commands.command(aliases=["ssc"])
+    @commands.command()
     @checks.has_permissions(PermissionLevel.ADMIN)
     async def setsuggestchannel(self, ctx, *, channel: discord.TextChannel):
         """
@@ -242,7 +242,7 @@ class Suggest(commands.Cog):
         embed.set_footer(text="Task succeeded successfully.")
         await ctx.send(embed=embed)
 
-    @commands.command(aliases=["sc"])
+    @commands.command()
     @checks.has_permissions(PermissionLevel.ADMIN)
     async def suggestchannel(self, ctx):
         """Displays the suggestion channel."""
@@ -257,7 +257,7 @@ class Suggest(commands.Cog):
         )
         await ctx.send(embed=embed)
 
-    @commands.command(aliases=["se"])
+    @commands.command()
     @checks.has_permissions(PermissionLevel.ADMIN)
     async def setemojis(self, ctx, *emojis: discord.Emoji):
         """
