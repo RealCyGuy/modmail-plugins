@@ -137,8 +137,16 @@ class Suggest(commands.Cog):
         embed.color = discord.Colour.green()
         embed.set_author(name=f"Suggestion #{suggestion_id}: Approved")
         embed.remove_field(2)
-        embed.add_field(name="Response", value=message if message else "No response given.")
+        embed.add_field(
+            name="Response", value=message if message else "No response given."
+        )
+        votes = ""
+        for reaction in s_message.reactions:
+            votes += f"{reaction.emoji}: {reaction.count -1 if reaction.me else reaction.count }\n"
+        if votes:
+            embed.add_field(name="Votes", value=votes, inline=False)
         await s_message.edit(embed=embed)
+        await s_message.clear_reactions()
 
     @commands.command()
     @checks.has_permissions(PermissionLevel.ADMIN)
@@ -179,8 +187,16 @@ class Suggest(commands.Cog):
         embed.color = discord.Colour.red()
         embed.set_author(name=f"Suggestion #{suggestion_id}: Denied")
         embed.remove_field(2)
-        embed.add_field(name="Response", value=message if message else "No response given.")
+        embed.add_field(
+            name="Response", value=message if message else "No response given."
+        )
+        votes = ""
+        for reaction in s_message.reactions:
+            votes += f"{reaction.emoji}: {reaction.count - 1 if reaction.me else reaction.count}\n"
+        if votes:
+            embed.add_field(name="Votes", value=votes, inline=False)
         await s_message.edit(embed=embed)
+        await s_message.clear_reactions()
 
     @commands.command(aliases=["ssc"])
     @checks.has_permissions(PermissionLevel.ADMIN)
