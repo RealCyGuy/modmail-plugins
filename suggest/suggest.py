@@ -134,12 +134,23 @@ class Suggest(commands.Cog):
             )
             return await ctx.send(embed=embed)
         embed = s_message.embeds[0]
+        fields = len(embed.fields)
         embed.color = discord.Colour.green()
         embed.set_author(name=f"Suggestion #{suggestion_id}: Approved")
         embed.remove_field(2)
-        embed.add_field(
-            name="Response", value=message if message else "No response given."
-        )
+        if fields == 4:
+            embed.insert_field_at(
+                index=2,
+                name="Response",
+                value=message if message else "No response given.",
+                inline=False,
+            )
+        else:
+            embed.add_field(
+                name="Response",
+                value=message if message else "No response given.",
+                inline=False,
+            )
         votes = ""
         for reaction in s_message.reactions:
             votes += f"{reaction.emoji}: {reaction.count -1 if reaction.me else reaction.count }\n"
@@ -184,12 +195,23 @@ class Suggest(commands.Cog):
             )
             return await ctx.send(embed=embed)
         embed = s_message.embeds[0]
+        fields = len(embed.fields)
         embed.color = discord.Colour.red()
         embed.set_author(name=f"Suggestion #{suggestion_id}: Denied")
         embed.remove_field(2)
-        embed.add_field(
-            name="Response", value=message if message else "No response given."
-        )
+        if fields == 4:
+            embed.insert_field_at(
+                index=2,
+                name="Response",
+                value=message if message else "No response given.",
+                inline=False,
+            )
+        else:
+            embed.add_field(
+                name="Response",
+                value=message if message else "No response given.",
+                inline=False,
+            )
         votes = ""
         for reaction in s_message.reactions:
             votes += f"{reaction.emoji}: {reaction.count - 1 if reaction.me else reaction.count}\n"
