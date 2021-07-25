@@ -76,10 +76,12 @@ class ClickTheButton(commands.Cog):
 
     @commands.Cog.listener()
     async def on_ready(self):
+        print("b")
         await self.startup()
 
     @commands.Cog.listener()
     async def on_plugins_ready(self):
+        print("a")
         await self.startup()
 
     @commands.Cog.listener()
