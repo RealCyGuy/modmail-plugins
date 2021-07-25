@@ -65,7 +65,7 @@ class CaptchaVerification(commands.Cog):
                 {"_id": "captchas"}, {"$set": {"current_captchas": dict()}}, upsert=True
             )
 
-            captchas = await self.db.find_one({"_id": "birthdays"})
+            captchas = await self.db.find_one({"_id": "captchas"})
 
         self.role = config.get("roles", dict())
         self.length = config.get("length", 7)
