@@ -1,3 +1,6 @@
+# Install with ?plugins install realcyguy/modmail-plugins/clickthebutton
+# RESTART YOUR BOT AFTER INSTALLING
+
 import asyncio
 import random
 import time
@@ -76,12 +79,10 @@ class ClickTheButton(commands.Cog):
 
     @commands.Cog.listener()
     async def on_ready(self):
-        print("b")
         await self.startup()
 
     @commands.Cog.listener()
     async def on_plugins_ready(self):
-        print("a")
         await self.startup()
 
     @commands.Cog.listener()
