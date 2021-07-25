@@ -13,7 +13,6 @@ class AnigameChannels(commands.Cog):
     async def on_message(self, message: discord.Message):
         if message.author.id == 571027211407196161 and message.embeds and message.channel.name in ["anigame-inactive", "anigame-active"]:
             embed = message.embeds[0]
-            print(embed.title)
             if embed.title.startswith("**__Challenging "):
                 await message.channel.edit(name="anigame-active")
             elif embed.title.startswith("**Victory") or embed.title.startswith("**Defeated"):
