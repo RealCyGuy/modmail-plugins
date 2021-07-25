@@ -21,6 +21,8 @@ class ClickTheButton(commands.Cog):
         self.leaderboard = {}
         self.message_id = 0
         self.winner_role_id = 0
+        self.winner_id = 0
+        self.started = False
 
     async def _update_db(self):
         await self.db.find_one_and_update(
@@ -42,7 +44,7 @@ class ClickTheButton(commands.Cog):
 
         if data is None:
             await self.db.find_one_and_update(
-                {"_id": "data"}, {"$set": {"leaderboard": dict()}}, upsert=True
+                {"_id": "data"}, {"$set": {"leaderboard": dict(), "winner": 0}}, upsert=True
             )
 
             data = await self.db.find_one({"_id": "data"})
@@ -50,12 +52,15 @@ class ClickTheButton(commands.Cog):
         self.message_id = config.get("message", 0)
         self.winner_role_id = config.get("winner_role", 0)
         self.leaderboard = data.get("leaderboard", {})
+        self.winner_id = data.get("winner", 0)
 
     def get_sorted_leaderboard(self):
         return sorted(self.leaderboard.items(), key=lambda x: x[1], reverse=True)
 
-    @commands.Cog.listener()
-    async def on_ready(self):
+    async def startup(self):
+        if self.started:
+            return
+        self.started = True
         await self._get_db()
         DiscordComponents(self.bot)
         for channel in self.bot.get_all_channels():
@@ -68,6 +73,14 @@ class ClickTheButton(commands.Cog):
                 await msg.edit(
                     embed=embed, components=[Button(label="Click to get a point!")]
                 )
+
+    @commands.Cog.listener()
+    async def on_ready(self):
+        await self.startup()
+
+    @commands.Cog.listener()
+    async def on_plugins_ready(self):
+        await self.startup()
 
     @commands.Cog.listener()
     async def on_button_click(self, interaction: Interaction):
