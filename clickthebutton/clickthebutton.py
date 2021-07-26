@@ -31,6 +31,8 @@ class ClickTheButton(commands.Cog):
         self.winner_id = 0
         self.started = False
 
+        asyncio.create_task(self.startup())
+
     async def _update_db(self):
         await self.db.find_one_and_update(
             {"_id": "config"},
