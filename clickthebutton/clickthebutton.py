@@ -1,5 +1,4 @@
 # Install with ?plugins install realcyguy/modmail-plugins/clickthebutton
-# RESTART YOUR BOT AFTER INSTALLING
 
 import asyncio
 import random
