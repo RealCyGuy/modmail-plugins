@@ -93,13 +93,9 @@ class ClickTheButton(commands.Cog):
                 m = await channel.send("Button cooldown over!")
                 await m.delete()
 
-    @commands.Cog.listener()
-    async def on_ready(self):
-        await self.startup()
-
-    @commands.Cog.listener()
-    async def on_plugins_ready(self):
-        await self.startup()
+    # @commands.Cog.listener()
+    # async def on_ready(self):
+    #     await self.startup()
 
     @commands.Cog.listener()
     async def on_button_click(self, interaction: Interaction):
