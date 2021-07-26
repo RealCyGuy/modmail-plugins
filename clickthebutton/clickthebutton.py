@@ -105,21 +105,42 @@ class ClickTheButton(commands.Cog):
             author = interaction.author
             points = self.leaderboard.get(str(author.id), 0)
             self.leaderboard[str(author.id)] = points + 1
+            sorted_leaderboard = self.get_sorted_leaderboard()
+            won = False
+            if sorted_leaderboard[0][0] == str(author.id) and self.winner_role_id:
+                winner_role = interaction.guild.get_role(self.winner_role_id)
+                if self.winner_id != author.id:
+                    try:
+                        previous_winner = await interaction.guild.fetch_member(
+                            self.winner_id
+                        )
+                        await previous_winner.remove_roles(
+                            winner_role, reason="Lost first place in click the button."
+                        )
+                    except discord.NotFound:
+                        pass
+                winner = await interaction.guild.fetch_member(author.id)
+                await winner.add_roles(
+                    winner_role,
+                    reason="Won from having most points in click the button.",
+                )
+                self.winner_id = author.id
+                won = True
             await self._update_db()
             rank = 0
-            for player in self.get_sorted_leaderboard():
+            for player in sorted_leaderboard:
                 rank += 1
                 if int(player[0]) == author.id:
                     break
             await interaction.respond(
                 content=f"You got a point! You are now at {self.leaderboard[str(author.id)]} points and "
-                f"ranked #{rank} out of {len(self.leaderboard)} players. "
+                f"ranked #{rank} out of {len(self.leaderboard)} players."
             )
             cooldown = random.randint(60, 360)
             embed = await self.create_leaderboard_embed(cooldown=cooldown)
             await interaction.message.edit(
                 content=event(
-                    f"{author.name}#{author.discriminator} got a point and is now #{rank}."
+                    f"{author.name}#{author.discriminator} got a point and is now #{rank}{f', winning the {winner_role.mention} role' if won else ''}."
                 ),
                 embed=embed,
                 components=[Button(label="On cooldown.", disabled=True)],
@@ -175,6 +196,16 @@ class ClickTheButton(commands.Cog):
         )
         self.message_id = msg.id
         await self._update_db()
+
+    @checks.has_permissions(PermissionLevel.ADMIN)
+    @commands.command()
+    async def setwinnerrole(self, ctx, role_id: int):
+        """
+        Set role for first place. Set to 0 to be none.
+        """
+        self.winner_role_id = role_id
+        await self._update_db()
+        await ctx.send(f"Winner role id set to `{self.winner_role_id}`")
 
 
 def setup(bot):
