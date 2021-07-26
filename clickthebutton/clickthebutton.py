@@ -40,7 +40,7 @@ class ClickTheButton(commands.Cog):
             upsert=True,
         )
         await self.db.find_one_and_update(
-            {"_id": "data"}, {"$set": {"leaderboard": self.leaderboard}}, upsert=True,
+            {"_id": "data"}, {"$set": {"leaderboard": self.leaderboard, "winner": self.winner_id}}, upsert=True,
         )
 
     async def _get_db(self):
