@@ -128,7 +128,7 @@ class ClickTheButton(commands.Cog):
             stats = ""
             if len(sorted_leaderboard) >= n:
                 user = sorted_leaderboard[n - 1]
-                stats = f"<@{user[0]}> - {user[1]} points"
+                stats = f"<@{user[0]}> - {user[1]} point{'s' if user[1] > 1 else ''}"
             leaderboard_text += str(n) + ". " + stats + "\n"
         leaderboard_text += "\n"
         if cooldown:
