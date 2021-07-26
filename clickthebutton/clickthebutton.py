@@ -76,6 +76,8 @@ class ClickTheButton(commands.Cog):
                 await msg.edit(
                     embed=embed, components=[Button(label="Click to get a point!")]
                 )
+                m = await channel.send("Button cooldown over!")
+                await m.delete()
 
     @commands.Cog.listener()
     async def on_ready(self):
@@ -110,6 +112,8 @@ class ClickTheButton(commands.Cog):
             await interaction.message.edit(
                 embed=embed, components=[Button(label="Click to get a point!")]
             )
+            m = await interaction.channel.send("Button cooldown over!")
+            await m.delete()
 
     async def create_leaderboard_embed(self, cooldown=0):
         embed = discord.Embed(
