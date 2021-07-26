@@ -13,6 +13,10 @@ from core import checks
 from core.models import PermissionLevel
 
 
+def event(text):
+    return "Latest event: " + text
+
+
 class ClickTheButton(commands.Cog):
     """
     Clicking button game. Use [p]startbutton to get started.
@@ -29,7 +33,9 @@ class ClickTheButton(commands.Cog):
 
     async def _update_db(self):
         await self.db.find_one_and_update(
-            {"_id": "config"}, {"$set": {"message": self.message_id, "winner_role": self.winner_role_id}}, upsert=True,
+            {"_id": "config"},
+            {"$set": {"message": self.message_id, "winner_role": self.winner_role_id}},
+            upsert=True,
         )
         await self.db.find_one_and_update(
             {"_id": "data"}, {"$set": {"leaderboard": self.leaderboard}}, upsert=True,
@@ -41,13 +47,17 @@ class ClickTheButton(commands.Cog):
 
         if config is None:
             await self.db.find_one_and_update(
-                {"_id": "config"}, {"$set": {"mesasage": 0, "winner_role": 0}}, upsert=True,
+                {"_id": "config"},
+                {"$set": {"mesasage": 0, "winner_role": 0}},
+                upsert=True,
             )
             config = await self.db.find_one({"_id": "config"})
 
         if data is None:
             await self.db.find_one_and_update(
-                {"_id": "data"}, {"$set": {"leaderboard": dict(), "winner": 0}}, upsert=True
+                {"_id": "data"},
+                {"$set": {"leaderboard": dict(), "winner": 0}},
+                upsert=True,
             )
 
             data = await self.db.find_one({"_id": "data"})
@@ -74,7 +84,9 @@ class ClickTheButton(commands.Cog):
             if msg.author.id == self.bot.user.id:
                 embed = await self.create_leaderboard_embed()
                 await msg.edit(
-                    embed=embed, components=[Button(label="Click to get a point!")]
+                    content=event("Bot and button cooldown restarted."),
+                    embed=embed,
+                    components=[Button(label="Click to get a point!")],
                 )
                 m = await channel.send("Button cooldown over!")
                 await m.delete()
@@ -90,27 +102,32 @@ class ClickTheButton(commands.Cog):
     @commands.Cog.listener()
     async def on_button_click(self, interaction: Interaction):
         if interaction.message.id == self.message_id:
-            points = self.leaderboard.get(str(interaction.author.id), 0)
-            self.leaderboard[str(interaction.author.id)] = points + 1
+            author = interaction.author
+            points = self.leaderboard.get(str(author.id), 0)
+            self.leaderboard[str(author.id)] = points + 1
             await self._update_db()
             rank = 0
             for player in self.get_sorted_leaderboard():
                 rank += 1
-                if int(player[0]) == interaction.author.id:
+                if int(player[0]) == author.id:
                     break
             await interaction.respond(
-                content=f"You got a point! You are now at {self.leaderboard[str(interaction.author.id)]} points and "
-                        f"ranked #{rank} out of {len(self.leaderboard)} players. "
+                content=f"You got a point! You are now at {self.leaderboard[str(author.id)]} points and "
+                f"ranked #{rank} out of {len(self.leaderboard)} players. "
             )
             cooldown = random.randint(60, 180)
             embed = await self.create_leaderboard_embed(cooldown=cooldown)
             await interaction.message.edit(
-                embed=embed, components=[Button(label="On cooldown.", disabled=True)]
+                content=event(
+                    f"{author.name}#{author.discriminator} got a point and is now #{rank}."
+                ),
+                embed=embed,
+                components=[Button(label="On cooldown.", disabled=True)],
             )
             await asyncio.sleep(cooldown)
             embed = await self.create_leaderboard_embed()
             await interaction.message.edit(
-                embed=embed, components=[Button(label="Click to get a point!")]
+                embed=embed, components=[Button(label="Click to get a point!")],
             )
             m = await interaction.channel.send("Button cooldown over!")
             await m.delete()
@@ -138,7 +155,9 @@ class ClickTheButton(commands.Cog):
             leaderboard_text += "You can click the button!"
         embed.description += leaderboard_text
         players = len(self.leaderboard)
-        embed.set_footer(text=f"{players} player{'' if players == 1 else 's'} - by cyrus yip")
+        embed.set_footer(
+            text=f"{players} player{'' if players == 1 else 's'} - by cyrus yip"
+        )
         return embed
 
     @checks.has_permissions(PermissionLevel.ADMIN)
@@ -150,7 +169,9 @@ class ClickTheButton(commands.Cog):
         """
         embed = await self.create_leaderboard_embed()
         msg = await ctx.send(
-            embed=embed, components=[Button(label="Click to get a point!")],
+            event("Click the button leaderboard was created!"),
+            embed=embed,
+            components=[Button(label="Click to get a point!")],
         )
         self.message_id = msg.id
         await self._update_db()
