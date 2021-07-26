@@ -106,6 +106,7 @@ class ClickTheButton(commands.Cog):
             sorted_leaderboard = self.get_sorted_leaderboard()
             won = False
             verb = "winning"
+            verb2 = "won"
             if sorted_leaderboard[0][0] == str(author.id) and self.winner_role_id:
                 winner_role = interaction.guild.get_role(self.winner_role_id)
                 if self.winner_id != author.id:
@@ -120,6 +121,7 @@ class ClickTheButton(commands.Cog):
                         pass
                 else:
                     verb = "keeping"
+                    verb2 = "kept"
                 winner = await interaction.guild.fetch_member(author.id)
                 await winner.add_roles(
                     winner_role,
@@ -135,7 +137,7 @@ class ClickTheButton(commands.Cog):
                     break
             await interaction.respond(
                 content=f"You got a point! You are now at {self.leaderboard[str(author.id)]} points and "
-                f"ranked #{rank} out of {len(self.leaderboard)} players."
+                f"ranked #{rank} out of {len(self.leaderboard)} players.{f' You also {verb2} the {winner_role.mention} role.' if won else ''}"
             )
             cooldown = random.randint(60, 360)
             embed = await self.create_leaderboard_embed(cooldown=cooldown)
