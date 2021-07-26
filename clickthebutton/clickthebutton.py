@@ -98,6 +98,8 @@ class ClickTheButton(commands.Cog):
 
     @commands.Cog.listener()
     async def on_button_click(self, interaction: Interaction):
+        if interaction.responded:
+            return
         if interaction.message.id == self.message_id:
             author = interaction.author
             points = self.leaderboard.get(str(author.id), 0)
