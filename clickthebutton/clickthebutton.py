@@ -107,6 +107,7 @@ class ClickTheButton(commands.Cog):
             self.leaderboard[str(author.id)] = points + 1
             sorted_leaderboard = self.get_sorted_leaderboard()
             won = False
+            verb = "winning"
             if sorted_leaderboard[0][0] == str(author.id) and self.winner_role_id:
                 winner_role = interaction.guild.get_role(self.winner_role_id)
                 if self.winner_id != author.id:
@@ -119,6 +120,8 @@ class ClickTheButton(commands.Cog):
                         )
                     except discord.NotFound:
                         pass
+                else:
+                    verb = "keeping"
                 winner = await interaction.guild.fetch_member(author.id)
                 await winner.add_roles(
                     winner_role,
@@ -140,7 +143,7 @@ class ClickTheButton(commands.Cog):
             embed = await self.create_leaderboard_embed(cooldown=cooldown)
             await interaction.message.edit(
                 content=event(
-                    f"{author.name}#{author.discriminator} got a point and is now #{rank}{f', winning the {winner_role.mention} role' if won else ''}."
+                    f"{author.name}#{author.discriminator} got a point and is now ranked #{rank}{f', {verb} the {winner_role.mention} role' if won else ''}."
                 ),
                 embed=embed,
                 components=[Button(label="On cooldown.", disabled=True)],
