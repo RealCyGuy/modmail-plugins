@@ -98,6 +98,7 @@ class ClickTheButton(commands.Cog):
 
     @commands.Cog.listener()
     async def on_button_click(self, interaction: Interaction):
+        await self._get_db()
         if interaction.responded:
             return
         if interaction.message.id == self.message_id:
