@@ -115,7 +115,7 @@ class ClickTheButton(commands.Cog):
                 content=f"You got a point! You are now at {self.leaderboard[str(author.id)]} points and "
                 f"ranked #{rank} out of {len(self.leaderboard)} players. "
             )
-            cooldown = random.randint(60, 180)
+            cooldown = random.randint(60, 360)
             embed = await self.create_leaderboard_embed(cooldown=cooldown)
             await interaction.message.edit(
                 content=event(
