@@ -108,9 +108,8 @@ class ClickTheButton(commands.Cog):
         if interaction.message.id == self.message_id:
             if interaction.responded:
                 return
-            await interaction.respond(type=6)
             if self.on_cooldown:
-                return
+                return await interaction.respond(type=6)
             await self._get_db()
             self.on_cooldown = True
             author = interaction.author
@@ -149,7 +148,6 @@ class ClickTheButton(commands.Cog):
                 if int(player[0]) == author.id:
                     break
             await interaction.respond(
-                type=7,
                 content=f"You got a point! You are now at {self.leaderboard[str(author.id)]} points and "
                 f"ranked #{rank} out of {len(self.leaderboard)} players.{f' You also {verb2} the {winner_role.mention} role.' if won else ''}",
             )
