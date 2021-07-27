@@ -86,7 +86,7 @@ class ClickTheButton(commands.Cog):
             if msg.author.id == self.bot.user.id:
                 embed = await self.create_leaderboard_embed()
                 await msg.edit(
-                    content=event("Bot and button cooldown restarted."),
+                    content=event("Cooldown restarted."),
                     embed=embed,
                     components=[Button(label="Click to get a point!")],
                 )
