@@ -109,7 +109,7 @@ class ClickTheButton(commands.Cog):
             if interaction.responded:
                 return
             if self.on_cooldown:
-                return await interaction.respond(type=6)
+                return await interaction.respond(content="Too late!")
             await self._get_db()
             self.on_cooldown = True
             author = interaction.author
