@@ -13,7 +13,7 @@ from core.models import PermissionLevel
 
 
 def event(text):
-    return "Latest event: " + text
+    return f"<t:{int(time.time())}:T>: {text}"
 
 
 class ClickTheButton(commands.Cog):
