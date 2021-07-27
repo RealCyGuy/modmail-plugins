@@ -29,6 +29,7 @@ class ClickTheButton(commands.Cog):
         self.winner_role_id = 0
         self.winner_id = 0
         self.started = False
+        self.on_cooldown = False
 
         asyncio.create_task(self.startup())
 
@@ -98,9 +99,9 @@ class ClickTheButton(commands.Cog):
 
     @commands.Cog.listener()
     async def on_button_click(self, interaction: Interaction):
-        await self._get_db()
-        if interaction.responded:
+        if self.on_cooldown or interaction.responded:
             return
+        await self._get_db()
         if interaction.message.id == self.message_id:
             author = interaction.author
             points = self.leaderboard.get(str(author.id), 0)
@@ -150,7 +151,9 @@ class ClickTheButton(commands.Cog):
                 embed=embed,
                 components=[Button(label="On cooldown.", disabled=True)],
             )
+            self.on_cooldown = True
             await asyncio.sleep(cooldown)
+            self.on_cooldown = False
             embed = await self.create_leaderboard_embed()
             await interaction.message.edit(
                 embed=embed, components=[Button(label="Click to get a point!")],
