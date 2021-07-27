@@ -40,7 +40,9 @@ class ClickTheButton(commands.Cog):
             upsert=True,
         )
         await self.db.find_one_and_update(
-            {"_id": "data"}, {"$set": {"leaderboard": self.leaderboard, "winner": self.winner_id}}, upsert=True,
+            {"_id": "data"},
+            {"$set": {"leaderboard": self.leaderboard, "winner": self.winner_id}},
+            upsert=True,
         )
 
     async def _get_db(self):
@@ -102,8 +104,9 @@ class ClickTheButton(commands.Cog):
         if interaction.message.id == self.message_id:
             if interaction.responded:
                 return
+            await interaction.respond(type=6)
             if self.on_cooldown:
-                return await interaction.respond(type=6)
+                return
             await self._get_db()
             self.on_cooldown = True
             author = interaction.author
@@ -142,8 +145,9 @@ class ClickTheButton(commands.Cog):
                 if int(player[0]) == author.id:
                     break
             await interaction.respond(
+                type=7,
                 content=f"You got a point! You are now at {self.leaderboard[str(author.id)]} points and "
-                f"ranked #{rank} out of {len(self.leaderboard)} players.{f' You also {verb2} the {winner_role.mention} role.' if won else ''}"
+                f"ranked #{rank} out of {len(self.leaderboard)} players.{f' You also {verb2} the {winner_role.mention} role.' if won else ''}",
             )
             cooldown = random.randint(180, 480)
             embed = await self.create_leaderboard_embed(cooldown=cooldown)
@@ -184,7 +188,9 @@ class ClickTheButton(commands.Cog):
             timestamp = t + cooldown
             leaderboard_text += f"The button will be re-enabled <t:{timestamp}:R>!"
         else:
-            leaderboard_text += f"You can click the button! (You could've since <t:{t}:F>.)"
+            leaderboard_text += (
+                f"You can click the button! (You could've since <t:{t}:F>.)"
+            )
         embed.description += leaderboard_text
         players = len(self.leaderboard)
         embed.set_footer(
