@@ -99,10 +99,11 @@ class ClickTheButton(commands.Cog):
 
     @commands.Cog.listener()
     async def on_button_click(self, interaction: Interaction):
-        if self.on_cooldown or interaction.responded:
-            return
-        await self._get_db()
         if interaction.message.id == self.message_id:
+            if self.on_cooldown or interaction.responded:
+                return
+            await self._get_db()
+            self.on_cooldown = True
             author = interaction.author
             points = self.leaderboard.get(str(author.id), 0)
             self.leaderboard[str(author.id)] = points + 1
@@ -151,7 +152,6 @@ class ClickTheButton(commands.Cog):
                 embed=embed,
                 components=[Button(label="On cooldown.", disabled=True)],
             )
-            self.on_cooldown = True
             await asyncio.sleep(cooldown)
             self.on_cooldown = False
             embed = await self.create_leaderboard_embed()
