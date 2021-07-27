@@ -179,11 +179,12 @@ class ClickTheButton(commands.Cog):
                 stats = f"<@{user[0]}> - {user[1]} point{'s' if user[1] > 1 else ''}"
             leaderboard_text += str(n) + ". " + stats + "\n"
         leaderboard_text += "\n"
+        t = int(time.time())
         if cooldown:
-            timestamp = int(time.time()) + cooldown
+            timestamp = t + cooldown
             leaderboard_text += f"The button will be re-enabled <t:{timestamp}:R>!"
         else:
-            leaderboard_text += "You can click the button!"
+            leaderboard_text += f"You can click the button! (You could've since <t:{t}:F>.)"
         embed.description += leaderboard_text
         players = len(self.leaderboard)
         embed.set_footer(
