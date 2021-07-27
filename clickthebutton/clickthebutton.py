@@ -86,14 +86,18 @@ class ClickTheButton(commands.Cog):
             except:
                 continue
             if msg.author.id == self.bot.user.id:
+                try:
+                    if "will be re-enabled" in msg.embeds[0].description:
+                        m = await channel.send("Button cooldown over!")
+                        await m.delete()
+                except IndexError:
+                    pass
                 embed = await self.create_leaderboard_embed()
                 await msg.edit(
                     content=event("Cooldown restarted."),
                     embed=embed,
                     components=[Button(label="Click to get a point!")],
                 )
-                m = await channel.send("Button cooldown over!")
-                await m.delete()
 
     # @commands.Cog.listener()
     # async def on_ready(self):
