@@ -100,8 +100,10 @@ class ClickTheButton(commands.Cog):
     @commands.Cog.listener()
     async def on_button_click(self, interaction: Interaction):
         if interaction.message.id == self.message_id:
-            if self.on_cooldown or interaction.responded:
+            if interaction.responded:
                 return
+            if self.on_cooldown:
+                return await interaction.respond(type=6)
             await self._get_db()
             self.on_cooldown = True
             author = interaction.author
