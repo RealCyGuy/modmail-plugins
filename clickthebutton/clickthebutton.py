@@ -214,6 +214,7 @@ class ClickTheButton(commands.Cog):
             components=[Button(label="Click to get a point!")],
         )
         self.message_id = msg.id
+        self.on_cooldown = False
         await self._update_db()
 
     @checks.has_permissions(PermissionLevel.ADMIN)
