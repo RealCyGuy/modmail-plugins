@@ -174,7 +174,7 @@ class ClickTheButton(commands.Cog):
             title="Click the button leaderboard!",
             description="Press the button that has a random global cooldown! Everytime you press it, you get one "
             "point.\n\n",
-            colour=discord.Colour.from_rgb(191, 23, 252),
+            colour=discord.Colour.from_hsv(random.randint(0, 360) / 100, random.randint(25, 95) / 100, random.randint(85, 95) / 100),
         )
         sorted_leaderboard = self.get_sorted_leaderboard()
         leaderboard_text = ""
