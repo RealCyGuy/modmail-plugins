@@ -1,6 +1,7 @@
 # Install with ?plugins install realcyguy/modmail-plugins/clickthebutton
 
 import asyncio
+import itertools
 import random
 import time
 
@@ -27,6 +28,7 @@ class ClickTheButton(commands.Cog):
         self.leaderboard = {}
         self.message_id = 0
         self.winner_role_id = 0
+        self.top_ten_role_id = 0
         self.winner_id = 0
         self.started = False
         self.on_cooldown = False
@@ -36,7 +38,7 @@ class ClickTheButton(commands.Cog):
     async def _update_db(self):
         await self.db.find_one_and_update(
             {"_id": "config"},
-            {"$set": {"message": self.message_id, "winner_role": self.winner_role_id}},
+            {"$set": {"message": self.message_id, "winner_role": self.winner_role_id, "top_ten_role": self.top_ten_role_id}},
             upsert=True,
         )
         await self.db.find_one_and_update(
@@ -52,7 +54,7 @@ class ClickTheButton(commands.Cog):
         if config is None:
             await self.db.find_one_and_update(
                 {"_id": "config"},
-                {"$set": {"mesasage": 0, "winner_role": 0}},
+                {"$set": {"mesasage": 0, "winner_role": 0, "top_ten_role": 0}},
                 upsert=True,
             )
             config = await self.db.find_one({"_id": "config"})
@@ -68,6 +70,7 @@ class ClickTheButton(commands.Cog):
 
         self.message_id = config.get("message", 0)
         self.winner_role_id = config.get("winner_role", 0)
+        self.top_ten_role_id = config.get("top_ten_role", 0)
         self.leaderboard = data.get("leaderboard", {})
         self.winner_id = data.get("winner", 0)
 
@@ -151,6 +154,21 @@ class ClickTheButton(commands.Cog):
                 content=f"You got a point! You are now at {self.leaderboard[str(author.id)]} points and "
                 f"ranked #{rank} out of {len(self.leaderboard)} players.{f' You also {verb2} the {winner_role.mention} role.' if won else ''}",
             )
+            if self.top_ten_role_id:
+                top_ten_role = interaction.guild.get_role(self.top_ten_role_id)
+                top_tens = []
+                for player in itertools.islice(sorted_leaderboard, 0, 10):
+                    top_tens.append(player[0])
+                    try:
+                        p = await interaction.guild.fetch_member(player[0])
+                    except discord.HTTPException:
+                        continue
+                    if top_ten_role in p.roles:
+                        continue
+                    await p.add_roles(top_ten_role, reason="Top ten clicker.")
+                for player in top_ten_role.members:
+                    if str(player.id) not in top_tens:
+                        await p.remove_roles(top_ten_role, reason="Not a top ten clicker.")
             cooldown = random.choices([random.randint(180, 480), random.randint(5, 20), 0], cum_weights=[6, 8, 9])[0]
             embed = await self.create_leaderboard_embed(cooldown=cooldown)
             await interaction.message.edit(
@@ -226,6 +244,16 @@ class ClickTheButton(commands.Cog):
         self.winner_role_id = role_id
         await self._update_db()
         await ctx.send(f"Winner role id set to `{self.winner_role_id}`")
+
+    @checks.has_permissions(PermissionLevel.ADMIN)
+    @commands.command()
+    async def settoptenrole(self, ctx, role_id: int):
+        """
+        Set role for being in top 10. Set to 0 to be none.
+        """
+        self.top_ten_role_id = role_id
+        await self._update_db()
+        await ctx.send(f"Top ten role id set to `{self.winner_role_id}`")
 
 
 def setup(bot):
