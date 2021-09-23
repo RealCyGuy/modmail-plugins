@@ -73,6 +73,23 @@ class ClickTheButton(commands.Cog):
         self.top_ten_role_id = config.get("top_ten_role", 0)
         self.leaderboard = data.get("leaderboard", {})
         self.winner_id = data.get("winner", 0)
+    
+    async def _update_top_ten(self, interaction, sorted_leaderboard):
+        if self.top_ten_role_id:
+            top_ten_role = interaction.guild.get_role(self.top_ten_role_id)
+            top_tens = []
+            for player in itertools.islice(sorted_leaderboard, 0, 10):
+                top_tens.append(player[0])
+                try:
+                    p = await interaction.guild.fetch_member(player[0])
+                except discord.HTTPException:
+                    continue
+                if top_ten_role in p.roles:
+                    continue
+                await p.add_roles(top_ten_role, reason="Top ten clicker.")
+            for player in top_ten_role.members:
+                if str(player.id) not in top_tens:
+                    await p.remove_roles(top_ten_role, reason="Not a top ten clicker.")
 
     def get_sorted_leaderboard(self):
         return sorted(self.leaderboard.items(), key=lambda x: x[1], reverse=True)
@@ -154,21 +171,6 @@ class ClickTheButton(commands.Cog):
                 content=f"You got a point! You are now at {self.leaderboard[str(author.id)]} points and "
                 f"ranked #{rank} out of {len(self.leaderboard)} players.{f' You also {verb2} the {winner_role.mention} role.' if won else ''}",
             )
-            if self.top_ten_role_id:
-                top_ten_role = interaction.guild.get_role(self.top_ten_role_id)
-                top_tens = []
-                for player in itertools.islice(sorted_leaderboard, 0, 10):
-                    top_tens.append(player[0])
-                    try:
-                        p = await interaction.guild.fetch_member(player[0])
-                    except discord.HTTPException:
-                        continue
-                    if top_ten_role in p.roles:
-                        continue
-                    await p.add_roles(top_ten_role, reason="Top ten clicker.")
-                for player in top_ten_role.members:
-                    if str(player.id) not in top_tens:
-                        await p.remove_roles(top_ten_role, reason="Not a top ten clicker.")
             cooldown = random.choices([random.randint(180, 480), random.randint(5, 20), 0], cum_weights=[6, 8, 9])[0]
             embed = await self.create_leaderboard_embed(cooldown=cooldown)
             await interaction.message.edit(
@@ -178,6 +180,7 @@ class ClickTheButton(commands.Cog):
                 embed=embed,
                 components=[Button(label="On cooldown.", disabled=True)],
             )
+            asyncio.create_task(self._update_top_ten(interaction, sorted_leaderboard))
             await asyncio.sleep(cooldown)
             self.on_cooldown = False
             embed = await self.create_leaderboard_embed()
