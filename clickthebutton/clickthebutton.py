@@ -217,7 +217,7 @@ class ClickTheButton(commands.Cog):
         embed.description += leaderboard_text
         players = len(self.leaderboard)
         embed.set_footer(
-            text=f"{players} player{'' if players == 1 else 's'} - by cyrus yip"
+            text=f"{players} player{'' if players == 1 else 's'} - {sum(self.leaderboard.values())} total clicks - by cyrus yip"
         )
         return embed
 
