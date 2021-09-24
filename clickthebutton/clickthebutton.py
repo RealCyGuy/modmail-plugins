@@ -163,7 +163,7 @@ class ClickTheButton(commands.Cog):
                 winner = await interaction.guild.fetch_member(author.id)
                 await winner.add_roles(
                     winner_role,
-                    reason="Won from having most points in click the button.",
+                    reason="Won from having most clicks in click the button.",
                 )
                 self.winner_id = author.id
                 won = True
@@ -174,7 +174,7 @@ class ClickTheButton(commands.Cog):
                 if int(player[0]) == author.id:
                     break
             await interaction.respond(
-                content=f"You got a point! You are now at {self.leaderboard[str(author.id)]} points and "
+                content=f"You got a click! You are now at {self.leaderboard[str(author.id)]} clicks and "
                 f"ranked #{rank} out of {len(self.leaderboard)} players.{f' You also {verb2} the {winner_role.mention} role.' if won else ''}",
             )
             cooldown = random.choices(
@@ -184,7 +184,7 @@ class ClickTheButton(commands.Cog):
             embed = await self.create_leaderboard_embed(cooldown=cooldown)
             await interaction.message.edit(
                 content=event(
-                    f"{author.name}#{author.discriminator} is now at {self.leaderboard[str(author.id)]} points and is ranked #{rank}{f', {verb} the {winner_role.mention} role' if won else ''}."
+                    f"{author.name}#{author.discriminator} is now at {self.leaderboard[str(author.id)]} clicks and is ranked #{rank}{f', {verb} the {winner_role.mention} role' if won else ''}."
                 ),
                 embed=embed,
                 components=[Button(label="On cooldown.", disabled=True)],
@@ -203,7 +203,7 @@ class ClickTheButton(commands.Cog):
         embed = discord.Embed(
             title="Click the button leaderboard!",
             description="Press the button that has a random global cooldown! Everytime you press it, you get one "
-            "point.\n\n",
+            "click (point).\n\n",
             colour=discord.Colour.from_hsv(
                 random.randint(0, 360) / 100,
                 random.randint(25, 95) / 100,
@@ -216,7 +216,7 @@ class ClickTheButton(commands.Cog):
             stats = ""
             if len(sorted_leaderboard) >= n:
                 user = sorted_leaderboard[n - 1]
-                stats = f"<@{user[0]}> - {user[1]} point{'s' if user[1] > 1 else ''}"
+                stats = f"<@{user[0]}> - {user[1]} click{'s' if user[1] > 1 else ''}"
             leaderboard_text += str(n) + ". " + stats + "\n"
         leaderboard_text += "\n"
         t = int(time.time())
