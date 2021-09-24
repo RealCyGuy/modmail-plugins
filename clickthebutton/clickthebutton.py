@@ -95,7 +95,7 @@ class ClickTheButton(commands.Cog):
                 await p.add_roles(top_ten_role, reason="Top ten clicker.")
             for player in top_ten_role.members:
                 if str(player.id) not in top_tens:
-                    await p.remove_roles(top_ten_role, reason="Not a top ten clicker.")
+                    await player.remove_roles(top_ten_role, reason="Not a top ten clicker.")
 
     def get_sorted_leaderboard(self):
         return sorted(self.leaderboard.items(), key=lambda x: x[1], reverse=True)
