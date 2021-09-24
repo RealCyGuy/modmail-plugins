@@ -184,7 +184,7 @@ class ClickTheButton(commands.Cog):
             embed = await self.create_leaderboard_embed(cooldown=cooldown)
             await interaction.message.edit(
                 content=event(
-                    f"{author.name}#{author.discriminator} got a point and is now ranked #{rank}{f', {verb} the {winner_role.mention} role' if won else ''}."
+                    f"{author.name}#{author.discriminator} is now at {self.leaderboard[str(author.id)]} points and is ranked #{rank}{f', {verb} the {winner_role.mention} role' if won else ''}."
                 ),
                 embed=embed,
                 components=[Button(label="On cooldown.", disabled=True)],
