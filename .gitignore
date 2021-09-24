@@ -9,3 +9,5 @@
 venv
 
 *.pyc
+
+.history
