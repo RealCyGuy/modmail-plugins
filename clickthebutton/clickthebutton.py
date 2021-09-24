@@ -38,7 +38,13 @@ class ClickTheButton(commands.Cog):
     async def _update_db(self):
         await self.db.find_one_and_update(
             {"_id": "config"},
-            {"$set": {"message": self.message_id, "winner_role": self.winner_role_id, "top_ten_role": self.top_ten_role_id}},
+            {
+                "$set": {
+                    "message": self.message_id,
+                    "winner_role": self.winner_role_id,
+                    "top_ten_role": self.top_ten_role_id,
+                }
+            },
             upsert=True,
         )
         await self.db.find_one_and_update(
@@ -73,7 +79,7 @@ class ClickTheButton(commands.Cog):
         self.top_ten_role_id = config.get("top_ten_role", 0)
         self.leaderboard = data.get("leaderboard", {})
         self.winner_id = data.get("winner", 0)
-    
+
     async def _update_top_ten(self, interaction, sorted_leaderboard):
         if self.top_ten_role_id:
             top_ten_role = interaction.guild.get_role(self.top_ten_role_id)
@@ -171,7 +177,10 @@ class ClickTheButton(commands.Cog):
                 content=f"You got a point! You are now at {self.leaderboard[str(author.id)]} points and "
                 f"ranked #{rank} out of {len(self.leaderboard)} players.{f' You also {verb2} the {winner_role.mention} role.' if won else ''}",
             )
-            cooldown = random.choices([random.randint(180, 480), random.randint(5, 20), 0], cum_weights=[6, 8, 9])[0]
+            cooldown = random.choices(
+                [random.randint(180, 480), random.randint(5, 20), 0],
+                cum_weights=[6, 8, 9],
+            )[0]
             embed = await self.create_leaderboard_embed(cooldown=cooldown)
             await interaction.message.edit(
                 content=event(
@@ -195,7 +204,11 @@ class ClickTheButton(commands.Cog):
             title="Click the button leaderboard!",
             description="Press the button that has a random global cooldown! Everytime you press it, you get one "
             "point.\n\n",
-            colour=discord.Colour.from_hsv(random.randint(0, 360) / 100, random.randint(25, 95) / 100, random.randint(85, 95) / 100),
+            colour=discord.Colour.from_hsv(
+                random.randint(0, 360) / 100,
+                random.randint(25, 95) / 100,
+                random.randint(85, 95) / 100,
+            ),
         )
         sorted_leaderboard = self.get_sorted_leaderboard()
         leaderboard_text = ""
