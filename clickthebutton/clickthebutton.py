@@ -13,8 +13,12 @@ from core import checks
 from core.models import PermissionLevel
 
 
-def event(text):
-    return f"<t:{int(time.time())}:T>: {text}"
+def event(text, content=""):
+    content = content.split("\n")
+    content.append(f"<t:{int(time.time())}:T>: {text}")
+    while len("\n".join(content)) > 2000:
+        content.pop(0)
+    return "\n".join(content)
 
 
 class ClickTheButton(commands.Cog):
@@ -95,7 +99,9 @@ class ClickTheButton(commands.Cog):
                 await p.add_roles(top_ten_role, reason="Top ten clicker.")
             for player in top_ten_role.members:
                 if str(player.id) not in top_tens:
-                    await player.remove_roles(top_ten_role, reason="Not a top ten clicker.")
+                    await player.remove_roles(
+                        top_ten_role, reason="Not a top ten clicker."
+                    )
 
     def get_sorted_leaderboard(self):
         return sorted(self.leaderboard.items(), key=lambda x: x[1], reverse=True)
@@ -120,7 +126,7 @@ class ClickTheButton(commands.Cog):
                     pass
                 embed = await self.create_leaderboard_embed()
                 await msg.edit(
-                    content=event("Cooldown restarted."),
+                    content=event("Cooldown restarted.", msg.content),
                     embed=embed,
                     components=[Button(label="Click to get a point!")],
                 )
@@ -184,7 +190,8 @@ class ClickTheButton(commands.Cog):
             embed = await self.create_leaderboard_embed(cooldown=cooldown)
             await interaction.message.edit(
                 content=event(
-                    f"{author.name}#{author.discriminator} is now at {self.leaderboard[str(author.id)]} clicks and is ranked #{rank}{f', {verb} the {winner_role.mention} role' if won else ''}."
+                    f"{author.name}#{author.discriminator} is now at {self.leaderboard[str(author.id)]} clicks and is ranked #{rank}{f', {verb} the {winner_role.mention} role' if won else ''}.",
+                    interaction.message.content
                 ),
                 embed=embed,
                 components=[Button(label="On cooldown.", disabled=True)],
