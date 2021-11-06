@@ -196,9 +196,9 @@ class ClickTheButton(commands.Cog):
                 embed=embed,
                 components=[Button(label="On cooldown.", disabled=True)],
             )
+            self.on_cooldown = False
             asyncio.create_task(self._update_top_ten(interaction, sorted_leaderboard))
             await asyncio.sleep(cooldown)
-            self.on_cooldown = False
             embed = await self.create_leaderboard_embed()
             await interaction.message.edit(
                 embed=embed, components=[Button(label="Click to get a point!")],
