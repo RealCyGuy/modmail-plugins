@@ -285,7 +285,7 @@ class ClickTheButton(commands.Cog):
 
     @checks.has_permissions(PermissionLevel.ADMIN)
     @commands.command()
-    async def event(self, ctx, message):
+    async def event(self, ctx, *, message):
         """
         Create an event for the leaderboard message.
         """
