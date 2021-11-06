@@ -283,6 +283,21 @@ class ClickTheButton(commands.Cog):
         await self._update_db()
         await ctx.send(f"Top ten role id set to `{self.winner_role_id}`")
 
+    @checks.has_permissions(PermissionLevel.ADMIN)
+    @commands.command()
+    async def event(self, ctx, message):
+        """
+        Create an event for the leaderboard message.
+        """
+        for channel in self.bot.get_all_channels():
+            try:
+                msg = await channel.fetch_message(self.message_id)
+            except:
+                continue
+            if msg.author.id == self.bot.user.id:
+                await msg.edit(content=event(message, msg.content))
+                await ctx.send("Sent `" + message + "`!")
+
 
 def setup(bot):
     bot.add_cog(ClickTheButton(bot))
