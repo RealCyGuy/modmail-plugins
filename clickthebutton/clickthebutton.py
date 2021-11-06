@@ -111,7 +111,7 @@ class ClickTheButton(commands.Cog):
             return
         self.started = True
         await self._get_db()
-        DiscordComponents(self.bot)
+        # DiscordComponents(self.bot)
         for channel in self.bot.get_all_channels():
             try:
                 msg = await channel.fetch_message(self.message_id)
@@ -131,9 +131,9 @@ class ClickTheButton(commands.Cog):
                     components=[Button(label="Click to get a point!")],
                 )
 
-    # @commands.Cog.listener()
-    # async def on_ready(self):
-    #     await self.startup()
+    @commands.Cog.listener()
+    async def on_plugins_ready(self):
+        DiscordComponents(self.bot)
 
     @commands.Cog.listener()
     async def on_button_click(self, interaction: Interaction):
