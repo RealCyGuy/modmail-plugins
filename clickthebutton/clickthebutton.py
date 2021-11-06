@@ -184,14 +184,19 @@ class ClickTheButton(commands.Cog):
                 f"ranked #{rank} out of {len(self.leaderboard)} players.{f' You also {verb2} the {winner_role.mention} role.' if won else ''}",
             )
             cooldown = random.choices(
-                [random.randint(180, 480), random.randint(5, 20), 0, random.randint(600, 660)],
+                [
+                    random.randint(180, 480),
+                    random.randint(5, 20),
+                    0,
+                    random.randint(600, 660),
+                ],
                 cum_weights=[8, 10, 11, 12],
             )[0]
             embed = await self.create_leaderboard_embed(cooldown=cooldown)
             await interaction.message.edit(
                 content=event(
                     f"{author.name}#{author.discriminator} is now at {self.leaderboard[str(author.id)]} clicks and is ranked #{rank}{f', {verb} the {winner_role.mention} role' if won else ''}.",
-                    interaction.message.content
+                    interaction.message.content,
                 ),
                 embed=embed,
                 components=[Button(label="On cooldown.", disabled=True)],
