@@ -14,9 +14,9 @@ class KarutaKeqingAutoReact(commands.Cog):
         if message.author.id == 646937666251915264 and message.embeds:
             embed = message.embeds[0]
             if embed.title.startswith("Card Collection"):
-                await message.add_reaction("\N{PENCIL}")
+                await message.add_reaction("📝")
             elif embed.title.startswith("Character Lookup"):
-                await message.add_reaction("\N{PAINTBRUSH}")
+                await message.add_reaction("🖌️")
 
 
 def setup(bot):
