@@ -129,6 +129,7 @@ class ClickTheButton(commands.Cog):
                     content=event("Cooldown restarted.", msg.content),
                     embed=embed,
                     components=[Button(label="Click to get a point!")],
+                    allowed_mentions=discord.AllowedMentions.none()
                 )
 
     @commands.Cog.listener()
@@ -200,13 +201,16 @@ class ClickTheButton(commands.Cog):
                 ),
                 embed=embed,
                 components=[Button(label="On cooldown.", disabled=True)],
+                allowed_mentions=discord.AllowedMentions.none()
             )
             self.on_cooldown = False
             asyncio.create_task(self._update_top_ten(interaction, sorted_leaderboard))
             await asyncio.sleep(cooldown)
             embed = await self.create_leaderboard_embed()
             await interaction.message.edit(
-                embed=embed, components=[Button(label="Click to get a point!")],
+                embed=embed,
+                components=[Button(label="Click to get a point!")],
+                allowed_mentions=discord.AllowedMentions.none(),
             )
             m = await interaction.channel.send("Button cooldown over!")
             await m.delete()
@@ -258,6 +262,7 @@ class ClickTheButton(commands.Cog):
             event("Click the button leaderboard was created!"),
             embed=embed,
             components=[Button(label="Click to get a point!")],
+            allowed_mentions=discord.AllowedMentions.none(),
         )
         self.message_id = msg.id
         self.on_cooldown = False
@@ -295,7 +300,7 @@ class ClickTheButton(commands.Cog):
             except:
                 continue
             if msg.author.id == self.bot.user.id:
-                await msg.edit(content=event(message, msg.content))
+                await msg.edit(content=event(message, msg.content), allowed_mentions=discord.AllowedMentions.none())
                 await ctx.send("Sent `" + message + "`!")
 
 
