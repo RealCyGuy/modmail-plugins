@@ -69,10 +69,10 @@ class PremiumSupport(commands.Cog):
                 attachments = []
                 stickers = []
                 
-        if Msg.content is not None:
+        if Msg.content:
             await thread.send(Msg, destination=recipient, from_mod=True, anonymous=True)
 
-        if self.mention != "":    
+        if self.mention:    
             await thread.channel.send(self.mention)
             
         if self.category:
