@@ -68,17 +68,21 @@ class PremiumSupport(commands.Cog):
                 id = initial_message.id
                 attachments = []
                 stickers = []
-
+                
+        if Msg.content is not None:
             await thread.send(Msg, destination=recipient, from_mod=True, anonymous=True)
+
+        if self.mention != "":    
             await thread.channel.send(self.mention)
-            if self.category:
-                await thread.channel.move(
-                    end=True,
-                    category=discord.utils.get(
-                        thread.channel.guild.channels, id=self.category
-                    ),
-                    reason="Premium support plugin.",
-                )
+            
+        if self.category:
+            await thread.channel.move(
+                end=True,
+                category=discord.utils.get(
+                    thread.channel.guild.channels, id=self.category
+                ),
+                reason="Premium support plugin.",
+            )
 
     @checks.has_permissions(PermissionLevel.ADMIN)
     @commands.group(invoke_without_command=True, aliases=["pc"])
