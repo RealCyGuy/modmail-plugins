@@ -63,7 +63,7 @@ class Suggest(commands.Cog):
                     embed.set_thumbnail(url=ctx.author.avatar_url)
                     embed.add_field(
                         name="Author",
-                        value=f"{ctx.author} (ID: {ctx.author.id})",
+                        value=f"{ctx.author.mention} (ID: {ctx.author.id})",
                         inline=False,
                     )
                     embed.add_field(name="Suggestion", value=suggestion, inline=False)
