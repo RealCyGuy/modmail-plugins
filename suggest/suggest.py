@@ -151,7 +151,7 @@ class Suggest(commands.Cog):
             )
         votes = ""
         for reaction in s_message.reactions:
-            votes += f"{reaction.emoji}: {reaction.count -1 if reaction.me else reaction.count }\n"
+            votes += f"{reaction.emoji} **- {reaction.count -1 if reaction.me else reaction.count }**\n"
         if votes:
             embed.add_field(name="Votes", value=votes, inline=False)
         await s_message.edit(embed=embed)
@@ -213,7 +213,7 @@ class Suggest(commands.Cog):
             )
         votes = ""
         for reaction in s_message.reactions:
-            votes += f"{reaction.emoji}: {reaction.count - 1 if reaction.me else reaction.count}\n"
+            votes += f"{reaction.emoji} **- {reaction.count - 1 if reaction.me else reaction.count}**\n"
         if votes:
             embed.add_field(name="Votes", value=votes, inline=False)
         await s_message.edit(embed=embed)
