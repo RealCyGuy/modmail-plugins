@@ -80,15 +80,20 @@ class CaptchaVerification(commands.Cog):
 
         if str(ctx.guild.id) in self.role:
             if code is None:
-                code = replace_similar("".join(
-                    random.choices(string.ascii_letters + string.digits, k=self.length)
-                ))
+                code = replace_similar(
+                    "".join(
+                        random.choices(
+                            string.ascii_letters + string.digits, k=self.length
+                        )
+                    )
+                )
                 image = ImageCaptcha()
                 image.write(
                     code, os.path.join(os.path.dirname(__file__), "captcha.png")
                 )
                 embed = discord.Embed(
-                    colour=self.bot.main_color, title="Your captcha, good sir (or ma'am)."
+                    colour=self.bot.main_color,
+                    title="Your captcha, good sir (or ma'am).",
                 )
                 embed.set_footer(
                     text=f"Use {self.bot.prefix}captcha <code> in a channel (not this DM) to solve it."
@@ -108,7 +113,8 @@ class CaptchaVerification(commands.Cog):
                     solved = True
                 elif (
                     not self.casesensitive
-                    and replace_similar(code.lower()) == self.captchas[str(ctx.author.id)].lower()
+                    and replace_similar(code.lower())
+                    == self.captchas[str(ctx.author.id)].lower()
                 ):
                     solved = True
                 else:
@@ -239,5 +245,5 @@ class CaptchaVerification(commands.Cog):
             await ctx.send("I don't understand.")
 
 
-def setup(bot):
-    bot.add_cog(CaptchaVerification(bot))
+async def setup(bot):
+    await bot.add_cog(CaptchaVerification(bot))

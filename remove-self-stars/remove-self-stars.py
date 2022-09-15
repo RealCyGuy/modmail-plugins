@@ -14,7 +14,7 @@ class RemoveSelfStars(commands.Cog):
 
     @commands.Cog.listener()
     async def on_raw_reaction_add(self, payload):
-        if str(payload.emoji) != '\N{WHITE MEDIUM STAR}':
+        if str(payload.emoji) != "\N{WHITE MEDIUM STAR}":
             return
 
         channel = self.bot.get_channel(payload.channel_id)
@@ -27,13 +27,14 @@ class RemoveSelfStars(commands.Cog):
         if payload.user_id == message.author.id:
             try:
                 await message.remove_reaction("\N{WHITE MEDIUM STAR}", user)
-                logger.info(f"I removed a self star from {user.name}#{user.discriminator}.")
+                logger.info(
+                    f"I removed a self star from {user.name}#{user.discriminator}."
+                )
             except discord.Forbidden:
                 logger.error(
-                        f"I didn't have permissions to remove a self star from {user.name}#{user.discriminator}."
-                    )
+                    f"I didn't have permissions to remove a self star from {user.name}#{user.discriminator}."
+                )
 
 
-
-def setup(bot):
-    bot.add_cog(RemoveSelfStars(bot))
+async def setup(bot):
+    await bot.add_cog(RemoveSelfStars(bot))

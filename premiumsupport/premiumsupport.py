@@ -68,13 +68,13 @@ class PremiumSupport(commands.Cog):
                 id = initial_message.id
                 attachments = []
                 stickers = []
-                
+
         if Msg.content:
             await thread.send(Msg, destination=recipient, from_mod=True, anonymous=True)
 
-        if self.mention:    
+        if self.mention:
             await thread.channel.send(self.mention)
-            
+
         if self.category:
             await thread.channel.move(
                 end=True,
@@ -150,5 +150,5 @@ class PremiumSupport(commands.Cog):
         await ctx.send(f"Premium category set to: `{self.category}`")
 
 
-def setup(bot):
-    bot.add_cog(PremiumSupport(bot))
+async def setup(bot):
+    await bot.add_cog(PremiumSupport(bot))

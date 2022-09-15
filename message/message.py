@@ -103,7 +103,7 @@ class MessageManager(commands.Cog):
         await asyncio.sleep(8)
         await confirm.delete()
 
-    @checks.has_permissions(PermissionLevel.ADMIN) # TODO: Set your own decay time.
+    @checks.has_permissions(PermissionLevel.ADMIN)  # TODO: Set your own decay time.
     @commands.command()
     async def decay(self, ctx, channel: discord.TextChannel):
         """
@@ -131,7 +131,7 @@ class MessageManager(commands.Cog):
 
             for channel in self.decay_channels:
                 total += self.decay_channels[channel]
-                
+
             average = total / len(self.decay_channels)
 
             front = discord.Embed(color=self.bot.main_color, title="All decay info.")
@@ -141,9 +141,7 @@ class MessageManager(commands.Cog):
                 inline=True,
             )
             front.add_field(
-                name="Average decay time:",
-                value=f"{str(average)}ms",
-                inline=True,
+                name="Average decay time:", value=f"{str(average)}ms", inline=True,
             )
             front.add_field(
                 name="To see channel specific info, use the reactions below.",
@@ -154,13 +152,17 @@ class MessageManager(commands.Cog):
 
             for channel in self.decay_channels:
                 d_channel = self.bot.get_channel(int(channel))
-                page = discord.Embed(color=self.bot.main_color, title=f"Decay info of: #{d_channel.name}")
-                page.add_field(name="Decay time:", value=f"{str(self.decay_channels[channel])}ms")
+                page = discord.Embed(
+                    color=self.bot.main_color, title=f"Decay info of: #{d_channel.name}"
+                )
+                page.add_field(
+                    name="Decay time:", value=f"{str(self.decay_channels[channel])}ms"
+                )
 
                 pages.append(page)
 
             session = EmbedPaginatorSession(ctx, *pages)
-            await session.run()    
+            await session.run()
 
         else:
             embed = discord.Embed(
@@ -183,5 +185,5 @@ class MessageManager(commands.Cog):
                 await d_channel.purge(check=is_deleteable)
 
 
-def setup(bot):
-    bot.add_cog(MessageManager(bot))
+async def setup(bot):
+    await bot.add_cog(MessageManager(bot))

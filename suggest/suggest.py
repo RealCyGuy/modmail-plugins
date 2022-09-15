@@ -60,7 +60,7 @@ class Suggest(commands.Cog):
 
                     embed = discord.Embed(color=0x59E9FF)
                     embed.set_author(name=f"Suggestion #{next_id}: Waiting")
-                    embed.set_thumbnail(url=ctx.author.avatar_url)
+                    embed.set_thumbnail(url=ctx.author.avatar.url)
                     embed.add_field(
                         name="Author",
                         value=f"{ctx.author.mention} (ID: {ctx.author.id})",
@@ -337,5 +337,5 @@ class Suggest(commands.Cog):
         await ctx.send(embed=embed)
 
 
-def setup(bot):
-    bot.add_cog(Suggest(bot))
+async def setup(bot):
+    await bot.add_cog(Suggest(bot))

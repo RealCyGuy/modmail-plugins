@@ -6,6 +6,7 @@ class KarutaKeqingAutoReact(commands.Cog):
     """
     Reacts to karuta character lookup and collection for keqing bot.
     """
+
     def __init__(self, bot):
         self.bot = bot
 
