@@ -20,7 +20,7 @@ class WebServer(commands.Cog):
 
         runner = web.AppRunner(app)
         await runner.setup()
-        site = web.TCPSite(runner, "localhost", 8080)
+        site = web.TCPSite(runner, port=8080)
         await site.start()
 
 
