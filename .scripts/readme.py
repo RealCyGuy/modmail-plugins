@@ -4,7 +4,7 @@ import os
 import glob
 import pathlib
 import sys
-from unittest.mock import Mock
+from unittest.mock import MagicMock
 
 sys.path.append("../")
 
@@ -18,7 +18,7 @@ for folder in glob.iglob(os.path.join("../", "*", "")):
         try:
             i = importlib.import_module(f"{name}.{name}")
         except ImportError as e:
-            sys.modules[e.name] = Mock()
+            sys.modules[e.name] = MagicMock()
         else:
             break
     cog = None
