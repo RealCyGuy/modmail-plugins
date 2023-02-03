@@ -6,7 +6,7 @@ import magic8ball
 
 class EightBall(commands.Cog):
     """
-    Ask ModMail a question and get an answer from a ever-growing list of answers.
+    Ask Modmail a question and get an answer from a ever-growing list of answers.
 
     Disclaimer: These answers are jokes and should be taken as jokes.
     For legal advice, talk to a lawyer.
@@ -19,7 +19,7 @@ class EightBall(commands.Cog):
     @commands.command(aliases=["ateball", "8bl"])
     async def eightball(self, ctx, *, question):
         """
-        Ask ModMail 8-Ball a question and get a response!
+        Ask Modmail 8-Ball a question and get a response!
 
         Usage: [prefix]eightball <question>
         """
