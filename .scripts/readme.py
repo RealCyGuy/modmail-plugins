@@ -8,8 +8,8 @@ from unittest.mock import Mock
 
 sys.path.append("../")
 
-output = """| Name | Description | Install Command | Source code |
-| --- | --- | --- | --- |
+output = """| Name | Description | Install Command |
+| --- | --- | --- |
 """
 
 for folder in glob.iglob(os.path.join("../", "*", "")):
@@ -43,10 +43,9 @@ for folder in glob.iglob(os.path.join("../", "*", "")):
 
     output += (
         f"|"
-        f"{name} | "
+        f"{name}<br>[`{name}.py`](https://github.com/RealCyGuy/modmail-plugins/blob/v4/{name}/{name}.py \"{name} source code\")  | "
         f"{doc} | "
-        f"`?plugins install realcyguy/modmail-plugins/{name}@v4` | "
-        f"[`{name}.py`](https://github.com/RealCyGuy/modmail-plugins/blob/v4/{name}/{name}.py \"{name} source code\") |\n"
+        f"`?plugins install realcyguy/modmail-plugins/{name}@v4` |\n"
     )
 print(output)
 
