@@ -33,12 +33,12 @@ for folder in glob.iglob(os.path.join("../", "*", "")):
     if cog is None:
         continue
 
-    for message in dir(cog):
-        item = getattr(cog, message, None)
-        print(item)
-
     doc = cog.__doc__
     if doc:
+        doc = doc.strip()
+        lines = doc.splitlines()
+        if len(lines) > 1:
+            doc = f"{lines[0]}<details><summary>More details</summary>{' '.join(lines[1:])}</details>"
         doc = " ".join(doc.split())
 
     output += (
