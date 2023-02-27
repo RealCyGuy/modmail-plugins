@@ -1,7 +1,7 @@
 # RealCyGuy's Modmail Plugins
 ### Some [plugins](https://github.com/kyb3r/modmail/wiki/Plugins) for the Discord [Modmail bot](https://github.com/kyb3r/modmail) by [Kyb3r](https://kyb3r.github.io/).
-![GitHub issues](https://img.shields.io/github/issues/realcyguy/modmail-plugins?style=for-the-badge)
-![GitHub](https://img.shields.io/github/license/realcyguy/modmail-plugins?style=for-the-badge)
+[![GitHub issues](https://img.shields.io/github/issues/realcyguy/modmail-plugins?style=for-the-badge)](https://github.com/RealCyGuy/modmail-plugins/issues)
+[![License](https://img.shields.io/github/license/realcyguy/modmail-plugins?style=for-the-badge)](https://github.com/RealCyGuy/modmail-plugins/blob/v4/LICENSE)
 
 ## Plugins
 
@@ -24,4 +24,4 @@
 ![Contributors](https://contributors-img.firebaseapp.com/image?repo=realcyguy/modmail-plugins)
 
 ## License
-[MIT License](https://github.com/RealCyGuy/modmail-plugins/blob/master/LICENSE)
+[MIT License](https://github.com/RealCyGuy/modmail-plugins/blob/v4/LICENSE)
