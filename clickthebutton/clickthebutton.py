@@ -196,11 +196,11 @@ class PersistentView(discord.ui.View):
         button.disabled = False
         self.cog.on_cooldown = False
         self.cog.clickers = []
+        await interaction.channel.send("Button cooldown over!", delete_after=0)
         await interaction.message.edit(
             embed=await self.cog.create_leaderboard_embed(),
             view=self,
         )
-        await interaction.channel.send("Button cooldown over!", delete_after=0)
 
 
 async def setup(bot):
