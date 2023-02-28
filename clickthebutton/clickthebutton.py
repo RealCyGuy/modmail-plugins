@@ -30,7 +30,6 @@ class ClickTheButton(commands.Cog):
         self.message = None
         self.leaderboard = {}
         self.custom_id = ""
-        self.on_cooldown = False
         self.clickers = []
         self.interaction_message = None
 
@@ -155,14 +154,14 @@ class PersistentView(discord.ui.View):
     )
     async def button(self, interaction: discord.Interaction, button: discord.ui.Button):
         user_id = str(interaction.user.id)
-        await interaction.response.defer()
         if interaction.user.id in self.cog.clickers:
-            return
+            return await interaction.response.defer()
         if self.cog.clickers:
-            return self.cog.clickers.append(interaction.user.id)
+            self.cog.clickers.append(interaction.user.id)
+            return await interaction.response.defer()
         self.cog.clickers.append(interaction.user.id)
+        await interaction.response.defer()
 
-        self.cog.on_cooldown = True
         points = self.cog.leaderboard.get(user_id, 0) + 1
         self.cog.leaderboard[user_id] = points
         await self.cog.db.update_one(
@@ -194,7 +193,6 @@ class PersistentView(discord.ui.View):
         await asyncio.sleep(cooldown)
         button.style = discord.ButtonStyle.green
         button.disabled = False
-        self.cog.on_cooldown = False
         self.cog.clickers = []
         await interaction.message.edit(
             embed=await self.cog.create_leaderboard_embed(),
