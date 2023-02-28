@@ -78,14 +78,17 @@ class ClickTheButton(commands.Cog):
                 if self.custom_id:
                     self.view = PersistentView(self)
                     self.bot.add_view(self.view)
-                    self.message = (
-                        await self.bot.get_guild(config["message"][0])
-                        .get_channel(config["message"][1])
-                        .fetch_message(config["message"][2])
-                    )
-                    await self.message.edit(
-                        embed=await self.create_leaderboard_embed(), view=self.view
-                    )
+                    try:
+                        self.message = (
+                            await self.bot.get_guild(config["message"][0])
+                            .get_channel(config["message"][1])
+                            .fetch_message(config["message"][2])
+                        )
+                        await self.message.edit(
+                            embed=await self.create_leaderboard_embed(), view=self.view
+                        )
+                    except:
+                        pass
 
     async def cog_unload(self):
         if self.view:
