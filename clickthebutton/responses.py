@@ -49,3 +49,32 @@ EMOJI_RANGES = [
 def random_emoji() -> str:
     emoji_range = random.choice(EMOJI_RANGES)
     return chr(random.randint(emoji_range[0], emoji_range[1]))
+
+
+FOUGHT_OFF = [
+    "fought off",
+    "repelled",
+    "defended against",
+    "resisted",
+    "battled against",
+    "overcame",
+    "beat back",
+    "staved off",
+    "held off",
+    "thwarted",
+    "warded off",
+    "combated",
+    "clashed with",
+    "confronted",
+    "countered",
+    "withstood",
+    "opposed",
+    "fended off",
+    "challenged",
+    "contended with",
+    "killed",  # requested by lyiam
+]
+
+
+def random_fought_off() -> str:
+    return random.choice(FOUGHT_OFF)

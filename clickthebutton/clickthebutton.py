@@ -8,7 +8,7 @@ from discord.ext import commands
 
 from core import checks
 from core.models import PermissionLevel
-from .responses import random_cooldown_over, random_emoji
+from .responses import random_cooldown_over, random_emoji, random_fought_off
 
 
 def event(text, content="") -> str:
@@ -130,7 +130,7 @@ class PersistentView(discord.ui.View):
         self.cog = cog
 
     async def do_stuff(
-        self, interaction: discord.Interaction, user_id, points, cooldown
+        self, interaction: discord.Interaction, user_id, points, cooldown, fought_off: str
     ):
         rank = 0
         sorted_leaderboard = self.cog.get_sorted_leaderboard()
@@ -143,7 +143,7 @@ class PersistentView(discord.ui.View):
         clickers.remove(interaction.user.id)
         if clickers:
             mentions = ", ".join(f"<@{user_id}>" for user_id in clickers)
-            fought = f" fought off {mentions} and"
+            fought = f" {fought_off} {mentions} and"
         self.cog.interaction_message = await interaction.channel.send(
             content=f"{random_emoji()} <@{user_id}>{fought} got a click!\n"
             f"You are now at {points} clicks and ranked #{rank} out of {len(self.cog.leaderboard)} players.",
@@ -180,9 +180,10 @@ class PersistentView(discord.ui.View):
         cooldown = random.randint(*cooldown)
         await asyncio.sleep(2)
         fought = ""
+        fought_off = random_fought_off()
         if len(self.cog.clickers) >= 2:
             await asyncio.sleep(3)
-            fought = f" fought off {len(self.cog.clickers) - 1} and"
+            fought = f" {fought_off} {len(self.cog.clickers) - 1} and"
         await interaction.message.edit(
             content=event(
                 f"{interaction.user.name}#{interaction.user.discriminator}{fought} is now at {points} clicks.",
@@ -191,7 +192,7 @@ class PersistentView(discord.ui.View):
             embed=await self.cog.create_leaderboard_embed(cooldown=cooldown),
             view=self,
         )
-        asyncio.create_task(self.do_stuff(interaction, user_id, points, cooldown))
+        asyncio.create_task(self.do_stuff(interaction, user_id, points, cooldown, fought_off))
         await asyncio.sleep(max(cooldown - 1, 0))
         button.style = discord.ButtonStyle.green
         button.disabled = False
