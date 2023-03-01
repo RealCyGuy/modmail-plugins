@@ -2,6 +2,8 @@ import asyncio
 import random
 import time
 import uuid
+from collections import OrderedDict
+from datetime import timedelta
 
 import discord
 from discord.ext import commands
@@ -31,7 +33,7 @@ class ClickTheButton(commands.Cog):
         self.message = None
         self.leaderboard = {}
         self.custom_id = ""
-        self.clickers = []
+        self.clickers = OrderedDict()
         self.interaction_message = None
 
     def get_sorted_leaderboard(self):
@@ -56,7 +58,9 @@ class ClickTheButton(commands.Cog):
         t = round(time.time())
         if cooldown:
             timestamp = t + cooldown + 1
-            leaderboard_text += f"The button will be re-enabled <t:{timestamp}:R> (<t:{timestamp}:T>)!"
+            leaderboard_text += (
+                f"The button will be re-enabled <t:{timestamp}:R> (<t:{timestamp}:T>)!"
+            )
         else:
             leaderboard_text += (
                 f"You can click the button! (You could've since <t:{t}:F>.)"
@@ -130,7 +134,12 @@ class PersistentView(discord.ui.View):
         self.cog = cog
 
     async def do_stuff(
-        self, interaction: discord.Interaction, user_id, points, cooldown, fought_off: str
+        self,
+        interaction: discord.Interaction,
+        user_id,
+        points,
+        cooldown,
+        fought_off: str,
     ):
         rank = 0
         sorted_leaderboard = self.cog.get_sorted_leaderboard()
@@ -139,10 +148,14 @@ class PersistentView(discord.ui.View):
             if player[0] == user_id:
                 break
         fought = ""
-        clickers = self.cog.clickers.copy()
+        clickers = list(self.cog.clickers.keys())
         clickers.remove(interaction.user.id)
         if clickers:
-            mentions = ", ".join(f"<@{user_id}>" for user_id in clickers)
+            winner_time = self.cog.clickers[interaction.user.id]
+            mentions = ", ".join(
+                f"<@{user_id}> ({int((self.cog.clickers[user_id] - winner_time) / timedelta(milliseconds=1))}ms)"
+                for user_id in clickers
+            )
             fought = f" {fought_off} {mentions} and"
         reaction = random_emoji()
         self.cog.interaction_message = await interaction.channel.send(
@@ -164,9 +177,9 @@ class PersistentView(discord.ui.View):
         if interaction.user.id in self.cog.clickers:
             return await interaction.response.defer()
         if self.cog.clickers:
-            self.cog.clickers.append(interaction.user.id)
+            self.cog.clickers[interaction.user.id] = interaction.created_at
             return await interaction.response.defer()
-        self.cog.clickers.append(interaction.user.id)
+        self.cog.clickers[interaction.user.id] = interaction.created_at
         await interaction.response.defer()
 
         points = self.cog.leaderboard.get(user_id, 0) + 1
@@ -197,11 +210,13 @@ class PersistentView(discord.ui.View):
             embed=await self.cog.create_leaderboard_embed(cooldown=cooldown),
             view=self,
         )
-        asyncio.create_task(self.do_stuff(interaction, user_id, points, cooldown, fought_off))
+        asyncio.create_task(
+            self.do_stuff(interaction, user_id, points, cooldown, fought_off)
+        )
         await asyncio.sleep(max(cooldown - 1, 0))
         button.style = discord.ButtonStyle.green
         button.disabled = False
-        self.cog.clickers = []
+        self.cog.clickers = OrderedDict()
         asyncio.create_task(
             interaction.channel.send(
                 random_cooldown_over(),
