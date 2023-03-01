@@ -144,11 +144,16 @@ class PersistentView(discord.ui.View):
         if clickers:
             mentions = ", ".join(f"<@{user_id}>" for user_id in clickers)
             fought = f" {fought_off} {mentions} and"
+        reaction = random_emoji()
         self.cog.interaction_message = await interaction.channel.send(
-            content=f"{random_emoji()} <@{user_id}>{fought} got a click!\n"
+            content=f"{reaction} <@{user_id}>{fought} got a click!\n"
             f"You are now at {points} clicks and ranked #{rank} out of {len(self.cog.leaderboard)} players.",
             delete_after=max(5, cooldown - 5),
         )
+        try:
+            await self.cog.interaction_message.add_reaction(reaction)
+        except:
+            pass
 
     @discord.ui.button(
         label="Click to get a point!",
