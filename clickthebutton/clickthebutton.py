@@ -197,7 +197,7 @@ class PersistentView(discord.ui.View):
         self.cog.clickers = []
         asyncio.create_task(
             interaction.channel.send(
-                random.choice(random_cooldown_over()),
+                random_cooldown_over(),
                 delete_after=0,
             )
         )
