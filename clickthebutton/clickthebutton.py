@@ -48,11 +48,12 @@ class ClickTheButton(commands.Cog):
         )
         sorted_leaderboard = self.get_sorted_leaderboard()
         leaderboard_text = ""
+        total_clicks = sum(self.leaderboard.values())
         for n in range(1, 11):
             stats = ""
             if len(sorted_leaderboard) >= n:
                 user = sorted_leaderboard[n - 1]
-                stats = f"<@{user[0]}> - {user[1]} click{'s' if user[1] > 1 else ''}"
+                stats = f"<@{user[0]}> - {user[1]} click{'s' if user[1] > 1 else ''} ({(user[1] / total_clicks * 100):.2f}%)"
             leaderboard_text += str(n) + ". " + stats + "\n"
         leaderboard_text += "\n"
         t = round(time.time())
@@ -68,7 +69,7 @@ class ClickTheButton(commands.Cog):
         embed.description += leaderboard_text
         players = len(self.leaderboard)
         embed.set_footer(
-            text=f"{players} player{'' if players == 1 else 's'} - {sum(self.leaderboard.values())} total clicks - by cyrus yip"
+            text=f"{players} player{'' if players == 1 else 's'} - {total_clicks} total clicks - by cyrus yip"
         )
         return embed
 
