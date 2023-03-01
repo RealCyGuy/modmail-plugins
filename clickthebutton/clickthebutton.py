@@ -190,11 +190,12 @@ class PersistentView(discord.ui.View):
             view=self,
         )
         asyncio.create_task(self.do_stuff(interaction, user_id, points, cooldown))
-        await asyncio.sleep(cooldown)
+        await asyncio.sleep(max(cooldown - 1, 0))
         button.style = discord.ButtonStyle.green
         button.disabled = False
         self.cog.clickers = []
-        await interaction.channel.send("Button cooldown over!", delete_after=0)
+        asyncio.create_task(interaction.channel.send("Button cooldown over!", delete_after=0))
+        await asyncio.sleep(1)
         await interaction.message.edit(
             embed=await self.cog.create_leaderboard_embed(),
             view=self,
