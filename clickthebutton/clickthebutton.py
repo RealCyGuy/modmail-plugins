@@ -176,10 +176,10 @@ class PersistentView(discord.ui.View):
             cum_weights=[1, 2, 6, 8, 9],
         )[0]
         cooldown = random.randint(*cooldown)
-        await asyncio.sleep(1)
+        await asyncio.sleep(2)
         fought = ""
         if len(self.cog.clickers) >= 2:
-            await asyncio.sleep(2)
+            await asyncio.sleep(3)
             fought = f" fought off {len(self.cog.clickers) - 1} and"
         await interaction.message.edit(
             content=event(
