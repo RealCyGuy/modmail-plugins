@@ -80,12 +80,19 @@ FOUGHT_OFF = [
     "deterred",
     "hindered",
     "hindered the advance of",
-    "prevented",
-    "checked",
     "quelled",
     "crushed",
     "subdued",
     "annihilated",
+    "destroyed",
+    "eliminated",
+    "hugged",
+    "licked",
+    "slapped",
+    "punched",
+    "poked",
+    "stabbed",
+    "bit",
 ]
 
 
