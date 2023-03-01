@@ -139,9 +139,10 @@ class PersistentView(discord.ui.View):
             if player[0] == user_id:
                 break
         fought = ""
-        self.cog.clickers.remove(interaction.user.id)
-        if self.cog.clickers:
-            mentions = ", ".join(f"<@{user_id}>" for user_id in self.cog.clickers)
+        clickers = self.cog.clickers.copy()
+        clickers.remove(interaction.user.id)
+        if clickers:
+            mentions = ", ".join(f"<@{user_id}>" for user_id in clickers)
             fought = f" fought off {mentions} and"
         self.cog.interaction_message = await interaction.channel.send(
             content=f"{random_emoji()} <@{user_id}>{fought} got a click!\n"
