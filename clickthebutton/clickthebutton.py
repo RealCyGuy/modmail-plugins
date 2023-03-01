@@ -8,6 +8,7 @@ from discord.ext import commands
 
 from core import checks
 from core.models import PermissionLevel
+from .responses import random_cooldown_over, random_emoji
 
 
 def event(text, content="") -> str:
@@ -143,7 +144,7 @@ class PersistentView(discord.ui.View):
             mentions = ", ".join(f"<@{user_id}>" for user_id in self.cog.clickers)
             fought = f" fought off {mentions} and"
         self.cog.interaction_message = await interaction.channel.send(
-            content=f"<@{user_id}>{fought} got a click!\n"
+            content=f"{random_emoji()} <@{user_id}>{fought} got a click!\n"
             f"You are now at {points} clicks and ranked #{rank} out of {len(self.cog.leaderboard)} players.",
             delete_after=max(5, cooldown - 5),
         )
@@ -194,7 +195,12 @@ class PersistentView(discord.ui.View):
         button.style = discord.ButtonStyle.green
         button.disabled = False
         self.cog.clickers = []
-        asyncio.create_task(interaction.channel.send("Button cooldown over!", delete_after=0))
+        asyncio.create_task(
+            interaction.channel.send(
+                random.choice(random_cooldown_over()),
+                delete_after=0,
+            )
+        )
         await asyncio.sleep(1)
         await interaction.message.edit(
             embed=await self.cog.create_leaderboard_embed(),
