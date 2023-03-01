@@ -31,6 +31,9 @@ COOLDOWN_OVER = [
     "The button has been freed from its cooldown prison!",
     "It's time to resume the clicking madness, the cooldown is over!",
     "The button is back in action, waiting for your next move!",
+    "Click the button now.",
+    "You may now click the button.",
+    "The button fluttered its eyelashes at you - how you longed to click it!",
 ]
 
 
@@ -59,7 +62,6 @@ FOUGHT_OFF = [
     "battled against",
     "overcame",
     "beat back",
-    "staved off",
     "held off",
     "thwarted",
     "warded off",
@@ -73,6 +75,17 @@ FOUGHT_OFF = [
     "challenged",
     "contended with",
     "killed",  # requested by lyiam
+    "foiled",
+    "repulsed",
+    "deterred",
+    "hindered",
+    "hindered the advance of",
+    "prevented",
+    "checked",
+    "quelled",
+    "crushed",
+    "subdued",
+    "annihilated",
 ]
 
 
