@@ -56,7 +56,7 @@ class ClickTheButton(commands.Cog):
         t = round(time.time())
         if cooldown:
             timestamp = t + cooldown + 1
-            leaderboard_text += f"The button will be re-enabled <t:{timestamp}:R>!"
+            leaderboard_text += f"The button will be re-enabled <t:{timestamp}:R> (<t:{timestamp}:T>)!"
         else:
             leaderboard_text += (
                 f"You can click the button! (You could've since <t:{t}:F>.)"
