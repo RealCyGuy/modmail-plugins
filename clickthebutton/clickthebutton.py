@@ -177,7 +177,10 @@ class PersistentView(discord.ui.View):
             delete_after=max(5, cooldown - 5),
         )
         try:
-            await self.cog.interaction_message.add_reaction(reaction)
+            try:
+                await self.cog.interaction_message.add_reaction(reaction)
+            except discord.HTTPException:
+                await self.cog.interaction_message.add_reaction("\N{otter}")
         except:
             pass
 
