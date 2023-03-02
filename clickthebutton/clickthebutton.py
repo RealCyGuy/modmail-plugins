@@ -174,6 +174,7 @@ class PersistentView(discord.ui.View):
         points,
         cooldown,
         fought_off: str,
+        previous_streak,
     ):
         rank = 0
         sorted_leaderboard = self.cog.get_sorted_leaderboard()
@@ -196,6 +197,13 @@ class PersistentView(discord.ui.View):
         streak = ""
         if self.cog.streak and self.cog.streak[1] > 1:
             streak = f" **Streak**: {self.cog.streak[1]}"
+        elif previous_streak:
+            previous_streak_user = self.cog.bot.get_user(previous_streak[0])
+            streak = " " + (
+                previous_streak_user.name
+                if previous_streak_user
+                else "<@" + previous_streak[0] + ">"
+            ) + f"'s streak of {previous_streak[1]} has ended."
 
         self.cog.interaction_message = await interaction.channel.send(
             content=f"{reaction} <@{user_id}>{fought} {random_got_a_click()}\n"
@@ -231,9 +239,11 @@ class PersistentView(discord.ui.View):
             {"$set": {"leaderboard": self.cog.leaderboard}},
             upsert=True,
         )
+        previous_streak = None
         if self.cog.streak and self.cog.streak[0] == interaction.user.id:
             self.cog.streak[1] += 1
         else:
+            previous_streak = self.cog.streak.copy()
             self.cog.streak = [interaction.user.id, 1]
         button.style = discord.ButtonStyle.grey
         button.disabled = True
@@ -259,7 +269,9 @@ class PersistentView(discord.ui.View):
             )
         )
         asyncio.create_task(
-            self.do_stuff(interaction, user_id, points, cooldown, fought_off)
+            self.do_stuff(
+                interaction, user_id, points, cooldown, fought_off, previous_streak
+            )
         )
         if cooldown > 5:
             await asyncio.sleep(cooldown - 4)
