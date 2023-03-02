@@ -90,8 +90,26 @@ FOUGHT_OFF = [
     "poked",
     "stabbed",
     "bit",
+    "deflected",
+    "blocked",
+    "attacked",
+    "flattened",
+    "one-upped",
+    "triumphed over",
+    "ended",
+    "absolutely humiliated",
+    "licked",
 ]
 
 
 def random_fought_off() -> str:
-    return random.choice(FOUGHT_OFF)
+    verb = random.choice(FOUGHT_OFF)
+    if random.random() < 0.1:
+        verb = verb.upper()
+    if random.random() < 0.1:
+        verb = "**" + verb + "**"
+    if random.random() < 0.1:
+        verb = "__" + verb + "__"
+    if random.random() < 0.1:
+        verb = "*" + verb + "*"
+    return verb
