@@ -62,6 +62,7 @@ FOUGHT_OFF = [
     "thwarted",
     "warded off",
     "combated",
+    "combatted",
     "clashed with",
     "confronted",
     "countered",
