@@ -145,6 +145,12 @@ class PersistentView(discord.ui.View):
         super().__init__(timeout=None)
         self.button.custom_id = cog.custom_id
         self.cog = cog
+        self.add_item(
+            discord.ui.Button(
+                emoji="\N{books}",
+                url="https://github.com/RealCyGuy/modmail-plugins/blob/v4/clickthebutton/clickthebutton.py",
+            )
+        )
 
     async def do_stuff(
         self,
@@ -218,14 +224,16 @@ class PersistentView(discord.ui.View):
         if len(self.cog.clickers) >= 2:
             await asyncio.sleep(3)
             fought = f" {fought_off} {len(self.cog.clickers) - 1} and"
-        asyncio.create_task(interaction.message.edit(
-            content=event(
-                f"{interaction.user.name}#{interaction.user.discriminator}{fought} is now at {points} clicks.",
-                interaction.message.content,
-            ),
-            embed=await self.cog.create_leaderboard_embed(cooldown=cooldown),
-            view=self,
-        ))
+        asyncio.create_task(
+            interaction.message.edit(
+                content=event(
+                    f"{interaction.user.name}#{interaction.user.discriminator}{fought} is now at {points} clicks.",
+                    interaction.message.content,
+                ),
+                embed=await self.cog.create_leaderboard_embed(cooldown=cooldown),
+                view=self,
+            )
+        )
         asyncio.create_task(
             self.do_stuff(interaction, user_id, points, cooldown, fought_off)
         )
