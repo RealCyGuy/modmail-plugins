@@ -1,4 +1,5 @@
 import asyncio
+import math
 import random
 import sys
 import time
@@ -57,9 +58,9 @@ class ClickTheButton(commands.Cog):
                 stats = f"<@{user[0]}> - {user[1]} click{'s' if user[1] > 1 else ''} ({(user[1] / total_clicks * 100):.2f}%)"
             leaderboard_text += str(n) + ". " + stats + "\n"
         leaderboard_text += "\n"
-        t = round(time.time())
+        t = math.ceil(time.time())
         if cooldown:
-            timestamp = t + cooldown + 1
+            timestamp = t + cooldown
             leaderboard_text += (
                 f"The button will be re-enabled <t:{timestamp}:R> (<t:{timestamp}:T>)!"
             )
