@@ -12,7 +12,12 @@ from discord.ext import commands
 
 from core import checks
 from core.models import PermissionLevel
-from .responses import random_cooldown_over, random_emoji, random_fought_off
+from .responses import (
+    random_cooldown_over,
+    random_emoji,
+    random_fought_off,
+    random_got_a_click,
+)
 
 
 def event(text, content="") -> str:
@@ -193,7 +198,7 @@ class PersistentView(discord.ui.View):
             streak = f" **Streak**: {self.cog.streak[1]}"
 
         self.cog.interaction_message = await interaction.channel.send(
-            content=f"{reaction} <@{user_id}>{fought} got a click!\n"
+            content=f"{reaction} <@{user_id}>{fought} {random_got_a_click()}\n"
             f"You are now at {points} clicks and ranked #{rank} out of {len(self.cog.leaderboard)} players.{streak}",
             delete_after=max(5, cooldown - 5),
         )

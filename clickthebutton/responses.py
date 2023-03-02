@@ -113,3 +113,29 @@ def random_fought_off() -> str:
     if random.random() < 0.1:
         verb = "*" + verb + "*"
     return verb
+
+
+ENDING_PUNCTUATION = [
+    ".",
+    "!",
+    "!!",
+    "!1!",
+    "!?",
+]
+
+
+def random_ending_punctuation() -> str:
+    return random.choices(ENDING_PUNCTUATION, cum_weights=(4, 5, 6, 7, 8))[0]
+
+
+GOT_A_CLICK = [
+    "got a click",
+    "pressed the button",
+    "secured a click",
+    "smashed the button",
+    "clicked successfully"
+]
+
+
+def random_got_a_click() -> str:
+    return random.choice(GOT_A_CLICK) + random_ending_punctuation()
