@@ -1,5 +1,6 @@
 import asyncio
 import random
+import sys
 import time
 import uuid
 from collections import OrderedDict
@@ -102,6 +103,16 @@ class ClickTheButton(commands.Cog):
             await self.interaction_message.delete()
         except:
             pass
+        try:
+            del sys.modules[__name__[:-14] + "responses"]
+        except:
+            pass
+        for task in asyncio.all_tasks():
+            if self.view.id in task.get_name():
+                try:
+                    task.cancel()
+                except:
+                    pass
 
     @checks.has_permissions(PermissionLevel.ADMIN)
     @commands.command()
