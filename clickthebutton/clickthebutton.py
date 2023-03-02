@@ -37,6 +37,7 @@ class ClickTheButton(commands.Cog):
         self.custom_id = ""
         self.clickers = OrderedDict()
         self.interaction_message = None
+        self.streak = []
 
     def get_sorted_leaderboard(self):
         return sorted(self.leaderboard.items(), key=lambda x: x[1], reverse=True)
@@ -96,6 +97,9 @@ class ClickTheButton(commands.Cog):
                         )
                     except:
                         pass
+            streak_data = await self.db.find_one({"_id": "streak"})
+            if streak_data:
+                self.streak = [streak_data["id"], streak_data["streak"]]
 
     async def cog_unload(self):
         if self.view:
@@ -114,6 +118,12 @@ class ClickTheButton(commands.Cog):
                     task.cancel()
                 except:
                     pass
+        if self.streak:
+            await self.db.update_one(
+                {"_id": "streak"},
+                {"$set": {"id": self.streak[0], "streak": self.streak[1]}},
+                upsert=True,
+            )
 
     @checks.has_permissions(PermissionLevel.ADMIN)
     @commands.command()
@@ -177,9 +187,14 @@ class PersistentView(discord.ui.View):
             )
             fought = f" {fought_off} {mentions} and"
         reaction = random_emoji()
+
+        streak = ""
+        if self.cog.streak and self.cog.streak[1] > 1:
+            streak = f" **Streak**: {self.cog.streak[1]}"
+
         self.cog.interaction_message = await interaction.channel.send(
             content=f"{reaction} <@{user_id}>{fought} got a click!\n"
-            f"You are now at {points} clicks and ranked #{rank} out of {len(self.cog.leaderboard)} players.",
+            f"You are now at {points} clicks and ranked #{rank} out of {len(self.cog.leaderboard)} players.{streak}",
             delete_after=max(5, cooldown - 5),
         )
         try:
@@ -211,6 +226,10 @@ class PersistentView(discord.ui.View):
             {"$set": {"leaderboard": self.cog.leaderboard}},
             upsert=True,
         )
+        if self.cog.streak and self.cog.streak[0] == interaction.user.id:
+            self.cog.streak[1] += 1
+        else:
+            self.cog.streak = [interaction.user.id, 1]
         button.style = discord.ButtonStyle.grey
         button.disabled = True
         cooldown = random.choices(
