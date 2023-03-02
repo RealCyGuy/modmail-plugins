@@ -1,5 +1,7 @@
 import random
 
+import emoji
+
 COOLDOWN_OVER = [
     "Button cooldown over!",
     "You can click the button now!",
@@ -41,17 +43,11 @@ def random_cooldown_over() -> str:
     return random.choice(COOLDOWN_OVER)
 
 
-EMOJI_RANGES = [
-    (0x1F600, 0x1F64F),  # Smiley & People
-    (0x1F910, 0x1F93E),  # Emotion
-    (0x1F950, 0x1F96C),  # Food & Drink
-    (0x1F980, 0x1F9E0),  # Objects & Symbols
-]
+EMOJIS = list(emoji.EMOJI_DATA.keys())
 
 
 def random_emoji() -> str:
-    emoji_range = random.choice(EMOJI_RANGES)
-    return chr(random.randint(emoji_range[0], emoji_range[1]))
+    return random.choice(EMOJIS)
 
 
 FOUGHT_OFF = [
