@@ -197,7 +197,7 @@ class PersistentView(discord.ui.View):
         streak = ""
         if self.cog.streak and self.cog.streak[1] > 1:
             streak = f" **Streak**: {self.cog.streak[1]}"
-        elif previous_streak:
+        elif previous_streak and previous_streak[1] > 1:
             previous_streak_user = self.cog.bot.get_user(previous_streak[0])
             streak = (
                 " "
