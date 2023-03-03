@@ -1,4 +1,5 @@
 import random
+from datetime import timedelta
 
 import emoji
 
@@ -139,3 +140,11 @@ GOT_A_CLICK = [
 
 def random_got_a_click() -> str:
     return random.choice(GOT_A_CLICK) + random_ending_punctuation()
+
+
+def format_deltatime(delta: timedelta) -> str:
+    seconds = delta.total_seconds()
+    if seconds < 10:
+        return f"{int(delta / timedelta(milliseconds=1))}ms"
+    else:
+        return f"{delta / timedelta(seconds=1):.3f}s"

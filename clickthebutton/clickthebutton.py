@@ -17,6 +17,7 @@ from .responses import (
     random_emoji,
     random_fought_off,
     random_got_a_click,
+    format_deltatime,
 )
 
 
@@ -186,9 +187,8 @@ class PersistentView(discord.ui.View):
         clickers = list(self.cog.clickers.keys())
         clickers.remove(interaction.user.id)
         if clickers:
-            winner_time = self.cog.clickers[interaction.user.id]
             mentions = ", ".join(
-                f"<@{user_id}> ({int((self.cog.clickers[user_id] - winner_time) / timedelta(milliseconds=1))}ms)"
+                f"<@{user_id}> ({format_deltatime(self.cog.clickers[user_id] - interaction.message.edited_at)})"
                 for user_id in clickers
             )
             fought = f" {fought_off} {mentions} and"
@@ -199,14 +199,18 @@ class PersistentView(discord.ui.View):
             streak = f" **Streak**: {self.cog.streak[1]}"
         elif previous_streak:
             previous_streak_user = self.cog.bot.get_user(previous_streak[0])
-            streak = " " + (
-                previous_streak_user.name
-                if previous_streak_user
-                else "<@" + previous_streak[0] + ">"
-            ) + f"'s streak of {previous_streak[1]} has ended."
+            streak = (
+                " "
+                + (
+                    previous_streak_user.name
+                    if previous_streak_user
+                    else "<@" + previous_streak[0] + ">"
+                )
+                + f"'s streak of {previous_streak[1]} has ended."
+            )
 
         self.cog.interaction_message = await interaction.channel.send(
-            content=f"{reaction} <@{user_id}>{fought} {random_got_a_click()}\n"
+            content=f"{reaction} <@{user_id}> ({format_deltatime(self.cog.clickers[interaction.user.id] - interaction.message.edited_at)}){fought} {random_got_a_click()}\n"
             f"You are now at {points} clicks and ranked #{rank} out of {len(self.cog.leaderboard)} players.{streak}",
             delete_after=max(5, cooldown - 5),
         )
