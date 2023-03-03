@@ -41,11 +41,18 @@ for folder in glob.iglob(os.path.join("../", "*", "")):
             doc = f"{lines[0]}<details><summary>More details</summary>{' '.join(lines[1:])}</details>"
         doc = " ".join(doc.split())
 
+    with open(os.path.join(folder, name + ".py"), "r", encoding="utf-8") as f:
+        line = f.readline().strip("\n")
+        if line.startswith("# registry: "):
+            install = line[12:]
+        else:
+            install = f"realcyguy/modmail-plugins/{name}@v4"
+
     output += (
         f"|"
         f"{name}<br>[`{name}.py`](https://github.com/RealCyGuy/modmail-plugins/blob/v4/{name}/{name}.py \"{name} source code\")  | "
         f"{doc} | "
-        f"`?plugins install realcyguy/modmail-plugins/{name}@v4` |\n"
+        f"`?plugins install {install}` |\n"
     )
 print(output)
 

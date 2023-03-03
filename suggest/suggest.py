@@ -1,3 +1,5 @@
+# registry: suggest
+
 import discord
 from discord.ext import commands
 from core import checks
