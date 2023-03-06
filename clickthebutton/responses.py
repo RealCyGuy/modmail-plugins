@@ -1,6 +1,7 @@
 import random
 from datetime import timedelta
 
+import discord
 import emoji
 
 COOLDOWN_OVER = [
@@ -154,7 +155,7 @@ GOT_A_CLICK = [
     "pressed the button",
     "secured a click",
     "smashed the button",
-    "clicked successfully"
+    "clicked successfully",
 ]
 
 
@@ -168,3 +169,36 @@ def format_deltatime(delta: timedelta) -> str:
         return f"{int(delta / timedelta(milliseconds=1))}ms"
     else:
         return f"{delta / timedelta(seconds=1):.3f}s"
+
+
+COOKIES = [
+    "{} used a click to eat a cookie.",
+    "Bored with all their clicks, {} converted one a click into a cookie!",
+    "Looks like {} has a sweet tooth! Enjoy your cookie.",
+    "A cookie a day keeps the frowns away, right {}?",
+    "{} just baked a fresh cookie!",
+    "A cookie for you, {}!",
+    "{} munched on a cookie.",
+    "{} put hours of work into baking a cookie.",
+    "Guess what, {}? You just got a cookie!",
+]
+
+EXCLAMATION = [
+    "Yum",
+    "Wow",
+    "Yummy",
+    "Delicious",
+    "Tasty",
+    "Scrumptious",
+    "Mmm",
+    "Divine",
+]
+
+
+def random_cookie(user: discord.User) -> str:
+    return (
+        random.choice(COOKIES).replace("{}", user.mention)
+        + " "
+        + random.choice(EXCLAMATION)
+        + "!"
+    )

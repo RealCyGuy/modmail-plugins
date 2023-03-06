@@ -5,10 +5,10 @@ import sys
 import time
 import uuid
 from collections import OrderedDict
-from datetime import timedelta
 
 import discord
 from discord.ext import commands
+from pymongo import ReturnDocument
 
 from core import checks
 from core.models import PermissionLevel
@@ -18,6 +18,7 @@ from .responses import (
     random_fought_off,
     random_got_a_click,
     format_deltatime,
+    random_cookie,
 )
 
 
@@ -42,8 +43,21 @@ class ClickTheButton(commands.Cog):
         self.leaderboard = {}
         self.custom_id = ""
         self.clickers = OrderedDict()
-        self.interaction_message = None
         self.streak = []
+        self.delete_messages = {}
+
+    def delete_after(self, message: discord.Message, delay: int):
+        self.delete_messages[message.id] = message
+
+        async def delete(delay: int):
+            await asyncio.sleep(delay)
+            try:
+                await message.delete()
+            except discord.HTTPException:
+                pass
+            del self.delete_messages[message.id]
+
+        asyncio.create_task(delete(delay))
 
     def get_sorted_leaderboard(self):
         return sorted(self.leaderboard.items(), key=lambda x: x[1], reverse=True)
@@ -110,10 +124,8 @@ class ClickTheButton(commands.Cog):
     async def cog_unload(self):
         if self.view:
             self.view.stop()
-        try:
-            await self.interaction_message.delete()
-        except:
-            pass
+        tasks = [message.delete() for message in self.delete_messages.values()]
+        await asyncio.gather(*tasks, return_exceptions=True)
         try:
             del sys.modules[__name__[:-14] + "responses"]
         except:
@@ -160,6 +172,7 @@ class PersistentView(discord.ui.View):
     def __init__(self, cog: ClickTheButton):
         super().__init__(timeout=None)
         self.button.custom_id = cog.custom_id
+        self.cookie.custom_id = cog.custom_id + "2"
         self.cog = cog
         self.add_item(
             discord.ui.Button(
@@ -209,16 +222,16 @@ class PersistentView(discord.ui.View):
                 + f"'s streak of {previous_streak[1]} has ended."
             )
 
-        self.cog.interaction_message = await interaction.channel.send(
+        message = await interaction.channel.send(
             content=f"{reaction} <@{user_id}> ({format_deltatime(self.cog.clickers[interaction.user.id] - interaction.message.edited_at)}){fought} {random_got_a_click()}\n"
             f"You are now at {points} clicks and ranked #{rank} out of {len(self.cog.leaderboard)} players.{streak}",
-            delete_after=max(5, cooldown - 5),
         )
+        self.cog.delete_after(message, max(5, cooldown - 5))
         try:
             try:
-                await self.cog.interaction_message.add_reaction(reaction)
+                await message.add_reaction(reaction)
             except discord.HTTPException:
-                await self.cog.interaction_message.add_reaction("\N{otter}")
+                await message.add_reaction("\N{otter}")
         except:
             pass
 
@@ -295,6 +308,35 @@ class PersistentView(discord.ui.View):
             embed=await self.cog.create_leaderboard_embed(),
             view=self,
         )
+
+    @discord.ui.button(
+        emoji="\N{COOKIE}",
+        style=discord.ButtonStyle.gray,
+    )
+    async def cookie(self, interaction: discord.Interaction, button: discord.ui.Button):
+        user_id = str(interaction.user.id)
+        if self.cog.leaderboard.get(user_id, 0) <= 1:
+            return await interaction.response.send_message(
+                "You don't have enough clicks!", ephemeral=True
+            )
+        await interaction.response.defer()
+        self.cog.leaderboard[user_id] -= 1
+        await self.cog.db.update_one(
+            {"_id": "data"},
+            {"$set": {"leaderboard": self.cog.leaderboard}},
+            upsert=True,
+        )
+        value = (await self.cog.db.find_one_and_update(
+            {"id": interaction.user.id, "user": True},
+            {"$inc": {"cookies": 1}},
+            upsert=True,
+            return_document=ReturnDocument.AFTER
+        )).get("cookies", 0)
+        message = await interaction.channel.send(
+            random_cookie(interaction.user)
+            + f"\nYou are now at {self.cog.leaderboard[user_id]} clicks and {value} cookie{'' if value == 1 else 's'}."
+        )
+        self.cog.delete_after(message, 30)
 
 
 async def setup(bot):
