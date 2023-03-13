@@ -38,6 +38,12 @@ COOLDOWN_OVER = [
     "Click the button now.",
     "You may now click the button.",
     "The button fluttered its eyelashes at you - how you longed to click it!",
+    "The button is now ready to be clicked.",
+    "Breaking news: the button is now clickable again!",
+    "Clickers of the world, rejoice! The button is now clickable again!",
+    "The cooldown has cooled down, go click!",
+    "Please click the button.",
+    "The button is staring at you, waiting for you to click it.",
 ]
 
 
@@ -142,6 +148,45 @@ FOUGHT_OFF = [
     "assassinated",
     "hired a private investigator to follow",
     "dreamed about",
+    "scammed",
+    "snapped at",
+    "presented the Academy Award for Best Picture to",
+    "danced with",
+    "didn't have to worry about",
+    "used the force to push away",
+    "called the police on",
+    "cooked a meal for",
+    "had a conversation with",
+    "slandered",
+    "learned about the true nature of",
+    "choreographed a dance routine for",
+    "played in a street band with",
+    "smacked",
+    "gambled bo3 ct40 d100 with",
+    "made sure to think about the environment when dealing with",
+    "followed the proper safety procedures while disposing of",
+    "calculated the exact amount of time it would take to fall from the top of the Empire State Building while fighting",
+    "made a slightly inappropriate joke about",
+    "cornered",
+    "snapped a photograph of",
+    "decided to play checkers with",
+    "sipped tea with",
+    "attempted a backflip while fighting",
+    "flicked",
+    "pretended to steal the nose of",
+    "violated the Geneva Convention by torturing",
+    "froze the bank account of",
+    "used the oldest trick in the book to defeat",
+    "learned that the real clicks were the friends we made along the way with",
+    "twirled their mustache while plotting against",
+    "embezzled funds in order to pay for their lavish lifestyle while fighting",
+    "went to medical school to learn how to treat the injuries they sustained while fighting",
+    "was the only one who could stop",
+    "stole the heart of",
+    "won the Estonian parliamentary election against",
+    "declined the queen's gambit against",
+    "saw the error of their ways and decided to join forces with",
+    "robbed",
 ]
 
 
@@ -193,15 +238,15 @@ def format_deltatime(delta: timedelta) -> str:
 
 
 COOKIES = [
-    "{} used a click to eat a cookie.",
+    "{} used a click to buy a cookie.",
     "Bored with all their clicks, {} converted one a click into a cookie!",
     "Looks like {} has a sweet tooth! Enjoy your cookie.",
     "A cookie a day keeps the frowns away, right {}?",
     "{} just baked a fresh cookie!",
     "A cookie for you, {}!",
-    "{} munched on a cookie.",
     "{} put hours of work into baking a cookie.",
     "Guess what, {}? You just got a cookie!",
+    "{} took a cookie from a baby."
 ]
 
 EXCLAMATION = [
