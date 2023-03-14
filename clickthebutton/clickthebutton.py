@@ -275,7 +275,7 @@ class PersistentView(discord.ui.View):
         if len(self.cog.clickers) >= 2:
             await asyncio.sleep(3)
             fought = f" {fought_off} {len(self.cog.clickers) - 1} and"
-        asyncio.create_task(
+        edit_task = asyncio.create_task(
             interaction.message.edit(
                 content=event(
                     f"{interaction.user.name}#{interaction.user.discriminator}{fought} is now at {points} clicks.",
@@ -301,6 +301,7 @@ class PersistentView(discord.ui.View):
             await asyncio.sleep(4)
         else:
             await asyncio.sleep(cooldown)
+        await asyncio.wait_for(edit_task, timeout=5)
         button.style = discord.ButtonStyle.green
         button.disabled = False
         self.cog.clickers = OrderedDict()
