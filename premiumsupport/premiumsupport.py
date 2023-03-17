@@ -4,6 +4,7 @@ import datetime
 import discord
 from discord.ext import commands
 
+from bot import ModmailBot
 from core import checks
 from core.models import PermissionLevel
 
@@ -11,7 +12,7 @@ from core.models import PermissionLevel
 class PremiumSupport(commands.Cog):
     """Special support for Premium members."""
 
-    def __init__(self, bot):
+    def __init__(self, bot: ModmailBot):
         self.bot = bot
         self.db = bot.plugin_db.get_partition(self)
 
@@ -56,18 +57,21 @@ class PremiumSupport(commands.Cog):
         for role in recipient.roles:
             if role.id in self.roles:
                 premium = True
-        if premium:
 
-            class Author:
-                roles = []
+        if not premium:
+            return
 
-            class Msg:
-                content = self.message
-                author = Author
-                created_at = datetime.datetime.now()
-                id = initial_message.id
-                attachments = []
-                stickers = []
+        class Author:
+            roles = []
+            id = recipient_id
+
+        class Msg:
+            content = self.message
+            author = Author
+            created_at = datetime.datetime.now()
+            id = initial_message.id
+            attachments = []
+            stickers = []
 
         if Msg.content:
             await thread.send(Msg, destination=recipient, from_mod=True, anonymous=True)
@@ -96,7 +100,7 @@ class PremiumSupport(commands.Cog):
         """
         embed = discord.Embed(colour=self.bot.main_color)
         embed.set_author(
-            name="Premium Support Configurations:", icon_url=self.bot.user.avatar_url
+            name="Premium Support Configurations:", icon_url=self.bot.user.avatar.url
         )
         embed.add_field(name="Premium Roles", value=f"`{self.roles}`", inline=False)
         embed.add_field(
