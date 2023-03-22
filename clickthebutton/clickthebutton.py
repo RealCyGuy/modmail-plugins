@@ -265,8 +265,8 @@ class PersistentView(discord.ui.View):
         button.style = discord.ButtonStyle.grey
         button.disabled = True
         cooldown = random.choices(
-            [(0, 5), (6, 39), (40, 179), (180, 599), (600, 720)],
-            cum_weights=[1, 2, 6, 8, 9],
+            [(0, 5), (6, 39), (40, 179), (180, 599), (600, 720), (0, 1800)],
+            cum_weights=[2, 4, 12, 16, 18, 19],
         )[0]
         cooldown = random.randint(*cooldown)
         await asyncio.sleep(2)
