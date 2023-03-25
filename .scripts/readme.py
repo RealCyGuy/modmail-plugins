@@ -8,9 +8,8 @@ from unittest.mock import MagicMock
 
 sys.path.append("../")
 
-output = """| Name | Description | Install Command |
-| --- | --- | --- |
-"""
+outputstart = []
+outputend = ""
 
 for folder in glob.iglob(os.path.join("../", "*", "")):
     name = pathlib.Path(folder).name
@@ -37,9 +36,11 @@ for folder in glob.iglob(os.path.join("../", "*", "")):
     if doc:
         doc = doc.strip()
         lines = doc.splitlines()
-        if len(lines) > 1:
-            doc = f"{lines[0]}<details><summary>More details</summary>{' '.join(lines[1:])}</details>"
-        doc = " ".join(doc.split())
+        lines = [line.strip() for line in lines]
+        # if len(lines) > 1:
+        #     doc = f"{lines[0]}<details><summary>More details</summary>{' '.join(lines[1:])}</details>"
+        # doc = " ".join(doc.split())
+        doc = "\n".join(lines)
 
     with open(os.path.join(folder, name + ".py"), "r", encoding="utf-8") as f:
         line = f.readline().strip("\n")
@@ -47,13 +48,14 @@ for folder in glob.iglob(os.path.join("../", "*", "")):
             install = line[12:]
         else:
             install = f"realcyguy/modmail-plugins/{name}@v4"
-
-    output += (
-        f"|"
-        f"{name}<br>[`{name}.py`](https://github.com/RealCyGuy/modmail-plugins/blob/v4/{name}/{name}.py \"{name} source code\")  | "
-        f"{doc} | "
-        f"`?plugins install {install}` |\n"
+    outputstart.append(f"[{name}](#{name})")
+    outputend += (
+        f"### {name}\n"
+        f"```\n{doc}\n```\n"
+        f'Source code: [`{name}.py`](https://github.com/RealCyGuy/modmail-plugins/blob/v4/{name}/{name}.py "{name} source code")  \n'
+        f"Install: `?plugins install {install}`\n"
     )
+output = " · ".join(outputstart) + "\n" + outputend
 print(output)
 
 try:
