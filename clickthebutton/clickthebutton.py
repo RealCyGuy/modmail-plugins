@@ -76,7 +76,8 @@ class ClickTheButton(commands.Cog):
             stats = ""
             if len(sorted_leaderboard) >= n:
                 user = sorted_leaderboard[n - 1]
-                stats = f"<@{user[0]}> - {user[1]} click{'s' if user[1] > 1 else ''} ({(user[1] / total_clicks * 100):.2f}%)"
+                cookies = (await self.db.find_one({"id": int(user[0]), "user": True}) or {}).get("cookies", 0)
+                stats = f"<@{user[0]}> - {user[1]} click{'s' if user[1] > 1 else ''} ({(user[1] / total_clicks * 100):.2f}%) - {cookies} 🍪"
             leaderboard_text += str(n) + ". " + stats + "\n"
         leaderboard_text += "\n"
         t = math.floor(time.time())
