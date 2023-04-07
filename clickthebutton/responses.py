@@ -44,6 +44,9 @@ COOLDOWN_OVER = [
     "The cooldown has cooled down, go click!",
     "Please click the button.",
     "The button is staring at you, waiting for you to click it.",
+    '"Someone click me!" - the button',
+    "HUZZAH! The button is now clickable again!",
+    "Yippie! We can click the button again!",
 ]
 
 
@@ -220,6 +223,31 @@ FOUGHT_OFF = [
     "interfered with",
     "squashed",
     "disrupted",
+    "erased",
+    "eradicated",
+    "cleansed the world of",
+    "destroyed the entire family tree of",
+    "practiced tattooing foxes on the back of",
+    "learned how to make a proper cup of tea from",
+    "was a little bit disappointed with",
+    "congradulated",
+    "shed a tear for",
+    "teared apart",
+    "shredded",
+    "ripped",
+    "implanted a microchip in the brain of",
+    "incepted a false memory in the mind of",
+    "conducted a psychological experiment on",
+    "led a highly successful raid on",
+    "paralyzed",
+    "survived a brawl with",
+    "subscribed to",
+    "stalked",
+    "sent a friend request to",
+    "unfortunately left the oven on while cooking a meal for",
+    "beheaded",
+    "outlived",
+    "carefully seasoned",
 ]
 
 
@@ -255,6 +283,7 @@ GOT_A_CLICK = [
     "secured a click",
     "smashed the button",
     "clicked successfully",
+    "clicked the button",
 ]
 
 
@@ -279,7 +308,7 @@ COOKIES = [
     "A cookie for you, {}!",
     "{} put hours of work into baking a cookie.",
     "Guess what, {}? You just got a cookie!",
-    "{} took a cookie from a baby."
+    "{} took a cookie from a baby.",
 ]
 
 EXCLAMATION = [
