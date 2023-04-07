@@ -37,7 +37,12 @@ class ClickTheButton(commands.Cog):
 
     def __init__(self, bot):
         self.bot = bot
-        self.db = bot.api.db.plugins["ClickTheButton2"]
+        self.db: motor.motor_asyncio.AsyncIOMotorCollection = bot.api.db.plugins[
+            "ClickTheButton2"
+        ]
+        self.dbGraph: motor.motor_asyncio.AsyncIOMotorCollection = bot.api.db.plugins[
+            "ClickTheButton2Graph"
+        ]
         self.view = None
         self.message = None
         self.leaderboard = {}
@@ -76,7 +81,9 @@ class ClickTheButton(commands.Cog):
             stats = ""
             if len(sorted_leaderboard) >= n:
                 user = sorted_leaderboard[n - 1]
-                cookies = (await self.db.find_one({"id": int(user[0]), "user": True}) or {}).get("cookies", 0)
+                cookies = (
+                    await self.db.find_one({"id": int(user[0]), "user": True}) or {}
+                ).get("cookies", 0)
                 stats = f"<@{user[0]}> - {user[1]} click{'s' if user[1] > 1 else ''} ({(user[1] / total_clicks * 100):.2f}%) - {cookies} 🍪"
             leaderboard_text += str(n) + ". " + stats + "\n"
         leaderboard_text += "\n"
@@ -257,6 +264,19 @@ class PersistentView(discord.ui.View):
             {"$set": {"leaderboard": self.cog.leaderboard}},
             upsert=True,
         )
+        await self.cog.dbGraph.insert_one(
+            {
+                "timestamp": discord.utils.utcnow(),
+                "id": user_id,
+                "clicks": points
+                + (
+                    await self.cog.db.find_one(
+                        {"id": interaction.user.id, "user": True}
+                    )
+                    or {}
+                ).get("cookies", 0),
+            }
+        )
         previous_streak = None
         if self.cog.streak and self.cog.streak[0] == interaction.user.id:
             self.cog.streak[1] += 1
@@ -328,12 +348,14 @@ class PersistentView(discord.ui.View):
             {"$set": {"leaderboard": self.cog.leaderboard}},
             upsert=True,
         )
-        value = (await self.cog.db.find_one_and_update(
-            {"id": interaction.user.id, "user": True},
-            {"$inc": {"cookies": 1}},
-            upsert=True,
-            return_document=ReturnDocument.AFTER
-        )).get("cookies", 0)
+        value = (
+            await self.cog.db.find_one_and_update(
+                {"id": interaction.user.id, "user": True},
+                {"$inc": {"cookies": 1}},
+                upsert=True,
+                return_document=ReturnDocument.AFTER,
+            )
+        ).get("cookies", 0)
         message = await interaction.channel.send(
             random_cookie(interaction.user)
             + f"\nYou are now at {self.cog.leaderboard[user_id]} clicks and {value} cookie{'' if value == 1 else 's'}."
