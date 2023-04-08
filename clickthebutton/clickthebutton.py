@@ -1,5 +1,6 @@
 import asyncio
 import math
+import os
 import random
 import sys
 import time
@@ -7,27 +8,14 @@ import uuid
 from collections import OrderedDict
 
 import discord
+import motor.motor_asyncio
 from discord.ext import commands
-from pymongo import ReturnDocument
+from matplotlib import font_manager
 
 from core import checks
 from core.models import PermissionLevel
-from .responses import (
-    random_cooldown_over,
-    random_emoji,
-    random_fought_off,
-    random_got_a_click,
-    format_deltatime,
-    random_cookie,
-)
-
-
-def event(text, content="") -> str:
-    content = content.split("\n")
-    content.append(f"<t:{int(time.time())}:f>: {text}")
-    while len("\n".join(content)) > 2000:
-        content.pop(0)
-    return "\n".join(content)
+from .views import PersistentView
+from .utils import event
 
 
 class ClickTheButton(commands.Cog):
@@ -105,6 +93,10 @@ class ClickTheButton(commands.Cog):
         return embed
 
     async def cog_load(self):
+        for font in font_manager.findSystemFonts(
+            os.path.join(os.path.dirname(os.path.realpath(__file__)), "fonts")
+        ):
+            font_manager.fontManager.addfont(font)
         if self.view is None:
             config = await self.db.find_one({"_id": "config"})
             data = await self.db.find_one({"_id": "data"}) or {}
@@ -134,10 +126,14 @@ class ClickTheButton(commands.Cog):
             self.view.stop()
         tasks = [message.delete() for message in self.delete_messages.values()]
         await asyncio.gather(*tasks, return_exceptions=True)
-        try:
-            del sys.modules[__name__[:-14] + "responses"]
-        except:
-            pass
+        for module in list(sys.modules.keys()):
+            if module.startswith(
+                ".".join(__name__.split(".")[:-1])
+            ) and not module.endswith("clickthebutton"):
+                try:
+                    del sys.modules[module]
+                except:
+                    pass
         for task in asyncio.all_tasks():
             if self.view.id in task.get_name():
                 try:
@@ -174,193 +170,6 @@ class ClickTheButton(commands.Cog):
             },
             upsert=True,
         )
-
-
-class PersistentView(discord.ui.View):
-    def __init__(self, cog: ClickTheButton):
-        super().__init__(timeout=None)
-        self.button.custom_id = cog.custom_id
-        self.cookie.custom_id = cog.custom_id + "2"
-        self.cog = cog
-        self.add_item(
-            discord.ui.Button(
-                emoji="\N{books}",
-                url="https://github.com/RealCyGuy/modmail-plugins/blob/v4/clickthebutton/clickthebutton.py",
-            )
-        )
-
-    async def do_stuff(
-        self,
-        interaction: discord.Interaction,
-        user_id,
-        points,
-        cooldown,
-        fought_off: str,
-        previous_streak,
-    ):
-        rank = 0
-        sorted_leaderboard = self.cog.get_sorted_leaderboard()
-        for player in sorted_leaderboard:
-            rank += 1
-            if player[0] == user_id:
-                break
-        fought = ""
-        clickers = list(self.cog.clickers.keys())
-        clickers.remove(interaction.user.id)
-        if clickers:
-            mentions = ", ".join(
-                f"<@{user_id}> ({format_deltatime(self.cog.clickers[user_id] - interaction.message.edited_at)})"
-                for user_id in clickers
-            )
-            fought = f" {fought_off} {mentions} and"
-        reaction = random_emoji()
-
-        streak = ""
-        if self.cog.streak and self.cog.streak[1] > 1:
-            streak = f" **Streak**: {self.cog.streak[1]}"
-        elif previous_streak and previous_streak[1] > 1:
-            previous_streak_user = self.cog.bot.get_user(previous_streak[0])
-            streak = (
-                " "
-                + (
-                    previous_streak_user.name
-                    if previous_streak_user
-                    else "<@" + previous_streak[0] + ">"
-                )
-                + f"'s streak of {previous_streak[1]} has ended."
-            )
-
-        message = await interaction.channel.send(
-            content=f"{reaction} <@{user_id}> ({format_deltatime(self.cog.clickers[interaction.user.id] - interaction.message.edited_at)}){fought} {random_got_a_click()}\n"
-            f"You are now at {points} clicks and ranked #{rank} out of {len(self.cog.leaderboard)} players.{streak}",
-        )
-        self.cog.delete_after(message, max(5, cooldown - 5))
-        try:
-            try:
-                await message.add_reaction(reaction)
-            except discord.HTTPException:
-                await message.add_reaction("\N{otter}")
-        except:
-            pass
-
-    @discord.ui.button(
-        label="Click to get a point!",
-        style=discord.ButtonStyle.green,
-    )
-    async def button(self, interaction: discord.Interaction, button: discord.ui.Button):
-        user_id = str(interaction.user.id)
-        if interaction.user.id in self.cog.clickers:
-            return await interaction.response.defer()
-        if self.cog.clickers:
-            self.cog.clickers[interaction.user.id] = interaction.created_at
-            return await interaction.response.defer()
-        self.cog.clickers[interaction.user.id] = interaction.created_at
-        await interaction.response.defer()
-
-        points = self.cog.leaderboard.get(user_id, 0) + 1
-        self.cog.leaderboard[user_id] = points
-        await self.cog.db.update_one(
-            {"_id": "data"},
-            {"$set": {"leaderboard": self.cog.leaderboard}},
-            upsert=True,
-        )
-        await self.cog.dbGraph.insert_one(
-            {
-                "timestamp": discord.utils.utcnow(),
-                "id": user_id,
-                "clicks": points
-                + (
-                    await self.cog.db.find_one(
-                        {"id": interaction.user.id, "user": True}
-                    )
-                    or {}
-                ).get("cookies", 0),
-            }
-        )
-        previous_streak = None
-        if self.cog.streak and self.cog.streak[0] == interaction.user.id:
-            self.cog.streak[1] += 1
-        else:
-            previous_streak = self.cog.streak.copy()
-            self.cog.streak = [interaction.user.id, 1]
-        button.style = discord.ButtonStyle.grey
-        button.disabled = True
-        cooldown = random.choices(
-            [(0, 5), (6, 39), (40, 179), (180, 599), (600, 720), (0, 1800)],
-            cum_weights=[2, 4, 12, 16, 18, 19],
-        )[0]
-        cooldown = random.randint(*cooldown)
-        await asyncio.sleep(2)
-        fought = ""
-        fought_off = random_fought_off()
-        if len(self.cog.clickers) >= 2:
-            await asyncio.sleep(3)
-            fought = f" {fought_off} {len(self.cog.clickers) - 1} and"
-        edit_task = asyncio.create_task(
-            interaction.message.edit(
-                content=event(
-                    f"{interaction.user.name}#{interaction.user.discriminator}{fought} is now at {points} clicks.",
-                    interaction.message.content,
-                ),
-                embed=await self.cog.create_leaderboard_embed(cooldown=cooldown),
-                view=self,
-            )
-        )
-        asyncio.create_task(
-            self.do_stuff(
-                interaction, user_id, points, cooldown, fought_off, previous_streak
-            )
-        )
-        if cooldown > 5:
-            await asyncio.sleep(cooldown - 4)
-            asyncio.create_task(
-                interaction.channel.send(
-                    random_cooldown_over(),
-                    delete_after=0,
-                )
-            )
-            await asyncio.sleep(4)
-        else:
-            await asyncio.sleep(cooldown)
-        await asyncio.wait_for(edit_task, timeout=5)
-        button.style = discord.ButtonStyle.green
-        button.disabled = False
-        self.cog.clickers = OrderedDict()
-        await interaction.message.edit(
-            embed=await self.cog.create_leaderboard_embed(),
-            view=self,
-        )
-
-    @discord.ui.button(
-        emoji="\N{COOKIE}",
-        style=discord.ButtonStyle.gray,
-    )
-    async def cookie(self, interaction: discord.Interaction, button: discord.ui.Button):
-        user_id = str(interaction.user.id)
-        if self.cog.leaderboard.get(user_id, 0) <= 1:
-            return await interaction.response.send_message(
-                "You don't have enough clicks!", ephemeral=True
-            )
-        await interaction.response.defer()
-        self.cog.leaderboard[user_id] -= 1
-        await self.cog.db.update_one(
-            {"_id": "data"},
-            {"$set": {"leaderboard": self.cog.leaderboard}},
-            upsert=True,
-        )
-        value = (
-            await self.cog.db.find_one_and_update(
-                {"id": interaction.user.id, "user": True},
-                {"$inc": {"cookies": 1}},
-                upsert=True,
-                return_document=ReturnDocument.AFTER,
-            )
-        ).get("cookies", 0)
-        message = await interaction.channel.send(
-            random_cookie(interaction.user)
-            + f"\nYou are now at {self.cog.leaderboard[user_id]} clicks and {value} cookie{'' if value == 1 else 's'}."
-        )
-        self.cog.delete_after(message, 30)
 
 
 async def setup(bot):

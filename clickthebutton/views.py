@@ -1,0 +1,391 @@
+import asyncio
+import io
+import random
+from collections import OrderedDict
+from datetime import timedelta
+from enum import Enum
+from typing import Any, Optional
+
+import discord
+from matplotlib import dates as mdates
+from matplotlib import pyplot as plt, ticker
+from pymongo import ReturnDocument
+
+from .responses import (
+    random_cooldown_over,
+    random_emoji,
+    random_fought_off,
+    random_got_a_click,
+    format_deltatime,
+    random_cookie,
+)
+from .utils import event
+
+
+class GraphTime(Enum):
+    MONTH = 0
+    WEEK = 1
+    DAY = 2
+    HOUR = 3
+
+
+class BaseView(discord.ui.View):
+    async def on_error(
+        self,
+        interaction: discord.Interaction,
+        error: Exception,
+        item: discord.ui.Item[Any],
+        /,
+    ):
+        raise error
+
+
+class PersistentView(BaseView):
+    def __init__(self, cog):
+        super().__init__(timeout=None)
+        self.button.custom_id = cog.custom_id
+        self.cookie.custom_id = cog.custom_id + "2"
+        self.graph.custom_id = cog.custom_id + "3"
+        self.cog = cog
+        self.add_item(
+            discord.ui.Button(
+                emoji="\N{books}",
+                url="https://github.com/RealCyGuy/modmail-plugins/blob/v4/clickthebutton/clickthebutton.py",
+            )
+        )
+
+    async def do_stuff(
+        self,
+        interaction: discord.Interaction,
+        user_id,
+        points,
+        cooldown,
+        fought_off: str,
+        previous_streak,
+    ):
+        rank = 0
+        sorted_leaderboard = self.cog.get_sorted_leaderboard()
+        for player in sorted_leaderboard:
+            rank += 1
+            if player[0] == user_id:
+                break
+        fought = ""
+        clickers = list(self.cog.clickers.keys())
+        clickers.remove(interaction.user.id)
+        if clickers:
+            mentions = ", ".join(
+                f"<@{user_id}> ({format_deltatime(self.cog.clickers[user_id] - interaction.message.edited_at)})"
+                for user_id in clickers
+            )
+            fought = f" {fought_off} {mentions} and"
+        reaction = random_emoji()
+
+        streak = ""
+        if self.cog.streak and self.cog.streak[1] > 1:
+            streak = f" **Streak**: {self.cog.streak[1]}"
+        elif previous_streak and previous_streak[1] > 1:
+            previous_streak_user = self.cog.bot.get_user(previous_streak[0])
+            streak = (
+                " "
+                + (
+                    previous_streak_user.name
+                    if previous_streak_user
+                    else "<@" + previous_streak[0] + ">"
+                )
+                + f"'s streak of {previous_streak[1]} has ended."
+            )
+
+        message = await interaction.channel.send(
+            content=f"{reaction} <@{user_id}> ({format_deltatime(self.cog.clickers[interaction.user.id] - interaction.message.edited_at)}){fought} {random_got_a_click()}\n"
+            f"You are now at {points} clicks and ranked #{rank} out of {len(self.cog.leaderboard)} players.{streak}",
+        )
+        self.cog.delete_after(message, max(5, cooldown - 5))
+        try:
+            try:
+                await message.add_reaction(reaction)
+            except discord.HTTPException:
+                await message.add_reaction("\N{otter}")
+        except:
+            pass
+
+    @discord.ui.button(
+        label="Click to get a point!",
+        style=discord.ButtonStyle.green,
+    )
+    async def button(self, interaction: discord.Interaction, button: discord.ui.Button):
+        user_id = str(interaction.user.id)
+        if interaction.user.id in self.cog.clickers:
+            return await interaction.response.defer()
+        if self.cog.clickers:
+            self.cog.clickers[interaction.user.id] = interaction.created_at
+            return await interaction.response.defer()
+        self.cog.clickers[interaction.user.id] = interaction.created_at
+        await interaction.response.defer()
+
+        points = self.cog.leaderboard.get(user_id, 0) + 1
+        self.cog.leaderboard[user_id] = points
+        await self.cog.db.update_one(
+            {"_id": "data"},
+            {"$set": {"leaderboard": self.cog.leaderboard}},
+            upsert=True,
+        )
+        await self.cog.dbGraph.insert_one(
+            {
+                "timestamp": discord.utils.utcnow(),
+                "id": user_id,
+                "clicks": points
+                + (
+                    await self.cog.db.find_one(
+                        {"id": interaction.user.id, "user": True}
+                    )
+                    or {}
+                ).get("cookies", 0),
+            }
+        )
+        previous_streak = None
+        if self.cog.streak and self.cog.streak[0] == interaction.user.id:
+            self.cog.streak[1] += 1
+        else:
+            previous_streak = self.cog.streak.copy()
+            self.cog.streak = [interaction.user.id, 1]
+        button.style = discord.ButtonStyle.grey
+        button.disabled = True
+        cooldown = random.choices(
+            [(0, 5), (6, 39), (40, 179), (180, 599), (600, 720), (0, 1800)],
+            cum_weights=[2, 4, 12, 16, 18, 19],
+        )[0]
+        cooldown = random.randint(*cooldown)
+        await asyncio.sleep(2)
+        fought = ""
+        fought_off = random_fought_off()
+        if len(self.cog.clickers) >= 2:
+            await asyncio.sleep(3)
+            fought = f" {fought_off} {len(self.cog.clickers) - 1} and"
+        edit_task = asyncio.create_task(
+            interaction.message.edit(
+                content=event(
+                    f"{interaction.user.name}#{interaction.user.discriminator}{fought} is now at {points} clicks.",
+                    interaction.message.content,
+                ),
+                embed=await self.cog.create_leaderboard_embed(cooldown=cooldown),
+                view=self,
+            )
+        )
+        asyncio.create_task(
+            self.do_stuff(
+                interaction, user_id, points, cooldown, fought_off, previous_streak
+            )
+        )
+        if cooldown > 5:
+            await asyncio.sleep(cooldown - 4)
+            asyncio.create_task(
+                interaction.channel.send(
+                    random_cooldown_over(),
+                    delete_after=0,
+                )
+            )
+            await asyncio.sleep(4)
+        else:
+            await asyncio.sleep(cooldown)
+        await asyncio.wait_for(edit_task, timeout=5)
+        button.style = discord.ButtonStyle.green
+        button.disabled = False
+        self.cog.clickers = OrderedDict()
+        await interaction.message.edit(
+            embed=await self.cog.create_leaderboard_embed(),
+            view=self,
+        )
+
+    @discord.ui.button(
+        emoji="\N{COOKIE}",
+        style=discord.ButtonStyle.gray,
+    )
+    async def cookie(self, interaction: discord.Interaction, button: discord.ui.Button):
+        user_id = str(interaction.user.id)
+        if self.cog.leaderboard.get(user_id, 0) <= 1:
+            return await interaction.response.send_message(
+                "You don't have enough clicks!", ephemeral=True
+            )
+        await interaction.response.defer()
+        self.cog.leaderboard[user_id] -= 1
+        await self.cog.db.update_one(
+            {"_id": "data"},
+            {"$set": {"leaderboard": self.cog.leaderboard}},
+            upsert=True,
+        )
+        value = (
+            await self.cog.db.find_one_and_update(
+                {"id": interaction.user.id, "user": True},
+                {"$inc": {"cookies": 1}},
+                upsert=True,
+                return_document=ReturnDocument.AFTER,
+            )
+        ).get("cookies", 0)
+        message = await interaction.channel.send(
+            random_cookie(interaction.user)
+            + f"\nYou are now at {self.cog.leaderboard[user_id]} clicks and {value} cookie{'' if value == 1 else 's'}."
+        )
+        self.cog.delete_after(message, 30)
+
+    @discord.ui.button(
+        emoji="\U0001F4C8",
+        style=discord.ButtonStyle.gray,
+    )
+    async def graph(self, interaction: discord.Interaction, button: discord.ui.Button):
+        view = GraphViewer(self)
+        await view.send(interaction)
+
+    async def create_graph(self, graph_time: GraphTime) -> Optional[io.BytesIO]:
+        user_clicks = {}
+
+        end_time = discord.utils.utcnow()
+        if graph_time == GraphTime.MONTH:
+            delta = timedelta(days=30)
+        elif graph_time == GraphTime.WEEK:
+            delta = timedelta(days=7)
+        elif graph_time == GraphTime.DAY:
+            delta = timedelta(days=1)
+        else:
+            delta = timedelta(hours=1)
+        start_time = end_time - delta
+
+        async for click in self.cog.dbGraph.find({"timestamp": {"$gt": start_time}}):
+            user_id = click["id"]
+            if user_id not in user_clicks:
+                username = self.cog.bot.get_user(int(user_id))
+                if username:
+                    username = f"{username.name}#{username.discriminator}"
+                user_clicks[user_id] = {
+                    "clicks": [],
+                    "timestamps": [],
+                    "username": username,
+                }
+            user_clicks[user_id]["clicks"].append(click["clicks"])
+            user_clicks[user_id]["timestamps"].append(click["timestamp"])
+
+        if len(user_clicks) == 0:
+            return None
+
+        sorted_clicks = sorted(
+            user_clicks.items(), key=lambda x: x[1]["clicks"][-1], reverse=True
+        )
+
+        plt.cla()
+        plt.clf()
+
+        plt.style.use("dark_background")
+        plt.set_cmap("gist_rainbow")
+        plt.rcParams["font.sans-serif"] = [
+            "Jetbrains Mono",
+            "DejaVu Sans",
+        ]
+        plt.figure(figsize=(10, 6))
+
+        for user_id, data in sorted_clicks:
+            data["timestamps"].append(end_time)
+            data["clicks"].append(data["clicks"][-1])
+            plt.step(
+                data["timestamps"],
+                data["clicks"],
+                label=data["username"] if data["username"] else user_id,
+            )
+
+        plt.title(
+            "Button clicks this " + graph_time.name.lower() + "!", pad=25, fontsize=16
+        )
+        plt.legend(
+            loc="center left",
+            bbox_to_anchor=(1.0, 1.0),
+            frameon=False,
+            borderpad=1,
+        )
+        plt.tick_params(axis="both", colors="white")
+        if graph_time in (GraphTime.MONTH, GraphTime.WEEK):
+            plt.xlabel("Date", color="white")
+        else:
+            plt.xlabel("Time", color="white")
+        plt.ylabel("Clicks", color="white")
+        plt.grid(color="gray")
+        plt.grid(color="gray", alpha=0.5, which="minor")
+        plt.gca().xaxis.labelpad = 8
+        plt.gca().yaxis.labelpad = 8
+
+        plt.rcParams["timezone"] = "GMT-7"
+        if graph_time == GraphTime.MONTH:
+            locator = mdates.DayLocator(interval=3)
+            formatter = mdates.ConciseDateFormatter(locator)
+            plt.gca().xaxis.set_minor_locator(mdates.DayLocator(interval=1))
+        elif graph_time == GraphTime.WEEK:
+            locator = mdates.DayLocator(interval=1)
+            formatter = mdates.DateFormatter("%b %d")
+        elif graph_time == GraphTime.DAY:
+            locator = mdates.HourLocator(interval=2)
+            formatter = mdates.DateFormatter("%I%p")
+        else:
+            locator = mdates.MinuteLocator(interval=15)
+            formatter = mdates.DateFormatter("%I:%M%p")
+            plt.gca().xaxis.set_minor_locator(mdates.MinuteLocator(interval=5))
+        plt.gca().xaxis.set_major_formatter(formatter)
+        plt.gca().xaxis.set_major_locator(locator)
+        plt.gca().yaxis.set_major_locator(ticker.MaxNLocator(integer=True))
+        background_colour = "#2B2D31"
+        plt.gca().set_facecolor(background_colour)
+
+        plt.xlim(start_time, end_time)
+
+        buffer = io.BytesIO()
+        plt.savefig(
+            buffer,
+            format="png",
+            bbox_inches="tight",
+            facecolor=background_colour,
+            pad_inches=0.3,
+        )
+        plt.close()
+        buffer.seek(0)
+        return buffer
+
+
+class GraphViewer(BaseView):
+    def __init__(
+        self, persistent_view: PersistentView, graph_time: GraphTime = GraphTime.WEEK
+    ):
+        super().__init__(timeout=30)
+        self.persistent_view = persistent_view
+        self.graph_time = graph_time
+        self.interaction = None
+
+    @discord.ui.button(label="Month", style=discord.ButtonStyle.gray)
+    async def month(self, interaction: discord.Interaction, button: discord.ui.Button):
+        view = GraphViewer(self.persistent_view, GraphTime.MONTH)
+        await view.send(interaction)
+
+    @discord.ui.button(label="Week", style=discord.ButtonStyle.gray)
+    async def week(self, interaction: discord.Interaction, button: discord.ui.Button):
+        view = GraphViewer(self.persistent_view)
+        await view.send(interaction)
+
+    @discord.ui.button(label="Day", style=discord.ButtonStyle.gray)
+    async def day(self, interaction: discord.Interaction, button: discord.ui.Button):
+        view = GraphViewer(self.persistent_view, GraphTime.DAY)
+        await view.send(interaction)
+
+    @discord.ui.button(label="Hour", style=discord.ButtonStyle.gray)
+    async def hour(self, interaction: discord.Interaction, button: discord.ui.Button):
+        view = GraphViewer(self.persistent_view, GraphTime.HOUR)
+        await view.send(interaction)
+
+    async def send(self, interaction: discord.Interaction):
+        buffer = await self.persistent_view.create_graph(self.graph_time)
+        if not buffer:
+            return await interaction.response.send_message(
+                "No data to graph in this time frame.", ephemeral=True
+            )
+        file = discord.File(buffer, filename="graph.png")
+        await interaction.response.send_message(file=file, view=self, ephemeral=True)
+        self.interaction = interaction
+
+    async def on_timeout(self) -> None:
+        for child in self.children:
+            child.disabled = True
+        await self.interaction.edit_original_response(view=self)
