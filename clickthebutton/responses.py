@@ -230,7 +230,7 @@ FOUGHT_OFF = [
     "practiced tattooing foxes on the back of",
     "learned how to make a proper cup of tea from",
     "was a little bit disappointed with",
-    "congradulated",
+    "congratulated",
     "shed a tear for",
     "teared apart",
     "shredded",
@@ -248,11 +248,26 @@ FOUGHT_OFF = [
     "beheaded",
     "outlived",
     "carefully seasoned",
+    "stole {}'s cat",
+    "stabbed {} with a polycarbonate spork",
+    "drank {}'s blood",
+    "robbed {} without consent",
+    "challenged {} to a duel",
+    "threw a rock at {}'s head",
+    "collaborated with {} on a jazz album",
+    "was overheard saying that {} is a bad person",
+    "was frightened by {}'s appearance",
+    "made {} cry about the social injustices of the world",
+    "voiced suspicions about {} suspicious behaviour",
+    "started an emergency meeting about",
+    "was lost in {}'s eyes",
 ]
 
 
 def random_fought_off() -> str:
     verb = random.choice(FOUGHT_OFF)
+    if "{}" in verb:
+        return verb
     if random.random() < 0.1:
         verb = verb.upper()
     if random.random() < 0.1:

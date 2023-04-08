@@ -77,7 +77,10 @@ class PersistentView(BaseView):
                 f"<@{user_id}> ({format_deltatime(self.cog.clickers[user_id] - interaction.message.edited_at)})"
                 for user_id in clickers
             )
-            fought = f" {fought_off} {mentions} and"
+            if "{}" in fought_off:
+                fought = " " + fought_off.replace("{}", mentions) + " and"
+            else:
+                fought = f" {fought_off} {mentions} and"
         reaction = random_emoji()
 
         streak = ""
@@ -160,7 +163,15 @@ class PersistentView(BaseView):
         fought_off = random_fought_off()
         if len(self.cog.clickers) >= 2:
             await asyncio.sleep(3)
-            fought = f" {fought_off} {len(self.cog.clickers) - 1} and"
+            fought_off_clickers = len(self.cog.clickers) - 1
+            if fought_off_clickers == 1:
+                fought_off_clickers = f"{fought_off_clickers} person"
+            else:
+                fought_off_clickers = f"{fought_off_clickers} people"
+            if "{}" in fought_off:
+                fought = " " + fought_off.replace("{}", fought_off_clickers) + " and"
+            else:
+                fought = f" {fought_off} {fought_off_clickers} and"
         edit_task = asyncio.create_task(
             interaction.message.edit(
                 content=event(
