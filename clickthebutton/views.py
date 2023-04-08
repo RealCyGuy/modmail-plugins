@@ -4,7 +4,7 @@ import random
 from collections import OrderedDict
 from datetime import timedelta
 from enum import Enum
-from typing import Any, Optional
+from typing import Any, Optional, Tuple
 
 import discord
 from matplotlib import dates as mdates
@@ -281,51 +281,50 @@ class PersistentView(BaseView):
             user_clicks.items(), key=lambda x: x[1]["clicks"][-1], reverse=True
         )
 
-        plt.cla()
-        plt.clf()
-
         plt.style.use("dark_background")
         plt.set_cmap("gist_rainbow")
         plt.rcParams["font.sans-serif"] = [
             "Jetbrains Mono",
             "DejaVu Sans",
         ]
-        plt.figure(figsize=(10, 6))
+
+        t: Tuple[plt.Figure, plt.Axes] = plt.subplots(figsize=(10, 6))
+        fig, ax = t
 
         for user_id, data in sorted_clicks:
             data["timestamps"].append(end_time)
             data["clicks"].append(data["clicks"][-1])
-            plt.step(
+            ax.step(
                 data["timestamps"],
                 data["clicks"],
                 label=data["username"] if data["username"] else user_id,
             )
 
-        plt.title(
+        ax.set_title(
             "Button clicks this " + graph_time.name.lower() + "!", pad=25, fontsize=16
         )
-        plt.legend(
+        ax.legend(
             loc="center left",
             bbox_to_anchor=(1.0, 1.0),
             frameon=False,
             borderpad=1,
         )
-        plt.tick_params(axis="both", colors="white")
+        ax.tick_params(axis="both", colors="white")
         if graph_time in (GraphTime.MONTH, GraphTime.WEEK):
-            plt.xlabel("Date", color="white")
+            ax.set_xlabel("Date", color="white")
         else:
-            plt.xlabel("Time", color="white")
-        plt.ylabel("Clicks", color="white")
-        plt.grid(color="gray")
-        plt.grid(color="gray", alpha=0.5, which="minor")
-        plt.gca().xaxis.labelpad = 8
-        plt.gca().yaxis.labelpad = 8
+            ax.set_xlabel("Time", color="white")
+        ax.set_ylabel("Clicks", color="white")
+        ax.grid(color="gray")
+        ax.grid(color="gray", alpha=0.5, which="minor")
+        ax.xaxis.labelpad = 8
+        ax.yaxis.labelpad = 8
 
         plt.rcParams["timezone"] = "GMT-7"
         if graph_time == GraphTime.MONTH:
             locator = mdates.DayLocator(interval=3)
             formatter = mdates.ConciseDateFormatter(locator)
-            plt.gca().xaxis.set_minor_locator(mdates.DayLocator(interval=1))
+            ax.xaxis.set_minor_locator(mdates.DayLocator(interval=1))
         elif graph_time == GraphTime.WEEK:
             locator = mdates.DayLocator(interval=1)
             formatter = mdates.DateFormatter("%b %d")
@@ -335,17 +334,17 @@ class PersistentView(BaseView):
         else:
             locator = mdates.MinuteLocator(interval=15)
             formatter = mdates.DateFormatter("%I:%M%p")
-            plt.gca().xaxis.set_minor_locator(mdates.MinuteLocator(interval=5))
-        plt.gca().xaxis.set_major_formatter(formatter)
-        plt.gca().xaxis.set_major_locator(locator)
-        plt.gca().yaxis.set_major_locator(ticker.MaxNLocator(integer=True))
+            ax.xaxis.set_minor_locator(mdates.MinuteLocator(interval=5))
+        ax.xaxis.set_major_formatter(formatter)
+        ax.xaxis.set_major_locator(locator)
+        ax.yaxis.set_major_locator(ticker.MaxNLocator(integer=True))
         background_colour = "#2B2D31"
-        plt.gca().set_facecolor(background_colour)
+        ax.set_facecolor(background_colour)
 
-        plt.xlim(start_time, end_time)
+        ax.set_xlim(start_time, end_time)
 
         buffer = io.BytesIO()
-        plt.savefig(
+        fig.savefig(
             buffer,
             format="png",
             bbox_inches="tight",
