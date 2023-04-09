@@ -7,6 +7,7 @@ from enum import Enum
 from typing import Any, Optional, Tuple
 
 import discord
+import brokenaxes
 from matplotlib import dates as mdates
 from matplotlib import pyplot as plt, ticker
 from pymongo import ReturnDocument
@@ -19,7 +20,7 @@ from .responses import (
     format_deltatime,
     random_cookie,
 )
-from .utils import event
+from .utils import event, find_data_intervals
 
 
 class GraphTime(Enum):
@@ -280,6 +281,7 @@ class PersistentView(BaseView):
         sorted_clicks = sorted(
             user_clicks.items(), key=lambda x: x[1]["clicks"][-1], reverse=True
         )
+        data_intervals = find_data_intervals(list(user_clicks.values()))
 
         plt.style.use("dark_background")
         plt.set_cmap("gist_rainbow")
@@ -288,60 +290,59 @@ class PersistentView(BaseView):
             "DejaVu Sans",
         ]
 
-        t: Tuple[plt.Figure, plt.Axes] = plt.subplots(figsize=(10, 6))
-        fig, ax = t
+        fig: plt.Figure = plt.figure(figsize=(10, 7))
+        bax: brokenaxes.BrokenAxes = brokenaxes.brokenaxes(
+            ylims=data_intervals, xlims=((start_time, end_time),), diag_color="white"
+        )
 
         for user_id, data in sorted_clicks:
             data["timestamps"].append(end_time)
             data["clicks"].append(data["clicks"][-1])
-            ax.step(
+            bax.step(
                 data["timestamps"],
                 data["clicks"],
                 label=data["username"] if data["username"] else user_id,
             )
 
-        ax.set_title(
+        bax.set_title(
             "Button clicks this " + graph_time.name.lower() + "!", pad=25, fontsize=16
         )
-        ax.legend(
+        bax.legend(
             loc="center left",
             bbox_to_anchor=(1.0, 1.0),
             frameon=False,
             borderpad=1,
         )
-        ax.tick_params(axis="both", colors="white")
+        bax.tick_params(axis="both", colors="white")
         if graph_time in (GraphTime.MONTH, GraphTime.WEEK):
-            ax.set_xlabel("Date", color="white")
+            bax.set_xlabel("Date", color="white", labelpad=30)
         else:
-            ax.set_xlabel("Time", color="white")
-        ax.set_ylabel("Clicks", color="white")
-        ax.grid(color="gray")
-        ax.grid(color="gray", alpha=0.5, which="minor")
-        ax.xaxis.labelpad = 8
-        ax.yaxis.labelpad = 8
+            bax.set_xlabel("Time", color="white", labelpad=30)
+        bax.set_ylabel("Clicks", color="white", labelpad=40)
+        bax.grid(color="gray")
+        bax.grid(color="gray", alpha=0.5, which="minor")
 
         plt.rcParams["timezone"] = "GMT-7"
-        if graph_time == GraphTime.MONTH:
-            locator = mdates.DayLocator(interval=3)
-            formatter = mdates.ConciseDateFormatter(locator)
-            ax.xaxis.set_minor_locator(mdates.DayLocator(interval=1))
-        elif graph_time == GraphTime.WEEK:
-            locator = mdates.DayLocator(interval=1)
-            formatter = mdates.DateFormatter("%b %d")
-        elif graph_time == GraphTime.DAY:
-            locator = mdates.HourLocator(interval=2)
-            formatter = mdates.DateFormatter("%I%p")
-        else:
-            locator = mdates.MinuteLocator(interval=15)
-            formatter = mdates.DateFormatter("%I:%M%p")
-            ax.xaxis.set_minor_locator(mdates.MinuteLocator(interval=5))
-        ax.xaxis.set_major_formatter(formatter)
-        ax.xaxis.set_major_locator(locator)
-        ax.yaxis.set_major_locator(ticker.MaxNLocator(integer=True))
+        for ax in bax.axs:
+            if graph_time == GraphTime.MONTH:
+                locator = mdates.DayLocator(interval=3)
+                formatter = mdates.ConciseDateFormatter(locator)
+                ax.xaxis.set_minor_locator(mdates.DayLocator(interval=1))
+            elif graph_time == GraphTime.WEEK:
+                locator = mdates.DayLocator(interval=1)
+                formatter = mdates.DateFormatter("%b %d")
+            elif graph_time == GraphTime.DAY:
+                locator = mdates.HourLocator(interval=2)
+                formatter = mdates.DateFormatter("%I%p")
+            else:
+                locator = mdates.MinuteLocator(interval=15)
+                formatter = mdates.DateFormatter("%I:%M%p")
+                ax.xaxis.set_minor_locator(mdates.MinuteLocator(interval=5))
+            ax.xaxis.set_major_formatter(formatter)
+            ax.xaxis.set_major_locator(locator)
+            ax.yaxis.set_minor_locator(ticker.AutoMinorLocator())
         background_colour = "#2B2D31"
-        ax.set_facecolor(background_colour)
-
-        ax.set_xlim(start_time, end_time)
+        bax.set_facecolor(background_colour)
 
         buffer = io.BytesIO()
         fig.savefig(
