@@ -2,7 +2,7 @@ import asyncio
 import io
 import random
 from collections import OrderedDict
-from datetime import timedelta
+from datetime import timedelta, timezone
 from enum import Enum
 from typing import Any, Optional, Tuple
 
@@ -273,7 +273,7 @@ class PersistentView(BaseView):
                     "username": username,
                 }
             user_clicks[user_id]["clicks"].append(click["clicks"])
-            user_clicks[user_id]["timestamps"].append(click["timestamp"])
+            user_clicks[user_id]["timestamps"].append(click["timestamp"].replace(tzinfo=timezone.utc))
 
         if len(user_clicks) == 0:
             return None
@@ -298,10 +298,13 @@ class PersistentView(BaseView):
         for user_id, data in sorted_clicks:
             data["timestamps"].append(end_time)
             data["clicks"].append(data["clicks"][-1])
+            data["timestamps"].insert(0, start_time)
+            data["clicks"].insert(0, data["clicks"][0] - 1)
             bax.step(
                 data["timestamps"],
                 data["clicks"],
                 label=data["username"] if data["username"] else user_id,
+                where="post",
             )
 
         bax.set_title(
@@ -322,11 +325,14 @@ class PersistentView(BaseView):
         bax.grid(color="gray")
         bax.grid(color="gray", alpha=0.5, which="minor")
 
+        background_colour = "#2B2D31"
+        bax.set_facecolor(background_colour)
+
         plt.rcParams["timezone"] = "GMT-7"
-        for ax in bax.axs:
+        for i, ax in enumerate(bax.axs):
             if graph_time == GraphTime.MONTH:
                 locator = mdates.DayLocator(interval=3)
-                formatter = mdates.ConciseDateFormatter(locator)
+                formatter = mdates.DateFormatter("%b %d")
                 ax.xaxis.set_minor_locator(mdates.DayLocator(interval=1))
             elif graph_time == GraphTime.WEEK:
                 locator = mdates.DayLocator(interval=1)
@@ -338,11 +344,13 @@ class PersistentView(BaseView):
                 locator = mdates.MinuteLocator(interval=15)
                 formatter = mdates.DateFormatter("%I:%M%p")
                 ax.xaxis.set_minor_locator(mdates.MinuteLocator(interval=5))
-            ax.xaxis.set_major_formatter(formatter)
+            if i == len(bax.axs) - 1:
+                ax.xaxis.set_major_formatter(formatter)
+            else:
+                ax.xaxis.set_major_formatter(ticker.NullFormatter())
+
             ax.xaxis.set_major_locator(locator)
             ax.yaxis.set_minor_locator(ticker.AutoMinorLocator())
-        background_colour = "#2B2D31"
-        bax.set_facecolor(background_colour)
 
         buffer = io.BytesIO()
         fig.savefig(
