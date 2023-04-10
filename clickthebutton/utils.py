@@ -15,15 +15,15 @@ def find_data_intervals(values: list) -> list:
     for value in values:
         intervals.append(
             [
-                value["clicks"][0] - 20,
-                value["clicks"][-1] + 20
+                value["clicks"][0] - 5,
+                value["clicks"][-1] + 5
             ]
         )
 
     # combine overlapping intervals
     merged_intervals = []
     for interval in sorted(intervals):
-        if not merged_intervals or merged_intervals[-1][1] < interval[0]:
+        if not merged_intervals or (merged_intervals[-1][1] < interval[0] and interval[0] - merged_intervals[-1][1] >= 15):
             merged_intervals.append(interval)
         else:
             merged_intervals[-1][1] = max(merged_intervals[-1][1], interval[1])
