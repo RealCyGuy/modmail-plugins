@@ -1,5 +1,7 @@
+import os
+
 import random
-from datetime import timedelta
+from datetime import timedelta, datetime
 
 import discord
 import emoji
@@ -69,6 +71,34 @@ EMOJIS = list(emoji.EMOJI_DATA.keys())
 
 def random_emoji() -> str:
     return random.choice(EMOJIS)
+
+
+def random_line(filename):
+    with open(
+        os.path.join(os.path.dirname(os.path.realpath(__file__)), "data", filename), "r"
+    ) as f:
+        line = next(f)
+        for num, aline in enumerate(f, 2):
+            if random.randrange(num):
+                continue
+            line = aline
+    return line.strip()
+
+
+MONTHS = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+]
 
 
 FOUGHT_OFF = [
@@ -175,7 +205,7 @@ FOUGHT_OFF = [
     "choreographed a dance routine for",
     "played in a street band with",
     "smacked",
-    "gambled bo3 ct40 d100 with",
+    ("gambled bo3 ct", lambda: random.randint(1, 100), " d100 with"),
     "made sure to think about the environment when dealing with",
     "followed the proper safety procedures while disposing of",
     "calculated the exact amount of time it would take to fall from the top of the Empire State Building while fighting",
@@ -283,12 +313,39 @@ FOUGHT_OFF = [
     "kneed",
     "kneeled before",
     "multiplied improper fractions with",
-    "practiced French with",
+    ("practiced speaking ", lambda: random_line("languages.txt"), " with"),
+    ("said an insult in ", lambda: random_line("languages.txt"), " to"),
+    (
+        'asked {} how to spell "',
+        lambda: random_line("commonly_misspelled_words.txt"),
+        '"',
+    ),
+    ('taught {} how to use the word "', lambda: random_line("words.txt"), '"'),
+    ("used a ", lambda: random_line("colours.txt").lower(), " knife to cut"),
+    ("watched ", lambda: random_line("2022_anime.txt"), " with"),
+    ("went to ", lambda: random_line("countries.txt"), " with"),
+    ("travelled to ", lambda: random_line("countries.txt"), " to escape"),
+    ("dipped {} in ", lambda: random_line("dips.txt"), " before eating them"),
+    ("thought ", lambda: MONTHS[datetime.now().month - 1], " was a good month to slap"),
+    (
+        "completed their ",
+        lambda: datetime.now().year,
+        " new year's resolution of getting revenge on",
+    ),
+    ("remembered what {} did in the ", lambda: random_line("armed_conflicts.txt")),
+    (
+        "listened to ",
+        lambda: random_line("twice_songs.txt"),
+        " by TWICE while fighting",
+    ),
+    ("performed a cover of ", lambda: random_line("twice_songs.txt"), " by TWICE with"),
 ]
 
 
 def random_fought_off() -> str:
     verb = random.choice(FOUGHT_OFF)
+    if type(verb) == tuple:
+        verb = "".join([str(part()) if callable(part) else part for part in verb])
     if "{}" in verb:
         return verb
     if random.random() < 0.1:
