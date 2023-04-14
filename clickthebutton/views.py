@@ -18,7 +18,6 @@ from .responses import (
     random_fought_off,
     random_got_a_click,
     format_deltatime,
-    random_cookie,
 )
 from .utils import event, find_data_intervals
 
@@ -45,7 +44,6 @@ class PersistentView(BaseView):
     def __init__(self, cog):
         super().__init__(timeout=None)
         self.button.custom_id = cog.custom_id
-        self.cookie.custom_id = cog.custom_id + "2"
         self.graph.custom_id = cog.custom_id + "3"
         self.cog = cog
         self.add_item(
@@ -137,13 +135,7 @@ class PersistentView(BaseView):
             {
                 "timestamp": discord.utils.utcnow(),
                 "id": user_id,
-                "clicks": points
-                + (
-                    await self.cog.db.find_one(
-                        {"id": interaction.user.id, "user": True}
-                    )
-                    or {}
-                ).get("cookies", 0),
+                "clicks": points,
             }
         )
         previous_streak = None
@@ -209,37 +201,6 @@ class PersistentView(BaseView):
         )
 
     @discord.ui.button(
-        emoji="\N{COOKIE}",
-        style=discord.ButtonStyle.gray,
-    )
-    async def cookie(self, interaction: discord.Interaction, button: discord.ui.Button):
-        user_id = str(interaction.user.id)
-        if self.cog.leaderboard.get(user_id, 0) <= 1:
-            return await interaction.response.send_message(
-                "You don't have enough clicks!", ephemeral=True
-            )
-        await interaction.response.defer()
-        self.cog.leaderboard[user_id] -= 1
-        await self.cog.db.update_one(
-            {"_id": "data"},
-            {"$set": {"leaderboard": self.cog.leaderboard}},
-            upsert=True,
-        )
-        value = (
-            await self.cog.db.find_one_and_update(
-                {"id": interaction.user.id, "user": True},
-                {"$inc": {"cookies": 1}},
-                upsert=True,
-                return_document=ReturnDocument.AFTER,
-            )
-        ).get("cookies", 0)
-        message = await interaction.channel.send(
-            random_cookie(interaction.user)
-            + f"\nYou are now at {self.cog.leaderboard[user_id]} clicks and {value} cookie{'' if value == 1 else 's'}."
-        )
-        self.cog.delete_after(message, 30)
-
-    @discord.ui.button(
         emoji="\U0001F4C8",
         style=discord.ButtonStyle.gray,
     )
@@ -273,7 +234,9 @@ class PersistentView(BaseView):
                     "username": username,
                 }
             user_clicks[user_id]["clicks"].append(click["clicks"])
-            user_clicks[user_id]["timestamps"].append(click["timestamp"].replace(tzinfo=timezone.utc))
+            user_clicks[user_id]["timestamps"].append(
+                click["timestamp"].replace(tzinfo=timezone.utc)
+            )
 
         if len(user_clicks) == 0:
             return None

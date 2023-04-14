@@ -394,18 +394,6 @@ def format_deltatime(delta: timedelta) -> str:
         return f"{delta / timedelta(seconds=1):.3f}s"
 
 
-COOKIES = [
-    "{} used a click to buy a cookie.",
-    "Bored with all their clicks, {} converted one a click into a cookie!",
-    "Looks like {} has a sweet tooth! Enjoy your cookie.",
-    "A cookie a day keeps the frowns away, right {}?",
-    "{} just baked a fresh cookie!",
-    "A cookie for you, {}!",
-    "{} put hours of work into baking a cookie.",
-    "Guess what, {}? You just got a cookie!",
-    "{} took a cookie from a baby.",
-]
-
 EXCLAMATION = [
     "Yum",
     "Wow",
@@ -416,12 +404,3 @@ EXCLAMATION = [
     "Mmm",
     "Divine",
 ]
-
-
-def random_cookie(user: discord.User) -> str:
-    return (
-        random.choice(COOKIES).replace("{}", user.mention)
-        + " "
-        + random.choice(EXCLAMATION)
-        + "!"
-    )

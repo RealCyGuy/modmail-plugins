@@ -69,10 +69,7 @@ class ClickTheButton(commands.Cog):
             stats = ""
             if len(sorted_leaderboard) >= n:
                 user = sorted_leaderboard[n - 1]
-                cookies = (
-                    await self.db.find_one({"id": int(user[0]), "user": True}) or {}
-                ).get("cookies", 0)
-                stats = f"<@{user[0]}> - {user[1]} click{'s' if user[1] > 1 else ''} ({(user[1] / total_clicks * 100):.2f}%) - {cookies} 🍪"
+                stats = f"<@{user[0]}> - {user[1]} click{'s' if user[1] > 1 else ''} ({(user[1] / total_clicks * 100):.2f}%)"
             leaderboard_text += str(n) + ". " + stats + "\n"
         leaderboard_text += "\n"
         t = math.floor(time.time())
@@ -170,6 +167,24 @@ class ClickTheButton(commands.Cog):
             },
             upsert=True,
         )
+
+    @checks.has_permissions(PermissionLevel.OWNER)
+    @commands.command()
+    async def reimbursecookieclicks(self, ctx: commands.Context):
+        """
+        Reimburses all users for the clicks they spent on cookies.
+
+        There used to be a button that gives them a cookie for 1 click, but it has been removed.
+        This command reimburses all users for the clicks they lost.
+
+        Here is the old cookie code: [github](https://github.com/RealCyGuy/modmail-plugins/blob/8803a954e7856aa5c3a30dad060e4abf90ea22af/clickthebutton/views.py#L215).
+        """
+        async for user in self.db.find({"user": True}):
+            if user.get("cookies", 0) > 0:
+                self.leaderboard[str(user["id"])] += user["cookies"]
+                await ctx.send(
+                    f"Reimbursing <@{user['id']}> with {user['cookies']} click(s). Updated clicks: {self.leaderboard[str(user['id'])]}."
+                )
 
 
 async def setup(bot):
