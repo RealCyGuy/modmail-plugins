@@ -47,6 +47,16 @@ COOLDOWN_OVER = [
     '"Someone click me!" - the button',
     "HUZZAH! The button is now clickable again!",
     "Yippie! We can click the button again!",
+    "Oh my, oh my God, you can click the button!",
+    "Times up, click the button!",
+    "Attention all clickers: the cooldown is over.",
+    "Get your clicks up, not your funny up.",
+    "Hello there, would you mind clicking the button?",
+    "Did you know you can click the button now?",
+    "The button is feeling a little shy, click it to make it feel better.",
+    "If you click the button, you will be rewarded with a point!",
+    "Can you be the first to click the button?",
+    "Hurry up and click the button!",
 ]
 
 
@@ -261,6 +271,19 @@ FOUGHT_OFF = [
     "voiced suspicions about {} suspicious behaviour",
     "started an emergency meeting about",
     "was lost in {}'s eyes",
+    "grabbed {} by the throat",
+    "beat {} in a staring contest",
+    "added too much salt to",
+    "hypnotized",
+    "winked at",
+    "chewed carrots with",
+    "deserved better than",
+    "publicly embarrassed",
+    "forgot to heal",
+    "kneed",
+    "kneeled before",
+    "multiplied improper fractions with",
+    "practiced French with",
 ]
 
 
