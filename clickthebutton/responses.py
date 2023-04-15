@@ -78,6 +78,8 @@ def random_line(filename):
         os.path.join(os.path.dirname(os.path.realpath(__file__)), "data", filename), "r"
     ) as f:
         line = next(f)
+        if line.startswith("# "):
+            line = next(f)
         for num, aline in enumerate(f, 2):
             if random.randrange(num):
                 continue
