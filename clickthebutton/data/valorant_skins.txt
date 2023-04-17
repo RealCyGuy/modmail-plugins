@@ -1,0 +1,663 @@
+# https://valorant-api.com/v1/weapons/skins
+Altitude Odin
+Xenohunter Odin
+Rune Stone Odin
+Glitchpop Odin
+Nitro Odin
+Topotek Odin
+.EXE Odin
+Prime//2.0 Odin
+Prism III Odin
+Smite Odin
+Coalition: Cobra Odin
+Lightwave Odin
+Sensation Odin
+Random Favorite Skin
+Schema Odin
+Lycan's Bane Odin
+Reaver Odin
+Standard Odin
+Aerosol Odin
+BlastX Odin
+VALORANT GO! Vol. 2 Ares
+Aristocrat Ares
+Endeavour Ares
+Nebula Ares
+Doodle Buds Ares
+Singularity Ares
+Rush Ares
+Hivemind Ares
+Spitfire Ares
+Infantry Ares
+Goldwing Ares
+Outpost Ares
+Prism Ares
+Nunca Olvidados Ares
+Celestial Ares
+Magepunk Ares
+Minima Ares
+Ion Ares
+Oni Ares
+9 Lives Ares
+POLYfrog Ares
+Divine Swine Ares
+Jigsaw Ares
+Premiere Collision Ares
+Random Favorite Skin
+Sentinels of Light Ares
+Sakura Ares
+Snowfall Ares
+Titanmail Ares
+Standard Ares
+Immortalized Vandal
+RGX 11z Pro Vandal
+Altitude Vandal
+VALORANT GO! Vol. 2 Vandal
+Araxys Vandal
+Neptune Vandal
+Aristocrat Vandal
+Gaia's Vengeance Vandal
+Endeavour Vandal
+Champions 2021 Vandal
+Origin Vandal
+Starlit Odyssey Vandal
+Glitchpop Vandal
+ChronoVoid Vandal
+Prelude to Chaos Vandal
+Elderflame Vandal
+Sarmad Vandal
+Nitro Vandal
+Hivemind Vandal
+Venturi Vandal
+Forsaken Vandal
+Team Ace Vandal
+Ruin Vandal
+.EXE Vandal
+.SYS Vandal
+Horizon Vandal
+Prime Vandal
+Avalanche Vandal
+Black.Market Vandal
+Prism II Vandal
+K/TAC Vandal
+Nunca Olvidados Vandal
+Luxe Vandal
+Silvanus Vandal
+Crimsonbeast Vandal
+Ion Vandal
+Oni Vandal
+Cryostasis Vandal
+Luna Vandal
+Sensation Vandal
+Random Favorite Skin
+Sentinels of Light Vandal
+Sakura Vandal
+Schema Vandal
+Lycan's Bane Vandal
+Reaver Vandal
+Tethered Realms Vandal
+Cavalier Vandal
+Titanmail Vandal
+Standard Vandal
+Depths Vandal
+Ego Vandal
+Wasteland Vandal
+Winterwunderland Vandal
+Araxys Bulldog
+Aristocrat Bulldog
+Endeavour Bulldog
+Spectrum Bulldog
+Striker Bulldog
+Rune Stone Bulldog
+Undercity Bulldog
+Glitchpop Bulldog
+Rush Bulldog
+Velocity Bulldog
+Shimmer Bulldog
+Horizon Bulldog
+Black.Market Bulldog
+K/TAC Bulldog
+Couture Bulldog
+Nunca Olvidados Bulldog
+Genesis Bulldog
+Oni Bulldog
+Cryostasis Bulldog
+Hue Shift Bulldog
+POLYfox Bulldog
+Protocol 781-A Bulldog
+Premiere Collision Bulldog
+Random Favorite Skin
+Infinity Bulldog
+Standard Bulldog
+Tilde Bulldog
+Gridcrash Bulldog
+Convex Bulldog
+Depths Bulldog
+Varnish Bulldog
+Task Force 809 Phantom
+RGX 11z Pro Phantom
+Xenohunter Phantom
+VALORANT GO! Vol. 1 Phantom
+Spectrum Phantom
+Piedra del Sol Phantom
+Champions 2022 Phantom
+Radiant Crisis 001 Phantom
+Nebula Phantom
+Undercity Phantom
+Glitchpop Phantom
+ChronoVoid Phantom
+Abyssal Phantom
+Doodle Buds Phantom
+Singularity Phantom
+Sarmad Phantom
+Rush Phantom
+Velocity Phantom
+Team Ace Phantom
+Topotek Phantom
+Soulstrife Phantom
+Prime//2.0 Phantom
+Avalanche Phantom
+Prism Phantom
+Serenity Phantom
+Ruination Phantom
+Kingdom Phantom
+Kohaku & Matsuba Phantom
+Smite Phantom
+Celestial Phantom
+Spline Phantom
+Minima Phantom
+Galleria Phantom
+Silvanus Phantom
+Ion Phantom
+Oni Phantom
+9 Lives Phantom
+Hue Shift Phantom
+Aero Phantom
+Artisan Phantom
+Protocol 781-A Phantom
+Lightwave Phantom
+Random Favorite Skin
+Snowfall Phantom
+Reaver Phantom
+Recon Phantom
+Infinity Phantom
+Reverie Phantom
+Standard Phantom
+Tigris Phantom
+BlastX Phantom
+Winterwunderland Phantom
+Piedra del Sol Judge
+Undercity Judge
+Glitchpop Judge
+ChronoVoid Judge
+Elderflame Judge
+Rush Judge
+Team Ace Judge
+Shimmer Judge
+.EXE Judge
+Goldwing Judge
+Hydrodip Judge
+Outpost Judge
+Prism III Judge
+Serenity Judge
+Kohaku & Matsuba Judge
+Smite Judge
+Iridian Thorn Judge
+Celestial Judge
+Luxe Judge
+Coalition: Cobra Judge
+Crimsonbeast Judge
+POLYfox Judge
+Divine Swine Judge
+Jigsaw Judge
+Sensation Judge
+Random Favorite Skin
+Snowfall Judge
+Standard Judge
+Tilde Judge
+Gridcrash Judge
+Convex Judge
+Varnish Judge
+Altitude Bucky
+Xenohunter Bucky
+Piedra del Sol Bucky
+Origin Bucky
+Radiant Crisis 001 Bucky
+Red Alert Bucky
+Surge Bucky
+Topotek Bucky
+.SYS Bucky
+Horizon Bucky
+Monarch Bucky
+Hydrodip Bucky
+Prime//2.0 Bucky
+Prism II Bucky
+Kingdom Bucky
+Iridian Thorn Bucky
+Magepunk Bucky
+Galleria Bucky
+Genesis Bucky
+Ion Bucky
+Oni Bucky
+Artisan Bucky
+Lightwave Bucky
+Random Favorite Skin
+Gravitational Uranium Neuroblaster Bucky
+Cavalier Bucky
+Titanmail Bucky
+Standard Bucky
+Aerosol Bucky
+Task Force 809 Frenzy
+RGX 11z Pro Frenzy
+Xenohunter Frenzy
+RagnaRocker Frenzy
+Origin Frenzy
+Glitchpop Frenzy
+Elderflame Frenzy
+Sarmad Frenzy
+Rush Frenzy
+Venturi Frenzy
+Team Ace Frenzy
+Swooping Frenzy
+Horizon Frenzy
+Monarch Frenzy
+Hydrodip Frenzy
+Prime//2.0 Frenzy
+Couture Frenzy
+Nunca Olvidados Frenzy
+Celestial Frenzy
+Coalition: Cobra Frenzy
+Ion Frenzy
+Oni Frenzy
+Spitfire Frenzy
+Aero Frenzy
+Divine Swine Frenzy
+Lightwave Frenzy
+Sensation Frenzy
+Random Favorite Skin
+Titanmail Frenzy
+Live Wire Frenzy
+Standard Frenzy
+BlastX Frenzy
+RGX 11z Pro Classic
+VALORANT GO! Vol. 2 Classic
+Spectrum Classic
+Pistolinha Classic
+Striker Classic
+Radiant Crisis 001 Classic
+Red Alert Classic
+Undercity Classic
+Glitchpop Classic
+Finesse Classic
+Surge Classic
+Songsteel Classic
+Forsaken Classic
+Shimmer Classic
+FIRE/arm Classic
+Goldwing Classic
+Prime Classic
+Avalanche Classic
+Black.Market Classic
+Prism III Classic
+Kingdom Classic
+Kohaku & Matsuba Classic
+Smite Classic
+Spline Classic
+Galleria Classic
+Cryostasis Classic
+9 Lives Classic
+Premiere Collision Classic
+Random Favorite Skin
+Gravitational Uranium Neuroblaster Classic
+Sakura Classic
+Snowfall Classic
+Infinity Classic
+Reverie Classic
+Standard Classic
+Final Chamber Classic
+VALORANT GO! Vol. 1 Ghost
+Gaia's Vengeance Ghost
+Endeavour Ghost
+Piedra del Sol Ghost
+Starlit Odyssey Ghost
+Topotek Ghost
+Spitfire Ghost
+.EXE Ghost
+Hush Ghost
+Soulstrife Ghost
+Infantry Ghost
+Goldwing Ghost
+Outpost Ghost
+Prism Ghost
+Serenity Ghost
+Ruination Ghost
+Luxe Ghost
+Magepunk Ghost
+Artisan Ghost
+Jigsaw Ghost
+Luna Ghost
+Random Favorite Skin
+Eclipse Ghost
+Lycan's Bane Ghost
+Reaver Ghost
+Tethered Realms Ghost
+Sovereign Ghost
+Recon Ghost
+Cavalier Ghost
+Standard Ghost
+Gridcrash Ghost
+Depths Ghost
+Ego Ghost
+Vendetta Ghost
+Winterwunderland Ghost
+Soul Silencer Ghost
+Wayfarer Sheriff
+Immortalized Sheriff
+Altitude Sheriff
+Aristocrat Sheriff
+Nebula Sheriff
+ChronoVoid Sheriff
+Abyssal Sheriff
+Singularity Sheriff
+Surge Sheriff
+.SYS Sheriff
+Protektor Sheriff
+Prism II Sheriff
+K/TAC Sheriff
+Iridian Thorn Sheriff
+Magepunk Sheriff
+Signature Sheriff
+Minima Sheriff
+Silvanus Sheriff
+Crimsonbeast Sheriff
+Ion Sheriff
+POLYfox Sheriff
+POLYfrog Sheriff
+Protocol 781-A Sheriff
+Lightwave Sheriff
+Random Favorite Skin
+Sentinels of Light Sheriff
+Sakura Sheriff
+Peacekeeper Sheriff
+Schema Sheriff
+Reaver Sheriff
+Standard Sheriff
+Convex Sheriff
+Varnish Sheriff
+Wasteland Sheriff
+Game Over Sheriff
+Arcane Sheriff
+Death Wish Sheriff
+Sidekick Shorty
+Araxys Shorty
+Neptune Shorty
+Karabasan Shorty
+Rune Stone Shorty
+Prelude to Chaos Shorty
+Doodle Buds Shorty
+Hivemind Shorty
+Velocity Shorty
+Ruin Shorty
+Monarch Shorty
+Prism II Shorty
+Wunderkind Shorty
+Genesis Shorty
+Oni Shorty
+Snakebite Shorty
+Hue Shift Shorty
+Random Favorite Skin
+Standard Shorty
+Aerosol Shorty
+Tilde Shorty
+Tigris Shorty
+Wayfinder Shorty
+Wasteland Shorty
+RGX 11z Pro Operator
+VALORANT GO! Vol. 2 Operator
+Araxys Operator
+Endeavour Operator
+Origin Operator
+Striker Operator
+Red Alert Operator
+Glitchpop Operator
+Prelude to Chaos Operator
+Elderflame Operator
+Nitro Operator
+Forsaken Operator
+Team Ace Operator
+Spitfire Operator
+Infantry Operator
+Prism Operator
+K/TAC Operator
+Kohaku & Matsuba Operator
+Iridian Thorn Operator
+Luxe Operator
+Magepunk Operator
+Spline Operator
+Minima Operator
+Silvanus Operator
+Genesis Operator
+Ion Operator
+Cryostasis Operator
+Random Favorite Skin
+Gravitational Uranium Neuroblaster Operator
+Sentinels of Light Operator
+Reaver Operator
+Tethered Realms Operator
+Cavalier Operator
+Standard Operator
+Aerosol Operator
+Tilde Operator
+Tigris Operator
+Convex Operator
+Immortalized Guardian
+RGX 11z Pro Guardian
+VALORANT GO! Vol. 1 Guardian
+Neptune Guardian
+Gaia's Vengeance Guardian
+Spectrum Guardian
+Starlit Odyssey Guardian
+Nebula Guardian
+Abyssal Guardian
+Nitro Guardian
+Songsteel Guardian
+Spitfire Guardian
+Ruin Guardian
+Soulstrife Guardian
+Infantry Guardian
+Hydrodip Guardian
+Prime Guardian
+Ruination Guardian
+Magepunk Guardian
+Signature Guardian
+Galleria Guardian
+Oni Guardian
+9 Lives Guardian
+Aero Guardian
+POLYfox Guardian
+Jigsaw Guardian
+Random Favorite Skin
+Reaver Guardian
+Tethered Realms Guardian
+Sovereign Guardian
+Recon Guardian
+Infinity Guardian
+Reverie Guardian
+Standard Guardian
+Ego Guardian
+Task Force 809 Marshal
+Gaia's Vengeance Marshal
+Rune Stone Marshal
+Doodle Buds Marshal
+Songsteel Marshal
+Venturi Marshal
+Ruin Marshal
+Monarch Marshal
+Avalanche Marshal
+Black.Market Marshal
+Couture Marshal
+Magepunk Marshal
+Signature Marshal
+Coalition: Cobra Marshal
+Galleria Marshal
+Crimsonbeast Marshal
+POLYfrog Marshal
+Divine Swine Marshal
+Artisan Marshal
+Luna Marshal
+Premiere Collision Marshal
+Random Favorite Skin
+Sovereign Marshal
+Reverie Marshal
+Standard Marshal
+Wasteland Marshal
+Winterwunderland Marshal
+Task Force 809 Spectre
+RGX 11z Pro Spectre
+VALORANT GO! Vol. 1 Spectre
+Neptune Spectre
+Striker Spectre
+Radiant Crisis 001 Spectre
+Starlit Odyssey Spectre
+Abyssal Spectre
+Singularity Spectre
+Sarmad Spectre
+Hivemind Spectre
+Venturi Spectre
+Forsaken Spectre
+Velocity Spectre
+Soulstrife Spectre
+Infantry Spectre
+Horizon Spectre
+Prime Spectre
+Avalanche Spectre
+Prism Spectre
+Serenity Spectre
+Ruination Spectre
+Kingdom Spectre
+Luxe Spectre
+Magepunk Spectre
+Spline Spectre
+Minima Spectre
+Ion Spectre
+Hue Shift Spectre
+Aero Spectre
+POLYfrog Spectre
+Protocol 781-A Spectre
+Luna Spectre
+Random Favorite Skin
+Gravitational Uranium Neuroblaster Spectre
+Reaver Spectre
+Recon Spectre
+Infinity Spectre
+Standard Spectre
+Tigris Spectre
+Convex Spectre
+BlastX Spectre
+Wasteland Spectre
+Immortalized Stinger
+RGX 11z Pro Stinger
+Aristocrat Stinger
+Red Alert Stinger
+Prelude to Chaos Stinger
+Doodle Buds Stinger
+Surge Stinger
+Shimmer Stinger
+.SYS Stinger
+Prism II Stinger
+Couture Stinger
+Signature Stinger
+Silvanus Stinger
+Sensation Stinger
+Random Favorite Skin
+Sakura Stinger
+Schema Stinger
+Lycan's Bane Stinger
+Sovereign Stinger
+Cavalier Stinger
+Standard Stinger
+Gridcrash Stinger
+Depths Stinger
+Ego Stinger
+Varnish Stinger
+Task Force 809 Knife
+RGX 11z Pro Blade
+RGX 11z Pro Firefly
+Altitude Knuckle Knife
+Xenohunter Knife
+VALORANT GO! Vol. 1 Knife
+Yoru's Stylish Butterfly Comb
+Araxys Bio Harvester
+Neptune Anchor
+Gaia's Wrath
+Waveform
+Obsidiana
+Champions 2021 Karambit
+Champions 2022 Butterfly Knife
+Origin Crescent Blade
+Striker Knife
+Radiant Crisis 001 Baseball Bat
+Nebula Knife
+Hack
+Glitchpop Dagger
+Glitchpop Axe
+Terminus A Quo
+Caeruleus
+Blade of Chaos
+Elderflame Dagger
+Singularity Knife
+Blade of Serket
+Songsteel
+VCT LOCK//IN Misericórdia
+Hivemind Sword
+Venturi Knife
+Forsaken Ritual Blade
+Velocity Karambit
+Ruin Dagger
+.SYS Melee
+Soulstrife Scythe
+Prime Axe
+Prime//2.0 Karambit
+Outpost Melee
+Black.Market Butterfly Knife
+Prism Knife
+Prism III Axe
+Broken Blade of the Ruined King
+Kingdom Knife
+K/TAC Blade
+Equilibrium
+Smite Knife
+Catrina
+Iridian Thorn Blade
+Celestial Fan
+Luxe Knife
+Magepunk Electroblade
+Magepunk Shock Gauntlet
+Spline Dagger
+Crimsonbeast Hammer
+Genesis Arc
+Ion Energy Sword
+Ion Karambit
+Oni Claw
+Onimaru Kunitsuna
+Cryostasis Impact Drill
+Artisan Foil
+Personal Administrative Melee Unit
+Luna's Descent
+Random Favorite Skin
+Gravitational Uranium Neuroblaster Baton
+Relic of the Sentinel
+Snowfall Wand
+Reaver Knife
+Reaver Karambit
+Prosperity
+Sovereign Sword
+Recon Balisong
+Titanmail Mace
+Reverie Sword
+Melee
+Tilde Knife
+Hu Else
+BlastX Polymer KnifeTech Coated Knife
+Ego Knife
+Winterwunderland Candy Cane

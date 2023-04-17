@@ -1,0 +1,113 @@
+# https://statsroyale.com/top/cards
+# (.*\n){5}^$\n
+Valkyrie
+Mini P.E.K.K.A
+The Log
+Arrows
+Goblin Barrel
+Skeleton Army
+Fireball
+Mega Knight
+Witch
+Zap
+Wizard
+Knight
+Baby Dragon
+Electro Wizard
+Prince
+Musketeer
+Hog Rider
+Dark Prince
+Archers
+P.E.K.K.A
+Princess
+Bats
+Bomber
+Goblin Gang
+Inferno Dragon
+Cannon
+Ice Spirit
+Miner
+Skeletons
+Minions
+Bandit
+Tesla
+Firecracker
+Dart Goblin
+Elite Barbarians
+Giant
+Spear Goblins
+Inferno Tower
+Balloon
+Goblins
+Ram Rider
+Barbarian Barrel
+Wall Breakers
+Goblin Hut
+Mega Minion
+Tornado
+Lumberjack
+Barbarians
+Guards
+Sparky
+Magic Archer
+Minion Horde
+Tombstone
+Poison
+Rocket
+Archer Queen
+Bomb Tower
+Ice Golem
+Mirror
+Battle Ram
+Golden Knight
+Phoenix
+Fire Spirit
+Lightning
+Goblin Cage
+Freeze
+Royal Hogs
+Rage
+Golem
+Executioner
+Giant Skeleton
+Royal Ghost
+Earthquake
+Goblin Giant
+Ice Wizard
+Electro Spirit
+Skeleton Barrel
+Giant Snowball
+Royal Delivery
+Graveyard
+Flying Machine
+Mother Witch
+X-Bow
+Royal Giant
+Skeleton Dragons
+Elixir Collector
+Electro Giant
+Night Witch
+Skeleton King
+Furnace
+Elixir Golem
+Lava Hound
+Mighty Miner
+Clone
+Barbarian Hut
+Goblin Drill
+Royal Recruits
+Cannon Cart
+Hunter
+Rascals
+Bowler
+Heal Spirit
+Three Musketeers
+Fisherman
+Zappies
+Mortar
+Electro Dragon
+Battle Healer
+Super Magic Archer
+Santa Hog Rider
+Monk

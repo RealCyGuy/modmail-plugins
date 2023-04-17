@@ -77,9 +77,10 @@ def random_line(filename):
     with open(
         os.path.join(os.path.dirname(os.path.realpath(__file__)), "data", filename), "r"
     ) as f:
-        line = next(f)
-        if line.startswith("# "):
-            line = next(f)
+        while line := next(f):
+            if line.startswith("# "):
+                continue
+            break
         for num, aline in enumerate(f, 2):
             if random.randrange(num):
                 continue
@@ -341,6 +342,26 @@ FOUGHT_OFF = [
         " by TWICE while fighting",
     ),
     ("performed a cover of ", lambda: random_line("twice_songs.txt"), " by TWICE with"),
+    "ate {}'s homework",
+    ("killed {} with their ", lambda: random_line("valorant_skins.txt")),
+    ("ordered their ", lambda: random_line("cobras.txt"), " to bite"),
+    (
+        "thought that the K-pop artist ",
+        lambda: random_line("kpop_artists.txt"),
+        " was better than {}'s favourite, ",
+        lambda: random_line("kpop_artists.txt"),
+    ),
+    (
+        "distracted {} with an image of the K-pop artist ",
+        lambda: random_line("kpop_artists.txt"),
+    ),
+    "three-starred",
+    (
+        "countered {}'s ",
+        lambda: random_line("clash_royale_cards.txt").lower(),
+        " with their ",
+        lambda: random_line("clash_royale_cards.txt").lower(),
+    ),
 ]
 
 
