@@ -75,7 +75,9 @@ def random_emoji() -> str:
 
 def random_line(filename):
     with open(
-        os.path.join(os.path.dirname(os.path.realpath(__file__)), "data", filename), "r"
+        os.path.join(os.path.dirname(os.path.realpath(__file__)), "data", filename),
+        "r",
+        encoding="utf-8",
     ) as f:
         while line := next(f):
             if line.startswith("# "):
@@ -251,8 +253,7 @@ FOUGHT_OFF = [
     "backstabbed",
     "betrayed",
     "matched wits with",
-    "played the vienna gambit against",
-    "played the queen's gambit declined exchange variation 4. d3 d6 5. Nf3 Nf6 6. e3 a6 7. a3 e5 8. d4 exd4 against",
+    ("played the ", lambda: random_line("chess_openings.txt"), " against"),
     "didn't like the new Star Wars movie because of",
     "wasn't a fan of",
     "engaged in intellectual discourse with",
@@ -362,6 +363,38 @@ FOUGHT_OFF = [
         " with their ",
         lambda: random_line("clash_royale_cards.txt").lower(),
     ),
+    "literally doesn't care about",
+    "convinced everyone that {} is the imposter",
+    "thought {} was super sus",
+    (
+        "vented from ",
+        lambda: random_line("skeld_locations.txt"),
+        " to ",
+        lambda: random_line("skeld_locations.txt"),
+        " to kill",
+    ),
+    ("taught {} ", lambda: random_line("programming_languages.txt")),
+    (
+        "programmed in ",
+        lambda: random_line("programming_languages.txt"),
+        " despite the advice of",
+    ),
+    "gave a second chance to Cupid for",
+    "cannibalized",
+    (
+        "outbid {} on the domain name ",
+        lambda: random_line("words.txt").lower(),
+        ".",
+        lambda: random_line("tlds.txt").lower().encode().decode("idna"),
+    ),
+    'made {} say "Gosh darn it!"',
+    (
+        "defeaned {} by playing the ",
+        lambda: random_line("instruments.txt").lower(),
+        " so badly",
+    ),
+    "threw {}'s rank-up game",
+    "lost their rank-up game to",
 ]
 
 

@@ -1,0 +1,15 @@
+# https://among-us.fandom.com/wiki/Locations#The_Skeld
+Admin
+Cafeteria
+Communications
+Electrical
+Lower Engine
+MedBay
+Navigation
+O2
+Reactor
+Security
+Shields
+Storage
+Upper Engine
+Weapons

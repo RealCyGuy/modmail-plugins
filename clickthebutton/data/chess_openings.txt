@@ -1,0 +1,3402 @@
+# https://github.com/lichess-org/chess-openings
+Amar Gambit
+Amar Opening
+Amar Opening: Gent Gambit
+Amar Opening: Paris Gambit
+Amsterdam Attack
+Anderssen's Opening
+Anderssen's Opening: Polish Gambit
+Barnes Opening
+Barnes Opening: Fool's Mate
+Barnes Opening: Gedult Gambit
+Barnes Opening: Gedult Gambit
+Barnes Opening: Hammerschlag
+Clemenz Opening
+Clemenz Opening: Spike Lee Gambit
+Crab Opening
+Creepy Crawly Formation: Classical Defense
+Formation: Hippopotamus Attack
+Formation: Shy Attack
+Global Opening
+Grob Opening
+Grob Opening: Alessi Gambit
+Grob Opening: Double Grob
+Grob Opening: Double Grob, Coca-Cola Gambit
+Grob Opening: Grob Gambit
+Grob Opening: Grob Gambit Declined
+Grob Opening: Grob Gambit, Basman Gambit
+Grob Opening: Grob Gambit, Fritz Gambit
+Grob Opening: Grob Gambit, Fritz Gambit, Romford Countergambit
+Grob Opening: Grob Gambit, Keres Gambit
+Grob Opening: Grob Gambit, Richter-Grob Gambit
+Grob Opening: Keene Defense
+Grob Opening: Keene Defense, Main Line
+Grob Opening: London Defense
+Grob Opening: Romford Countergambit
+Grob Opening: Spike Attack
+Grob Opening: Spike, Hurst Attack
+Grob Opening: Zilbermints Gambit
+Grob Opening: Zilbermints Gambit, Schiller Defense
+Grob Opening: Zilbermints Gambit, Zilbermints-Hartlaub Gambit
+Hungarian Opening
+Hungarian Opening: Asten Gambit
+Hungarian Opening: Burk Gambit
+Hungarian Opening: Bücker Gambit
+Hungarian Opening: Catalan Formation
+Hungarian Opening: Dutch Defense
+Hungarian Opening: Indian Defense
+Hungarian Opening: Myers Defense
+Hungarian Opening: Pachman Gambit
+Hungarian Opening: Paris Gambit
+Hungarian Opening: Reversed Alekhine
+Hungarian Opening: Reversed Brooklyn Defense, Brooklyn Benko Gambit
+Hungarian Opening: Reversed Modern Defense
+Hungarian Opening: Reversed Norwegian Defense
+Hungarian Opening: Sicilian Invitation
+Hungarian Opening: Slav Formation
+Hungarian Opening: Symmetrical Variation
+Hungarian Opening: Van Kuijk Gambit
+Hungarian Opening: Winterberg Gambit
+Kádas Opening
+Kádas Opening: Beginner's Trap
+Kádas Opening: Kádas Gambit
+Kádas Opening: Kádas Gambit
+Kádas Opening: Kádas Gambit
+Kádas Opening: Myers Variation
+Kádas Opening: Schneider Gambit
+Kádas Opening: Steinbok Gambit
+Lasker Simul Special
+Mieses Opening
+Mieses Opening: Myers Spike Attack
+Mieses Opening: Reversed Rat
+Polish Opening
+Polish Opening: Baltic Defense
+Polish Opening: Birmingham Gambit
+Polish Opening: Bugayev Advance Variation
+Polish Opening: Bugayev Attack
+Polish Opening: Czech Defense
+Polish Opening: Dutch Defense
+Polish Opening: German Defense
+Polish Opening: Grigorian Variation
+Polish Opening: Karniewski Variation
+Polish Opening: King's Indian Variation
+Polish Opening: King's Indian Variation, Schiffler Attack
+Polish Opening: King's Indian Variation, Sokolsky Attack
+Polish Opening: Myers Variation
+Polish Opening: Outflank Variation
+Polish Opening: Queen's Indian Variation
+Polish Opening: Queenside Defense
+Polish Opening: Rooks Swap Line
+Polish Opening: Schiffler-Sokolsky Variation
+Polish Opening: Schuehler Gambit
+Polish Opening: Symmetrical Variation
+Polish Opening: Tartakower Gambit
+Polish Opening: Wolferts Gambit
+Saragossa Opening
+Sodium Attack
+Sodium Attack: Chenoboskion Variation
+Sodium Attack: Durkin Gambit
+Valencia Opening
+Van Geet Opening
+Van Geet Opening: Battambang Variation
+Van Geet Opening: Billockus-Johansen Gambit
+Van Geet Opening: Caro-Kann Variation, St. Patrick's Attack
+Van Geet Opening: Damhaug Gambit
+Van Geet Opening: Dougherty Gambit
+Van Geet Opening: Dunst-Perrenet Gambit
+Van Geet Opening: Düsseldorf Gambit
+Van Geet Opening: Gladbacher Gambit
+Van Geet Opening: Hector Gambit
+Van Geet Opening: Hergert Gambit
+Van Geet Opening: Hulsemann Gambit
+Van Geet Opening: Jendrossek Gambit
+Van Geet Opening: Kluever Gambit
+Van Geet Opening: Laroche Gambit
+Van Geet Opening: Liebig Gambit
+Van Geet Opening: Melleby Gambit
+Van Geet Opening: Myers Attack
+Van Geet Opening: Napoleon Attack
+Van Geet Opening: Novosibirsk Variation
+Van Geet Opening: Nowokunski Gambit
+Van Geet Opening: Pfeiffer Gambit
+Van Geet Opening: Pfeiffer Gambit, Sleipnir Countergambit
+Van Geet Opening: Reversed Nimzowitsch
+Van Geet Opening: Reversed Scandinavian
+Van Geet Opening: Sicilian Two Knights
+Van Geet Opening: Sleipnir Gambit
+Van Geet Opening: Twyble Attack
+Van Geet Opening: Tübingen Gambit
+Van Geet Opening: Venezolana Variation
+Van Geet Opening: Warsteiner Gambit
+Van't Kruijs Opening
+Van't Kruijs Opening: Bouncing Bishop Variation
+Van't Kruijs Opening: Keoni-Hiva Gambit, Akahi Variation
+Van't Kruijs Opening: Keoni-Hiva Gambit, Alua Variation
+Van't Kruijs Opening: Keoni-Hiva Gambit, Ekolu Variation
+Venezolana Opening
+Ware Opening
+Ware Opening: Meadow Hay Trap
+Ware Opening: Ware Gambit
+Ware Opening: Wing Gambit
+Nimzo-Larsen Attack
+Nimzo-Larsen Attack: Classical Variation
+Nimzo-Larsen Attack: Dutch Variation
+Nimzo-Larsen Attack: English Variation
+Nimzo-Larsen Attack: Graz Attack
+Nimzo-Larsen Attack: Indian Variation
+Nimzo-Larsen Attack: Modern Variation
+Nimzo-Larsen Attack: Modern Variation
+Nimzo-Larsen Attack: Modern Variation
+Nimzo-Larsen Attack: Pachman Gambit
+Nimzo-Larsen Attack: Polish Variation
+Nimzo-Larsen Attack: Ringelbach Gambit
+Nimzo-Larsen Attack: Spike Variation
+Nimzo-Larsen Attack: Symmetrical Variation
+Bird Opening
+Bird Opening
+Bird Opening: Batavo-Polish Attack
+Bird Opening: Double Duck Formation
+Bird Opening: From's Gambit
+Bird Opening: From's Gambit, Bahr Gambit
+Bird Opening: From's Gambit, Langheld Gambit
+Bird Opening: From's Gambit, Lasker Variation
+Bird Opening: From's Gambit, Lipke Variation
+Bird Opening: Hobbs Gambit
+Bird Opening: Hobbs-Zilbermints Gambit
+Bird Opening: Horsefly Defense
+Bird Opening: Lasker Gambit
+Bird Opening: Mujannah
+Bird Opening: Myers Defense
+Bird Opening: Platz Gambit
+Bird Opening: Schlechter Gambit
+Bird Opening: Siegener Gambit
+Bird Opening: Swiss Gambit
+Bird Opening: Wagner-Zwitersch Gambit
+Bird Opening: Dutch Variation
+Bird Opening: Dutch Variation, Dudweiler Gambit
+Bird Opening: Lasker Variation
+Bird Opening: Sturm Gambit
+Bird Opening: Thomas Gambit
+Bird Opening: Williams Gambit
+Bird Opening: Williams Gambit
+Bird Opening: Williams-Zilbermints Gambit
+Colle System: Rhamphorhynchus Variation
+Modern Defense: Semi-Averbakh Variation, Polish Variation
+Modern Defense: Semi-Averbakh Variation, Pterodactyl Variation
+Modern Defense: Semi-Averbakh Variation, Pterodactyl Variation Accepted
+Zukertort Defense: Kingside Variation
+Zukertort Defense: Sicilian Knight Variation
+Zukertort Opening
+Zukertort Opening: Arctic Defense
+Zukertort Opening: Arctic Defense, Drunken Knight Variation
+Zukertort Opening: Basman Defense
+Zukertort Opening: Black Mustang Defense
+Zukertort Opening: Drunken Cavalry Variation
+Zukertort Opening: Dutch Variation
+Zukertort Opening: Herrstrom Gambit
+Zukertort Opening: Kingside Fianchetto
+Zukertort Opening: Lisitsyn Gambit
+Zukertort Opening: Lisitsyn Gambit Deferred
+Zukertort Opening: Pirc Invitation
+Zukertort Opening: Polish Defense
+Zukertort Opening: Queen's Gambit Invitation
+Zukertort Opening: Queenside Fianchetto Variation
+Zukertort Opening: Ross Gambit
+Zukertort Opening: Shabalov Gambit
+Zukertort Opening: Sicilian Invitation
+Zukertort Opening: Slav Invitation
+Zukertort Opening: Speelsmet Gambit
+Zukertort Opening: St. George Defense
+Zukertort Opening: The Walrus
+Zukertort Opening: Vos Gambit
+Zukertort Opening: Wade Defense
+Zukertort Opening: Ware Defense
+King's Indian Attack
+King's Indian Attack: Smyslov Variation
+King's Indian Attack: Spassky Variation
+King's Indian Attack: Symmetrical Defense
+King's Indian Attack: Wahls Defense
+Polish Opening: Zukertort System
+Zukertort Opening
+Zukertort Opening
+Zukertort Opening: Double Fianchetto Attack
+Zukertort Opening: Lemberger Gambit
+Zukertort Opening: Myers Polish Attack
+Zukertort Opening: Nimzo-Larsen Variation
+Zukertort Opening: Quiet System
+Nimzo-Larsen Attack: Classical Variation
+Nimzo-Larsen Attack: Norfolk Gambit
+Nimzo-Larsen Attack: Norfolk Gambit
+Zukertort Opening
+Zukertort Opening: Ampel Variation
+Zukertort Opening: Old Indian Attack
+Zukertort Opening: Pachman Gambit
+Zukertort Opening: Regina-Nu Gambit
+Zukertort Opening: Reversed Mexican Defense
+Zukertort Opening: Santasiere's Folly
+Zukertort Opening: Tennison Gambit
+Zukertort Opening: The Potato
+Hungarian Opening: Wiedenhagen-Beta Gambit
+King's Indian Attack
+King's Indian Attack: Double Fianchetto
+King's Indian Attack: Keres Variation
+King's Indian Attack: Keres Variation
+King's Indian Attack: Omega-Delta Gambit
+King's Indian Attack: Pachman System
+King's Indian Attack: Sicilian Variation
+King's Indian Attack: Yugoslav Variation
+King's Indian Attack: French Variation
+King's Indian Attack: Sicilian Variation
+King's Indian Attack: Sicilian Variation
+Zukertort Opening: Grünfeld Reversed
+Réti Opening
+Réti Opening: Advance Variation
+Réti Opening: Advance Variation, Michel Gambit
+Réti Opening: Penguin Variation
+Réti Opening: Reversed Blumenfeld Gambit
+Réti Opening: Réti Accepted
+Réti Opening: Réti Gambit, Keres Variation
+Réti Opening: Zilbermints Gambit
+English Opening
+English Opening: Achilles-Omega Gambit
+English Opening: Adorjan Defense
+English Opening: Anglo-Dutch Defense
+English Opening: Anglo-Dutch Defense, Hickmann Gambit
+English Opening: Anglo-Dutch Variation, Chabanon Gambit
+English Opening: Anglo-Dutch Variation, Ferenc Gambit
+English Opening: Anglo-Lithuanian Variation
+English Opening: Anglo-Scandinavian Defense
+English Opening: Anglo-Scandinavian Defense, Löhn Gambit
+English Opening: Anglo-Scandinavian Defense, Malvinas Variation
+English Opening: Anglo-Scandinavian Defense, Schulz Gambit
+English Opening: Great Snake Variation
+English Opening: Jaenisch Gambit
+English Opening: King's English Variation, Botvinnik System, Prickly Pawn Pass System
+English Opening: Myers Defense
+English Opening: Myers Gambit
+English Opening: Porcupine Variation
+English Opening: Wade Gambit
+English Opening: Zilbermints Gambit
+English Opening: Caro-Kann Defensive System
+Réti Opening: Anglo-Slav Variation, Bled Variation
+Réti Opening: Anglo-Slav Variation, Bogoljubov Variation
+Réti Opening: Anglo-Slav Variation, Bogoljubov Variation
+Réti Opening: Anglo-Slav Variation, Bogoljubov Variation
+Réti Opening: Anglo-Slav Variation, Capablanca Variation
+Réti Opening: Anglo-Slav Variation, London Defensive System
+Réti Opening: Anglo-Slav Variation, New York System
+Réti Opening: Anglo-Slav Variation, Torre System
+English Opening: Agincourt Defense
+English Opening: Agincourt Defense
+English Opening: Agincourt Defense
+English Opening: Agincourt Defense, Bogoljubov Defense
+English Opening: Agincourt Defense, Catalan Defense
+English Opening: Agincourt Defense, Catalan Defense
+English Opening: Agincourt Defense, Catalan Defense Accepted
+English Opening: Agincourt Defense, Catalan Defense, Semi-Slav Defense
+English Opening: Agincourt Defense, Kurajica Defense
+English Opening: Agincourt Defense, Tarrasch Defense
+English Opening: Agincourt Defense, Wimpy System
+English Opening: Neo-Catalan
+English Opening: Neo-Catalan Declined
+English Opening: Romanishin Gambit
+English Opening: Agincourt Defense, Keres Defense
+English Opening: Agincourt Defense, Neo-Catalan Declined
+Réti Opening: Anglo-Slav Variation, Bogoljubov Variation, Stonewall Line
+English Opening: Anglo-Indian Defense
+English Opening: Anglo-Indian Defense, Anti-Anti-Grünfeld
+English Opening: Anglo-Indian Defense, Grünfeld Formation
+English Opening: Anglo-Indian Defense, King's Indian Formation
+English Opening: Anglo-Indian Defense, King's Indian Formation, Double Fianchetto
+English Opening: Anglo-Indian Defense, King's Knight Variation
+English Opening: Anglo-Indian Defense, Old Indian Formation
+English Opening: Anglo-Indian Defense, Queen's Indian Formation
+English Opening: Anglo-Indian Defense, Queen's Indian Formation
+English Opening: Anglo-Indian Defense, Romanishin Variation
+English Opening: Anglo-Indian Defense, Scandinavian Defense
+English Opening: Anglo-Indian Defense, Scandinavian Defense, Exchange Variation
+English Opening: Anglo-Indian Defense, Slav Formation
+English Orangutan
+English Opening: Anglo-Grünfeld Defense
+English Opening: Anglo-Grünfeld Defense, Korchnoi Variation
+English Opening: Anglo-Indian Defense, Anglo-Grünfeld Variation
+English Opening: Anglo-Indian Defense, Anglo-Grünfeld Variation
+English Opening: Anglo-Indian Defense, Anglo-Grünfeld Variation
+English Opening: Anglo-Indian Defense, Queen's Knight Variation
+English Opening: Anglo-Indian Defense, Hedgehog System
+English Opening: Anglo-Indian Defense, Nimzo-English
+English Opening: Anglo-Indian Defense, Queen's Indian Formation
+English Opening: Anglo-Indian Defense, Queen's Indian Variation
+English Opening: Anglo-Indian Defense, Zvjaginsev-Krasenkow Attack
+English Opening: Mikenas-Carls Variation
+English Opening: Mikenas-Carls Variation
+English Opening: Mikenas-Carls Variation
+English Opening: Anglo-Indian Defense, Flohr-Mikenas-Carls Variation, Nei Gambit
+English Opening: Mikenas-Carls, Sicilian
+English Opening: Drill Variation
+English Opening: King's English Variation
+English Opening: King's English Variation, Kahiko-Hula Gambit
+English Opening: King's English Variation, Nimzowitsch Variation
+English Opening: King's English Variation, Nimzowitsch-Flohr Variation
+English Opening: King's English Variation
+English Opening: King's English Variation, Keres Defense
+English Opening: King's English Variation, Kramnik-Shirov Counterattack
+English Opening: King's English Variation, Reversed Sicilian
+English Opening: King's English Variation, Smyslov Defense
+English Opening: King's English Variation, Troger Defense
+English Opening: Carls-Bremen System
+English Opening: King's English Variation, Bellon Gambit
+English Opening: King's English Variation, Two Knights Variation
+English Opening: King's English Variation, Two Knights Variation, Reversed Dragon
+English Opening: King's English Variation, Two Knights Variation, Smyslov System
+English Opening: King's English, Erbenheimer Gambit
+English Opening: King's English, Mazedonisch
+English Opening: King's English Variation, Two Knights Variation, Keres Variation
+English Opening: King's English Variation, Two Knights Variation, Fianchetto Line
+English Opening: Closed, Taimanov Variation
+English Opening: Closed, Taimanov Variation
+English Opening: King's English Variation, Bremen-Hort Variation
+English Opening: King's English Variation, Closed System
+English Opening: King's English Variation, Hungarian Attack
+English Opening: King's English Variation, Reversed Closed Sicilian
+English Opening: King's English Variation, Taimanov Variation
+English Opening: King's English Variation, Botvinnik System
+English Opening: King's English Variation, Closed System, Full Symmetry
+English Opening: King's English Variation, Three Knights System
+English Opening: Four Knights System, Nimzowitsch Variation
+English Opening: King's English Variation, Four Knights Variation
+English Opening: King's English Variation, Four Knights Variation
+English Opening: King's English Variation, Four Knights Variation, Bradley Beach Variation
+English Opening: King's English Variation, Four Knights Variation, Flexible Line
+English Opening: King's English Variation, Four Knights Variation, Korchnoi Line
+English Opening: King's English Variation, Four Knights Variation, Quiet Line
+English Opening: King's English Variation, Four Knights Variation, Quiet Line
+English Opening: King's English Variation, Four Knights Variation, Quiet Line
+English Opening: King's English Variation, Four Knights Variation, Fianchetto Line
+English Opening: Symmetrical Variation
+English Opening: Symmetrical Variation
+English Opening: Symmetrical Variation, Hedgehog Defense
+English Opening: Symmetrical Variation, Napolitano Gambit
+English Opening: Symmetrical, Hedgehog, Flexible Formation
+English Opening: Wing Gambit
+English Opening: Symmetrical Variation, Anti-Benoni Variation
+English Opening: Symmetrical Variation, Anti-Benoni Variation, Spielmann Defense
+English Opening: Symmetrical Variation, Anti-Benoni Variation, Geller Variation
+English Opening: Symmetrical Variation, Anti-Benoni Variation, Spielmann Defense
+English Opening: Symmetrical Variation, Fianchetto Variation
+English Opening: Symmetrical Variation, Normal Variation
+English Opening: Symmetrical Variation, Rubinstein Variation
+English Opening: Symmetrical Variation, Three Knights Variation
+English Opening: Symmetrical Variation, Four Knights Variation
+English Opening: Symmetrical Variation, Two Knights Variation
+English Opening: Symmetrical Variation, Botvinnik System
+English Opening: Symmetrical Variation, Botvinnik System Reversed, with e3
+English Opening: Symmetrical Variation, Symmetrical Variation
+English Opening: Symmetrical Variation, Two Knights, Fianchetto Variation
+English Opening: Symmetrical Variation, Botvinnik System Reversed, with Nf3
+English Opening: Symmetrical Variation, Three Knights, Fianchetto Variation
+English Opening: Symmetrical Variation, Double Fianchetto
+English Opening: Symmetrical Variation, Duchamp Variation
+English Opening: Symmetrical Variation, Full Symmetry Line
+English Opening: Symmetrical Variation, Mecking Variation
+Australian Defense
+Benoni Defense: Franco-Sicilian Hybrid
+Borg Defense: Borg Gambit
+Colle System: Pterodactyl Variation
+Colle System: Siroccopteryx Variation
+English Defense
+English Defense
+English Defense: Eastbourne Gambit
+English Defense: Hartlaub Gambit Accepted
+English Defense: Hartlaub Gambit Declined
+English Defense: Perrin Variation
+English Defense: Poli Gambit
+Englund Gambit
+Englund Gambit Complex Declined
+Englund Gambit Complex Declined: Diemer Counterattack
+Englund Gambit Complex: Englund Gambit
+Englund Gambit Complex: Felbecker Gambit
+Englund Gambit Complex: Hartlaub-Charlick Gambit
+Englund Gambit Complex: Mosquito Gambit
+Englund Gambit Complex: Soller Gambit
+Englund Gambit Complex: Soller Gambit Deferred
+Englund Gambit Complex: Stockholm Variation
+Englund Gambit Complex: Zilbermints Gambit
+Englund Gambit Declined: Reversed Alekhine
+Englund Gambit Declined: Reversed Brooklyn
+Englund Gambit Declined: Reversed French
+Englund Gambit Declined: Reversed Krebs
+Englund Gambit Declined: Reversed Mokele Mbembe
+Horwitz Defense
+Horwitz Defense: Zilbermints Gambit
+Kangaroo Defense
+Kangaroo Defense: Keres Defense, Transpositional Variation
+Mikenas Defense
+Mikenas Defense: Cannstatter Variation
+Mikenas Defense: Lithuanian Variation
+Mikenas Defense: Pozarek Gambit
+Modern Defense: Beefeater Variation
+Modern Defense: Lizard Defense, Pirc-Diemer Gambit
+Montevideo Defense
+Polish Defense
+Polish Defense: Spassky Gambit Accepted
+Pterodactyl Defense: Central, Benoni Beefeater Pterodactyl
+Pterodactyl Defense: Central, Benoni Pterodactyl
+Pterodactyl Defense: Fianchetto, Queen Benoni Pterodactyl
+Pterodactyl Defense: Fianchetto, Queen Pteranodon
+Pterodactyl Defense: Fianchetto, Queen Pterodactyl
+Pterodactyl Defense: Queen Pterodactyl, Quiet Line
+Queen's Pawn Game
+Queen's Pawn Game: Anglo-Slav Opening
+Queen's Pawn Game: Modern Defense
+Slav Indian: Kudischewitsch Gambit
+Zaire Defense
+Modern Defense
+Modern Defense: Neo-Modern Defense
+Old Indian Defense
+Queen's Pawn Game
+Rat Defense: English Rat
+Rat Defense: English Rat, Lisbon Gambit
+Rat Defense: English Rat, Pounds Gambit
+Robatsch Defense
+Wade Defense
+Zukertort Opening: Wade Defense, Chigorin Plan
+Modern Defense: Averbakh System
+Modern Defense: Averbakh Variation, Pseudo-Sämisch
+Modern Defense: Kotov Variation
+Modern Defense: Randspringer Variation
+Pterodactyl Defense
+Pterodactyl Defense: Central, Bogolubovia
+Benoni Defense: Benoni Gambit Accepted
+Benoni Defense: Benoni Gambit, Schlenker Defense
+Benoni Defense: Benoni-Indian Defense
+Benoni Defense: Benoni-Indian Defense, Kingside Move Order
+Benoni Defense: Benoni-Staunton Gambit
+Benoni Defense: Cormorant Gambit
+Benoni Defense: French Benoni
+Benoni Defense: Hawk Variation
+Benoni Defense: Old Benoni
+Benoni Defense: Old Benoni
+Benoni Defense: Old Benoni
+Benoni Defense: Old Benoni, Mujannah Formation
+Benoni Defense: Old Benoni, Schmid Variation
+Benoni Defense: Snail Variation
+Benoni Defense: Woozle
+Benoni Defense: Zilbermints-Benoni Gambit
+Benoni Defense: Zilbermints-Benoni Gambit
+Benoni Defense: Zilbermints-Benoni Gambit, Tamarkin Countergambit
+Indian Defense: Pseudo-Benko
+Queen's Pawn Game: Liedmann Gambit
+Benoni Defense: Old Benoni
+Benoni Defense: Semi-Benoni
+Amazon Attack: Siberian Attack
+Canard Opening
+Indian Defense
+Indian Defense: Gedult Attack, Gedult Attack
+Indian Defense: Gibbins-Weidenhagen Gambit
+Indian Defense: Gibbins-Weidenhagen Gambit Accepted
+Indian Defense: Gibbins-Weidenhagen Gambit, Maltese Falcon
+Indian Defense: Gibbins-Weidenhagen Gambit, Oshima Defense
+Indian Defense: Gibbins-Weidenhagen Gambit, Stummer Gambit
+Indian Defense: Lazard Gambit
+Indian Defense: Maddigan Gambit
+Indian Defense: Omega Gambit
+Indian Defense: Omega Gambit, Arafat Gambit
+Indian Defense: Paleface Attack, Blackmar-Diemer Gambit Deferred
+Indian Defense: Pawn Push Variation
+Indian Defense: Reversed Chigorin Defense
+Indian Defense: Tartakower Attack
+Paleface Attack
+Queen's Pawn Game: Chigorin Variation
+Queen's Pawn Game: Veresov, Richter Attack
+Trompowsky Attack
+Trompowsky Attack: Borg Variation
+Trompowsky Attack: Classical Defense
+Trompowsky Attack: Classical Defense, Big Center Variation
+Trompowsky Attack: Edge Variation
+Trompowsky Attack: Edge Variation, Hergert Gambit
+Trompowsky Attack: Edge Variation, Hergert Gambit
+Trompowsky Attack: Poisoned Pawn Variation
+Trompowsky Attack: Raptor Variation
+Trompowsky Attack: Raptor Variation, Hergert Gambit
+Döry Defense
+Indian Defense: Czech-Indian
+Indian Defense: Knights Variation
+Indian Defense: Knights Variation, Alburt-Miles Variation
+Indian Defense: London System
+Indian Defense: Polish Variation
+Indian Defense: Spielmann-Indian
+Indian Defense: Wade-Tartakower Defense
+Queen's Pawn Game: Torre Attack, Breyer Variation
+Queen's Pawn Game: Veresov Attack, Classical Defense
+Torre Attack: Classical Defense
+Torre Attack: Classical Defense, Nimzowitsch Variation
+Torre Attack: Classical Defense, Petrosian Gambit
+Torre Attack: Wagner Gambit
+Yusupov-Rubinstein System
+Indian Defense: Schnepper Gambit
+Marienbad System
+Marienbad System: Berg Variation
+Pseudo Queen's Indian Defense
+East Indian Defense
+Indian Defense: Colle System, King's Indian Variation
+London System
+Queen's Pawn Game: Barry Attack, Grünfeld Variation
+Queen's Pawn Game: Torre Attack, Grünfeld Variation, Main Line
+Torre Attack: Fianchetto Defense
+Torre Attack: Fianchetto Defense, Euwe Variation
+Indian Defense: Przepiorka Variation
+Indian Defense: Medusa Gambit
+Indian Defense: Normal Variation
+Indian Defense: Pyrenees Gambit
+Mexican Defense
+Mexican Defense: Horsefly Gambit
+Queen's Indian Accelerated
+Slav Indian
+Indian Defense: Budapest Defense
+Indian Defense: Budapest Defense, Fajarowicz Defense, Bonsdorf Variation
+Indian Defense: Budapest Defense, Fajarowicz Variation
+Indian Defense: Budapest Defense, Fajarowicz-Steiner Variation
+Indian Defense: Budapest Defense
+Indian Defense: Budapest Defense, Adler Variation
+Indian Defense: Budapest Defense, Alekhine Variation
+Indian Defense: Budapest Defense, Alekhine Variation, Abonyi Variation
+Indian Defense: Budapest Defense, Alekhine Variation, Tartakower Defense
+Indian Defense: Budapest Defense, Rubinstein Variation
+Old Indian Defense
+Old Indian Defense: Aged Gibbon Gambit
+Old Indian Defense: Czech Variation, with Nc3
+Old Indian Defense: Czech Variation, with Nf3
+Old Indian Defense: Janowski Variation
+Old Indian Defense: Janowski Variation, Fianchetto Variation
+Old Indian Defense: Janowski Variation, Grinberg Gambit
+Old Indian Defense: Janowski Variation, Main Line
+Old Indian Defense: Dus-Khotimirsky Variation
+Old Indian Defense: Tartakower-Indian
+Old Indian Defense: Two Knights Variation
+Old Indian Defense: Ukrainian Variation
+Old Indian Defense: Normal Variation
+Benoni Defense
+Benoni Defense: Czech Benoni Defense
+Benoni Defense: Hromádka System
+Benoni Defense: King's Indian System
+Benoni Defense: Weenink Variation
+Grünfeld Defense: Three Knights Variation, Burille Variation, Reversed Tarrasch
+Vulture Defense
+Benko Gambit
+Benko Gambit Accepted
+Benko Gambit Accepted: Dlugy Variation
+Benko Gambit Accepted: Modern Variation
+Benko Gambit Accepted: Pawn Return Variation
+Benko Gambit Declined: Bishop Attack
+Benko Gambit Declined: Hjørring Countergambit
+Benko Gambit Declined: Main Line
+Benko Gambit Declined: Pseudo-Sämisch
+Benko Gambit Declined: Quiet Line
+Benko Gambit Declined: Sosonko Variation
+Benko Gambit: Mutkin Countergambit
+Benko Gambit: Nescafe Frappe Attack
+Benko Gambit: Zaitsev System
+Benko Gambit: Zaitsev Variation, Nescafe Frappe Attack
+Benko Gambit Accepted: Central Storming Variation
+Benko Gambit Accepted: Fianchetto Variation
+Benko Gambit Accepted: Fully Accepted Variation
+Benko Gambit: Fianchetto Variation
+Benko Gambit: Nd2 Variation
+Benko Gambit
+Benko Gambit Accepted: King Walk Variation
+Benko Gambit Accepted: Yugoslav
+Benko Gambit Accepted: Yugoslav
+Benoni Defense: Modern Variation
+Benoni Defense: Modern Variation, Snake Variation
+Benoni Defense
+Benoni Defense: Fianchetto Variation
+Benoni Defense: Knight's Tour Variation
+Benoni Defense: Uhlmann Variation
+Benoni Defense: Fianchetto Variation
+Benoni Defense: Fianchetto Variation, Hastings Defense
+Benoni Defense: Fianchetto Variation, Hastings Defense, Main Line
+Benoni Defense: King's Pawn Line
+Benoni Defense: Mikenas Variation
+Benoni Defense: Pawn Storm Variation
+Benoni Defense: Taimanov Variation
+Benoni Defense: Four Pawns Attack
+Benoni Defense: Four Pawns Attack, Main Line
+Benoni Defense: Classical Variation
+Benoni Defense: Classical Variation, New York Variation
+Benoni Defense: Classical Variation, Traditional Variation
+Benoni Defense: Classical Variation, Averbakh-Grivas Attack
+Benoni Defense: Classical
+Benoni Defense: Classical Variation, Main Line
+Benoni Defense: Classical Variation, Full Line
+Benoni Defense: Classical Variation, Argentine Counterattack
+Benoni Defense: Classical Variation, Czerniak Defense
+Benoni Defense: Classical Variation, Czerniak Defense, Tal Line
+Benoni Defense: Classical Variation, Czerniak Defense
+Benoni Defense: Classical Variation, Czerniak Defense
+Dutch Defense
+Dutch Defense: Alapin Variation
+Dutch Defense: Hevendehl Gambit
+Dutch Defense: Hopton Attack
+Dutch Defense: Janzen-Korchnoi Gambit
+Dutch Defense: Kingfisher Gambit
+Dutch Defense: Korchnoi Attack
+Dutch Defense: Krejcik Gambit
+Dutch Defense: Krejcik Gambit, Tate Gambit
+Dutch Defense: Manhattan Gambit, Anti-Classical Line
+Dutch Defense: Manhattan Gambit, Anti-Leningrad
+Dutch Defense: Manhattan Gambit, Anti-Modern
+Dutch Defense: Manhattan Gambit, Anti-Stonewall
+Dutch Defense: Omega-Isis Gambit
+Dutch Defense: Raphael Variation
+Dutch Defense: Senechaud Gambit
+Dutch Defense: Spielmann Gambit
+Queen's Pawn Game: Veresov Attack, Dutch System
+Dutch Defense: Blackburne Variation
+Dutch Defense: Fianchetto Attack
+Dutch Defense: Leningrad Variation, Karlsbad Variation
+Dutch Defense: Leningrad, Basman System
+Dutch Defense: Semi-Leningrad Variation
+Dutch Defense: Blackmar's Second Gambit
+Dutch Defense: Staunton Gambit
+Dutch Defense: Staunton Gambit Accepted
+Dutch Defense: Staunton Gambit, American Attack
+Dutch Defense: Staunton Gambit, Tartakower Variation
+Rat Defense: Balogh Defense
+Dutch Defense: Staunton Gambit
+Dutch Defense: Staunton Gambit, Alekhine Variation
+Dutch Defense: Staunton Gambit, Chigorin Variation
+Dutch Defense: Staunton Gambit, Lasker Variation
+Dutch Defense: Staunton Gambit, Nimzowitsch Variation
+Dutch Defense
+Dutch Defense: Bellon Gambit
+Dutch Defense: Bladel Variation
+Dutch Defense: Classical Variation
+Dutch Defense: Krause Variation
+Dutch Defense: Normal Variation
+Dutch Defense: Rubinstein Variation
+Dutch Defense: Queen's Knight Variation
+Dutch Defense: Fianchetto Variation
+Dutch Defense: Hort-Antoshin System
+Dutch Defense: Leningrad Variation
+Dutch Defense: Leningrad Variation
+Dutch Defense: Leningrad Variation, Warsaw Variation
+Dutch Defense: Leningrad Variation, Matulovic Variation
+Dutch Defense: Classical Variation
+Dutch Defense: Nimzo-Dutch Variation
+Dutch Defense: Nimzo-Dutch Variation, Alekhine Variation
+Dutch Defense: Stonewall Variation, Modern Variation
+Dutch Defense: Classical Variation
+Dutch Defense: Classical Variation, Blackburne Attack
+Dutch Defense: Alekhine Variation
+Dutch Defense: Classical Variation
+Dutch Defense: Stonewall Variation
+Dutch Defense: Stonewall Variation
+Dutch Defense: Stonewall Variation, Botvinnik Variation
+Dutch Defense: Stonewall Variation
+Dutch Defense: Stonewall Variation
+Dutch Defense: Stonewall Variation, Chekhover Variation
+Dutch Defense: Classical Variation
+Dutch Defense: Classical Variation, Buenos Aires Variation
+Dutch Defense: Classical Variation, Huisl Variation
+Dutch Defense: Classical Variation, Ilyin-Zhenevsky Variation
+Dutch Defense: Classical Variation, Ilyin-Zhenevsky Variation, Winter Variation
+Dutch Defense: Classical Variation, Ilyin-Zhenevsky Variation, Alatortsev-Lisitsyn Line
+Dutch Defense: Classical Variation, Ilyin-Zhenevsky Variation, Modern Main Line
+Barnes Defense
+Borg Defense
+Borg Defense: Borg Gambit
+Borg Defense: Troon Gambit
+Borg Defense: Zilbermints Gambit
+Carr Defense
+Carr Defense: Zilbermints Gambit
+Duras Gambit
+Fried Fox Defense
+Goldsmith Defense
+Goldsmith Defense: Picklepuss Defense
+Guatemala Defense
+Hippopotamus Defense
+Hippopotamus Defense
+King's Pawn Game
+Lemming Defense
+Lion Defense: Lion's Jaw
+Nimzowitsch Defense
+Nimzowitsch Defense
+Nimzowitsch Defense: Breyer Variation
+Nimzowitsch Defense: Colorado Countergambit
+Nimzowitsch Defense: Colorado Countergambit Accepted
+Nimzowitsch Defense: Declined Variation
+Nimzowitsch Defense: El Columpio Defense
+Nimzowitsch Defense: El Columpio Defense, El Columpio Gambit
+Nimzowitsch Defense: El Columpio Defense, Exchange Variation
+Nimzowitsch Defense: El Columpio Defense, Pin Variation
+Nimzowitsch Defense: Franco-Nimzowitsch Variation
+Nimzowitsch Defense: French Connection
+Nimzowitsch Defense: Hornung Gambit
+Nimzowitsch Defense: Kennedy Variation
+Nimzowitsch Defense: Kennedy Variation, Bielefelder Gambit
+Nimzowitsch Defense: Kennedy Variation, Hammer Gambit
+Nimzowitsch Defense: Kennedy Variation, Herford Gambit
+Nimzowitsch Defense: Kennedy Variation, Keres Attack
+Nimzowitsch Defense: Kennedy Variation, Linksspringer Variation
+Nimzowitsch Defense: Kennedy Variation, Main Line
+Nimzowitsch Defense: Kennedy Variation, Paulsen Attack
+Nimzowitsch Defense: Kennedy Variation, Riemann Defense
+Nimzowitsch Defense: Kennedy Variation, de Smet Gambit
+Nimzowitsch Defense: Mikenas Variation
+Nimzowitsch Defense: Neo-Mongoloid Defense
+Nimzowitsch Defense: Pirc Connection
+Nimzowitsch Defense: Pseudo-Spanish Variation
+Nimzowitsch Defense: Scandinavian Variation
+Nimzowitsch Defense: Scandinavian Variation, Aachen Gambit
+Nimzowitsch Defense: Scandinavian Variation, Advance Variation
+Nimzowitsch Defense: Scandinavian Variation, Bogoljubov Variation
+Nimzowitsch Defense: Scandinavian Variation, Bogoljubov Variation
+Nimzowitsch Defense: Scandinavian Variation, Bogoljubov Variation, Brandics Gambit
+Nimzowitsch Defense: Scandinavian Variation, Bogoljubov Variation, Erben Gambit
+Nimzowitsch Defense: Scandinavian Variation, Bogoljubov Variation, Heinola-Deppe Gambit
+Nimzowitsch Defense: Scandinavian Variation, Bogoljubov Variation, Nimzowitsch Gambit
+Nimzowitsch Defense: Scandinavian Variation, Bogoljubov Variation, Richter Gambit
+Nimzowitsch Defense: Scandinavian Variation, Bogoljubov Variation, Vehre Variation
+Nimzowitsch Defense: Scandinavian Variation, Exchange Variation
+Nimzowitsch Defense: Scandinavian Variation, Exchange Variation, Marshall Gambit
+Nimzowitsch Defense: Wheeler Gambit
+Nimzowitsch Defense: Williams Variation
+Nimzowitsch Defense: Woodchuck Variation
+Owen Defense
+Owen Defense: Hekili-Loa Gambit
+Owen Defense: Matovinsky Gambit
+Owen Defense: Naselwaus Gambit
+Owen Defense: Smith Gambit
+Owen Defense: Unicorn Variation
+Owen Defense: Wind Gambit
+Pirc Defense
+Pirc Defense
+Pirc Defense
+Pirc Defense: Roscher Gambit
+Rat Defense: Antal Defense
+Rat Defense: Fuller Gambit
+Rat Defense: Harmonist
+Rat Defense: Petruccioli Attack
+Rat Defense: Spike Attack
+St. George Defense
+St. George Defense: Polish Variation
+St. George Defense: San Jorge Variation
+St. George Defense: Zilbermints Gambit
+Van Geet Opening: Berlin Gambit
+Ware Defense
+Ware Defense: Snagglepuss Defense
+Scandinavian Defense
+Scandinavian Defense
+Scandinavian Defense: Anderssen Counterattack
+Scandinavian Defense: Anderssen Counterattack, Collijn Variation
+Scandinavian Defense: Anderssen Counterattack, Goteborg System
+Scandinavian Defense: Anderssen Counterattack, Orthodox Attack
+Scandinavian Defense: Blackburne Gambit
+Scandinavian Defense: Blackburne-Kloosterboer Gambit
+Scandinavian Defense: Boehnke Gambit
+Scandinavian Defense: Bronstein Variation
+Scandinavian Defense: Classical Variation
+Scandinavian Defense: Grünfeld Variation
+Scandinavian Defense: Gubinsky-Melts Defense
+Scandinavian Defense: Icelandic-Palme Gambit
+Scandinavian Defense: Kiel Variation
+Scandinavian Defense: Kloosterboer Gambit
+Scandinavian Defense: Kádas Gambit
+Scandinavian Defense: Lasker Variation
+Scandinavian Defense: Main Line
+Scandinavian Defense: Main Line, Leonhardt Gambit
+Scandinavian Defense: Main Line, Mieses Variation
+Scandinavian Defense: Marshall Variation
+Scandinavian Defense: Mieses-Kotroc Variation
+Scandinavian Defense: Modern Variation
+Scandinavian Defense: Modern Variation
+Scandinavian Defense: Modern Variation, Gipslis Variation
+Scandinavian Defense: Modern Variation, Wing Gambit
+Scandinavian Defense: Panov Transfer
+Scandinavian Defense: Portuguese Gambit
+Scandinavian Defense: Portuguese Gambit, Banker Variation
+Scandinavian Defense: Portuguese Gambit, Classical Variation
+Scandinavian Defense: Portuguese Gambit, Correspondence Refutation
+Scandinavian Defense: Portuguese Gambit, Elbow Variation
+Scandinavian Defense: Portuguese Gambit, Jadoul Variation
+Scandinavian Defense: Portuguese Gambit, Lusophobe Variation
+Scandinavian Defense: Portuguese Gambit, Melbourne Shuffle Variation
+Scandinavian Defense: Portuguese Gambit, Wuss Variation
+Scandinavian Defense: Richter Variation
+Scandinavian Defense: Richter Variation
+Scandinavian Defense: Schiller-Pytel Variation
+Scandinavian Defense: Schiller-Pytel Variation, Modern Variation
+Scandinavian Defense: Valencian Variation
+Scandinavian Defense: Valencian Variation, Ilundain Variation
+Scandinavian Defense: Valencian Variation, Main Line
+Scandinavian Defense: Zilbermints Gambit
+Van Geet Opening: Grünfeld Defense
+Alekhine Defense
+Alekhine Defense: Brooklyn Variation
+Alekhine Defense: Brooklyn Variation, Everglades Variation
+Alekhine Defense: Buckley Attack
+Alekhine Defense: Hunt Variation, Lasker Simul Gambit
+Alekhine Defense: Hunt Variation, Matsukevich Gambit
+Alekhine Defense: Hunt Variation, Mikenas Gambit
+Alekhine Defense: Kmoch Variation
+Alekhine Defense: Krejcik Variation
+Alekhine Defense: Krejcik Variation, Krejcik Gambit
+Alekhine Defense: Maróczy Variation
+Alekhine Defense: Mokele Mbembe
+Alekhine Defense: Mokele Mbembe, Modern Line
+Alekhine Defense: Mokele Mbembe, Vavra Defense
+Alekhine Defense: Normal Variation
+Alekhine Defense: Scandinavian Variation
+Alekhine Defense: Scandinavian Variation, Geschev Gambit
+Alekhine Defense: Scandinavian Variation, Myers Gambit
+Alekhine Defense: Spielmann Gambit
+Alekhine Defense: Steiner Variation
+Alekhine Defense: Sämisch Attack
+Alekhine Defense: The Squirrel
+Alekhine Defense: Two Pawns Attack
+Alekhine Defense: Two Pawns Attack, Lasker Variation
+Alekhine Defense: Two Pawns Attack, Mikenas Variation
+Alekhine Defense: Welling Variation
+Alekhine Defense
+Alekhine Defense
+Alekhine Defense
+Alekhine Defense: Balogh Variation
+Alekhine Defense: Exchange Variation
+Alekhine Defense: Exchange Variation, Karpov Variation
+Alekhine Defense: Exchange Variation, Voronezh Variation
+Alekhine Defense: Four Pawns Attack
+Alekhine Defense: Four Pawns Attack, Cambridge Gambit
+Alekhine Defense: Four Pawns Attack, Fianchetto Variation
+Alekhine Defense: Four Pawns Attack, Ilyin-Zhenevsky Variation
+Alekhine Defense: Four Pawns Attack, Korchnoi Variation
+Alekhine Defense: Four Pawns Attack, Main Line
+Alekhine Defense: Four Pawns Attack, Tartakower Variation
+Alekhine Defense: Four Pawns Attack, Trifunovic Variation
+Alekhine Defense: Hunt Variation
+Alekhine Defense: Modern Variation, Alekhine Gambit
+Alekhine Defense: O'Sullivan Gambit
+Alekhine Defense: Modern Variation
+Alekhine Defense: Modern Variation, Alburt Variation
+Alekhine Defense: Modern Variation, Keres Variation
+Alekhine Defense: Modern Variation, Larsen Variation
+Alekhine Defense: Modern Variation, Larsen-Haakert Variation
+Alekhine Defense: Modern Variation, Schmid Variation
+Alekhine Defense: Modern Variation, Alekhine Variation
+Alekhine Defense: Modern Variation, Flohr Variation
+Alekhine Defense: Modern Variation, Main Line
+Alekhine Defense: Modern Variation, Panov Variation
+Alekhine Defense: Modern Variation, Vitolins Attack
+Modern Defense
+Modern Defense
+Modern Defense: Anti-Modern
+Modern Defense: Bishop Attack
+Modern Defense: Bishop Attack, Bücker Gambit
+Modern Defense: Bishop Attack, Monkey's Bum
+Modern Defense: Dunworthy Variation
+Modern Defense: Fianchetto Gambit
+Modern Defense: Gurgenidze Defense
+Modern Defense: Lizard Defense, Mittenberger Gambit
+Modern Defense: Masur Gambit
+Modern Defense: Modern Pterodactyl
+Modern Defense: Mongredien Defense, with Nc3
+Modern Defense: Mongredien Defense, with Nf3
+Modern Defense: Norwegian Defense
+Modern Defense: Norwegian Defense, Norwegian Gambit
+Modern Defense: Pseudo-Austrian Attack
+Modern Defense: Semi-Averbakh Variation, Pterodactyl Variation Declined
+Modern Defense: Standard Defense
+Modern Defense: Standard Line
+Modern Defense: Three Pawns Attack
+Modern Defense: Two Knights Variation
+Modern Defense: Two Knights Variation, Suttles Variation
+Modern Defense: Two Knights Variation, Suttles Variation, Tal Gambit
+Modern Defense: Westermann Gambit
+Modern Defense: Wind Gambit
+Norwegian Defense
+Pterodactyl Defense: Austrian, Austriadactylus Western
+Pterodactyl Defense: Austrian, Grand Prix Pterodactyl
+Pterodactyl Defense: Austrian, Pteranodon
+Pterodactyl Defense: Central, Anhanguera
+Pterodactyl Defense: Central, Benoni Quetzalcoatlus
+Pterodactyl Defense: Central, Quetzalcoatlus Gambit
+Pterodactyl Defense: Eastern, Anhanguera
+Pterodactyl Defense: Eastern, Benoni
+Pterodactyl Defense: Eastern, Benoni Pteranodon
+Pterodactyl Defense: Eastern, Benoni Pterodactyl
+Pterodactyl Defense: Eastern, Pteranodon
+Pterodactyl Defense: Eastern, Pterodactyl
+Pterodactyl Defense: Eastern, Rhamphorhynchus
+Pterodactyl Defense: Fianchetto, King Pterodactyl
+Pterodactyl Defense: Fianchetto, Rhamphorhynchus
+Pterodactyl Defense: Sicilian, Quetzalcoatlus
+Pterodactyl Defense: Sicilian, Siroccopteryx
+Pterodactyl Defense: Western, Anhanguera
+Pterodactyl Defense: Western, Siroccopteryx
+Rat Defense: Accelerated Gurgenidze
+Czech Defense
+King's Pawn Game: Maróczy Defense
+Lion Defense: Anti-Philidor
+Lion Defense: Anti-Philidor, Lion's Cave
+Lion Defense: Anti-Philidor, Lion's Cave, Lion Claw Gambit
+Lion Defense: Bayonet Attack
+Modern Defense: Geller's System
+Pirc Defense
+Pirc Defense: 150 Attack
+Pirc Defense: 150 Attack, Inner Doll Defense
+Pirc Defense: 150 Attack, Sveshnikov-Jansa Attack
+Pirc Defense: Bayonet Attack
+Pirc Defense: Byrne Variation
+Pirc Defense: Chinese Variation
+Pirc Defense: Kholmov System
+Pirc Defense: Sveshnikov System
+Pirc Defense: Classical Variation
+Pirc Defense: Classical Variation
+Pirc Defense: Classical Variation, Quiet System
+Pirc Defense: Classical Variation, Quiet System, Chigorin Line
+Pirc Defense: Classical Variation, Quiet System, Czech Defense
+Pirc Defense: Classical Variation, Quiet System, Parma Defense
+Pirc Defense: Classical Variation, Schlechter Variation
+Pirc Defense: Austrian Attack
+Pirc Defense: Austrian Attack
+Pirc Defense: Austrian Attack, Dragon Formation
+Pirc Defense: Austrian Attack, Kurajica Variation
+Pirc Defense: Austrian Attack, Ljubojevic Variation
+Pirc Defense: Austrian Attack, Unzicker Attack
+Pirc Defense: Austrian Attack, Unzicker Attack, Bronstein Variation
+Pirc Defense: Austrian Attack, Weiss Variation
+Caro-Kann Defense
+Caro-Kann Defense
+Caro-Kann Defense
+Caro-Kann Defense: Accelerated Panov Attack
+Caro-Kann Defense: Accelerated Panov Attack
+Caro-Kann Defense: Accelerated Panov Attack, Modern Variation
+Caro-Kann Defense: Accelerated Panov Attack, Open Variation
+Caro-Kann Defense: Accelerated Panov Attack, Pseudo-Scandinavian
+Caro-Kann Defense: Accelerated Panov Attack, Van Weersel Attack
+Caro-Kann Defense: Apocalypse Attack
+Caro-Kann Defense: Breyer Variation
+Caro-Kann Defense: Breyer Variation, Stein Attack
+Caro-Kann Defense: Euwe Attack
+Caro-Kann Defense: Goldman Variation
+Caro-Kann Defense: Hector Gambit
+Caro-Kann Defense: Hillbilly Attack
+Caro-Kann Defense: Hillbilly Attack, Schaeffer Gambit
+Caro-Kann Defense: Labahn Attack
+Caro-Kann Defense: Labahn Attack, Double Gambit
+Caro-Kann Defense: Labahn Attack, Polish Variation
+Caro-Kann Defense: Scorpion-Horus Gambit
+Caro-Kann Defense: Spike Variation
+Caro-Kann Defense: Spike Variation, Scorpion-Grob Gambit
+Caro-Kann Defense: Toikkanen Gambit
+Caro-Kann Defense: Two Knights Attack
+Caro-Kann Defense: Two Knights Attack, Mindeno Variation
+Caro-Kann Defense: Two Knights Attack, Mindeno Variation, Exchange Line
+Caro-Kann Defense: Two Knights Attack, Mindeno Variation, Retreat Line
+Caro-Kann Defense
+Caro-Kann Defense
+Caro-Kann Defense: Advance Variation
+Caro-Kann Defense: Advance Variation, Bayonet Attack
+Caro-Kann Defense: Advance Variation, Botvinnik-Carls Defense
+Caro-Kann Defense: Advance Variation, Bronstein Variation
+Caro-Kann Defense: Advance Variation, Prins Attack
+Caro-Kann Defense: Advance Variation, Short Variation
+Caro-Kann Defense: Advance Variation, Tal Variation
+Caro-Kann Defense: Advance Variation, Van der Wiel Attack
+Caro-Kann Defense: Advance Variation, Van der Wiel Attack
+Caro-Kann Defense: Advance Variation, Van der Wiel Attack, Dreyev Defense
+Caro-Kann Defense: Advance, Short Variation
+Caro-Kann Defense: De Bruycker Defense
+Caro-Kann Defense: De Bruycker Defense
+Caro-Kann Defense: Edinburgh Variation
+Caro-Kann Defense: Maróczy Variation
+Caro-Kann Defense: Maróczy Variation, Maróczy Gambit
+Caro-Kann Defense: Masi Variation
+Caro-Kann Defense: Massachusetts Defense
+Caro-Kann Defense: Mieses Attack, Landau Gambit
+Caro-Kann Defense: Mieses Gambit
+Caro-Kann Defense: Modern Variation
+Caro-Kann Defense: Ulysses Gambit
+Caro-Kann Defense: Exchange Variation
+Caro-Kann Defense: Exchange Variation, Bulla Attack
+Caro-Kann Defense: Exchange Variation, Rubinstein Variation
+Caro-Kann Defense: Panov Attack
+Caro-Kann Defense: Panov Attack
+Caro-Kann Defense: Panov Attack, Gunderam Attack
+Caro-Kann Defense: Panov Attack, Modern Defense
+Caro-Kann Defense: Panov Attack, Modern Defense, Carlsbad Line
+Caro-Kann Defense: Panov Attack, Modern Defense, Czerniak Line
+Caro-Kann Defense: Panov Attack, Modern Defense, Mieses Line
+Caro-Kann Defense: Panov Attack, Modern Defense, Reifir-Spielmann Line
+Caro-Kann Defense: Panov-Botvinnik, Herzog Defense
+Caro-Kann Defense: Panov Attack
+Caro-Kann Defense: Panov Attack, Fianchetto Defense
+Caro-Kann Defense: Panov Attack, Fianchetto Defense, Fianchetto Gambit
+Caro-Kann Defense: Panov Attack, Main Line
+Caro-Kann Defense
+Caro-Kann Defense
+Caro-Kann Defense: Alekhine Gambit
+Caro-Kann Defense: Campomanes Attack
+Caro-Kann Defense: Forgacs Variation
+Caro-Kann Defense: Gurgenidze Counterattack
+Caro-Kann Defense: Gurgenidze System
+Caro-Kann Defense: Main Line
+Caro-Kann Defense: Rasa-Studier Gambit
+Caro-Kann Defense: Tartakower Variation
+Caro-Kann Defense: von Hennig Gambit
+Caro-Kann Defense: Bronstein-Larsen Variation
+Caro-Kann Defense: Finnish Variation
+Caro-Kann Defense: Karpov Variation
+Caro-Kann Defense: Karpov Variation, Modern Main Line
+Caro-Kann Defense: Karpov Variation, Modern Variation
+Caro-Kann Defense: Karpov Variation, Modern Variation, Ivanchuk Defense
+Caro-Kann Defense: Karpov Variation, Modern Variation, Kasparov Attack
+Caro-Kann Defense: Karpov Variation, Smyslov Variation
+Caro-Kann Defense: Karpov Variation, Smyslov Variation, Main Line
+Caro-Kann Defense: Karpov Variation, Tiviakov-Fischer Attack
+Caro-Kann Defense: Classical Variation
+Caro-Kann Defense: Classical Variation, Flohr Variation
+Caro-Kann Defense: Classical Variation, Main Line
+Caro-Kann Defense: Classical Variation, Maróczy Attack
+Caro-Kann Defense: Classical Variation
+Caro-Kann Defense: Classical Variation, Lobron System
+Caro-Kann Defense: Classical Variation, Seirawan Variation
+Caro-Kann Defense: Classical Variation, Spassky Variation
+Sicilian Defense
+Sicilian Defense: Amazon Attack
+Sicilian Defense: Big Clamp Formation
+Sicilian Defense: Bowdler Attack
+Sicilian Defense: Brick Variation
+Sicilian Defense: Euwe Attack, Prins Gambit
+Sicilian Defense: Gloria Variation
+Sicilian Defense: Grob Variation
+Sicilian Defense: Keres Variation
+Sicilian Defense: King David's Opening
+Sicilian Defense: Kronberger Variation
+Sicilian Defense: Kronberger Variation, Nemeth Gambit
+Sicilian Defense: Lasker-Dunne Attack
+Sicilian Defense: Mengarini Variation
+Sicilian Defense: Myers Attack, with a4
+Sicilian Defense: Myers Attack, with h4
+Sicilian Defense: Snyder Variation
+Sicilian Defense: Snyder Variation, Queen Fianchetto Variation
+Sicilian Defense: Staunton-Cochrane Variation
+Sicilian Defense: Wing Gambit
+Sicilian Defense: Wing Gambit, Abrahams Variation
+Sicilian Defense: Wing Gambit, Carlsbad Variation
+Sicilian Defense: Wing Gambit, Marienbad Variation
+Sicilian Defense: Wing Gambit, Marshall Variation
+Sicilian Defense: Wing Gambit, Nanu Gambit
+Sicilian Defense: Wing Gambit, Romanian Defense
+Sicilian Defense: Wing Gambit, Santasiere Variation
+Bird Opening: Dutch Variation, Batavo Gambit
+Sicilian Defense: Coles Sicilian Gambit
+Sicilian Defense: Halasz Gambit
+Sicilian Defense: McDonnell Attack
+Sicilian Defense: McDonnell Attack, Tal Gambit
+Sicilian Defense: Morphy Gambit
+Sicilian Defense: Morphy Gambit, Andreaschek Gambit
+Sicilian Defense: Smith-Morra Gambit
+Sicilian Defense: Smith-Morra Gambit
+Sicilian Defense: Smith-Morra Gambit Accepted, Chicago Defense
+Sicilian Defense: Smith-Morra Gambit Accepted, Classical Formation
+Sicilian Defense: Smith-Morra Gambit Accepted, Fianchetto Defense
+Sicilian Defense: Smith-Morra Gambit Accepted, Finegold Defense
+Sicilian Defense: Smith-Morra Gambit Accepted, Kan Formation
+Sicilian Defense: Smith-Morra Gambit Accepted, Larsen Defense
+Sicilian Defense: Smith-Morra Gambit Accepted, Morphy Defense
+Sicilian Defense: Smith-Morra Gambit Accepted, Morphy Defense Deferred
+Sicilian Defense: Smith-Morra Gambit Accepted, Paulsen Formation
+Sicilian Defense: Smith-Morra Gambit Accepted, Pin Defense
+Sicilian Defense: Smith-Morra Gambit Accepted, Scheveningen Formation
+Sicilian Defense: Smith-Morra Gambit Accepted, Sozin Formation
+Sicilian Defense: Smith-Morra Gambit Accepted, Taimanov Formation
+Sicilian Defense: Smith-Morra Gambit Declined, Alapin Formation
+Sicilian Defense: Smith-Morra Gambit Declined, Center Formation
+Sicilian Defense: Smith-Morra Gambit Declined, Dubois Variation
+Sicilian Defense: Smith-Morra Gambit Declined, Push Variation
+Sicilian Defense: Smith-Morra Gambit Declined, Scandinavian Formation
+Sicilian Defense: Smith-Morra Gambit Declined, Wing Formation
+Sicilian Defense: Smith-Morra Gambit, Chicago Defense
+Sicilian Defense: Smith-Morra Gambit, Danish Variation
+Sicilian Defense: Alapin Variation
+Sicilian Defense: Alapin Variation, Barmen Defense
+Sicilian Defense: Alapin Variation, Barmen Defense, Central Exchange
+Sicilian Defense: Alapin Variation, Barmen Defense, Endgame Variation
+Sicilian Defense: Alapin Variation, Barmen Defense, Milner-Barry Attack
+Sicilian Defense: Alapin Variation, Barmen Defense, Modern Line
+Sicilian Defense: Alapin Variation, Smith-Morra Declined
+Sicilian Defense: Alapin Variation, Stoltz Attack
+Sicilian Defense: Alapin Variation, Stoltz Attack, Ivanchuk Line
+Sicilian Defense: Heidenfeld Variation
+Sicilian Defense: Closed
+Sicilian Defense: Closed
+Sicilian Defense: Closed
+Sicilian Defense: Closed, Chameleon Variation
+Sicilian Defense: Closed, Grob Attack
+Sicilian Defense: Closed, Korchnoi Defense
+Sicilian Defense: Closed, Traditional
+Sicilian Defense: Grand Prix Attack
+Sicilian Defense: Grand Prix Attack, Schofman Variation
+Sicilian Defense: Closed
+Sicilian Defense: Closed
+Sicilian Defense: Closed, Fianchetto Variation
+Sicilian Defense: Closed, Smyslov Variation
+Sicilian Defense: Closed
+Sicilian Defense: Closed
+Sicilian Defense: Closed, Botvinnik Defense, Edge Variation
+Sicilian Defense: Closed, Botvinnik Defense, with Nge2
+Sicilian Defense: Closed, Botvinnik Defense, with f4
+Sicilian Defense: Closed
+Modern Defense: Pterodactyl Variation
+Pterodactyl Defense: Sicilian, Anhanguera
+Pterodactyl Defense: Sicilian, Benoni Gambit
+Pterodactyl Defense: Sicilian, Pteranodon
+Pterodactyl Defense: Sicilian, Rhamphorhynchus
+Pterodactyl Defense: Sicilian, Unpin
+Pterodactyl Defense: Western, Pterodactyl
+Pterodactyl Defense: Western, Rhamphorhynchus
+Sicilian Defense
+Sicilian Defense: Acton Extension
+Sicilian Defense: Brussels Gambit
+Sicilian Defense: Bücker Variation
+Sicilian Defense: Double-Dutch Gambit
+Sicilian Defense: Frederico Variation
+Sicilian Defense: Hyperaccelerated Dragon
+Sicilian Defense: Hyperaccelerated Fianchetto
+Sicilian Defense: Hyperaccelerated Pterodactyl
+Sicilian Defense: Hyperaccelerated Pterodactyl, Exchange Variation
+Sicilian Defense: Jalalabad Variation
+Sicilian Defense: Katalimov Variation
+Sicilian Defense: Mongoose Variation
+Sicilian Defense: Polish Gambit
+Sicilian Defense: Quinteros Variation
+Sicilian Defense: O'Kelly Variation
+Sicilian Defense: O'Kelly Variation, Aronin System
+Sicilian Defense: O'Kelly Variation, Kieseritzky System
+Sicilian Defense: O'Kelly Variation, Maróczy Bind
+Sicilian Defense: O'Kelly Variation, Maróczy Bind, Paulsen Line
+Sicilian Defense: O'Kelly Variation, Maróczy Bind, Robatsch Line
+Sicilian Defense: O'Kelly Variation, Normal System
+Sicilian Defense: O'Kelly Variation, Normal System, Cortlever Gambit
+Sicilian Defense: O'Kelly Variation, Normal System, Smith-Morra Line
+Sicilian Defense: O'Kelly Variation, Normal System, Taimanov Line
+Sicilian Defense: O'Kelly Variation, Normal System, Zagorovsky Line
+Sicilian Defense: O'Kelly Variation, Quiet System
+Sicilian Defense: O'Kelly Variation, Réti System
+Sicilian Defense: O'Kelly Variation, Venice System
+Sicilian Defense: O'Kelly Variation, Venice System, Barcza Line
+Sicilian Defense: O'Kelly Variation, Venice System, Gambit Line
+Sicilian Defense: O'Kelly Variation, Venice System, Ljubojevic Line
+Sicilian Defense: O'Kelly Variation, Venice System, Steiner Line
+Sicilian Defense: O'Kelly Variation, Wing Gambit
+Sicilian Defense: O'Kelly Variation, Yerevan System
+Sicilian Defense: Nimzowitsch Variation
+Sicilian Defense: Nimzowitsch Variation, Advance Variation
+Sicilian Defense: Nimzowitsch Variation, Closed Variation
+Sicilian Defense: Nimzowitsch Variation, Exchange Variation
+Sicilian Defense: Nimzowitsch Variation, Main Line
+Sicilian Defense: Closed, Anti-Sveshnikov Variation, Kharlov-Kramnik Line
+Sicilian Defense: Nyezhmetdinov-Rossolimo Attack
+Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, San Francisco Gambit
+Sicilian Defense: Old Sicilian
+Sicilian Defense: Portsmouth Gambit
+Sicilian Defense: Rossolimo Variation, Brooklyn Retreat Defense
+Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation
+Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation, Gufeld Gambit
+Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation, Lutikov Gambit
+Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation, Totsky Attack
+Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Gurgenidze Variation
+Sicilian Defense: Accelerated Dragon
+Sicilian Defense: Flohr Variation
+Sicilian Defense: Franco-Sicilian Variation
+Sicilian Defense: Godiva Variation
+Sicilian Defense: Kalashnikov Variation
+Sicilian Defense: Löwenthal Variation
+Sicilian Defense: Nimzo-American Variation
+Sicilian Defense: O'Kelly Variation, Maróczy Bind, Geller Line
+Sicilian Defense: Open
+Sicilian Defense: Open
+Sicilian Defense: Open
+Sicilian Defense: Four Knights Variation, Cobra Variation
+Sicilian Defense: Lasker-Pelikan Variation
+Sicilian Defense: Lasker-Pelikan Variation, Bird Variation
+Sicilian Defense: Lasker-Pelikan Variation, Exchange Variation
+Sicilian Defense: Lasker-Pelikan Variation, Retreat Variation
+Sicilian Defense: Lasker-Pelikan Variation, Schlechter Variation
+Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation
+Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation
+Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Chelyabinsk Variation
+Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Novosibirsk Variation
+Sicilian Defense: Lasker-Pelikan Variation, Sveshnikov Variation, Peresypkin's Sacrifice
+Sicilian Defense: Open
+Sicilian Defense: Accelerated Dragon, Exchange Variation
+Sicilian Defense: Accelerated Dragon, Modern Variation
+Sicilian Defense: Accelerated Dragon, Modern Bc4 Variation
+Sicilian Defense: Dragon Variation, Modern Bc4 Variation
+Sicilian Defense: Accelerated Dragon, Maróczy Bind
+Sicilian Defense: Accelerated Dragon, Maróczy Bind, Gurgenidze Variation
+Sicilian Defense: Accelerated Dragon, Maróczy Bind
+Sicilian Defense: Accelerated Dragon, Simagin Variation
+Sicilian Defense: Accelerated Dragon, Maróczy Bind
+Sicilian Defense: Accelerated Dragon, Maróczy Bind, Breyer Variation
+Sicilian Defense: Alapin Variation, Sherzer Variation
+Sicilian Defense: Delayed Alapin Variation
+Sicilian Defense: Drazic Variation
+Sicilian Defense: Four Knights Variation
+Sicilian Defense: Four Knights Variation, Exchange Variation
+Sicilian Defense: French Variation
+Sicilian Defense: French Variation, Normal
+Sicilian Defense: French Variation, Open
+Sicilian Defense: French Variation, Westerinen Attack
+Sicilian Defense: Gaw-Paw Variation
+Sicilian Defense: Kan Variation, Wing Attack, Fianchetto Variation
+Sicilian Defense: Kramnik Variation
+Sicilian Defense: Kveinis Variation
+Sicilian Defense: Marshall Counterattack
+Sicilian Defense: Paulsen-Basman Defense
+Sicilian Defense: Pin Variation
+Sicilian Defense: Pin Variation, Jaffe Variation
+Sicilian Defense: Pin Variation, Koch Variation
+Sicilian Defense: Smith-Morra Gambit Deferred
+Sicilian Defense: Wing Gambit Deferred
+Sicilian Defense: Kan Variation
+Sicilian Defense: Kan Variation, Maróczy Bind, Bronstein Variation
+Sicilian Defense: Kan Variation, Maróczy Bind, Bronstein Variation
+Sicilian Defense: Kan Variation, Maróczy Bind, Hedgehog Variation
+Sicilian Defense: Kan Variation, Maróczy Bind, Réti Variation
+Sicilian Defense: Kan Variation, Gipslis Variation
+Sicilian Defense: Kan Variation, Modern Variation
+Sicilian Defense: Kan Variation, Polugaevsky Variation
+Sicilian Defense: Kan Variation, Swiss Cheese Variation
+Sicilian Defense: Kan Variation, Knight Variation
+Sicilian Defense: Kan Variation, Wing Attack
+Sicilian Defense: Kan Variation, Wing Attack, Christiansen's Dream
+Sicilian Defense: Kan Variation, Wing Attack, Spraggett Attack
+Sicilian Defense: Taimanov Variation
+Sicilian Defense: Taimanov Variation, Gary Gambit
+Sicilian Defense: Taimanov Variation, Modern Line
+Sicilian Defense: Taimanov Variation, Szén Variation
+Sicilian Defense: Taimanov Variation, American Attack
+Sicilian Defense: Taimanov Variation, Normal Variation
+Sicilian Defense: Taimanov Variation
+Sicilian Defense: Taimanov Variation, Bastrikov Variation
+Sicilian Defense: Taimanov Variation, Bastrikov Variation, Ponomariov Gambit
+Sicilian Defense: Taimanov Variation, Bastrikov Variation, English Attack
+Sicilian Defense: Taimanov Variation, Bastrikov Variation
+Sicilian Defense
+Sicilian Defense
+Sicilian Defense: Delayed Alapin
+Sicilian Defense: Delayed Alapin, Basman-Palatnik Double Gambit
+Sicilian Defense: Delayed Alapin, Basman-Palatnik Gambit
+Sicilian Defense: Kopec System
+Sicilian Defense: Kotov Gambit
+Sicilian Defense: Modern Variations
+Sicilian Defense: Modern Variations, Anti-Qxd4 Move Order
+Sicilian Defense: Modern Variations, Anti-Qxd4 Move Order Accepted
+Sicilian Defense: Modern Variations, Tartakower
+Sicilian Defense: Wing Gambit, Deferred Variation
+Sicilian Defense: Moscow Variation
+Sicilian Defense: Moscow Variation, Dorfman Gambit
+Sicilian Defense: Moscow Variation, Moscow Gambit
+Sicilian Defense: Moscow Variation, Haag Gambit
+Sicilian Defense: Moscow Variation, Main Line
+Sicilian Defense: Moscow Variation, Sokolsky Variation
+Sicilian Defense: Chekhover Variation
+Sicilian Defense: Chekhover Variation, Zaitsev Defense
+Sicilian Defense: Dragon Variation, Accelerated Dragon
+Sicilian Defense: Modern Variations, Ginsberg Gambit
+Sicilian Defense: Modern Variations, Main Line
+Sicilian Defense: Prins Variation
+Sicilian Defense: Prins Variation, Venice Attack
+Sicilian Defense: Classical Variation
+Sicilian Defense: Classical Variation, Fianchetto Variation
+Sicilian Defense: Kupreichik Variation
+Sicilian Defense: Spielmann Variation
+Sicilian Defense: Venice Attack
+Sicilian Defense: Yates Variation
+Sicilian Defense: Classical Variation, Anti-Sozin Variation
+Sicilian Defense: Classical Variation, Sozin Attack
+Sicilian Defense: Magnus Smith Trap
+Sicilian Defense: Boleslavsky Variation
+Sicilian Defense: Boleslavsky Variation, Louma Variation
+Sicilian Defense: Classical Variation
+Sicilian Defense: Classical Variation, Dragon Transfer
+Sicilian Defense: Boleslavsky Variation
+Sicilian Defense: Richter-Rauzer Variation
+Sicilian Defense: Richter-Rauzer Variation, Dragon Variation
+Sicilian Defense: Richter-Rauzer Variation, Modern Variation
+Sicilian Defense: Richter-Rauzer Variation, Modern Variation
+Sicilian Defense: Richter-Rauzer Variation
+Sicilian Defense: Richter-Rauzer Variation
+Sicilian Defense: Richter-Rauzer Variation, Exchange Variation
+Sicilian Defense: Richter-Rauzer Variation, Podebrady Variation
+Sicilian Defense: Richter-Rauzer Variation, Vitolins Variation
+Sicilian Defense: Richter-Rauzer Variation, Classical Variation
+Sicilian Defense: Richter-Rauzer Variation, Classical Variation, Kantscher Line
+Sicilian Defense: Richter-Rauzer Variation, Ivanov Variation
+Sicilian Defense: Richter-Rauzer Variation, Traditional Variation
+Sicilian Defense: Richter-Rauzer Variation, Classical Variation
+Sicilian Defense: Richter-Rauzer Variation, Classical Variation
+Sicilian Defense: Richter-Rauzer Variation, Classical Variation
+Sicilian Defense: Richter-Rauzer Variation, Rauzer Attack
+Sicilian Defense: Richter-Rauzer Variation, Neo-Modern Variation, Early Deviations
+Sicilian Defense: Richter-Rauzer Variation, Neo-Modern Variation
+Sicilian Defense: Richter-Rauzer Variation, Neo-Modern Variation
+Sicilian Defense: Richter-Rauzer Variation, Neo-Modern Variation, Nyezhmetdinov Attack
+Sicilian Defense: Dragon Variation
+Sicilian Defense: Dragon Variation, Classical Variation
+Sicilian Defense: Dragon Variation, Fianchetto Variation
+Sicilian Defense: Dragon Variation, Levenfish Variation
+Sicilian Defense: Dragon Variation, Levenfish Variation, Main Line
+Sicilian Defense: Dragon Variation
+Sicilian Defense: Dragon Variation, Classical Variation
+Sicilian Defense: Dragon Variation, Classical Variation
+Sicilian Defense: Dragon Variation, Classical Variation
+Sicilian Defense: Dragon Variation, Classical Variation, Amsterdam Variation
+Sicilian Defense: Dragon Variation, Classical Variation, Grigoriev Variation
+Sicilian Defense: Dragon Variation, Classical Variation
+Sicilian Defense: Dragon Variation, Classical Variation, Battery Variation
+Sicilian Defense: Dragon Variation, Classical Variation, Zollner Gambit
+Sicilian Defense: Dragon Variation, Classical Variation, Alekhine Line
+Sicilian Defense: Dragon Variation, Classical Variation, Bernard Defense
+Sicilian Defense: Dragon Variation, Classical Variation, Maróczy Line
+Sicilian Defense: Dragon Variation, Classical Variation, Normal Line
+Sicilian Defense: Dragon Variation, Classical Variation, Spielmann Variation
+Sicilian Defense: Dragon Variation, Classical Variation, Stockholm Attack
+Sicilian Defense: Dragon Variation, Classical Variation, Tartakower Line
+Sicilian Defense: Dragon Variation, Yugoslav Attack, Belezky Line
+Sicilian Defense: Dragon Variation, Yugoslav Attack, Early Deviations
+Sicilian Defense: Dragon Variation, Yugoslav Attack
+Sicilian Defense: Dragon Variation, Yugoslav Attack
+Sicilian Defense: Dragon Variation, Yugoslav Attack, Modern Line
+Sicilian Defense: Dragon Variation, Yugoslav Attack, Panov Variation
+Sicilian Defense: Dragon Variation, Yugoslav Attack
+Sicilian Defense: Dragon Variation, Yugoslav Attack, Byrne Variation
+Sicilian Defense: Dragon Variation, Yugoslav Attack, Czerniak Variation
+Sicilian Defense: Dragon Variation, Yugoslav Attack, Main Line
+Sicilian Defense: Dragon Variation, Yugoslav Attack, Sosonko Variation
+Sicilian Defense: Dragon Variation, Yugoslav Attack
+Sicilian Defense: Dragon Variation, Yugoslav Attack, Old Line
+Sicilian Defense: Dragon Variation, Yugoslav Attack
+Sicilian Defense: Dragon Variation, Yugoslav Attack, Soltis Variation
+Sicilian Defense: Scheveningen Variation
+Sicilian Defense: Scheveningen Variation, English Attack, with Qd2
+Sicilian Defense: Scheveningen Variation, Fianchetto Variation
+Sicilian Defense: Scheveningen Variation, Vitolins Variation
+Sicilian Defense: Scheveningen Variation, Keres Attack
+Sicilian Defense: Scheveningen Variation, Matanovic Attack
+Sicilian Defense: Scheveningen Variation, Tal Variation
+Sicilian Defense: Scheveningen Variation, Classical Variation
+Sicilian Defense: Scheveningen Variation, Modern Variation
+Sicilian Defense: Scheveningen Variation, Modern Variation
+Sicilian Defense: Scheveningen Variation, Modern Variation
+Sicilian Defense: Najdorf Variation, Scheveningen Variation
+Sicilian Defense: Scheveningen Variation, Classical Variation
+Sicilian Defense: Scheveningen Variation, Classical Variation
+Sicilian Defense: Scheveningen Variation, Classical Main Line
+Sicilian Defense: Scheveningen Variation, Classical Variation, Paulsen Variation
+Sicilian Defense: Scheveningen Variation, Classical Variation, Paulsen Variation
+Sicilian Defense: Scheveningen Variation, Classical Variation, Paulsen Variation
+Sicilian Defense: Sozin Attack
+Sicilian Defense: Sozin Attack, Flank Variation
+Sicilian Defense: Sozin Attack, Fischer Variation
+Sicilian Defense: Sozin Attack, Leonhardt Variation
+Sicilian Defense: Sozin Attack, Main Line
+Sicilian Defense: Sozin Attack, Main Line, Sherbakov Variation
+Sicilian Defense: Velimirovic Attack
+Sicilian Defense: Najdorf Variation
+Sicilian Defense: Najdorf Variation, Adams Attack
+Sicilian Defense: Najdorf Variation, Dekker Gambit
+Sicilian Defense: Najdorf Variation, English Attack
+Sicilian Defense: Najdorf Variation, English Attack, Anti-English
+Sicilian Defense: Najdorf Variation, Freak Attack
+Sicilian Defense: Najdorf Variation, Lipnitsky Attack
+Sicilian Defense: Scheveningen Variation, Delayed Keres Attack
+Sicilian Defense: Scheveningen Variation, Delayed Keres Attack, Perenyi Gambit
+Sicilian Defense: Scheveningen Variation, English Attack, with f3
+Sicilian Defense: Najdorf Variation, Zagreb Variation
+Sicilian Defense: Najdorf Variation, Opocensky Variation
+Sicilian Defense: Najdorf Variation, Opocensky Variation, Modern Line
+Sicilian Defense: Najdorf Variation, Opocensky Variation, Traditional Line
+Sicilian Defense: Najdorf Variation, Amsterdam Variation
+Sicilian Defense: Najdorf Variation
+Sicilian Defense: Najdorf Variation, Ivkov Variation
+Sicilian Defense: Najdorf Variation
+Sicilian Defense: Najdorf Variation
+Sicilian Defense: Najdorf Variation, Neo-Classical Defense
+Sicilian Defense: Najdorf Variation, Polugaevsky Variation
+Sicilian Defense: Najdorf Variation, Polugaevsky Variation, Simagin Line
+Sicilian Defense: Najdorf Variation, Poisoned Pawn Accepted
+Sicilian Defense: Najdorf Variation, Poisoned Pawn Variation
+Sicilian Defense: Najdorf Variation
+Sicilian Defense: Najdorf Variation, Browne Variation
+Sicilian Defense: Najdorf Variation, Goteborg Variation
+Sicilian Defense: Najdorf Variation, Traditional Line
+Sicilian Defense: Najdorf Variation, Main Line
+French Defense
+French Defense
+French Defense: Alapin Gambit
+French Defense: Baeuerle Gambit
+French Defense: Banzai-Leong Gambit
+French Defense: Banzai-Leong Gambit, Pinova Gambit
+French Defense: Bird Invitation
+French Defense: Carlson Gambit
+French Defense: Chigorin Variation
+French Defense: Diemer-Duhm Gambit
+French Defense: Diemer-Duhm Gambit Accepted
+French Defense: Franco-Hiva Gambit
+French Defense: Franco-Hiva Gambit Accepted
+French Defense: Franco-Sicilian Defense
+French Defense: Hoffmann Gambit
+French Defense: Horwitz Attack
+French Defense: Horwitz Attack, Papa-Ticulat Gambit
+French Defense: King's Indian Attack
+French Defense: King's Indian Attack, Franco-Hiva Gambit
+French Defense: Knight Variation
+French Defense: Knight Variation, Franco-Hiva Gambit
+French Defense: La Bourdonnais Variation
+French Defense: La Bourdonnais Variation, Reuter Gambit
+French Defense: Mediterranean Defense
+French Defense: Morphy Gambit
+French Defense: Normal Variation
+French Defense: Orthoschnapp Gambit
+French Defense: Pelikan Variation
+French Defense: Perseus Gambit
+French Defense: Queen's Knight
+French Defense: Reversed Philidor Formation
+French Defense: Réti-Spielmann Attack
+French Defense: Schlechter Variation
+French Defense: St. George Defense
+French Defense: St. George Defense, Sanky-George Gambit
+French Defense: St. George Defense, St. George Gambit
+French Defense: St. George Defense, Three Pawn Attack
+French Defense: St. George Defense, Traditional Line
+French Defense: Steiner Variation
+French Defense: Steinitz Attack
+French Defense: Two Knights Variation
+French Defense: Wing Gambit
+Rat Defense: Small Center Defense
+French Defense: Exchange Variation
+French Defense: Exchange Variation, Bogoljubov Variation
+French Defense: Exchange Variation, Monte Carlo Variation
+French Defense: Exchange Variation, Svenonius Variation
+French Defense: Advance Variation
+French Defense: Advance Variation
+French Defense: Advance Variation
+French Defense: Advance Variation
+French Defense: Advance Variation, Euwe Variation
+French Defense: Advance Variation, Extended Bishop Swap
+French Defense: Advance Variation, Frenkel Gambit
+French Defense: Advance Variation, Lputian Variation
+French Defense: Advance Variation, Main Line
+French Defense: Advance Variation, Milner-Barry Gambit
+French Defense: Advance Variation, Nimzowitsch Attack
+French Defense: Advance Variation, Nimzowitsch Gambit
+French Defense: Advance Variation, Nimzowitsch System
+French Defense: Advance Variation, Paulsen Attack
+French Defense: Advance Variation, Ruisdonk Gambit
+French Defense: Advance Variation, Steinitz Variation
+French Defense: Advance Variation, Wade Variation
+French Defense: Guimard Variation, Thunderbunny Variation
+French Defense: Tarrasch Variation
+French Defense: Tarrasch Variation, Guimard Defense
+French Defense: Tarrasch Variation, Haberditz Variation
+French Defense: Tarrasch Variation, Modern System
+French Defense: Tarrasch Variation, Morozevich Variation
+French Defense: Tarrasch Variation, Guimard Defense, Main Line
+French Defense: Tarrasch Variation, Botvinnik Variation
+French Defense: Tarrasch Variation, Closed Variation
+French Defense: Tarrasch Variation, Closed Variation
+French Defense: Tarrasch Variation, Pawn Center Variation
+French Defense: Tarrasch Variation, Closed Variation, Main Line
+French Defense: Tarrasch Variation, Leningrad Variation
+French Defense: Tarrasch Variation, Chistyakov Defense
+French Defense: Tarrasch Variation, Chistyakov Defense, Modern Line
+French Defense: Tarrasch Variation, Eliskases Variation
+French Defense: Tarrasch Variation, Open System
+French Defense: Tarrasch Variation, Open System, Euwe-Keres Line
+French Defense: Tarrasch Variation, Open System, Shaposhnikov Gambit
+French Defense: Tarrasch Variation, Open System, Süchting Line
+French Defense: Tarrasch Variation, Open System
+French Defense: Tarrasch Variation, Open System, Advance Line
+French Defense: Tarrasch Variation, Open System, Main Line
+French Defense: Classical Variation, Svenonius Variation
+French Defense: Paulsen Variation
+French Defense: Rubinstein Variation
+French Defense: Rubinstein Variation, Blackburne Defense
+French Defense: Rubinstein Variation, Capablanca Line
+French Defense: Rubinstein Variation, Ellis Gambit
+French Defense: Rubinstein Variation, Fort Knox Variation
+French Defense: Rubinstein Variation, Kasparov Attack
+French Defense: Rubinstein Variation, Maric Variation
+Sicilian Defense: Marshall Gambit
+French Defense: Burn Variation
+French Defense: Classical Variation
+French Defense: Classical Variation, Burn Variation, Main Line
+French Defense: Classical Variation, Burn Variation, Morozevich Line
+French Defense: Classical Variation, Delayed Exchange Variation
+French Defense: Classical Variation, Steinitz Variation
+French Defense: Classical Variation, Swiss Variation
+French Defense: Henneberger Variation
+French Defense: Steinitz Variation
+French Defense: Steinitz Variation
+French Defense: Steinitz Variation, Boleslavsky Variation
+French Defense: Steinitz Variation, Bradford Attack Variation
+French Defense: Steinitz Variation, Brodsky-Jones Variation
+French Defense: Steinitz Variation, Gledhill Attack
+French Defense: MacCutcheon Variation
+French Defense: MacCutcheon Variation, Advance Variation
+French Defense: MacCutcheon Variation, Bernstein Variation
+French Defense: MacCutcheon Variation, Bogoljubov Variation
+French Defense: MacCutcheon Variation, Chigorin Variation
+French Defense: MacCutcheon Variation, Dr. Olland Variation
+French Defense: MacCutcheon Variation, Duras Variation
+French Defense: MacCutcheon Variation, Exchange Variation
+French Defense: MacCutcheon Variation, Grigoriev Variation
+French Defense: MacCutcheon Variation, Janowski Variation
+French Defense: MacCutcheon Variation, Lasker Variation
+French Defense: MacCutcheon Variation, Lasker Variation
+French Defense: MacCutcheon Variation, Tartakower Variation
+French Defense: Alekhine-Chatard Attack
+French Defense: Alekhine-Chatard Attack, Albin-Chatard Gambit
+French Defense: Alekhine-Chatard Attack, Breyer Variation
+French Defense: Alekhine-Chatard Attack, Maróczy Variation
+French Defense: Alekhine-Chatard Attack, Spielmann Variation
+French Defense: Alekhine-Chatard Attack, Teichmann Variation
+French Defense: Classical Variation, Frankfurt Variation
+French Defense: Classical Variation, Normal Variation
+French Defense: Classical Variation, Richter Attack
+French Defense: Classical Variation, Richter Attack
+French Defense: Classical Variation, Tartakower Variation
+French Defense: Classical Variation, Vistaneckis Variation
+French Defense: Classical Variation
+French Defense: Classical Variation, Alapin Variation
+French Defense: Classical Variation, Pollock Variation
+French Defense: Classical Variation, Rubinstein Variation
+French Defense: Classical Variation, Stahlberg Variation
+French Defense: Classical Variation, Steinitz Variation
+French Defense: Classical Variation, Tarrasch Variation
+French Defense: MacCutcheon Variation, Wolf Gambit
+French Defense: Winawer Variation
+French Defense: Winawer Variation, Alekhine Gambit Accepted
+French Defense: Winawer Variation, Alekhine Gambit, Alatortsev Variation
+French Defense: Winawer Variation, Alekhine Gambit, Kan Variation
+French Defense: Winawer Variation, Alekhine-Maróczy Gambit
+French Defense: Winawer Variation, Delayed Exchange Variation
+French Defense: Winawer Variation, Exchange Variation, Canal Attack
+French Defense: Winawer Variation, Fingerslip Variation
+French Defense: Winawer Variation, Fingerslip Variation, Kunin Double Gambit
+French Defense: Winawer Variation, Fingerslip Variation, Main Line
+French Defense: Winawer Variation, Fingerslip Variation, Schwarz's Line
+French Defense: Winawer Variation, Kondratiyev Variation
+French Defense: Winawer Variation, Winckelmann-Riemer Gambit
+French Defense: Winawer Variation, Advance Variation
+French Defense: Winawer Variation, Petrosian Variation
+French Defense: Winawer Variation, Advance Variation
+French Defense: Winawer Variation, Advance Variation
+French Defense: Winawer Variation, Advance Variation
+French Defense: Winawer Variation, Advance Variation, Moscow Variation
+French Defense: Winawer Variation, Bogoljubov Variation
+French Defense: Winawer Variation, Bogoljubov Variation, Icelandic Defense
+French Defense: Winawer Variation, Maróczy-Wallis Variation
+French Defense: Winawer Variation, Retreat Variation
+French Defense: Winawer Variation, Retreat Variation, Armenian Line
+French Defense: Winawer Variation, Advance Variation
+French Defense: Winawer Variation, Classical Variation
+French Defense: Winawer Variation, Portisch-Hook Variation
+French Defense: Winawer Variation, Advance Variation
+French Defense: Winawer Variation, Advance Variation
+French Defense: Winawer Variation, Poisoned Pawn Variation
+French Defense: Winawer Variation, Poisoned Pawn Variation, Main Line
+French Defense: Winawer Variation, Poisoned Pawn Variation, Paoli Variation
+French Defense: Winawer Variation, Positional Variation
+Barnes Opening: Walkerling
+Bongcloud Attack
+Center Game
+English Opening: The Whale
+King's Pawn Game
+King's Pawn Game: Alapin Opening
+King's Pawn Game: Bavarian Gambit
+King's Pawn Game: Beyer Gambit
+King's Pawn Game: Clam Variation, King's Gambit Reversed
+King's Pawn Game: Clam Variation, Radisch Gambit
+King's Pawn Game: King's Head Opening
+King's Pawn Game: King's Head Opening
+King's Pawn Game: Leonardis Variation
+King's Pawn Game: MacLeod Attack
+King's Pawn Game: MacLeod Attack, Lasa Gambit
+King's Pawn Game: MacLeod Attack, Norwalde Gambit
+King's Pawn Game: Mengarini's Opening
+King's Pawn Game: Napoleon Attack
+King's Pawn Game: Philidor Gambit
+King's Pawn Game: Tortoise Opening
+King's Pawn Game: Wayward Queen Attack
+King's Pawn Game: Wayward Queen Attack, Kiddie Countergambit
+King's Pawn Game: Wayward Queen Attack, Mellon Gambit
+King's Pawn Game: Weber Gambit
+King's Pawn Opening
+King's Pawn Opening: Speers
+King's Pawn Opening: Van Hooydoon Gambit
+Portuguese Opening
+Portuguese Opening: Miguel Gambit
+Portuguese Opening: Portuguese Gambit
+Center Game
+Center Game Accepted
+Center Game: Halasz-McDonnell Gambit
+Center Game: Halasz-McDonnell Gambit, Crocodile Variation
+Center Game: Kieseritzky Variation
+Center Game: Kieseritzky Variation
+Center Game: Kieseritzky Variation
+Center Game: Kieseritzky Variation
+Center Game: Lanc-Arnold Gambit
+Center Game: Lanc-Arnold Gambit, Schippler Gambit
+Center Game: Ross Gambit
+Center Game: von der Lasa Gambit
+Danish Gambit
+Danish Gambit Accepted
+Danish Gambit Accepted: Chigorin Defense
+Danish Gambit Accepted: Classical Defense
+Danish Gambit Accepted: Copenhagen Defense
+Danish Gambit Accepted: Schlechter Defense
+Danish Gambit Accepted: Svenonius Defense
+Danish Gambit Declined: Sorensen Defense
+Center Game: Berger Variation
+Center Game: Charousek Variation
+Center Game: Hall Variation
+Center Game: Kupreichik Variation
+Center Game: Normal Variation
+Center Game: Paulsen Attack Variation
+Center Game: l'Hermet Variation
+Bishop's Opening
+Bishop's Opening: Anderssen Gambit
+Bishop's Opening: Boi Variation
+Bishop's Opening: Calabrese Countergambit
+Bishop's Opening: Calabrese Countergambit, Jaenisch Variation
+Bishop's Opening: Four Pawns Gambit
+Bishop's Opening: Khan Gambit
+Bishop's Opening: Lewis Countergambit
+Bishop's Opening: Lewis Countergambit
+Bishop's Opening: Lewis Countergambit, Walker Variation
+Bishop's Opening: Lewis Gambit
+Bishop's Opening: Lisitsyn Variation
+Bishop's Opening: Lopez Gambit
+Bishop's Opening: Lopez Variation
+Bishop's Opening: Lopez Variation, Lopez Gambit
+Bishop's Opening: McDonnell Gambit
+Bishop's Opening: McDonnell Gambit, La Bourdonnais-Denker Gambit
+Bishop's Opening: McDonnell Gambit, McDonnell Double Gambit
+Bishop's Opening: Philidor Counterattack
+Bishop's Opening: Philidor Variation
+Bishop's Opening: Pratt Variation
+Bishop's Opening: Stein Gambit
+Bishop's Opening: Thorold Gambit
+Bishop's Opening: del Rio Variation
+Bishop's Opening: Berlin Defense
+Bishop's Opening: Berlin Defense, Greco Gambit
+Bishop's Opening: Kitchener Folly
+Bishop's Opening: Krejcik Gambit
+Bishop's Opening: Pachman Gambit
+Bishop's Opening: Ponziani Gambit
+Bishop's Opening: Urusov Gambit, Panov Variation
+Bishop's Opening: Vienna Hybrid
+Bishop's Opening: Warsaw Gambit
+Vienna Gambit, with Max Lange Defense
+Vienna Gambit, with Max Lange Defense: Cunningham Defense
+Vienna Gambit, with Max Lange Defense: Hamppe-Allgaier Gambit
+Vienna Gambit, with Max Lange Defense: Hamppe-Allgaier Gambit, Alapin Variation
+Vienna Gambit, with Max Lange Defense: Hamppe-Allgaier Gambit, Thorold Variation
+Vienna Gambit, with Max Lange Defense: Hamppe-Muzio Gambit
+Vienna Gambit, with Max Lange Defense: Knight Variation
+Vienna Gambit, with Max Lange Defense: Pierce Gambit
+Vienna Gambit, with Max Lange Defense: Quelle Gambit
+Vienna Gambit, with Max Lange Defense: Steinitz Gambit
+Vienna Gambit, with Max Lange Defense: Steinitz Gambit, Fraser-Minckwitz Defense
+Vienna Gambit, with Max Lange Defense: Steinitz Gambit, Main Line
+Vienna Gambit, with Max Lange Defense: Steinitz Gambit, Paulsen Defense
+Vienna Gambit, with Max Lange Defense: Steinitz Gambit, Sörensen Defense
+Vienna Gambit, with Max Lange Defense: Steinitz Gambit, Zukertort Defense
+Vienna Game
+Vienna Game: Anderssen Defense
+Vienna Game: Fyfe Gambit
+Vienna Game: Giraffe Attack
+Vienna Game: Hamppe-Meitner Variation
+Vienna Game: Hamppe-Muzio Gambit
+Vienna Game: Hamppe-Muzio, Dubois Variation
+Vienna Game: Max Lange Defense
+Vienna Game: Omaha Gambit
+Vienna Game: Paulsen Variation
+Vienna Game: Paulsen Variation
+Vienna Game: Paulsen Variation, Mariotti Gambit
+Vienna Game: Philidor Countergambit
+Vienna Game: Pierce Gambit, Rushmere Attack
+Vienna Game: Stanley Variation, Meitner-Mieses Gambit
+Vienna Game: Zhuravlev Countergambit
+Bishop's Opening: Horwitz Gambit
+Bishop's Opening: Vienna Hybrid, Spielmann Attack
+Vienna Game: Falkbeer Variation
+Vienna Game: Mengarini Variation
+Vienna Game: Mieses Variation
+Vienna Game: Mieses Variation, Erben Gambit
+Vienna Game: Paulsen Variation, Pollock Gambit
+Vienna Game: Stanley Variation
+Vienna Game: Stanley Variation, Eifel Gambit
+Vienna Game: Stanley Variation, Reversed Spanish
+Bishop's Opening: Boden-Kieseritzky Gambit
+Bishop's Opening: Boden-Kieseritzky Gambit, Lichtenhein Defense
+Vienna Game: Adams' Gambit
+Vienna Game: Frankenstein-Dracula Variation
+Vienna Game: Stanley Variation, Alekhine Variation
+Vienna Game: Stanley Variation, Frankenstein-Dracula Variation
+Vienna Game: Stanley Variation, Monster Declined
+Bishop's Opening: Vienna Hybrid, Hromádka Variation
+Vienna Game: Stanley Variation, Bronstein Gambit
+Vienna Game: Stanley Variation, Three Knights Variation
+Vienna Game: Heyde Variation
+Vienna Game: Vienna Gambit
+Vienna Game: Vienna Gambit, Bardeleben Variation
+Vienna Game: Vienna Gambit, Breyer Variation
+Vienna Game: Vienna Gambit, Kaufmann Variation
+Vienna Game: Vienna Gambit, Main Line
+Vienna Game: Vienna Gambit, Modern Variation
+Vienna Game: Vienna Gambit, Paulsen Attack
+Vienna Game: Vienna Gambit, Steinitz Variation
+Vienna Game: Vienna Gambit, Wurzburger Trap
+King's Gambit
+King's Gambit Declined: Classical Variation
+King's Gambit Declined: Classical Variation
+King's Gambit Declined: Classical Variation, Euwe Attack
+King's Gambit Declined: Classical Variation, Rotlewi Countergambit
+King's Gambit Declined: Classical Variation, Rubinstein Countergambit
+King's Gambit Declined: Classical, Hanham Variation
+King's Gambit Declined: Classical, Réti Variation
+King's Gambit Declined: Classical, Soldatenkov Variation
+King's Gambit Declined: Classical, Svenonius Variation
+King's Gambit Declined: Hobbs-Zilbermints Gambit
+King's Gambit Declined: Keene Defense
+King's Gambit Declined: Keene's Defense
+King's Gambit Declined: Keene's Defense
+King's Gambit Declined: Mafia Defense
+King's Gambit Declined: Miles Defense
+King's Gambit Declined: Norwalde Variation
+King's Gambit Declined: Norwalde Variation, Bücker Gambit
+King's Gambit Declined: Norwalde Variation, Schubert Variation
+King's Gambit Declined: Panteldakis Countergambit
+King's Gambit Declined: Panteldakis Countergambit, Greco Variation
+King's Gambit Declined: Panteldakis Countergambit, Pawn Sacrifice Line
+King's Gambit Declined: Panteldakis Countergambit, Schiller's Defense
+King's Gambit Declined: Panteldakis Countergambit, Shirazi Line
+King's Gambit Declined: Panteldakis Countergambit, Symmetrical Variation
+King's Gambit Declined: Petrov's Defense
+King's Gambit Declined: Queen's Knight Defense
+King's Gambit Declined: Senechaud Countergambit
+King's Gambit Declined: Soller-Zilbermints Gambit
+King's Gambit Declined: Zilbermints Double Countergambit
+King's Gambit Declined: Zilbermints Double Gambit
+King's Gambit Declined: Falkbeer Countergambit
+King's Gambit Declined: Falkbeer Countergambit Accepted
+King's Gambit Declined: Falkbeer Countergambit, Anderssen Attack
+King's Gambit Declined: Falkbeer Countergambit, Blackburne Attack
+King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit
+King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Morphy Defense
+King's Gambit Declined: Falkbeer Countergambit, Hinrichsen Gambit
+King's Gambit Declined: Falkbeer Countergambit, Miles Gambit
+King's Gambit Declined: Falkbeer Countergambit, Milner-Barry Variation
+King's Gambit Declined: Falkbeer Countergambit, Modern Transfer
+King's Gambit Declined: Falkbeer Countergambit, Nimzowitsch-Marshall Countergambit
+King's Gambit Declined: Falkbeer Countergambit, Pickler Gambit
+King's Gambit Declined: Falkbeer Countergambit, Rubinstein Variation
+King's Gambit Declined: Falkbeer Countergambit, Staunton Line
+Van Geet Opening: Grünfeld Defense, Steiner Gambit
+King's Gambit Declined: Falkbeer Countergambit, Alapin Variation
+King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit
+King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit Accepted
+King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Keres Variation
+King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Main Line
+King's Gambit Declined: Falkbeer Countergambit, Charousek Gambit, Old Line
+King's Gambit Declined: Falkbeer Countergambit, Charousek Variation
+King's Gambit Declined: Falkbeer Countergambit, Tarrasch Variation
+King's Gambit Accepted
+King's Gambit Accepted: Basman Gambit
+King's Gambit Accepted: Bishop's Gambit
+King's Gambit Accepted: Bishop's Gambit, Anderssen Defense
+King's Gambit Accepted: Bishop's Gambit, Anderssen Variation
+King's Gambit Accepted: Bishop's Gambit, Bledow Countergambit
+King's Gambit Accepted: Bishop's Gambit, Bledow Variation
+King's Gambit Accepted: Bishop's Gambit, Boden Variation
+King's Gambit Accepted: Bishop's Gambit, Bogoljubov Defense
+King's Gambit Accepted: Bishop's Gambit, Bogoljubov Variation
+King's Gambit Accepted: Bishop's Gambit, Boren-Svenonius Variation
+King's Gambit Accepted: Bishop's Gambit, Bryan Countergambit
+King's Gambit Accepted: Bishop's Gambit, Chigorin's Attack
+King's Gambit Accepted: Bishop's Gambit, Classical Defense
+King's Gambit Accepted: Bishop's Gambit, Classical Defense, Cozio Attack
+King's Gambit Accepted: Bishop's Gambit, Cozio Defense
+King's Gambit Accepted: Bishop's Gambit, Cozio Variation
+King's Gambit Accepted: Bishop's Gambit, First Jaenisch Variation
+King's Gambit Accepted: Bishop's Gambit, Fraser Variation
+King's Gambit Accepted: Bishop's Gambit, Gianutio Gambit
+King's Gambit Accepted: Bishop's Gambit, Greco Variation
+King's Gambit Accepted: Bishop's Gambit, Grimm Attack
+King's Gambit Accepted: Bishop's Gambit, Kieseritzky Gambit
+King's Gambit Accepted: Bishop's Gambit, Lopez Defense
+King's Gambit Accepted: Bishop's Gambit, Lopez Variation
+King's Gambit Accepted: Bishop's Gambit, Maurian Defense
+King's Gambit Accepted: Bishop's Gambit, McDonnell Attack
+King's Gambit Accepted: Bishop's Gambit, McDonnell Attack
+King's Gambit Accepted: Bishop's Gambit, Paulsen Attack
+King's Gambit Accepted: Bishop's Gambit, Steinitz Defense
+King's Gambit Accepted: Breyer Gambit
+King's Gambit Accepted: Carrera Gambit
+King's Gambit Accepted: Dodo Variation
+King's Gambit Accepted: Eisenberg Variation
+King's Gambit Accepted: Gaga Gambit
+King's Gambit Accepted: Lopez-Gianutio Countergambit, Hein Variation
+King's Gambit Accepted: Mason-Keres Gambit
+King's Gambit Accepted: Orsini Gambit
+King's Gambit Accepted: Paris Gambit
+King's Gambit Accepted: Polerio Gambit
+King's Gambit Accepted: Schurig Gambit, with Bb5
+King's Gambit Accepted: Schurig Gambit, with Bd3
+King's Gambit Accepted: Stamma Gambit
+King's Gambit Accepted: Tartakower Gambit
+King's Gambit Accepted: Tartakower Gambit, Weiss Defense
+King's Gambit Accepted: Tumbleweed
+King's Gambit Accepted: Becker Defense
+King's Gambit Accepted: Bonsch-Osmolovsky Variation
+King's Gambit Accepted: Fischer Defense
+King's Gambit Accepted: Fischer Defense, Schulder Gambit
+King's Gambit Accepted: Fischer Defense, Spanish Variation
+King's Gambit Accepted: Gianutio Countergambit
+King's Gambit Accepted: Greco Gambit
+King's Gambit Accepted: King's Knight's Gambit
+King's Gambit Accepted: King's Knight's Gambit
+King's Gambit Accepted: MacLeod Defense
+King's Gambit Accepted: Schallopp Defense
+King's Gambit Accepted: Schallopp Defense, Tashkent Attack
+King's Gambit Accepted: Wagenbach Defense
+King's Gambit Accepted: Cunningham Defense
+King's Gambit Accepted: Cunningham Defense, Bertin Gambit
+King's Gambit Accepted: Cunningham Defense, Bertin Gambit
+King's Gambit Accepted: Cunningham Defense, McCormick Defense
+King's Gambit Accepted: Abbazia Defense
+King's Gambit Accepted: Abbazia Defense, Main Line
+King's Gambit Accepted: Modern Defense
+King's Gambit Accepted: Modern Defense
+King's Gambit Accepted: Australian Gambit
+King's Gambit Accepted: Blachly Gambit
+King's Gambit Accepted: Double Muzio Gambit
+King's Gambit Accepted: Double Muzio Gambit, Baldwin Gambit
+King's Gambit Accepted: Double Muzio Gambit, Bello Gambit
+King's Gambit Accepted: Double Muzio Gambit, Paulsen Defense
+King's Gambit Accepted: Double Muzio Gambit, Young Gambit
+King's Gambit Accepted: Ghulam-Kassim Gambit
+King's Gambit Accepted: Ghulam-Kassim Gambit
+King's Gambit Accepted: King's Knight's Gambit
+King's Gambit Accepted: Kotov Gambit
+King's Gambit Accepted: Lolli Gambit
+King's Gambit Accepted: Lolli Gambit, Young Variation
+King's Gambit Accepted: McDonnell Gambit
+King's Gambit Accepted: Middleton Countergambit
+King's Gambit Accepted: Muzio Gambit Accepted, From's Defense
+King's Gambit Accepted: Muzio Gambit, Brentano Defense
+King's Gambit Accepted: Muzio Gambit, Holloway Defense
+King's Gambit Accepted: Muzio Gambit, Kling and Horwitz Counterattack
+King's Gambit Accepted: Muzio Gambit, Sarratt Defense
+King's Gambit Accepted: Muzio Gambit, Wild Muzio Gambit
+King's Gambit Accepted: Quade Gambit
+King's Gambit Accepted: Rosentreter Gambit
+King's Gambit Accepted: Rosentreter Gambit, Bird Gambit
+King's Gambit Accepted: Rosentreter Gambit, Sörensen Gambit
+King's Gambit Accepted: Rosentreter Gambit, Testa Variation
+King's Gambit Accepted: Salvio Gambit
+King's Gambit Accepted: Salvio Gambit, Anderssen Counterattack
+King's Gambit Accepted: Salvio Gambit, Cochrane Gambit
+King's Gambit Accepted: Salvio Gambit, Santa Maria Defense
+King's Gambit Accepted: Salvio Gambit, Silberschmidt Defense
+King's Gambit Accepted: Salvio Gambit, Viennese Variation
+King's Gambit Accepted: Silberschmidt Gambit
+King's Gambit Accepted: Sörensen Gambit
+King's Gambit Accepted: Greco Gambit
+King's Gambit Accepted: Hanstein Gambit
+King's Gambit Accepted: Mayet Gambit
+King's Gambit Accepted: Philidor Gambit
+King's Gambit Accepted: Philidor Gambit, Schultz Variation
+King's Gambit Accepted: Traditional Variation
+King's Gambit Accepted: Allgaier Gambit
+King's Gambit Accepted: Allgaier Gambit, Thorold Attack
+King's Gambit Accepted: Allgaier Gambit, Urusov Attack
+King's Gambit Accepted: Allgaier, Blackburne Gambit
+King's Gambit Accepted: Allgaier, Cook Variation
+King's Gambit Accepted: Allgaier, Horny Defense
+King's Gambit Accepted: Allgaier, Schlechter Defense
+King's Gambit Accepted: Allgaier, Urusov Attack
+King's Gambit Accepted: Kieseritzky Gambit
+King's Gambit Accepted: Kieseritzky Gambit, Anderssen Defense
+King's Gambit Accepted: Kieseritzky Gambit, Anderssen-Cordel Gambit
+King's Gambit Accepted: Kieseritzky Gambit, Berlin Defense
+King's Gambit Accepted: Kieseritzky Gambit, Berlin Defense, Rubinstein Variation
+King's Gambit Accepted: Kieseritzky Gambit, Berlin Defense, de Riviere Variation
+King's Gambit Accepted: Kieseritzky Gambit, Brentano Defense
+King's Gambit Accepted: Kieseritzky Gambit, Brentano Defense
+King's Gambit Accepted: Kieseritzky Gambit, Brentano Defense, Caro Variation
+King's Gambit Accepted: Kieseritzky Gambit, Cotter Gambit
+King's Gambit Accepted: Kieseritzky Gambit, Kolisch Defense
+King's Gambit Accepted: Kieseritzky Gambit, Long Whip
+King's Gambit Accepted: Kieseritzky Gambit, Neumann Defense
+King's Gambit Accepted: Kieseritzky Gambit, Paulsen Defense
+King's Gambit Accepted: Kieseritzky Gambit, Paulsen Defense Deferred
+King's Gambit Accepted: Kieseritzky Gambit, Rice Gambit
+King's Gambit Accepted: Kieseritzky Gambit, Rosenthal Defense
+King's Gambit Accepted: Kieseritzky, Long Whip Defense, Jaenisch Variation
+King's Gambit Accepted: Kieseritzky, Polerio Defense
+King's Gambit Accepted: Kieseritzky, Rice Gambit
+King's Gambit Accepted: Kieseritzky, Salvio Defense, Cozio Variation
+King's Gambit Accepted: King's Knight's Gambit
+Elephant Gambit
+Elephant Gambit: Maróczy Gambit
+Elephant Gambit: Paulsen Countergambit
+Elephant Gambit: Wasp Variation
+Gunderam Defense
+King's Knight Opening
+King's Pawn Game: Busch-Gass Gambit
+King's Pawn Game: Busch-Gass Gambit, Chiodini Gambit
+King's Pawn Game: Damiano Defense
+King's Pawn Game: Damiano Defense, Damiano Gambit
+King's Pawn Game: Damiano Defense, Damiano Gambit, Chigorin Gambit
+King's Pawn Game: Gunderam Defense, Gunderam Gambit
+King's Pawn Game: Gunderam Gambit
+King's Pawn Game: La Bourdonnais Gambit
+King's Pawn Game: McConnell Defense
+Latvian Gambit
+Latvian Gambit Accepted
+Latvian Gambit Accepted: Bilguer Variation
+Latvian Gambit Accepted: Bronstein Attack
+Latvian Gambit Accepted: Bronstein Gambit
+Latvian Gambit Accepted: Foltys Variation
+Latvian Gambit Accepted: Foltys-Leonhardt Variation
+Latvian Gambit Accepted: Leonhardt Variation
+Latvian Gambit Accepted: Main Line
+Latvian Gambit Accepted: Nimzowitsch Attack
+Latvian Gambit: Behting Variation
+Latvian Gambit: Corkscrew Countergambit
+Latvian Gambit: Corkscrew Gambit
+Latvian Gambit: Diepstraten Countergambit
+Latvian Gambit: Fraser Defense
+Latvian Gambit: Greco Variation
+Latvian Gambit: Lobster Gambit
+Latvian Gambit: Mason Countergambit
+Latvian Gambit: Mayet Attack
+Latvian Gambit: Mayet Attack, Morgado Defense
+Latvian Gambit: Mayet Attack, Poisoned Pawn Variation
+Latvian Gambit: Mayet Attack, Polerio-Svedenborg Variation
+Latvian Gambit: Mayet Attack, Strautins Gambit
+Latvian Gambit: Mlotkowski Variation
+Latvian Gambit: Senechaud Gambit
+Philidor Defense
+Philidor Defense
+Philidor Defense
+Philidor Defense
+Philidor Defense: Albin-Blackburne Gambit
+Philidor Defense: Berger Variation
+Philidor Defense: Bird Gambit
+Philidor Defense: Boden Variation
+Philidor Defense: Exchange Variation
+Philidor Defense: Exchange Variation
+Philidor Defense: Exchange Variation
+Philidor Defense: Hanham Variation
+Philidor Defense: Hanham Variation, Delmar Variation
+Philidor Defense: Hanham Variation, Krause Variation
+Philidor Defense: Hanham Variation, Schlechter Variation
+Philidor Defense: Hanham Variation, Sharp Variation
+Philidor Defense: Hanham Variation, Steiner Variation
+Philidor Defense: Hanham, Kmoch Variation
+Philidor Defense: Larsen Variation
+Philidor Defense: Lion Variation
+Philidor Defense: Lion Variation, Bishop Sacrifice
+Philidor Defense: Lion Variation, Delayed Bishop Sacrifice
+Philidor Defense: Lion Variation, Forcing Line
+Philidor Defense: Lion Variation, Lion's Claw, with Bc4 and h6
+Philidor Defense: Lion Variation, Lion's Claw, with Be2 and c6
+Philidor Defense: Lion Variation, Shirov Gambit
+Philidor Defense: Lion Variation, Sozin Variation
+Philidor Defense: Lopez Countergambit
+Philidor Defense: Lopez Countergambit, Jaenisch Variation
+Philidor Defense: Morphy Gambit
+Philidor Defense: Nimzowitsch Variation
+Philidor Defense: Nimzowitsch Variation
+Philidor Defense: Nimzowitsch Variation, Klein Variation
+Philidor Defense: Nimzowitsch Variation, Rellstab Variation
+Philidor Defense: Nimzowitsch Variation, Sokolsky Variation
+Philidor Defense: Nimzowitsch, Larobok Variation
+Philidor Defense: Nimzowitsch, Locock Variation
+Philidor Defense: Paulsen Attack
+Philidor Defense: Philidor Countergambit
+Philidor Defense: Philidor Countergambit, Berger Variation
+Philidor Defense: Philidor Countergambit, Zukertort Variation
+Philidor Defense: Philidor Countergambit, del Rio Attack
+Philidor Defense: Philidor Gambit
+Philidor Defense: Steinitz Variation
+Russian Game
+Russian Game
+Russian Game
+Russian Game
+Russian Game
+Russian Game: Classical Attack
+Russian Game: Classical Attack, Berger Variation
+Russian Game: Classical Attack, Chigorin Variation
+Russian Game: Classical Attack, Chigorin Variation, Browne Attack
+Russian Game: Classical Attack, Chigorin Variation, Main Line
+Russian Game: Classical Attack, Closed Variation
+Russian Game: Classical Attack, Jaenisch Variation
+Russian Game: Classical Attack, Krause Variation
+Russian Game: Classical Attack, Marshall Trap
+Russian Game: Classical Attack, Marshall Variation
+Russian Game: Classical Attack, Marshall Variation, Chinese Gambit
+Russian Game: Classical Attack, Maróczy Variation
+Russian Game: Classical Attack, Mason Variation
+Russian Game: Classical Attack, Mason-Showalter Variation
+Russian Game: Classical Attack, Staunton Variation
+Russian Game: Classical Attack, Tarrasch Variation
+Russian Game: Cochrane Gambit
+Russian Game: Cochrane Gambit, Bishop Check Line
+Russian Game: Cochrane Gambit, Center Variation
+Russian Game: Cozio Attack
+Russian Game: Damiano Variation
+Russian Game: Damiano Variation, Kholmov Gambit
+Russian Game: French Attack
+Russian Game: Italian Variation
+Russian Game: Karklins-Martinovsky Variation
+Russian Game: Kaufmann Attack
+Russian Game: Millennium Attack
+Russian Game: Moody Gambit
+Russian Game: Nimzowitsch Attack
+Russian Game: Paulsen Attack
+Russian Game: Stafford Gambit
+Russian Game: Stafford Gambit
+Russian Game: Three Knights Game
+Bishop's Opening: Urusov Gambit
+Bishop's Opening: Urusov Gambit, Keidansky Gambit
+Russian Game: Modern Attack
+Russian Game: Modern Attack
+Russian Game: Modern Attack, Bardeleben Variation
+Russian Game: Modern Attack, Center Attack
+Russian Game: Modern Attack, Center Variation
+Russian Game: Modern Attack, Murrey Variation
+Russian Game: Modern Attack, Steinitz Variation
+Russian Game: Modern Attack, Symmetrical Variation
+Russian Game: Modern Attack, Tal Gambit
+Russian Game: Modern Attack, Trifunovic Variation
+Dresden Opening: The Goblin
+Irish Gambit
+King's Knight Opening: Konstantinopolsky
+King's Knight Opening: Normal Variation
+King's Pawn Game: Dresden Opening
+King's Pawn Game: Pachman Wing Gambit
+King's Pawn Game: Schulze-Müller Gambit
+King's Pawn Game: Tayler Opening
+King's Pawn Game: Tayler Opening
+King's Pawn Game: Tayler Opening, Basman Gambit
+King's Pawn Game: Tayler Opening, Inverted Hanham
+Latvian Gambit: Clam Gambit
+Ponziani Opening
+Ponziani Opening: Caro Gambit
+Ponziani Opening: Jaenisch Counterattack
+Ponziani Opening: Leonhardt Variation
+Ponziani Opening: Neumann Gambit
+Ponziani Opening: Ponziani Countergambit
+Ponziani Opening: Ponziani Countergambit, Schmidt Attack
+Ponziani Opening: Romanishin Variation
+Ponziani Opening: Réti Variation
+Ponziani Opening: Spanish Variation
+Ponziani Opening: Spanish Variation, Harrwitz Attack, Nikitin Gambit
+Ponziani Opening: Steinitz Variation
+Ponziani Opening: Vukovic Gambit
+Scotch Game
+Scotch Game
+Scotch Game: Benima Defense
+Scotch Game: Cochrane Variation
+Scotch Game: Cochrane-Shumov Defense
+Scotch Game: Göring Gambit
+Scotch Game: Göring Gambit, Bardeleben Variation
+Scotch Game: Göring Gambit, Double Pawn Sacrifice
+Scotch Game: Göring Gambit, Main Line
+Scotch Game: Hanneken Variation
+Scotch Game: Haxo Gambit
+Scotch Game: Lolli Variation
+Scotch Game: Napoleon Gambit
+Scotch Game: Relfsson Gambit
+Scotch Game: Scotch Gambit
+Scotch Game: Scotch Gambit, Advance Variation
+Scotch Game: Scotch Gambit, Cochrane-Anderssen Variation
+Scotch Game: Scotch Gambit, Dubois Réti Defense
+Scotch Game: Scotch Gambit, Göring Gambit Declined
+Scotch Game: Scotch Gambit, Kingside Variation
+Scotch Game: Scotch Gambit, London Defense
+Scotch Game: Scotch Gambit, Sarratt Variation
+Scotch Game: Sea-Cadet Mate
+Scotch Game: Vitzthum Attack
+Scotch Game
+Scotch Game
+Scotch Game: Alekhine Gambit
+Scotch Game: Blumenfeld Attack
+Scotch Game: Braune Variation
+Scotch Game: Classical Variation
+Scotch Game: Classical Variation, Blackburne Attack
+Scotch Game: Classical Variation, Intermezzo Variation
+Scotch Game: Classical Variation, Millennium Variation
+Scotch Game: Fraser Variation
+Scotch Game: Ghulam-Kassim Variation
+Scotch Game: Gottschall Variation
+Scotch Game: Horwitz Attack
+Scotch Game: Horwitz Attack, Blackburne Variation
+Scotch Game: Malaniuk Variation
+Scotch Game: Meitner Variation
+Scotch Game: Mieses Variation
+Scotch Game: Modern Defense
+Scotch Game: Paulsen Attack
+Scotch Game: Paulsen Variation
+Scotch Game: Paulsen, Gunsberg Defense
+Scotch Game: Potter Variation
+Scotch Game: Romanishin Variation
+Scotch Game: Rosenthal Variation
+Scotch Game: Schmidt Variation
+Scotch Game: Steinitz Variation
+Scotch Game: Steinitz Variation
+Scotch Game: Tartakower Variation
+Three Knights Opening
+Three Knights Opening
+Three Knights Opening: Schlechter Variation
+Three Knights Opening: Steinitz Defense
+Three Knights Opening: Steinitz-Rosenthal Variation
+Three Knights Opening: Winawer Defense
+Four Knights Game
+Four Knights Game: Gunsberg Variation
+Four Knights Game: Halloween Gambit
+Four Knights Game: Halloween Gambit, Oldtimer Variation
+Four Knights Game: Halloween Gambit, Plasma Variation
+Four Knights Game: Italian Variation
+Four Knights Game: Italian Variation, Noa Gambit
+Four Knights Game: Scotch Variation
+Four Knights Game: Scotch Variation Accepted
+Four Knights Game: Scotch Variation, Belgrade Gambit
+Four Knights Game: Scotch Variation, Belgrade Gambit, Modern Defense
+Four Knights Game: Scotch Variation, Krause Gambit
+Four Knights Game: Scotch Variation, Krause Gambit, Leonhardt Defense
+Four Knights Game: Scotch Variation, Oxford Gambit
+Four Knights Game: Scotch Variation, Schmid Defense
+Four Knights Game: Spanish Variation
+Four Knights Game: Spanish Variation, Bardeleben Variation
+Four Knights Game: Spanish Variation, Classical Variation
+Four Knights Game: Spanish Variation, Ranken Variation
+Four Knights Game: Spanish Variation, Rubinstein Variation
+Four Knights Game: Spanish Variation, Rubinstein Variation
+Four Knights Game: Spanish Variation, Rubinstein Variation
+Four Knights Game: Spanish Variation, Rubinstein Variation Accepted
+Four Knights Game: Spanish Variation, Rubinstein Variation, Henneberger Variation
+Four Knights Game: Spanish Variation, Rubinstein Variation, Marshall Gambit
+Four Knights Game: Spanish Variation, Rubinstein Variation, Marshall Variation
+Four Knights Game: Spanish Variation, Rubinstein Variation, Maróczy Variation
+Four Knights Game: Spanish Variation, Spielmann Variation
+Four Knights Game: Spanish Variation
+Four Knights Game: Spanish Variation, Alatortsev Variation
+Four Knights Game: Spanish Variation, Double Spanish
+Four Knights Game: Spanish Variation, Double Spanish
+Four Knights Game: Spanish Variation, Gunsberg Counterattack
+Four Knights Game: Spanish Variation, Janowski Variation
+Four Knights Game: Spanish Variation, Nimzowitsch Variation
+Four Knights Game: Spanish Variation, Svenonius Variation
+Four Knights Game: Spanish Variation, Symmetrical Variation
+Four Knights Game: Spanish Variation, Symmetrical Variation
+Four Knights Game: Spanish Variation, Symmetrical Variation
+Four Knights Game: Spanish Variation, Symmetrical Variation
+Four Knights Game: Spanish Variation, Symmetrical Variation, Blake Variation
+Four Knights Game: Spanish Variation, Symmetrical Variation, Metger Unpin
+Four Knights Game: Spanish Variation, Symmetrical Variation, Tarrasch Variation
+Four Knights Game: Italian Variation
+Italian Game
+Italian Game: Anti-Fried Liver Defense
+Italian Game: Blackburne-Kostić Gambit
+Italian Game: Classical Variation, Albin Gambit
+Italian Game: Deutz Gambit
+Italian Game: Giuoco Pianissimo
+Italian Game: Giuoco Pianissimo, Canal Variation
+Italian Game: Giuoco Pianissimo, Dubois Variation
+Italian Game: Giuoco Pianissimo, Italian Four Knights Variation
+Italian Game: Giuoco Pianissimo, Lucchini Gambit
+Italian Game: Giuoco Pianissimo, Normal
+Italian Game: Giuoco Piano
+Italian Game: Hungarian Defense
+Italian Game: Hungarian Defense, Tartakower Variation
+Italian Game: Jerome Gambit
+Italian Game: Paris Defense
+Italian Game: Rosentreter Gambit
+Italian Game: Rousseau Gambit
+Italian Game: Evans Gambit
+Italian Game: Evans Gambit
+Italian Game: Evans Gambit Accepted
+Italian Game: Evans Gambit Declined
+Italian Game: Evans Gambit Declined
+Italian Game: Evans Gambit Declined, Cordel Variation
+Italian Game: Evans Gambit Declined, Hicken Variation
+Italian Game: Evans Gambit Declined, Hirschbach Variation
+Italian Game: Evans Gambit Declined, Lange Variation
+Italian Game: Evans Gambit Declined, Pavlov Variation
+Italian Game: Evans Gambit Declined, Showalter Variation
+Italian Game: Evans Gambit Declined, Vasquez Variation
+Italian Game: Evans Gambit, Anderssen Variation
+Italian Game: Evans Gambit, Anderssen Variation, Cordel Line
+Italian Game: Evans Gambit, Fontaine Countergambit
+Italian Game: Evans Gambit, Fraser Attack
+Italian Game: Evans Gambit, Fraser-Mortimer Attack
+Italian Game: Evans Gambit, Göring Attack
+Italian Game: Evans Gambit, Harding Variation
+Italian Game: Evans Gambit, Hein Countergambit
+Italian Game: Evans Gambit, Mayet Defense
+Italian Game: Evans Gambit, McDonnell Defense
+Italian Game: Evans Gambit, McDonnell Defense, Main Line
+Italian Game: Evans Gambit, Morphy Attack
+Italian Game: Evans Gambit, Mortimer-Evans Gambit
+Italian Game: Evans Gambit, Paulsen Variation
+Italian Game: Evans Gambit, Steinitz Variation
+Italian Game: Evans Gambit, Stone-Ware Variation
+Italian Game: Evans Gambit, Ulvestad Variation
+Italian Game: Evans Gambit
+Italian Game: Evans Gambit, Alapin-Steinitz Variation
+Italian Game: Evans Gambit, Anderssen Defense
+Italian Game: Evans Gambit, Bronstein Defense
+Italian Game: Evans Gambit, Compromised Defense
+Italian Game: Evans Gambit, Compromised Defense, Main Line
+Italian Game: Evans Gambit, Compromised Defense, Potter Variation
+Italian Game: Evans Gambit, Dufresne Defense
+Italian Game: Evans Gambit, Johner Defense
+Italian Game: Evans Gambit, Laroche Variation
+Italian Game: Evans Gambit, Lasker Defense
+Italian Game: Evans Gambit, Leonhardt Countergambit
+Italian Game: Evans Gambit, Levenfish Variation
+Italian Game: Evans Gambit, Main Line
+Italian Game: Evans Gambit, Mieses Defense
+Italian Game: Evans Gambit, Pierce Defense
+Italian Game: Evans Gambit, Richardson Attack
+Italian Game: Evans Gambit, Sanders-Alapin Variation
+Italian Game: Evans Gambit, Slow Variation
+Italian Game: Evans Gambit, Sokolsky Variation
+Italian Game: Evans Gambit, Tartakower Attack
+Italian Game: Evans Gambit, Waller Attack
+Italian Game: Bird's Attack
+Italian Game: Classical Variation
+Italian Game: Classical Variation
+Italian Game: Classical Variation, Alexandre Gambit
+Italian Game: Classical Variation, Center Attack
+Italian Game: Classical Variation, Center Holding Variation
+Italian Game: Classical Variation, Closed Variation
+Italian Game: Classical Variation, Giuoco Pianissimo
+Italian Game: Classical Variation, Giuoco Pianissimo, Main Line
+Italian Game: Classical Variation, Greco Gambit
+Italian Game: Classical Variation, Greco Gambit, Anderssen Variation
+Italian Game: Classical Variation, La Bourdonnais Variation
+Italian Game: Classical Variation, Tarrasch Variation
+Italian Game: Giuoco Piano, Eisinger Variation
+Italian Game: Giuoco Piano, Ghulam-Kassim Variation
+Italian Game: Giuoco Piano, Mestel Variation
+Italian Game: Scotch Gambit, Walbrodt-Baird Gambit
+Italian Game: Classical Variation, Greco Gambit, Greco Variation
+Italian Game: Classical Variation, Greco Gambit, Main Line
+Italian Game: Classical Variation, Greco Gambit, Moeller-Bayonet Attack
+Italian Game: Classical Variation, Greco Gambit, Moeller-Therkatz Attack
+Italian Game: Classical Variation, Greco Gambit, Traditional Line
+Italian Game: Giuoco Piano, Aitken Variation
+Italian Game: Giuoco Piano, Bernstein Variation
+Italian Game: Giuoco Piano, Cracow Variation
+Italian Game: Giuoco Piano, Greco's Attack
+Italian Game: Giuoco Piano, Krause Variation
+Italian Game: Giuoco Piano, Steinitz Variation
+Italian Game: Giuoco Piano, Therkatz-Herzog Variation
+Italian Game: Giuoco Piano
+Italian Game: Giuoco Piano, Holzhausen Attack
+Italian Game: Giuoco Piano, Rosentreter Variation
+Italian Game: Scotch Gambit
+Italian Game: Scotch Gambit, Janowski Defense
+Italian Game: Scotch Gambit, Max Lange Attack
+Italian Game: Scotch Gambit, Max Lange Attack Accepted
+Italian Game: Scotch Gambit, Max Lange Attack, Long Variation
+Italian Game: Scotch Gambit, Max Lange Attack, Spielmann Defense
+Italian Game: Scotch Gambit, de Riviere Defense
+Italian Game: Scotch Invitation Declined
+Italian Game: Two Knights Defense
+Italian Game: Two Knights Defense
+Italian Game: Two Knights Defense, Keidansky Variation
+Italian Game: Two Knights Defense, Max Lange Attack
+Italian Game: Two Knights Defense, Max Lange Attack, Berger Variation
+Italian Game: Two Knights Defense, Max Lange Attack, Krause Variation
+Italian Game: Two Knights Defense, Max Lange Attack, Loman Defense
+Italian Game: Two Knights Defense, Max Lange Attack, Rubinstein Variation
+Italian Game: Two Knights Defense, Modern Bishop's Opening
+Italian Game: Two Knights Defense, Open Variation
+Italian Game: Two Knights Defense, Perreux Variation
+Italian Game: Scotch Gambit, Anderssen Attack
+Italian Game: Scotch Gambit, Anderssen Attack, Main Line
+Italian Game: Scotch Gambit, Canal Variation
+Italian Game: Scotch Gambit, Double Gambit Accepted
+Italian Game: Scotch Gambit, Nakhmanson Gambit
+Italian Game: Two Knights Defense, Yurdansky Attack
+Italian Game: Two Knights Defense, Fegatello Attack, Leonhardt Variation
+Italian Game: Two Knights Defense, Fried Liver Attack
+Italian Game: Two Knights Defense, Fritz Variation
+Italian Game: Two Knights Defense, Fritz, Gruber Variation
+Italian Game: Two Knights Defense, Kloss Gambit
+Italian Game: Two Knights Defense, Knight Attack
+Italian Game: Two Knights Defense, Knight Attack, Normal Variation
+Italian Game: Two Knights Defense, Lolli Attack
+Italian Game: Two Knights Defense, Pincus Variation
+Italian Game: Two Knights Defense, Ponziani-Steinitz Gambit
+Italian Game: Two Knights Defense, Traxler Counterattack
+Italian Game: Two Knights Defense, Traxler Counterattack, Bishop Sacrifice Line
+Italian Game: Two Knights Defense, Traxler Counterattack, King March Line
+Italian Game: Two Knights Defense, Traxler Counterattack, Knight Sacrifice Line
+Italian Game: Two Knights Defense, Traxler Variation, Trencianske-Teplice Gambit
+Italian Game: Two Knights Defense, Ulvestad Variation
+Italian Game: Two Knights Defense, Ulvestad Variation, Kurkin Gambit
+Italian Game: Two Knights Defense
+Italian Game: Two Knights Defense, Blackburne Variation
+Italian Game: Two Knights Defense, Colman Variation
+Italian Game: Two Knights Defense, Maróczy Variation
+Italian Game: Two Knights Defense, Paoli Variation
+Italian Game: Two Knights Defense, Polerio Defense
+Italian Game: Two Knights Defense, Polerio Defense, Bishop Check Line
+Italian Game: Two Knights Defense, Polerio Defense, Bogoljubov Variation
+Italian Game: Two Knights Defense, Polerio Defense, Kieseritzky Variation
+Italian Game: Two Knights Defense, Polerio Defense, Yankovich Variation
+Italian Game: Two Knights Defense, Knorre Variation
+Italian Game: Two Knights Defense, Polerio Defense, Göring Variation
+Italian Game: Two Knights Defense, Polerio Defense, Suhle Defense
+Italian Game: Two Knights Defense, Steinitz Variation
+Ruy Lopez
+Ruy Lopez: Alapin Defense
+Ruy Lopez: Alapin Defense, Alapin Gambit
+Ruy Lopez: Brentano Gambit
+Ruy Lopez: Bulgarian Variation
+Ruy Lopez: Cozio Defense
+Ruy Lopez: Cozio Defense, Paulsen Variation
+Ruy Lopez: Cozio Defense, Tartakower Gambit
+Ruy Lopez: Fianchetto Defense
+Ruy Lopez: Fianchetto Defense, Kevitz Gambit
+Ruy Lopez: Lucena Variation
+Ruy Lopez: Nürnberg Variation
+Ruy Lopez: Pollock Defense
+Ruy Lopez: Retreat Variation
+Ruy Lopez: Rotary-Albany Gambit
+Ruy Lopez: Spanish Countergambit
+Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit
+Ruy Lopez: Spanish Countergambit, Harding Gambit
+Ruy Lopez: Vinogradov Variation
+Ruy Lopez: Bird Variation
+Ruy Lopez: Bird Variation, Paulsen Variation
+Ruy Lopez: Old Steinitz Defense, Semi-Duras Variation
+Ruy Lopez: Steinitz Defense
+Ruy Lopez: Steinitz Defense, Center Gambit
+Ruy Lopez: Steinitz Defense, Nimzowitsch Attack
+Ruy Lopez: Schliemann Defense
+Ruy Lopez: Schliemann Defense, Classical Variation
+Ruy Lopez: Schliemann Defense, Dyckhoff Variation
+Ruy Lopez: Schliemann Defense, Exchange Variation
+Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted
+Ruy Lopez: Schliemann Defense, Kostić Defense
+Ruy Lopez: Schliemann Defense, Möhring Variation
+Ruy Lopez: Schliemann Defense, Schönemann Attack
+Ruy Lopez: Schliemann Defense, Tartakower Variation
+Ruy Lopez: Classical Defense, Benelux Variation
+Ruy Lopez: Classical Defense, Boden Variation
+Ruy Lopez: Classical Defense, Zaitsev Variation
+Ruy Lopez: Classical Variation
+Ruy Lopez: Classical Variation, Central Variation
+Ruy Lopez: Classical Variation, Charousek Variation
+Ruy Lopez: Classical Variation, Cordel Gambit
+Ruy Lopez: Classical Variation, Konikowski Gambit
+Ruy Lopez: Classical Variation, Modern Main Line
+Ruy Lopez: Classical Variation, Spanish Wing Gambit
+Ruy Lopez: Berlin Defense
+Ruy Lopez: Berlin Defense
+Ruy Lopez: Berlin Defense, Anderssen Variation
+Ruy Lopez: Berlin Defense, Beverwijk Variation
+Ruy Lopez: Berlin Defense, Duras Variation
+Ruy Lopez: Berlin Defense, Fishing Pole Variation
+Ruy Lopez: Berlin Defense, Kaufmann Variation
+Ruy Lopez: Berlin Defense, Mortimer Trap
+Ruy Lopez: Berlin Defense, Mortimer Variation
+Ruy Lopez: Berlin Defense, Nyholm Attack
+Ruy Lopez: Classical Variation, Zukertort Gambit
+Ruy Lopez: Halloween Attack
+Ruy Lopez: Berlin Defense, Closed Bernstein Variation
+Ruy Lopez: Berlin Defense, Closed Showalter Variation
+Ruy Lopez: Berlin Defense, Closed Wolf Variation
+Ruy Lopez: Berlin Defense, Hedgehog Variation
+Ruy Lopez: Berlin Defense, Improved Steinitz Defense
+Ruy Lopez: Berlin Defense, Tarrasch Trap
+Ruy Lopez: Closed Berlin Defense, Chigorin Variation
+Ruy Lopez: Berlin Defense, Berlin Wall
+Ruy Lopez: Berlin Defense, Cordel Variation
+Ruy Lopez: Berlin Defense, Minckwitz Variation
+Ruy Lopez: Berlin Defense, Pillsbury Variation
+Ruy Lopez: Berlin Defense, Rio Gambit Accepted
+Ruy Lopez: Berlin Defense, Rio de Janeiro Variation
+Ruy Lopez: Berlin Defense, Rio de Janeiro Variation
+Ruy Lopez: Berlin Defense, Rosenthal Variation
+Ruy Lopez: Berlin Defense, Trifunovic Variation
+Ruy Lopez: Berlin Defense, Winawer Attack
+Ruy Lopez: Berlin Defense, Zukertort Variation
+Ruy Lopez: Berlin Defense, l'Hermet Variation
+Ruy Lopez: Berlin Defense, l'Hermet Variation, Berlin Wall Defense
+Ruy Lopez: Berlin Defense, l'Hermet Variation, Westerinen Line
+Ruy Lopez: Open Berlin Defense, Showalter Variation
+Ruy Lopez: Open Berlin Defense, l'Hermet Variation
+Ruy Lopez: Exchange Variation
+Ruy Lopez: Exchange Variation, Alekhine Variation
+Ruy Lopez: Exchange Variation, Keres Variation
+Ruy Lopez: Exchange Variation, Lutikov Variation
+Ruy Lopez: Exchange Variation, Romanovsky Variation
+Ruy Lopez: Exchange, Alekhine Variation
+Ruy Lopez: Exchange Variation, Alapin Gambit
+Ruy Lopez: Exchange Variation, Bronstein Variation
+Ruy Lopez: Exchange Variation, Gligoric Variation
+Ruy Lopez: Exchange Variation, King's Bishop Variation
+Ruy Lopez: Exchange Variation, Normal Variation
+Ruy Lopez: Bird's Defense Deferred
+Ruy Lopez: Morphy Defense
+Ruy Lopez: Morphy Defense, Alapin's Defense Deferred
+Ruy Lopez: Morphy Defense, Caro Variation
+Ruy Lopez: Morphy Defense, Classical Defense Deferred
+Ruy Lopez: Morphy Defense, Cozio Defense
+Ruy Lopez: Morphy Defense, Fianchetto Defense Deferred
+Ruy Lopez: Morphy Defense, Graz Variation
+Ruy Lopez: Morphy Defense, Norwegian Variation
+Ruy Lopez: Morphy Defense, Norwegian Variation, Nightingale Gambit
+Ruy Lopez: Morphy Defense, Schliemann Defense Deferred
+Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred
+Ruy Lopez: Morphy Defense, Modern Steinitz Defense
+Ruy Lopez: Morphy Defense, Modern Steinitz Defense
+Ruy Lopez: Morphy Defense, Modern Steinitz Defense
+Ruy Lopez: Noah's Ark Trap
+Ruy Lopez: Closed, Kecskemet Variation
+Ruy Lopez: Morphy Defense, Modern Steinitz Defense
+Ruy Lopez: Morphy Defense, Modern Steinitz Defense
+Ruy Lopez: Morphy Defense, Modern Steinitz Defense
+Ruy Lopez: Morphy Defense, Modern Steinitz Defense
+Ruy Lopez: Morphy Defense, Modern Steinitz Defense
+Ruy Lopez: Morphy Defense, Modern Steinitz Defense, Siesta Variation
+Ruy Lopez: Morphy Defense, Modern Steinitz Defense
+Ruy Lopez: Morphy Defense, Modern Steinitz Defense
+Ruy Lopez: Morphy Defense, Modern Steinitz Defense, Fianchetto Variation
+Ruy Lopez: Morphy Defense, Anderssen Variation
+Ruy Lopez: Morphy Defense, Bayreuth Variation
+Ruy Lopez: Morphy Defense, Duras Variation
+Ruy Lopez: Morphy Defense, Jaffe Gambit
+Ruy Lopez: Morphy Defense, Mackenzie Variation
+Ruy Lopez: Morphy Defense, Tarrasch Variation
+Ruy Lopez: Morphy Defense, Wormald Attack
+Ruy Lopez: Wormald Attack, Grünfeld Variation
+Ruy Lopez: Brix Variation
+Ruy Lopez: Central Countergambit
+Ruy Lopez: Morphy Defense
+Ruy Lopez: Morphy Defense
+Ruy Lopez: Morphy Defense, Arkhangelsk Variation
+Ruy Lopez: Morphy Defense, Neo-Arkhangelsk Variation
+Ruy Lopez: Morphy Defense, Wing Attack
+Ruy Lopez: Rabinovich Variation
+Ruy Lopez: Morphy Defense, Steinitz Deferred
+Ruy Lopez: Morphy Defense, Steinitz Deferred
+Ruy Lopez: Steinitz Defense Deferred, Boleslavsky Variation
+Ruy Lopez: Steinitz Defense Deferred, Lipnitsky Variation
+Ruy Lopez: Morphy Defense, Tartakower Variation
+Ruy Lopez: Open
+Ruy Lopez: Open
+Ruy Lopez: Open
+Ruy Lopez: Open
+Ruy Lopez: Open, Berger Variation
+Ruy Lopez: Open, Bernstein Variation
+Ruy Lopez: Open, Bernstein Variation, Luther Line
+Ruy Lopez: Open, Friess Attack
+Ruy Lopez: Open, Harksen Gambit
+Ruy Lopez: Open, Karpov Gambit
+Ruy Lopez: Open, Knorre Variation
+Ruy Lopez: Open, Main Line
+Ruy Lopez: Open, Richter Variation
+Ruy Lopez: Open, Riga Variation
+Ruy Lopez: Open, Schlechter Defense
+Ruy Lopez: Open, Skipworth Gambit
+Ruy Lopez: Open, Zukertort Variation
+Ruy Lopez: Open, Howell Attack
+Ruy Lopez: Open, Howell Attack
+Ruy Lopez: Open, Howell Attack, Ekstrom Variation
+Ruy Lopez: Open
+Ruy Lopez: Open, Berlin Variation
+Ruy Lopez: Open, Dilworth Variation
+Ruy Lopez: Open, Italian Variation
+Ruy Lopez: Open, Motzko Attack
+Ruy Lopez: Open, Motzko Attack, Nenarokov Variation
+Ruy Lopez: Open, St. Petersburg Variation
+Ruy Lopez: Open, Breslau Variation
+Ruy Lopez: Open, Classical Defense
+Ruy Lopez: Open, Classical Defense, Main Line
+Ruy Lopez: Open, Malkin Variation
+Ruy Lopez: Open, Tarrasch Trap
+Ruy Lopez: Closed
+Ruy Lopez: Closed, Basque Gambit
+Ruy Lopez: Closed, Center Attack
+Ruy Lopez: Closed, Center Attack, Basque Gambit
+Ruy Lopez: Closed, Martinez Variation
+Ruy Lopez: Closed, Morphy Attack
+Ruy Lopez: Closed, Delayed Exchange
+Ruy Lopez: Closed, Worrall Attack
+Ruy Lopez: Closed, Worrall Attack, Castling Line
+Ruy Lopez: Closed, Worrall Attack, Delayed Castling Line
+Ruy Lopez: Closed, Averbakh Variation
+Ruy Lopez: Closed
+Ruy Lopez: Closed
+Ruy Lopez: Closed, Alekhine Gambit
+Ruy Lopez: Closed, Anti-Marshall
+Ruy Lopez: Closed, Balla Variation
+Ruy Lopez: Closed, Leonhardt Variation
+Ruy Lopez: Closed, Rosen Attack
+Ruy Lopez: Closed, Trajkovic Counterattack
+Ruy Lopez: Noah's Ark Trap
+Ruy Lopez: Marshall Attack
+Ruy Lopez: Marshall Attack, Main Line
+Ruy Lopez: Marshall Attack, Main Line, Spassky Variation
+Ruy Lopez: Marshall Attack, Modern Main Line
+Ruy Lopez: Marshall Attack, Modern Variation
+Ruy Lopez: Marshall Attack, Original Marshall Attack
+Ruy Lopez: Marshall Attack, Re3 Variation
+Ruy Lopez: Marshall Attack, Steiner Variation
+Ruy Lopez: Closed
+Ruy Lopez: Closed, Lutikov Variation
+Ruy Lopez: Closed, Pilnik Variation
+Ruy Lopez: Closed, Suetin Variation
+Ruy Lopez: Closed, Bogoljubov Variation
+Ruy Lopez: Closed, Yates Variation
+Ruy Lopez: Closed, Yates Variation, Short Attack
+Ruy Lopez: Closed
+Ruy Lopez: Closed, Flohr System
+Ruy Lopez: Closed, Karpov Variation
+Ruy Lopez: Closed, Kholmov Variation
+Ruy Lopez: Closed, Smyslov-Breyer-Zaitsev Hybrid
+Ruy Lopez: Closed, Zaitsev System
+Ruy Lopez: Closed, Smyslov Defense
+Ruy Lopez: Closed, Breyer Defense
+Ruy Lopez: Closed, Breyer Defense, Quiet Variation
+Ruy Lopez: Closed, Breyer
+Ruy Lopez: Closed, Breyer Defense
+Ruy Lopez: Closed, Breyer Defense
+Ruy Lopez: Closed, Breyer Defense, Zaitsev Hybrid
+Ruy Lopez: Closed, Borisenko Variation
+Ruy Lopez: Closed, Chigorin Defense
+Ruy Lopez: Closed, Chigorin Defense
+Ruy Lopez: Closed, Keres Defense
+Ruy Lopez: Closed, Rossolimo Defense
+Ruy Lopez: Closed, Chigorin Defense
+Ruy Lopez: Closed, Chigorin Defense
+Ruy Lopez: Closed, Chigorin, Yugoslav System
+Ruy Lopez: Closed, Chigorin Defense
+Ruy Lopez: Closed, Chigorin Defense
+Ruy Lopez: Closed, Chigorin Defense, Panov System
+Amazon Attack
+Blackmar-Diemer Gambit
+Blackmar-Diemer Gambit
+Blackmar-Diemer Gambit Accepted
+Blackmar-Diemer Gambit Accepted: Bogoljubow Defense
+Blackmar-Diemer Gambit Accepted: Bogoljubow Defense, Kloss Attack
+Blackmar-Diemer Gambit Accepted: Bogoljubow Defense, Mad Dog Attack
+Blackmar-Diemer Gambit Accepted: Bogoljubow Defense, Nimzowitsch Attack
+Blackmar-Diemer Gambit Accepted: Bogoljubow Defense, Studier Attack
+Blackmar-Diemer Gambit Accepted: Euwe Defense
+Blackmar-Diemer Gambit Accepted: Euwe Defense, Zilbermints Gambit
+Blackmar-Diemer Gambit Accepted: Gunderam Defense
+Blackmar-Diemer Gambit Accepted: Gunderam Defense, Stader Variation
+Blackmar-Diemer Gambit Accepted: Holwell Defense
+Blackmar-Diemer Gambit Accepted: Kaulich Defense
+Blackmar-Diemer Gambit Accepted: Pietrowsky Defense
+Blackmar-Diemer Gambit Accepted: Ritter Defense
+Blackmar-Diemer Gambit Accepted: Ryder Gambit
+Blackmar-Diemer Gambit Accepted: Schlutter Defense
+Blackmar-Diemer Gambit Accepted: Teichmann Defense
+Blackmar-Diemer Gambit Accepted: Teichmann Defense, Ciesielski Variation
+Blackmar-Diemer Gambit Accepted: Teichmann Defense, Classical Variation
+Blackmar-Diemer Gambit Accepted: Teichmann Defense, Seidel-Hall Attack
+Blackmar-Diemer Gambit Accepted: Ziegler Defense
+Blackmar-Diemer Gambit Declined: Brombacher Countergambit
+Blackmar-Diemer Gambit Declined: Elbert Countergambit
+Blackmar-Diemer Gambit Declined: Gedult Defense
+Blackmar-Diemer Gambit Declined: Lamb Defense
+Blackmar-Diemer Gambit Declined: Langeheinicke Defense
+Blackmar-Diemer Gambit Declined: O'Kelly Defense
+Blackmar-Diemer Gambit Declined: Vienna Defense
+Blackmar-Diemer Gambit Declined: Weinsbach Defense
+Blackmar-Diemer Gambit: Blackmar Gambit
+Blackmar-Diemer Gambit: Diemer-Rosenberg Attack
+Blackmar-Diemer Gambit: Fritz Attack
+Blackmar-Diemer Gambit: Lemberger Countergambit
+Blackmar-Diemer Gambit: Lemberger Countergambit, Endgame Variation
+Blackmar-Diemer Gambit: Lemberger Countergambit, Lange Gambit
+Blackmar-Diemer Gambit: Lemberger Countergambit, Rasmussen Attack
+Blackmar-Diemer Gambit: Lemberger Countergambit, Sneiders Attack
+Blackmar-Diemer Gambit: Lemberger Countergambit, Soller Attack
+Blackmar-Diemer Gambit: Netherlands Variation
+Blackmar-Diemer Gambit: Rasa-Studier Gambit
+Blackmar-Diemer Gambit: Reversed Albin Countergambit
+Blackmar-Diemer Gambit: Zeller Defense
+Blackmar-Diemer Gambit: Zeller Defense, Soller Attack
+Blackmar-Diemer Gambit: von Popiel Gambit
+Blackmar-Diemer Gambit: von Popiel Gambit, Zilbermints Variation
+Queen's Pawn Game
+Queen's Pawn Game
+Queen's Pawn Game
+Queen's Pawn Game: Accelerated London System
+Queen's Pawn Game: Accelerated London System, Steinitz Countergambit
+Queen's Pawn Game: Accelerated London System, Steinitz Countergambit Accepted
+Queen's Pawn Game: Accelerated London System, Steinitz Countergambit, Morris Countergambit
+Queen's Pawn Game: Accelerated London System, Steinitz Countergambit, Morris Countergambit Accepted
+Queen's Pawn Game: Chigorin Variation
+Queen's Pawn Game: Chigorin Variation, Alburt Defense
+Queen's Pawn Game: Chigorin Variation, Anti-Veresov
+Queen's Pawn Game: Chigorin Variation, Fianchetto Defense
+Queen's Pawn Game: Chigorin Variation, Irish Gambit
+Queen's Pawn Game: Chigorin Variation, Shaviliuk Gambit
+Queen's Pawn Game: Chigorin Variation, Shropshire Defense
+Queen's Pawn Game: Hübsch Gambit
+Queen's Pawn Game: Levitsky Attack
+Queen's Pawn Game: Levitsky Attack, Welling Variation
+Queen's Pawn Game: Mason Attack
+Queen's Pawn Game: Stonewall Attack
+Queen's Pawn Game: Zurich Gambit
+Rapport-Jobava System
+Richter-Veresov Attack
+Richter-Veresov Attack
+Richter-Veresov Attack: Boyce Defense
+Richter-Veresov Attack: Malich Gambit
+Richter-Veresov Attack: Richter Variation
+Richter-Veresov Attack: Two Knights System
+Richter-Veresov Attack: Two Knights System, Grünfeld Defense
+Richter-Veresov Attack: Veresov Variation
+London System: Poisoned Pawn Variation
+Queen's Gambit Declined: Baltic Defense, Pseudo-Slav
+Queen's Pawn Game: Anti-Torre
+Queen's Pawn Game: Chandler Gambit
+Queen's Pawn Game: Chigorin Variation
+Queen's Pawn Game: Krause Variation
+Queen's Pawn Game: Levitsky Attack, Euwe Variation, Modern Line
+Queen's Pawn Game: London System
+Queen's Pawn Game: London System, Pterodactyl Variation
+Queen's Pawn Game: Symmetrical Variation
+Queen's Pawn Game: Symmetrical Variation, Pseudo-Catalan
+Queen's Pawn Game: Zilbermints Countergambit
+Queen's Pawn Game: Zukertort Variation
+Queen's Pawn Game: Torre Attack
+Queen's Pawn Game: Torre Attack, Gossip Variation
+Queen's Pawn Game: Torre Attack, Grünfeld Variation
+Queen's Pawn Game: Colle System
+Queen's Pawn Game: Colle System, Anti-Colle
+Queen's Pawn Game: Colle System, Grünfeld Formation
+Queen's Pawn Game: Colle System
+Queen's Pawn Game: Colle System
+Queen's Pawn Game: Colle System, Traditional Colle
+Queen's Pawn Game: Zukertort Variation
+Rubinstein Opening
+Rubinstein Opening: Bogoljubov Defense
+Rubinstein Opening: Classical Defense
+Rubinstein Opening: Semi-Slav Defense
+Queen's Gambit
+Queen's Gambit Declined: Austrian Attack, Salvio Countergambit
+Queen's Gambit Declined: Austrian Defense
+Queen's Gambit Declined: Austrian Defense, Gusev Countergambit
+Queen's Gambit Declined: Austrian Defense, Haberditz Variation
+Queen's Gambit Declined: Baltic Defense
+Queen's Gambit Declined: Baltic Defense, Argentinian Gambit
+Queen's Gambit Declined: Baltic Defense, Pseudo-Chigorin
+Queen's Gambit Declined: Baltic Defense, Queen Attack
+Queen's Gambit Declined: Baltic Defense, Queen Attack Deferred
+Queen's Gambit Declined: Marshall Defense
+Queen's Gambit Declined: Marshall Defense, Tan Gambit
+Queen's Gambit Declined: Zilbermints Gambit
+Queen's Gambit Declined: Chigorin Defense
+Queen's Gambit Declined: Chigorin Defense
+Queen's Gambit Declined: Chigorin Defense
+Queen's Gambit Declined: Chigorin Defense, Exchange Variation
+Queen's Gambit Declined: Chigorin Defense, Exchange Variation, Costa's Line
+Queen's Gambit Declined: Chigorin Defense, Janowski Variation
+Queen's Gambit Declined: Chigorin Defense, Lazard Gambit
+Queen's Gambit Declined: Chigorin Defense, Main Line
+Queen's Gambit Declined: Chigorin Defense, Main Line, Alekhine Variation
+Queen's Gambit Declined: Chigorin Defense, Modern Gambit
+Queen's Gambit Declined: Chigorin Defense, Tartakower Gambit
+Queen's Gambit Declined: Albin Countergambit
+Queen's Gambit Declined: Albin Countergambit, Balogh Variation
+Queen's Gambit Declined: Albin Countergambit, Janowski Variation
+Queen's Gambit Declined: Albin Countergambit, Krenosz Variation
+Queen's Gambit Declined: Albin Countergambit, Lasker Trap
+Queen's Gambit Declined: Albin Countergambit, Modern Line
+Queen's Gambit Declined: Albin Countergambit, Normal Line
+Queen's Gambit Declined: Albin Countergambit, Tartakower Defense
+Queen's Gambit Declined: Albin Countergambit, Fianchetto Variation
+Queen's Gambit Declined: Albin Countergambit, Fianchetto Variation, Be6 Line
+Queen's Gambit Declined: Albin Countergambit, Fianchetto Variation, Bf5 Line
+Queen's Gambit Declined: Albin Countergambit, Fianchetto Variation, Bg4 Line
+Slav Defense
+Slav Defense
+Slav Defense
+Slav Defense: Diemer Gambit
+Slav Defense: Exchange Variation
+Slav Defense: Exchange Variation, Boor Attack
+Slav Defense: Slav Gambit, Alekhine Attack
+Slav Defense: Winawer Countergambit
+Slav Defense: Winawer Countergambit, Anti-Winawer Gambit
+Slav Defense: Bonet Gambit
+Slav Defense: Breyer Variation
+Slav Defense: Modern Line
+Slav Defense: Quiet Variation
+Slav Defense: Quiet Variation, Pin Defense
+Slav Defense: Quiet Variation, Amsterdam Variation
+Slav Defense: Quiet Variation, Landau Variation
+Slav Defense: Quiet Variation, Schallopp Defense
+Slav Defense: Exchange Variation
+Slav Defense: Exchange Variation, Schallopp Variation
+Slav Defense: Exchange Variation, Symmetrical Line
+Slav Defense: Exchange Variation, Trifunovic Variation
+Slav Defense: Alekhine Variation
+Slav Defense: Chameleon Variation
+Slav Defense: Chameleon Variation, Advance System
+Slav Defense: Geller Gambit
+Slav Defense: Geller Gambit
+Slav Defense: Schlechter Variation
+Slav Defense: Süchting Variation
+Slav Defense: Three Knights Variation
+Slav Defense: Two Knights Attack
+Slav Defense: Alapin Variation
+Slav Defense: Smyslov Variation
+Slav Defense: Soultanbeieff Variation
+Slav Defense: Steiner Variation
+Slav Defense: Czech Variation
+Slav Defense: Czech Variation, Bled Attack
+Slav Defense: Czech Variation, Carlsbad Variation
+Slav Defense: Czech Variation, Carlsbad Variation, Morozevich Variation
+Slav Defense: Czech Variation, Krause Attack
+Slav Defense: Czech Variation, Krause Attack, Fazekas Gambit
+Slav Defense: Czech Variation, Wiesbaden Variation
+Slav Defense: Czech Variation, Wiesbaden Variation, Sharp Line
+Slav Defense: Czech Variation, Classical System
+Slav Defense: Czech Variation, Lasker Variation
+Slav Defense: Czech Variation, Classical System, Main Line
+Slav Defense: Czech Variation, Dutch Variation
+Slav Defense: Czech Variation, Dutch Variation, Sämisch Variation
+Queen's Gambit Accepted
+Queen's Gambit Accepted: Accelerated Mannheim Variation
+Queen's Gambit Accepted: Central Variation, Alekhine System
+Queen's Gambit Accepted: Central Variation, Greco Variation
+Queen's Gambit Accepted: Central Variation, McDonnell Defense
+Queen's Gambit Accepted: Central Variation, McDonnell Defense, Somov Gambit
+Queen's Gambit Accepted: Central Variation, Modern Defense
+Queen's Gambit Accepted: Central Variation, Rubinstein Defense
+Queen's Gambit Accepted: Central Variation, Rubinstein Defense, Yefimov Gambit
+Queen's Gambit Accepted: Linares Variation
+Queen's Gambit Accepted: Old Variation
+Queen's Gambit Accepted: Old Variation, Billinger Gambit
+Queen's Gambit Accepted: Old Variation, Christensen Gambit
+Queen's Gambit Accepted: Old Variation, Korchnoi Gambit
+Queen's Gambit Accepted: Old Variation, Novikov Gambit
+Queen's Gambit Accepted: Saduleto Variation
+Queen's Gambit Accepted: Schwartz Defense
+Queen's Gambit Accepted: Alekhine Defense, Borisenko-Furman Variation
+Queen's Gambit Accepted: Godes Variation
+Queen's Gambit Accepted: Gunsberg Defense
+Queen's Gambit Accepted: Normal Variation
+Queen's Gambit Accepted: Rosenthal Variation
+Queen's Gambit Accepted: Slav Gambit
+Queen's Gambit Accepted: Alekhine Defense
+Queen's Gambit Accepted: Alekhine Defense, Alatortsev Variation
+Queen's Gambit Accepted: Alekhine Defense, Haberditz Variation
+Queen's Gambit Accepted
+Queen's Gambit Accepted: Mannheim Variation
+Queen's Gambit Accepted: Bogoljubov Defense
+Queen's Gambit Accepted: Gunsberg Defense, Prianishenmo Gambit
+Queen's Gambit Accepted: Showalter Variation
+Queen's Gambit Accepted: Janowski-Larsen Variation
+Queen's Gambit Accepted: Normal Variation
+Queen's Gambit Accepted: Smyslov Variation
+Queen's Gambit Accepted: Winawer Defense
+Queen's Gambit Accepted: Classical Defense
+Queen's Gambit Accepted: Classical Defense, Normal Line
+Queen's Gambit Accepted: Classical Defense, Steinitz Variation, Development Variation
+Queen's Gambit Accepted: Classical Defense, Steinitz Variation, Exchange Variation
+Queen's Gambit Accepted: Classical, Furman Variation
+Queen's Gambit Accepted: Normal Variation, Traditional System
+Queen's Gambit Accepted: Classical Defense, Main Line
+Queen's Gambit Accepted: Classical Defense, Rubinstein Variation
+Queen's Gambit Accepted: Classical Defense, Russian Gambit
+Queen's Gambit Accepted: Furman Variation
+Queen's Gambit Accepted: Classical Defense, Alekhine System
+Queen's Gambit Accepted: Classical Defense, Alekhine System
+Queen's Gambit Accepted: Classical, Flohr Variation
+Queen's Gambit Accepted: Classical Defense, Alekhine System, Main Line
+Queen's Gambit Accepted: Classical Defense, Alekhine System, Smyslov Variation
+Queen's Gambit Declined
+Queen's Gambit Declined: Capablanca Variation
+Queen's Gambit Declined: Capablanca Variation
+Queen's Gambit Declined: Semmering Variation
+Queen's Gambit Declined: Spielmann Variation
+Queen's Gambit Declined: Stonewall Variation
+Queen's Gambit Declined: Tarrasch Defense, Pseudo-Tarrasch
+Queen's Gambit Declined: Tarrasch Defense, Pseudo-Tarrasch Bishop Attack
+Queen's Gambit Declined: Traditional Variation
+Queen's Gambit Declined: Vienna Variation
+Semi-Slav Defense: Quiet Variation
+Semi-Slav Defense: Quiet Variation
+Queen's Gambit Declined: Alapin Variation
+Queen's Gambit Declined: Charousek Variation
+Queen's Gambit Declined: Charousek Variation, Miladinovic Gambit
+Queen's Gambit Declined: Janowski Variation
+Queen's Gambit Declined: Queen's Knight Variation
+Queen's Gambit Declined: Semi-Slav, Abrahams Variation
+Queen's Gambit Declined: Semi-Slav, Junge Variation
+Queen's Gambit Declined: Semi-Slav, Koomen Variation
+Queen's Gambit Declined: Uhlmann Variation
+Semi-Slav Defense: Accelerated Move Order
+Semi-Slav Defense: Anti-Noteboom, Stonewall Variation, Portisch Gambit
+Semi-Slav Defense: Gunderam Gambit
+Semi-Slav Defense: Marshall Gambit
+Semi-Slav Defense: Marshall Gambit, Forgotten Variation
+Semi-Slav Defense: Marshall Gambit, Main Line
+Semi-Slav Defense: Marshall Gambit, Tolush Variation
+Semi-Slav Defense: Noteboom Variation
+Semi-Slav Defense: Noteboom Variation, Abrahams Variation
+Semi-Slav Defense: Noteboom Variation, Anti-Noteboom Gambit
+Semi-Slav Defense: Noteboom Variation, Anti-Noteboom Variation
+Semi-Slav Defense: Noteboom Variation, Anti-Noteboom Variation, Belyavsky Line
+Queen's Gambit Declined: Tarrasch Defense
+Tarrasch Defense
+Tarrasch Defense: Grünfeld Gambit
+Tarrasch Defense: Marshall Gambit
+Tarrasch Defense: Schara Gambit
+Tarrasch Defense: Symmetrical Variation
+Tarrasch Defense: Tarrasch Gambit
+Tarrasch Defense: Two Knights Variation
+Tarrasch Defense: von Hennig Gambit
+Tarrasch Defense: Dubov Tarrasch
+Tarrasch Defense: Prague Variation
+Tarrasch Defense: Rubinstein System
+Tarrasch Defense: Swedish Variation
+Tarrasch Defense: Swedish Variation, Central Break
+Tarrasch Defense: Wagner Variation
+Queen's Gambit Declined: Tarrasch Defense, Stoltz Variation
+Tarrasch Defense: Classical Variation
+Tarrasch Defense: Classical Variation, Advance Variation
+Tarrasch Defense: Classical Variation, Bogoljubov Variation
+Tarrasch Defense: Classical Variation, Carlsbad Variation
+Tarrasch Defense: Classical Variation, Chandler Variation
+Tarrasch Defense: Classical Variation, Classical Tarrasch Gambit
+Tarrasch Defense: Classical Variation, Endgame Variation
+Tarrasch Defense: Classical Variation, Main Line
+Tarrasch Defense: Classical Variation, Petursson Variation
+Tarrasch Defense: Classical Variation, Réti Variation
+Tarrasch Defense: Classical Variation, Spassky Variation
+Tarrasch Defense: Prague Variation, Main Line
+Queen's Gambit Declined: Exchange Variation
+Queen's Gambit Declined: Exchange Variation, Chameleon Variation
+Queen's Gambit Declined: Exchange Variation, Positional Variation
+Queen's Gambit Declined: Exchange Variation, Positional Variation
+Queen's Gambit Declined: Exchange Variation, Sämisch Variation
+Queen's Gambit Declined: Harrwitz Attack
+Queen's Gambit Declined: Normal Defense
+Queen's Gambit Declined: Exchange Variation, Reshevsky Variation
+Queen's Gambit Declined: Barmen Variation
+Queen's Gambit Declined: Harrwitz Attack
+Queen's Gambit Declined: Harrwitz Attack
+Queen's Gambit Declined: Harrwitz Attack
+Queen's Gambit Declined: Harrwitz Attack, Fianchetto Defense
+Queen's Gambit Declined: Harrwitz Attack, Main Line
+Queen's Gambit Declined: Harrwitz Attack, Orthodox Defense
+Queen's Gambit Declined: Harrwitz Attack, Two Knights Defense
+Queen's Gambit Declined: Harrwitz Attack, Two Knights Defense, Blockade Line
+Queen's Gambit Declined: Knight Defense, Alekhine Gambit
+Queen's Gambit Declined: Miles Variation
+Queen's Gambit Declined: Three Knights Variation
+Queen's Gambit Declined: Three Knights, Vienna Variation
+Queen's Gambit Declined: Vienna Variation, Quiet Variation
+Queen's Gambit Declined: Ragozin Defense
+Queen's Gambit Declined: Ragozin Defense, Alekhine Variation
+Queen's Gambit Declined: Westphalian Variation
+Queen's Gambit Declined: Ragozin Defense, Vienna Variation
+Queen's Gambit Declined: Semi-Tarrasch Defense
+Queen's Gambit Declined: Semi-Tarrasch Defense, Levenfish Variation
+Queen's Gambit Declined: Semi-Tarrasch Defense, Pillsbury Variation
+Queen's Gambit Declined: Semi-Tarrasch Defense, Symmetrical Variation
+Queen's Gambit Declined: Semi-Tarrasch Defense
+Queen's Gambit Declined: Semi-Tarrasch Defense, Exchange Variation
+Queen's Gambit Declined: Semi-Tarrasch Defense, Kmoch Variation
+Queen's Gambit Declined: Semi-Tarrasch Defense, Pillsbury Variation
+Queen's Gambit Declined: Semi-Tarrasch Defense, San Sebastian Variation
+Queen's Gambit Declined: Semi-Tarrasch Defense, Main Line
+Queen's Gambit Declined: Hastings Variation
+Semi-Slav Defense
+Semi-Slav Defense: Anti-Moscow Gambit
+Semi-Slav Defense Accepted
+Semi-Slav Defense: Botvinnik Variation
+Semi-Slav Defense: Botvinnik Variation
+Semi-Slav Defense: Botvinnik Variation, Alatortsev System
+Semi-Slav Defense: Botvinnik Variation, Ekstrom Variation
+Semi-Slav Defense: Botvinnik Variation, Lilienthal Variation
+Semi-Slav Defense: Botvinnik Variation, Szabo Variation
+Semi-Slav Defense: Accelerated Meran Variation
+Semi-Slav Defense: Main Line
+Semi-Slav Defense: Normal Variation
+Semi-Slav Defense: Rubinstein System
+Semi-Slav Defense: Stoltz Variation
+Semi-Slav Defense: Stoltz Variation, Center Variation
+Semi-Slav Defense: Stoltz Variation, Center Variation, Mikhalchishin Line
+Semi-Slav Defense: Stoltz Variation, Shabalov Attack
+Semi-Slav Defense: Stonewall Defense
+Semi-Slav Defense: Bogoljubov Variation
+Semi-Slav Defense: Chigorin Defense
+Semi-Slav Defense: Main Line
+Semi-Slav Defense: Romih Variation
+Semi-Slav Defense: Meran Variation
+Semi-Slav Defense: Meran Variation, Lundin Variation
+Semi-Slav Defense: Meran Variation, Wade Variation
+Semi-Slav Defense: Meran Variation, Wade Variation, Kaidanov Gambit
+Semi-Slav Defense: Meran Variation, Wade Variation, Larsen Variation
+Semi-Slav Defense: Semi-Meran Variation
+Semi-Slav Defense: Meran Variation
+Semi-Slav Defense: Meran Variation
+Semi-Slav Defense: Meran Variation, Old Variation
+Semi-Slav Defense: Meran Variation, Pirc Variation
+Semi-Slav Defense: Meran Variation, Reynolds' Variation
+Semi-Slav Defense: Meran Variation, Blumenfeld Variation
+Semi-Slav Defense: Meran Variation, Rabinovich Variation
+Semi-Slav Defense: Meran Variation, Rellstab Attack
+Semi-Slav Defense: Meran Variation, Sozin Variation
+Semi-Slav Defense: Meran Variation, Sozin Variation
+Semi-Slav Defense: Meran Variation, Stahlberg Variation
+Queen's Gambit Declined: Been-Koomen Variation
+Queen's Gambit Declined: Modern Variation
+Queen's Gambit Declined: Pseudo-Tarrasch Variation
+Queen's Gambit Declined: Pseudo-Tarrasch Variation, Canal Variation
+Queen's Gambit Declined: Pseudo-Tarrasch Variation, Primitive Pillsbury Variation
+Queen's Gambit Declined: Semi-Tarrasch Defense, Krause Variation
+Queen's Gambit Declined: Alekhine Variation
+Queen's Gambit Declined: Capablanca Variation, Anti-Cambridge Springs Variation
+Queen's Gambit Declined: Manhattan Variation
+Queen's Gambit Declined: Modern Variation, Knight Defense
+Queen's Gambit Declined: Modern Variation, Knight Defense
+Queen's Gambit Declined: Modern Variation, Knight Defense
+Queen's Gambit Declined: Rochlin Variation
+Queen's Gambit Declined
+Queen's Gambit Declined: Cambridge Springs Defense
+Queen's Gambit Declined: Cambridge Springs Defense
+Queen's Gambit Declined: Cambridge Springs Defense, Argentine Variation
+Queen's Gambit Declined: Cambridge Springs Defense, Bogoljubov Variation
+Queen's Gambit Declined: Cambridge Springs Defense, Capablanca Variation
+Queen's Gambit Declined: Cambridge Springs Defense, Rubinstein Variation
+Queen's Gambit Declined: Cambridge Springs Defense, Yugoslav Variation
+Queen's Gambit Declined
+Queen's Gambit Declined: Lasker Defense
+Queen's Gambit Declined: Modern Variation, Heral Variation
+Queen's Gambit Declined: Neo-Orthodox Variation
+Queen's Gambit Declined: Anti-Tartakower Variation
+Queen's Gambit Declined: Anti-Tartakower Variation, Petrosian Variation
+Queen's Gambit Declined: Modern Variation, Normal Line
+Queen's Gambit Declined: Neo-Orthodox Variation
+Queen's Gambit Declined: Neo-Orthodox Variation, Main Line
+Queen's Gambit Declined: Pillsbury Attack
+Queen's Gambit Declined: Lasker Defense
+Queen's Gambit Declined: Lasker Defense, Russian Variation
+Queen's Gambit Declined: Lasker Defense, Teichmann Variation
+Queen's Gambit Declined: Lasker Defense, Bernstein Variation
+Queen's Gambit Declined: Lasker Defense, Bernstein Variation, Mar del Plata Gambit
+Queen's Gambit Declined: Lasker Defense, Main Line
+Queen's Gambit Declined: Tartakower Defense
+Queen's Gambit Declined: Tartakower Defense, Exchange Variation
+Queen's Gambit Declined: Tartakower Defense
+Queen's Gambit Declined: Tartakower Defense, Makogonov Exchange Variation
+Queen's Gambit Declined: Orthodox Defense
+Queen's Gambit Declined: Orthodox Defense, Botvinnik Variation
+Queen's Gambit Declined: Orthodox Defense, Rauzer Variation
+Queen's Gambit Declined: Orthodox Defense, Rubinstein Variation
+Queen's Gambit Declined: Orthodox Defense, Rubinstein Variation, Flohr Line
+Queen's Gambit Declined: Orthodox Defense, Capablanca Variation
+Queen's Gambit Declined: Orthodox Defense, Henneberger Variation
+Queen's Gambit Declined: Orthodox Defense, Main Line
+Queen's Gambit Declined: Orthodox Defense, Main Line
+Queen's Gambit Declined: Orthodox Defense, Pillsbury Variation
+Queen's Gambit Declined: Orthodox Defense, Swiss, Karlsbad Variation
+Queen's Gambit Declined: Orthodox Defense, Rubinstein Attack
+Queen's Gambit Declined: Orthodox Defense, Rubinstein Attack
+Queen's Gambit Declined: Orthodox Defense, Rubinstein Attack
+Queen's Gambit Declined: Orthodox Defense, Rubinstein Attack
+Queen's Gambit Declined: Orthodox Defense, Rubinstein Attack
+Queen's Gambit Declined: Orthodox Defense, Bd3 Line
+Queen's Gambit Declined: Orthodox Defense, Fianchetto Variation
+Queen's Gambit Declined: Orthodox Defense, Alekhine Variation
+Queen's Gambit Declined: Orthodox Defense, Bd3 Line
+Queen's Gambit Declined: Orthodox Defense, Capablanca System
+Queen's Gambit Declined: Orthodox Defense, Janowski Variation
+Queen's Gambit Declined: Orthodox Defense, Main Line
+Queen's Gambit Declined: Orthodox Defense, Classical Variation
+Queen's Gambit Declined: Orthodox Defense, Classical Variation
+Queen's Gambit Declined: Orthodox Defense, Classical Variation
+Queen's Gambit Declined: Orthodox Defense, Classical Variation
+Neo-Grünfeld Defense: Goglidze Attack
+Neo-Grünfeld Defense: with Nf3
+Neo-Grünfeld Defense: with g3
+Neo-Grünfeld Defense: Exchange Variation
+Neo-Grünfeld Defense: Delayed Exchange Variation
+Neo-Grünfeld Defense: Delayed Exchange Variation
+Neo-Grünfeld Defense: Delayed Exchange Variation
+Neo-Grünfeld Defense: Delayed Exchange Variation
+Neo-Grünfeld Defense: Classical Variation
+Neo-Grünfeld Defense: Classical Variation, Modern Defense
+Neo-Grünfeld Defense: Classical Variation, Polgar Variation
+Neo-Grünfeld Defense: Classical Variation, Original Defense
+Neo-Grünfeld Defense: Ultra-Delayed Exchange Variation
+Grünfeld Defense
+Grünfeld Defense: Gibbon Gambit
+Grünfeld Defense: Lundin Variation
+Grünfeld Defense: Lutikov Variation
+Grünfeld Defense: Lutikov Variation, Murrey Attack
+Grünfeld Defense: Stockholm Variation
+Grünfeld Defense: Zaitsev Gambit
+Grünfeld Defense: Russian Variation, Accelerated Variation
+Grünfeld Defense: Brinckmann Attack
+Grünfeld Defense: Brinckmann Attack, Grünfeld Gambit
+Grünfeld Defense: Brinckmann Attack, Grünfeld Gambit, Botvinnik Variation
+Grünfeld Defense: Brinckmann Attack, Grünfeld Gambit, Capablanca Variation
+Grünfeld Defense: Brinckmann Attack, Reshevsky Gambit
+Grünfeld Defense: Brinckmann Attack, Grünfeld Gambit Accepted
+Grünfeld Defense: Exchange Variation
+Grünfeld Defense: Exchange Variation, Modern Exchange Variation
+Grünfeld Defense: Exchange Variation, Modern Exchange Variation, Kramnik's Line
+Grünfeld Defense: Exchange Variation, Modern Exchange Variation, Pawn Grab Line
+Grünfeld Defense: Exchange Variation, Nadanian Attack
+Grünfeld Defense: Exchange Variation, Classical Variation
+Grünfeld Defense: Exchange Variation, Larsen Variation
+Grünfeld Defense: Exchange Variation, Larsen Variation
+Grünfeld Defense: Exchange Variation, Simagin's Improved Variation
+Grünfeld Defense: Exchange Variation, Simagin's Lesser Variation
+Grünfeld Defense: Exchange Variation, Seville Variation
+Grünfeld Defense: Exchange Variation, Spassky Variation
+Grünfeld Defense: Exchange Variation, Spassky Variation
+Grünfeld Defense: Exchange Variation, Sokolsky Variation
+Grünfeld Defense: Exchange Variation, Spassky Variation
+Grünfeld Defense: Flohr Variation
+Grünfeld Defense: Three Knights Variation
+Grünfeld Defense: Three Knights Variation
+Grünfeld Defense: Three Knights Variation, Petrosian System
+Grünfeld Defense: Three Knights Variation, Hungarian Attack
+Grünfeld Defense: Three Knights Variation, Hungarian Variation
+Grünfeld Defense: Flohr Defense
+Grünfeld Defense: Makogonov Variation
+Grünfeld Defense: Opocensky Variation
+Grünfeld Defense: Smyslov Defense
+Grünfeld Defense: Three Knights Variation, Burille Variation
+Grünfeld Defense: Three Knights Variation, Paris Variation
+Grünfeld Defense: Botvinnik Variation
+Grünfeld Defense: Pachman Variation
+Grünfeld Defense: Three Knights Variation, Vienna Variation
+Grünfeld Defense: Russian Variation
+Grünfeld Defense: Russian Variation
+Grünfeld Defense: Russian Variation, Byrne Variation
+Grünfeld Defense: Russian Variation, Hungarian Variation
+Grünfeld Defense: Russian Variation, Levenfish Variation
+Grünfeld Defense: Russian Variation, Prins Variation
+Grünfeld Defense: Russian Variation, Szabo Variation
+Grünfeld Defense: Russian Variation, Keres Variation
+Grünfeld Defense: Russian Variation, Smyslov Variation
+Grünfeld Defense: Russian Variation, Smyslov Variation
+Grünfeld Defense: Russian Variation, Yugoslav Variation
+Catalan Opening
+Catalan Opening
+Catalan Opening: Hungarian Gambit
+Indian Defense
+Indian Defense: Devin Gambit
+Indian Defense: Seirawan Attack
+Catalan Opening: Closed
+Catalan Opening: Open Defense
+Catalan Opening: Open Defense
+Catalan Opening: Open Defense, Alekhine Variation
+Catalan Opening: Open Defense
+Catalan Opening: Open Defense, Modern Sharp Variation
+Catalan Opening: Open Defense, Classical Line
+Catalan Opening: Closed
+Catalan Opening: Closed
+Catalan Opening: Closed, Botvinnik Variation
+Catalan Opening: Closed
+Catalan Opening: Closed
+Catalan Opening: Closed, Spassky Gambit
+Catalan Opening: Closed, Zagoryansky Variation
+Catalan Opening: Closed Variation, Rabinovich Variation
+Catalan Opening: Closed Variation, Traditional Variation
+Catalan Opening: Closed, Main Line
+Catalan Opening: Closed, Sokolsky Variation
+Blumenfeld Countergambit
+Blumenfeld Countergambit Accepted
+Blumenfeld Countergambit: Dus-Khotimirsky Variation
+Blumenfeld Countergambit: Spielmann Variation
+Indian Defense: Anti-Nimzo-Indian
+Indian Defense: Dzindzi-Indian Defense
+Indian Defense: Döry Indian
+Bogo-Indian Defense
+Bogo-Indian Defense: Exchange Variation
+Bogo-Indian Defense: Grünfeld Variation
+Bogo-Indian Defense: Haiti Variation
+Bogo-Indian Defense: Monticelli Trap
+Bogo-Indian Defense: New England Variation
+Bogo-Indian Defense: Nimzowitsch Variation
+Bogo-Indian Defense: Retreat Variation
+Bogo-Indian Defense: Vitolins Variation
+Bogo-Indian Defense: Wade-Smyslov Variation
+Nimzo-Indian Defense: Three Knights Variation, Duchamp Variation
+Nimzo-Indian Defense: Three Knights Variation, Duchamp Variation, Modern Line
+Queen's Indian Defense
+Queen's Indian Defense: Kasparov Variation
+Queen's Indian Defense: Kasparov Variation, Botvinnik Attack
+Queen's Indian Defense: Kasparov-Petrosian Variation
+Queen's Indian Defense: Kasparov-Petrosian Variation, Andersson Variation
+Queen's Indian Defense: Kasparov-Petrosian Variation, Classical Variation
+Queen's Indian Defense: Kasparov-Petrosian Variation, Hedgehog Variation
+Queen's Indian Defense: Kasparov-Petrosian Variation, Kasparov Attack
+Queen's Indian Defense: Kasparov-Petrosian Variation, Main Line
+Queen's Indian Defense: Kasparov-Petrosian Variation, Marco Defense
+Queen's Indian Defense: Kasparov-Petrosian Variation, Modern Variation
+Queen's Indian Defense: Kasparov-Petrosian Variation, Petrosian Attack
+Queen's Indian Defense: Kasparov-Petrosian Variation, Polovodin Gambit
+Queen's Indian Defense: Kasparov-Petrosian Variation, Rashkovsky Attack
+Queen's Indian Defense: Kasparov-Petrosian Variation, Romanishin Attack
+Queen's Indian Defense: Miles Variation
+Queen's Indian Defense: Petrosian Variation
+Queen's Indian Defense: Petrosian Variation, Farago Defense
+Queen's Indian Defense: Kasparov Variation
+Queen's Indian Defense: Averbakh Variation
+Queen's Indian Defense: Spassky System
+Queen's Indian Defense: Buerger Variation
+Queen's Indian Defense: Fianchetto Traditional
+Queen's Indian Defense: Fianchetto Variation
+Queen's Indian Defense: Fianchetto Variation, Check Variation
+Queen's Indian Defense: Fianchetto Variation, Check Variation, Intermezzo Line
+Queen's Indian Defense: Fianchetto Variation, Check Variation, Modern Line
+Queen's Indian Defense: Fianchetto Variation, Nimzowitsch Variation
+Queen's Indian Defense: Fianchetto Variation, Nimzowitsch Variation, Nimzowitsch Attack
+Queen's Indian Defense: Fianchetto Variation, Nimzowitsch Variation, Quiet Line
+Queen's Indian Defense: Fianchetto Variation, Nimzowitsch Variation, Timman's Line
+Queen's Indian Defense: Fianchetto Variation, Rubinstein Variation
+Queen's Indian Defense: Fianchetto Variation, Sämisch Variation
+Queen's Indian Defense: Capablanca Variation
+Queen's Indian Defense: Riumin Variation
+Queen's Indian Defense: Yates Variation
+Queen's Indian Defense: Anti-Queen's Indian System
+Queen's Indian Defense: Classical Variation
+Queen's Indian Defense: Classical Variation, Polugaevsky Gambit
+Queen's Indian Defense: Classical Variation, Taimanov Gambit
+Queen's Indian Defense: Euwe Variation
+Queen's Indian Defense: Fianchetto Variation, Kramnik Variation
+Queen's Indian Defense: Opocensky Variation
+Queen's Indian Defense: Traditional Variation
+Queen's Indian Defense: Classical Variation, Tiviakov Defense
+Queen's Indian Defense: Classical Variation, Traditional Variation
+Queen's Indian Defense: Classical Variation, Traditional Variation, Nimzowitsch Line
+Queen's Indian Defense: Classical Variation, Traditional Variation, Main Line
+Nimzo-Indian Defense
+Nimzo-Indian Defense: Kmoch Variation
+Nimzo-Indian Defense: Mikenas Attack
+Nimzo-Indian Defense: Romanishin Variation
+Nimzo-Indian Defense: Romanishin Variation
+Nimzo-Indian Defense: Romanishin Variation, English Hybrid
+Nimzo-Indian Defense: Three Knights Variation
+Nimzo-Indian Defense: Three Knights Variation, Euwe Variation
+Nimzo-Indian Defense: Three Knights Variation, Korchnoi Variation
+Nimzo-Indian Defense: Three Knights Variation, Shocron Gambit
+Nimzo-Indian Defense: Spielmann Variation
+Nimzo-Indian Defense: Spielmann Variation, Karlsbad Variation
+Nimzo-Indian Defense: Spielmann Variation, Romanovsky Gambit
+Nimzo-Indian Defense: Spielmann Variation, Stahlberg Variation
+Nimzo-Indian Defense: Spielmann Variation, Stahlberg Variation
+Nimzo-Indian Defense: Sämisch Variation, Accelerated
+Nimzo-Indian Defense: Sämisch Variation, Botvinnik Variation
+Nimzo-Indian Defense: Sämisch Variation
+Nimzo-Indian Defense: Sämisch Variation, Keres Variation
+Nimzo-Indian Defense: Sämisch Variation, Romanovsky Variation
+Nimzo-Indian Defense: Sämisch Variation
+Nimzo-Indian Defense: Sämisch Variation, O'Kelly Variation
+Nimzo-Indian Defense: Sämisch Variation
+Nimzo-Indian Defense: Sämisch Variation
+Nimzo-Indian Defense: Sämisch Variation
+Nimzo-Indian Defense: Sämisch Variation, Capablanca Variation
+Nimzo-Indian Defense: Leningrad Variation
+Nimzo-Indian Defense: Leningrad Variation, Averbakh Gambit
+Nimzo-Indian Defense: Leningrad Variation, Benoni Defense
+Nimzo-Indian Defense: Classical Variation
+Nimzo-Indian Defense: Classical Variation, Keres Defense
+Nimzo-Indian Defense: Classical Variation, Vitolins-Adorjan Gambit
+Nimzo-Indian Defense: Classical Variation, Milner-Barry Variation
+Nimzo-Indian Defense: Classical Variation, Zurich Variation
+Nimzo-Indian Defense: Classical Variation, Belyavsky Gambit
+Nimzo-Indian Defense: Classical Variation, Noa Variation
+Nimzo-Indian Defense: Classical Variation, Noa Variation
+Nimzo-Indian Defense: Classical Variation, Noa Variation
+Nimzo-Indian Defense: Classical Variation, Noa Variation, Botvinnik Variation
+Nimzo-Indian Defense: Classical Variation, Noa Variation, Main Line
+Nimzo-Indian Defense: Classical Variation, Noa Variation
+Nimzo-Indian Defense: Classical Variation, Noa Variation, San Remo Variation
+Nimzo-Indian Defense: Classical Variation, Berlin Variation
+Nimzo-Indian Defense: Classical Variation, Berlin Variation, Steiner Variation
+Nimzo-Indian Defense: Classical Variation, Berlin Variation, Macieja System
+Nimzo-Indian Defense: Classical Variation, Berlin Variation, Pirc Variation
+Nimzo-Indian Defense: Normal Line
+Nimzo-Indian Defense: Normal Variation, Taimanov Variation
+Nimzo-Indian Defense: Hübner Variation
+Nimzo-Indian Defense: Hübner Variation, Main Line
+Nimzo-Indian Defense: Normal Variation, Hübner Deferred
+Nimzo-Indian Defense: Hübner Variation, Rubinstein Variation
+Nimzo-Indian Defense: Hübner Variation, Rubinstein Variation, Main Line
+Nimzo-Indian Defense: Hübner Variation, Rubinstein Variation, Sherbakov Attack
+Nimzo-Indian Defense: St. Petersburg Variation
+Nimzo-Indian Defense: Fischer Variation
+Nimzo-Indian Defense: Normal Variation, Bronstein (Byrne) Variation
+Nimzo-Indian Defense: Normal Variation
+Nimzo-Indian Defense: Reshevsky Variation
+Nimzo-Indian Defense: Simagin Variation
+Nimzo-Indian Defense: Normal Variation, Bishop Attack
+Nimzo-Indian Defense: Normal Variation, Bishop Attack, Classical Defense
+Nimzo-Indian Defense: Ragozin Defense
+Nimzo-Indian Defense: Normal Variation, Botvinnik System
+Nimzo-Indian Defense
+Nimzo-Indian Defense: Normal Variation, Ragozin Variation
+Nimzo-Indian Defense: Normal Variation, Sämisch Deferred
+Nimzo-Indian Defense: Ragozin Variation
+Nimzo-Indian Defense: Normal Variation, Schlechter Defense
+Nimzo-Indian Defense: Normal Variation, Gligoric System
+Nimzo-Indian Defense: Normal Variation, Gligoric System
+Nimzo-Indian Defense: Normal Variation, Gligoric System, Keres Variation
+Nimzo-Indian Defense: Normal Variation, Gligoric System, Exchange Variation
+Nimzo-Indian Defense: Normal Variation, Gligoric System, Smyslov Variation
+Nimzo-Indian Defense: Normal Variation, Gligoric System, Bronstein Variation
+Nimzo-Indian Defense: Normal Variation, Gligoric System, Bernstein Defense
+Nimzo-Indian Defense: Normal Variation, Bernstein Defense, Exchange Line
+Nimzo-Indian Defense: Normal Variation, Bernstein Defense
+Grünfeld Defense: Counterthrust Variation
+Indian Defense: Anti-Grünfeld, Adorjan Gambit
+Indian Defense: Anti-Grünfeld, Advance Variation
+Indian Defense: Anti-Grünfeld, Alekhine Variation
+Indian Defense: Anti-Grünfeld, Alekhine Variation, Leko Gambit
+Indian Defense: Anti-Grünfeld, Basman-Williams Attack
+Indian Defense: King's Indian Variation, Fianchetto Variation
+Indian Defense: West Indian Defense
+King's Indian Defense: Fianchetto Variation, Immediate Fianchetto
+King's Indian Defense: Fianchetto Variation, Pterodactyl Variation
+King's Indian Defense: Fianchetto Variation, Yugoslav System
+King's Indian Defense: Normal Variation, King's Knight Variation
+King's Indian Defense: Santasiere Variation
+King's Indian Defense: Semi-Classical Variation, Benoni Variation
+King's Indian Defense: Semi-Classical Variation, Hollywood Variation
+Queen's Pawn, Mengarini Attack
+King's Indian Defense
+King's Indian Defense: Fianchetto Variation, Benjamin Defense
+King's Indian Defense: Semi-Classical Variation
+King's Indian Defense: Semi-Classical Variation, Exchange Variation
+King's Indian Defense: Semi-Classical Variation, Queenside Storm Line
+King's Indian Defense: Smyslov Variation
+King's Indian Defense: Fianchetto Variation, Delayed Fianchetto
+King's Indian Defense: Fianchetto Variation, Karlsbad Variation
+King's Indian Defense: Fianchetto Variation, Kavalek Defense
+King's Indian Defense: Fianchetto Variation, Larsen Defense
+King's Indian Defense: Fianchetto Variation, Lesser Simagin (Spassky)
+King's Indian Defense: Fianchetto Variation, Simagin Variation
+King's Indian Defense: Fianchetto Variation, Uhlmann-Szabo System
+King's Indian Defense: Fianchetto Variation, Panno Variation
+King's Indian Defense: Fianchetto Variation, Panno Variation, Blockade Line
+King's Indian Defense: Fianchetto Variation, Panno Variation, Donner Line
+King's Indian Defense: Fianchetto Variation, Panno Variation, Korchnoi Line
+King's Indian Defense: Fianchetto Variation, Yugoslav Variation, Rare Line
+King's Indian Defense: Fianchetto Variation, Yugoslav Variation
+King's Indian Defense: Fianchetto Variation, Yugoslav Variation, Exchange Line
+King's Indian Defense: Fianchetto Variation, Yugoslav Variation, Advance Line
+King's Indian Defense: Fianchetto Variation, Classical Fianchetto
+King's Indian Defense: Fianchetto Variation, Debrecen Defense
+King's Indian Defense: Fianchetto Variation, Double Fianchetto Attack
+King's Indian Defense: Fianchetto Variation, Hungarian Variation
+King's Indian Defense: Fianchetto Variation, Classical Variation
+King's Indian Defense: Fianchetto Variation, Long Variation
+King's Indian Defense: Fianchetto Variation, Classical Main Line
+King's Indian Defense: Accelerated Averbakh Variation
+King's Indian Defense: Kramer Variation
+King's Indian Defense: Normal Variation
+King's Indian Defense: Normal Variation
+King's Indian Defense: Makogonov Variation
+King's Indian Defense: Normal Variation, Deferred Fianchetto
+King's Indian Defense: Pomar System
+King's Indian Defense: Averbakh Variation
+King's Indian Defense: Averbakh Variation, Flexible Defense
+King's Indian Defense: Averbakh Variation, Geller Defense
+King's Indian Defense: Averbakh Variation, Modern Defense
+King's Indian Defense: Averbakh Variation, Modern Defense, Burgess Line
+King's Indian Defense: Averbakh Variation, Nc6 Defense
+King's Indian Defense: Averbakh Variation, Spanish Defense
+King's Indian Defense: Normal Variation, Standard Development
+King's Indian Defense: Semi-Averbakh System
+King's Indian Defense: Averbakh Variation, Benoni Defense
+King's Indian Defense: Averbakh Variation, Benoni Defense, Advance Variation
+King's Indian Defense: Averbakh Variation, Benoni Defense, Exchange Variation
+King's Indian Defense: Averbakh Variation, Main Line
+King's Indian Defense: Four Pawns Attack
+King's Indian Defense: Four Pawns Attack, Dynamic Attack
+King's Indian Defense: Four Pawns Attack, Modern Defense
+King's Indian Defense: Four Pawns Attack
+King's Indian Defense: Four Pawns Attack, Florentine Gambit
+King's Indian Defense: Four Pawns Attack, Normal Attack
+King's Indian Defense: Six Pawns Attack
+King's Indian Defense: Four Pawns Attack, Fluid Attack
+King's Indian Defense: Four Pawns Attack, Exchange Variation
+King's Indian Defense: Sämisch Variation
+King's Indian Defense: Steiner Attack
+King's Indian Defense: Sämisch Variation, Bobotsov-Korchnoi-Petrosian Variation
+King's Indian Defense: Sämisch Variation, Byrne Defense
+King's Indian Defense: Sämisch Variation, Normal Defense
+King's Indian Defense: Sämisch Variation, Sämisch Gambit
+King's Indian Defense: Sämisch Variation, Double Fianchetto
+King's Indian Defense: Sämisch Variation, Panno Formation
+King's Indian Defense: Sämisch Variation, Ruban Variation
+King's Indian Defense: Sämisch Variation, Yates Defense
+King's Indian Defense: Sämisch Variation, Panno Main Line
+King's Indian Defense: Sämisch Variation, Orthodox Variation
+King's Indian Defense: Sämisch Variation
+King's Indian Defense: Sämisch Variation, Bronstein Defense
+King's Indian Defense: Sämisch Variation, Closed Variation
+King's Indian Defense: Sämisch Variation, Orthodox Variation, Bronstein Variation
+King's Indian Defense: Sämisch Variation, Closed Variation, Main Line
+King's Indian Defense: Larsen Variation
+King's Indian Defense: Normal Variation, Rare Defenses
+King's Indian Defense: Zinnowitz Variation
+King's Indian Defense: Kazakh Variation
+King's Indian Defense: Orthodox Variation
+King's Indian Defense: Exchange Variation
+King's Indian Defense: Orthodox Variation
+King's Indian Defense: Orthodox Variation, Gligoric-Taimanov System
+King's Indian Defense: Petrosian Variation
+King's Indian Defense: Petrosian Variation, Stein Defense
+King's Indian Defense: Petrosian Variation, Keres Defense
+King's Indian Defense: Petrosian Variation, Normal Defense
+King's Indian Defense: Orthodox Variation
+King's Indian Defense: Orthodox Variation, Donner Defense
+King's Indian Defense: Orthodox Variation, Glek Defense
+King's Indian Defense: Orthodox Variation, Positional Defense
+King's Indian Defense: Orthodox Variation, Positional Defense, Closed Line
+King's Indian Defense: Orthodox Variation, Ukrainian Defense
+King's Indian Defense: Orthodox Variation
+King's Indian Defense: Orthodox Variation, Positional Defense, Main Line
+King's Indian Defense: Orthodox Variation, Aronin-Taimanov Defense
+King's Indian Defense: Orthodox Variation, Bayonet Attack
+King's Indian Defense: Orthodox Variation, Bayonet Attack, Sokolov's Line
+King's Indian Defense: Orthodox Variation, Bayonet Attack, Yepishin's Line
+King's Indian Defense: Orthodox Variation, Korchnoi Attack
+King's Indian Defense: Orthodox Variation, Modern System
+King's Indian Defense: Orthodox Variation, Classical System
+King's Indian Defense: Orthodox Variation, Classical System, Kozul Gambit
+King's Indian Defense: Orthodox Variation, Classical System, Neo-Classical Line
+King's Indian Defense: Orthodox Variation, Classical System, Benko Attack
+King's Indian Defense: Orthodox Variation, Classical System, Traditional Line
