@@ -448,15 +448,3 @@ def format_deltatime(delta: timedelta) -> str:
         return f"{int(delta / timedelta(milliseconds=1))}ms"
     else:
         return f"{delta / timedelta(seconds=1):.3f}s"
-
-
-EXCLAMATION = [
-    "Yum",
-    "Wow",
-    "Yummy",
-    "Delicious",
-    "Tasty",
-    "Scrumptious",
-    "Mmm",
-    "Divine",
-]

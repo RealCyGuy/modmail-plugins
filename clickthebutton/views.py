@@ -102,7 +102,7 @@ class PersistentView(BaseView):
             content=f"{reaction} <@{user_id}> ({format_deltatime(self.cog.clickers[interaction.user.id] - interaction.message.edited_at)}){fought} {random_got_a_click()}\n"
             f"You are now at {points} clicks and ranked #{rank} out of {len(self.cog.leaderboard)} players.{streak}",
             channel=interaction.channel,
-            silent=cooldown > 5
+            silent=cooldown > 5,
         )
         self.cog.delete_after(message, max(5, cooldown - 5))
         try:

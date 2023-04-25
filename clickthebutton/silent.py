@@ -5,7 +5,9 @@ from discord.http import handle_message_parameters
 async def send_silent(content: str, channel: discord.TextChannel, silent: bool):
     """Custom send function for silent messages in discord.py v2.0.1"""
     if not silent or discord.__version__ != "2.0.1":
-        return await channel.send(content=content, allowed_mentions=discord.AllowedMentions.none())
+        return await channel.send(
+            content=content, allowed_mentions=discord.AllowedMentions.none()
+        )
 
     # https://github.com/Rapptz/discord.py/blob/v2.0.1/discord/abc.py#L1374
     _channel = await channel._get_channel()
