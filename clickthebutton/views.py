@@ -4,13 +4,12 @@ import random
 from collections import OrderedDict
 from datetime import timedelta, timezone
 from enum import Enum
-from typing import Any, Optional, Tuple
+from typing import Any, Optional
 
 import discord
 import brokenaxes
 from matplotlib import dates as mdates
 from matplotlib import pyplot as plt, ticker
-from pymongo import ReturnDocument
 
 from .responses import (
     random_cooldown_over,
@@ -19,6 +18,7 @@ from .responses import (
     random_got_a_click,
     format_deltatime,
 )
+from .silent import send_silent
 from .utils import event, find_data_intervals
 
 
@@ -96,10 +96,13 @@ class PersistentView(BaseView):
                 )
                 + f"'s streak of {previous_streak[1]} has ended."
             )
-
-        message = await interaction.channel.send(
+        if not isinstance(interaction.channel, discord.TextChannel):
+            return
+        message = await send_silent(
             content=f"{reaction} <@{user_id}> ({format_deltatime(self.cog.clickers[interaction.user.id] - interaction.message.edited_at)}){fought} {random_got_a_click()}\n"
             f"You are now at {points} clicks and ranked #{rank} out of {len(self.cog.leaderboard)} players.{streak}",
+            channel=interaction.channel,
+            silent=cooldown > 5
         )
         self.cog.delete_after(message, max(5, cooldown - 5))
         try:
