@@ -32,6 +32,7 @@ Infantry Ares
 Goldwing Ares
 Outpost Ares
 Prism Ares
+Monstrocity Ares
 Nunca Olvidados Ares
 Celestial Ares
 Magepunk Ares
@@ -80,6 +81,7 @@ Avalanche Vandal
 Black.Market Vandal
 Prism II Vandal
 K/TAC Vandal
+Monstrocity Vandal
 Nunca Olvidados Vandal
 Luxe Vandal
 Silvanus Vandal
@@ -104,6 +106,7 @@ Ego Vandal
 Wasteland Vandal
 Winterwunderland Vandal
 Araxys Bulldog
+Radiant Entertainment System Bulldog
 Aristocrat Bulldog
 Endeavour Bulldog
 Spectrum Bulldog
@@ -116,6 +119,7 @@ Velocity Bulldog
 Shimmer Bulldog
 Horizon Bulldog
 Black.Market Bulldog
+Bound Bulldog
 K/TAC Bulldog
 Couture Bulldog
 Nunca Olvidados Bulldog
@@ -138,6 +142,7 @@ Task Force 809 Phantom
 RGX 11z Pro Phantom
 Xenohunter Phantom
 VALORANT GO! Vol. 1 Phantom
+Radiant Entertainment System Phantom
 Spectrum Phantom
 Piedra del Sol Phantom
 Champions 2022 Phantom
@@ -157,6 +162,7 @@ Topotek Phantom
 Soulstrife Phantom
 Prime//2.0 Phantom
 Avalanche Phantom
+Bound Phantom
 Prism Phantom
 Serenity Phantom
 Ruination Phantom
@@ -198,6 +204,7 @@ Shimmer Judge
 Goldwing Judge
 Hydrodip Judge
 Outpost Judge
+Bound Judge
 Prism III Judge
 Serenity Judge
 Kohaku & Matsuba Judge
@@ -267,6 +274,7 @@ Couture Frenzy
 Nunca Olvidados Frenzy
 Celestial Frenzy
 Coalition: Cobra Frenzy
+Moondash Frenzy
 Ion Frenzy
 Oni Frenzy
 Spitfire Frenzy
@@ -298,6 +306,7 @@ Goldwing Classic
 Prime Classic
 Avalanche Classic
 Black.Market Classic
+Bound Classic
 Prism III Classic
 Kingdom Classic
 Kohaku & Matsuba Classic
@@ -316,6 +325,7 @@ Reverie Classic
 Standard Classic
 Final Chamber Classic
 VALORANT GO! Vol. 1 Ghost
+Radiant Entertainment System Ghost
 Gaia's Vengeance Ghost
 Endeavour Ghost
 Piedra del Sol Ghost
@@ -364,6 +374,7 @@ Surge Sheriff
 Protektor Sheriff
 Prism II Sheriff
 K/TAC Sheriff
+Monstrocity Sheriff
 Iridian Thorn Sheriff
 Magepunk Sheriff
 Signature Sheriff
@@ -415,6 +426,7 @@ Wasteland Shorty
 RGX 11z Pro Operator
 VALORANT GO! Vol. 2 Operator
 Araxys Operator
+Radiant Entertainment System Operator
 Endeavour Operator
 Origin Operator
 Striker Operator
@@ -471,6 +483,7 @@ Ruination Guardian
 Magepunk Guardian
 Signature Guardian
 Galleria Guardian
+Moondash Guardian
 Oni Guardian
 9 Lives Guardian
 Aero Guardian
@@ -501,6 +514,7 @@ Signature Marshal
 Coalition: Cobra Marshal
 Galleria Marshal
 Crimsonbeast Marshal
+Moondash Marshal
 POLYfrog Marshal
 Divine Swine Marshal
 Artisan Marshal
@@ -535,6 +549,7 @@ Prism Spectre
 Serenity Spectre
 Ruination Spectre
 Kingdom Spectre
+Monstrocity Spectre
 Luxe Spectre
 Magepunk Spectre
 Spline Spectre
@@ -568,6 +583,7 @@ Prism II Stinger
 Couture Stinger
 Signature Stinger
 Silvanus Stinger
+Moondash Stinger
 Sensation Stinger
 Random Favorite Skin
 Sakura Stinger
@@ -589,6 +605,7 @@ VALORANT GO! Vol. 1 Knife
 Yoru's Stylish Butterfly Comb
 Araxys Bio Harvester
 Neptune Anchor
+Power Fist
 Gaia's Wrath
 Waveform
 Obsidiana
@@ -620,6 +637,7 @@ Prime Axe
 Prime//2.0 Karambit
 Outpost Melee
 Black.Market Butterfly Knife
+Bound 
 Prism Knife
 Prism III Axe
 Broken Blade of the Ruined King
