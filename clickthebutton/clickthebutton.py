@@ -14,6 +14,7 @@ from matplotlib import font_manager
 
 from core import checks
 from core.models import PermissionLevel
+from .responses import random_divider
 from .views import PersistentView
 from .utils import event
 
@@ -84,8 +85,9 @@ class ClickTheButton(commands.Cog):
             )
         embed.description += leaderboard_text
         players = len(self.leaderboard)
+        divider = random_divider()
         embed.set_footer(
-            text=f"{players} player{'' if players == 1 else 's'} - {total_clicks} total clicks - by cyrus yip"
+            text=f"{players} player{'' if players == 1 else 's'} {divider} {total_clicks} total clicks {divider} by cyrus yip"
         )
         return embed
 

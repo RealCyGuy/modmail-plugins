@@ -448,3 +448,35 @@ def format_deltatime(delta: timedelta) -> str:
         return f"{int(delta / timedelta(milliseconds=1))}ms"
     else:
         return f"{delta / timedelta(seconds=1):.3f}s"
+
+
+DIVIDERS = [
+    "-",
+    "—",
+    "―",
+    "|",
+    "/",
+    "⇹",
+    "★",
+    "☆",
+    "♥",
+    "♡",
+    "❣",
+    "❉",
+    "♪",
+    "♫",
+    "♬",
+    "☮",
+    "·",
+    "~",
+    "∼",
+    "≀",
+    "⋮",
+    "⑅",
+    "✳",
+    "✯",
+]
+
+
+def random_divider() -> str:
+    return random.choice(DIVIDERS)
