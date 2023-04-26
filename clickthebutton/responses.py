@@ -59,6 +59,13 @@ COOLDOWN_OVER = [
     "If you click the button, you will be rewarded with a point!",
     "Can you be the first to click the button?",
     "Hurry up and click the button!",
+    "Oh no. The button is back with a vengeance.",
+    "Hurry! Click the button!",
+    "Drop everything and click the button!",
+    "If you don't click the button now, you will regret it.",
+    "Woof! Woof! Click the button!",
+    "After what felt like an eternity, the button is back!",
+    "I know you're reading this. Click the button!",
 ]
 
 
@@ -395,6 +402,7 @@ FOUGHT_OFF = [
     ),
     "threw {}'s rank-up game",
     "lost their rank-up game to",
+    "made {} so skeptical of love",
 ]
 
 
