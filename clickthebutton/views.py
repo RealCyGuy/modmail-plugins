@@ -156,10 +156,10 @@ class PersistentView(BaseView):
         cooldown = random.randint(*cooldown)
         await asyncio.sleep(random.randint(1, 4))
         fought = ""
-        fought_off = random_fought_off()
+        fought_off_clickers = len(self.cog.clickers) - 1
+        fought_off = random_fought_off(fought_off_clickers)
         if len(self.cog.clickers) >= 2:
             await asyncio.sleep(3)
-            fought_off_clickers = len(self.cog.clickers) - 1
             if fought_off_clickers == 1:
                 fought_off_clickers = f"{fought_off_clickers} person"
             else:

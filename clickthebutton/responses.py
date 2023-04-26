@@ -66,6 +66,7 @@ COOLDOWN_OVER = [
     "Woof! Woof! Click the button!",
     "After what felt like an eternity, the button is back!",
     "I know you're reading this. Click the button!",
+    "Joke's over, click the button!",
 ]
 
 
@@ -260,7 +261,6 @@ FOUGHT_OFF = [
     "backstabbed",
     "betrayed",
     "matched wits with",
-    ("played the ", lambda: random_line("chess_openings.txt"), " against"),
     "didn't like the new Star Wars movie because of",
     "wasn't a fan of",
     "engaged in intellectual discourse with",
@@ -405,9 +405,26 @@ FOUGHT_OFF = [
     "made {} so skeptical of love",
 ]
 
+SINGULAR_FOUGHT_OFF = [
+    (
+        "performed a ",
+        lambda: random_line("instruments.txt"),
+        " and ",
+        lambda: random_line("instruments.txt"),
+        " duet cover of ",
+        lambda: random_line("twice_songs.txt"),
+        " by TWICE with",
+    ),
+    ("played the ", lambda: random_line("chess_openings.txt"), " against"),
+    "lost a 1v1 against",
+]
 
-def random_fought_off() -> str:
-    verb = random.choice(FOUGHT_OFF)
+
+def random_fought_off(amount: int) -> str:
+    if amount == 1:
+        verb = random.choice(FOUGHT_OFF + SINGULAR_FOUGHT_OFF)
+    else:
+        verb = random.choice(FOUGHT_OFF)
     if type(verb) == tuple:
         verb = "".join([str(part()) if callable(part) else part for part in verb])
     if "{}" in verb:
