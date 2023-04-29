@@ -40,11 +40,12 @@ class RandomVCLimit(commands.Cog):
         await ctx.send(
             "Channels: "
             + ", ".join([f"`{c}` (<#{c.split('-')[1]}>)" for c in self.channels])
+            + f"\nNext modification is <t:{int(self.random_limit_loop.next_iteration.timestamp())}:R>."
         )
 
     @checks.has_permissions(PermissionLevel.ADMIN)
     @randomvc.command()
-    async def add(self, ctx, channel: discord.VoiceChannel):
+    async def add(self, ctx, *, channel: discord.VoiceChannel):
         """Set the voice channel to be configured."""
         self.channels.add(str(ctx.guild.id) + "-" + str(channel.id))
         await self._update_db()
