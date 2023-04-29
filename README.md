@@ -6,7 +6,7 @@ Some [plugins](https://github.com/modmail-dev/modmail/wiki/Plugins) for the amaz
 [![License](https://img.shields.io/github/license/realcyguy/modmail-plugins?style=for-the-badge)](https://github.com/RealCyGuy/modmail-plugins/blob/v4/LICENSE)
 
 ## Plugins
-[8ball](#8ball) · [anigame-channels](#anigame-channels) · [banana](#banana) · [clickthebutton](#clickthebutton) · [filebackup](#filebackup) · [karutakeqingautoreact](#karutakeqingautoreact) · [message](#message) · [premiumsupport](#premiumsupport) · [react-on-ping](#react-on-ping) · [remove-self-stars](#remove-self-stars) · [say](#say) · [suggest](#suggest) · [verification](#verification) · [webserver](#webserver)
+[8ball](#8ball) · [anigame-channels](#anigame-channels) · [banana](#banana) · [clickthebutton](#clickthebutton) · [filebackup](#filebackup) · [karutakeqingautoreact](#karutakeqingautoreact) · [message](#message) · [premiumsupport](#premiumsupport) · [randomvclimit](#randomvclimit) · [react-on-ping](#react-on-ping) · [remove-self-stars](#remove-self-stars) · [say](#say) · [suggest](#suggest) · [verification](#verification) · [webserver](#webserver)
 ### 8ball
 ```
 Ask Modmail a question and get an answer from a ever-growing list of answers.
@@ -63,6 +63,12 @@ Special support for Premium members.
 ```
 Source code: [`premiumsupport.py`](https://github.com/RealCyGuy/modmail-plugins/blob/v4/premiumsupport/premiumsupport.py "premiumsupport source code")  
 Install: `?plugins install realcyguy/modmail-plugins/premiumsupport@v4`
+### randomvclimit
+```
+Automatically set a voice channel's member limit to a random value.
+```
+Source code: [`randomvclimit.py`](https://github.com/RealCyGuy/modmail-plugins/blob/v4/randomvclimit/randomvclimit.py "randomvclimit source code")  
+Install: `?plugins install realcyguy/modmail-plugins/randomvclimit@v4`
 ### react-on-ping
 ```
 Reacts with a ping emoji when someone gets pinged.
