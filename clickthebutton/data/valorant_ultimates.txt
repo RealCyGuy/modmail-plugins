@@ -1,0 +1,22 @@
+# https://valorant-api.com/v1/agents?isPlayableCharacter=true
+Thrash
+Nightfall
+Rolling Thunder
+Showstopper
+Tour De Force
+NULL/cmd
+Seekers
+Neural Theft
+Hunter's Fury
+Lockdown
+Reckoning
+Viper's Pit
+Run it Back
+Cosmic Divide
+Orbital Strike
+Overdrive
+DIMENSIONAL DRIFT
+Resurrection
+Empress
+From the Shadows
+Blade Storm

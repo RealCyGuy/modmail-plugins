@@ -283,7 +283,7 @@ FOUGHT_OFF = [
     "was a little bit disappointed with",
     "congratulated",
     "shed a tear for",
-    "teared apart",
+    "tore apart",
     "shredded",
     "ripped",
     "implanted a microchip in the brain of",
@@ -364,12 +364,6 @@ FOUGHT_OFF = [
         lambda: random_line("kpop_artists.txt"),
     ),
     "three-starred",
-    (
-        "countered {}'s ",
-        lambda: random_line("clash_royale_cards.txt").lower(),
-        " with their ",
-        lambda: random_line("clash_royale_cards.txt").lower(),
-    ),
     "literally doesn't care about",
     "convinced everyone that {} is the imposter",
     "thought {} was super sus",
@@ -403,6 +397,16 @@ FOUGHT_OFF = [
     "threw {}'s rank-up game",
     "lost their rank-up game to",
     "made {} so skeptical of love",
+    "pushed down",
+    "knocked over",
+    ("used ", lambda: random_line("valorant_ultimates.txt"), " on"),
+    ("outplayed {} with ", lambda: random_line("valorant_abilities.txt")),
+    "stole {}'s ace",
+    (
+        "stream-sniped {} by landing at ",
+        lambda: random_line("fortnite_named_locations.txt"),
+    ),
+    ("cranked 90s on {} in ", lambda: random_line("fortnite_named_locations.txt")),
 ]
 
 SINGULAR_FOUGHT_OFF = [
@@ -417,6 +421,17 @@ SINGULAR_FOUGHT_OFF = [
     ),
     ("played the ", lambda: random_line("chess_openings.txt"), " against"),
     "lost a 1v1 against",
+    (
+        "countered {}'s ",
+        lambda: random_line("clash_royale_cards.txt").lower(),
+        " with their ",
+        lambda: random_line("clash_royale_cards.txt").lower(),
+    ),
+    (
+        "destroyed {} with a ",
+        lambda: random_line("clash_royale_cards.txt").lower(),
+        " cycle deck",
+    ),
 ]
 
 

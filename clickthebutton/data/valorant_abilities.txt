@@ -1,0 +1,85 @@
+# https://valorant-api.com/v1/agents?isPlayableCharacter=true
+Gekko's Wingman 
+Gekko's Dizzy 
+Gekko's Mosh Pit 
+Gekko's Thrash 
+Fade's Seize 
+Fade's Haunt 
+Fade's Prowler 
+Fade's Nightfall 
+Breach's Flashpoint 
+Breach's Fault Line 
+Breach's Aftershock 
+Breach's Rolling Thunder 
+Raze's Blast Pack 
+Raze's Paint Shells 
+Raze's Boom Bot 
+Raze's Showstopper 
+Chamber's Rendezvous 
+Chamber's Trademark 
+Chamber's Headhunter 
+Chamber's Tour De Force 
+KAY/O's FRAG/ment 
+KAY/O's FLASH/drive 
+KAY/O's ZERO/point 
+KAY/O's NULL/cmd 
+Skye's Trailblazer 
+Skye's Guiding Light 
+Skye's Regrowth 
+Skye's Seekers 
+Cypher's Cyber Cage 
+Cypher's Spycam 
+Cypher's Trapwire 
+Cypher's Neural Theft 
+Sova's Shock Bolt 
+Sova's Recon Bolt 
+Sova's Owl Drone 
+Sova's Hunter's Fury 
+Killjoy's Nanoswarm 
+Killjoy's ALARMBOT 
+Killjoy's TURRET 
+Killjoy's Lockdown 
+Harbor's Cove 
+Harbor's Cascade 
+Harbor's High Tide 
+Harbor's Reckoning 
+Viper's Poison Cloud 
+Viper's Toxic Screen 
+Viper's Snake Bite 
+Viper's Viper's Pit 
+Phoenix's Blaze 
+Phoenix's Curveball 
+Phoenix's Hot Hands 
+Phoenix's Run it Back 
+Astra's Nova Pulse 
+Astra's Nebula  / Dissipate 
+Astra's Gravity Well 
+Astra's Astral Form / Cosmic Divide 
+Brimstone's Stim Beacon 
+Brimstone's Incendiary 
+Brimstone's Sky Smoke 
+Brimstone's Orbital Strike 
+Neon's High Gear 
+Neon's Relay Bolt 
+Neon's Fast Lane 
+Neon's Overdrive 
+Yoru's FAKEOUT 
+Yoru's BLINDSIDE 
+Yoru's GATECRASH 
+Yoru's DIMENSIONAL DRIFT 
+Sage's Slow Orb 
+Sage's Healing Orb 
+Sage's Barrier Orb 
+Sage's Resurrection 
+Reyna's Devour 
+Reyna's Dismiss 
+Reyna's Leer 
+Reyna's Empress 
+Omen's Paranoia 
+Omen's Dark Cover 
+Omen's Shrouded Step 
+Omen's From the Shadows 
+Jett's Updraft 
+Jett's Tailwind 
+Jett's Cloudburst 
+Jett's Blade Storm 
