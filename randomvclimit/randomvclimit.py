@@ -14,7 +14,6 @@ class RandomVCLimit(commands.Cog):
         self.bot = bot
         self.db = bot.plugin_db.get_partition(self)
         self.channels = set()
-        self.random_limit_loop.start()
 
     async def _update_db(self):
         await self.db.find_one_and_update(
@@ -29,6 +28,7 @@ class RandomVCLimit(commands.Cog):
 
     async def cog_load(self):
         await self._get_db()
+        self.random_limit_loop.start()
 
     async def cog_unload(self):
         self.random_limit_loop.cancel()
