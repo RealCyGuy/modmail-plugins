@@ -6,7 +6,7 @@ Some [plugins](https://github.com/modmail-dev/modmail/wiki/Plugins) for the amaz
 [![License](https://img.shields.io/github/license/realcyguy/modmail-plugins?style=for-the-badge)](https://github.com/RealCyGuy/modmail-plugins/blob/v4/LICENSE)
 
 ## Plugins
-[8ball](#8ball) · [anigame-channels](#anigame-channels) · [banana](#banana) · [clickthebutton](#clickthebutton) · [filebackup](#filebackup) · [karutakeqingautoreact](#karutakeqingautoreact) · [message](#message) · [premiumsupport](#premiumsupport) · [randomvclimit](#randomvclimit) · [react-on-ping](#react-on-ping) · [remove-self-stars](#remove-self-stars) · [say](#say) · [suggest](#suggest) · [verification](#verification) · [webserver](#webserver)
+[8ball](#8ball) · [anigame-channels](#anigame-channels) · [banana](#banana) · [clickthebutton](#clickthebutton) · [filebackup](#filebackup) · [hotreload](#hotreload) · [karutakeqingautoreact](#karutakeqingautoreact) · [message](#message) · [premiumsupport](#premiumsupport) · [randomvclimit](#randomvclimit) · [react-on-ping](#react-on-ping) · [remove-self-stars](#remove-self-stars) · [say](#say) · [suggest](#suggest) · [verification](#verification) · [webserver](#webserver)
 ### 8ball
 ```
 Ask Modmail a question and get an answer from a ever-growing list of answers.
@@ -43,6 +43,12 @@ This is for viewing attachments in the logviewer after the thread channel has be
 ```
 Source code: [`filebackup.py`](https://github.com/RealCyGuy/modmail-plugins/blob/v4/filebackup/filebackup.py "filebackup source code")  
 Install: `?plugins install realcyguy/modmail-plugins/filebackup@v4`
+### hotreload
+```
+Hot-reload local plugins for development!
+```
+Source code: [`hotreload.py`](https://github.com/RealCyGuy/modmail-plugins/blob/v4/hotreload/hotreload.py "hotreload source code")  
+Install: `?plugins install realcyguy/modmail-plugins/hotreload@v4`
 ### karutakeqingautoreact
 ```
 Automatically add reactions to Karuta messages for Keqing Bot that usually requires premium.
