@@ -17,7 +17,7 @@ class HotReload(commands.Cog):
         self.plugins = {}
 
     async def watch_plugin(self, plugin: str):
-        async for _ in awatch(Path("plugins") / "@local" / plugin):
+        async for _ in awatch(Path("plugins") / "@local" / plugin, debounce=2000):
             extension = f"plugins.@local.{plugin}.{plugin}"
             await self.bot.reload_extension(extension)
             logger.info(f"Reloaded {extension}.")
