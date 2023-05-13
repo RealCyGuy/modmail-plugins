@@ -67,6 +67,7 @@ COOLDOWN_OVER = [
     "After what felt like an eternity, the button is back!",
     "I know you're reading this. Click the button!",
     "Joke's over, click the button!",
+    "The button wants your click.",
 ]
 
 
@@ -407,6 +408,21 @@ FOUGHT_OFF = [
         lambda: random_line("fortnite_named_locations.txt"),
     ),
     ("cranked 90s on {} in ", lambda: random_line("fortnite_named_locations.txt")),
+    (
+        "sent a message to {} containing their IP address, ",
+        lambda: ".".join(str(random.randint(0, 255)) for _ in range(4)),
+    ),
+    ("played {} like a ", lambda: random_line("instruments.txt")),
+    ("burned down {}'s ", lambda: random_line("agricultural_buildings.txt").lower()),
+    (
+        "flew from ",
+        lambda: random_line("iata_codes.txt"),
+        " airport to ",
+        lambda: random_line("iata_codes.txt"),
+        " with",
+    ),
+    "used the power of god and anime on",
+    "deranked",
 ]
 
 SINGULAR_FOUGHT_OFF = [
@@ -475,6 +491,7 @@ GOT_A_CLICK = [
     "smashed the button",
     "clicked successfully",
     "clicked the button",
+    "obtained a click",
 ]
 
 

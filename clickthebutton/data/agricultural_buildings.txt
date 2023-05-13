@@ -1,0 +1,20 @@
+# https://en.wikipedia.org/wiki/List_of_building_types#Agricultural
+Abattoir
+Barn
+Chicken coop
+Cow-shed
+Farmhouse
+Granary
+Greenhouse
+Hayloft
+Pigpen
+Root cellar
+Shed
+Silo
+Slaughterhouse
+Stable
+Storm cellar
+Well house
+Crib
+Windmill
+Workshop
