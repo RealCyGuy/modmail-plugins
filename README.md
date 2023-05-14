@@ -6,7 +6,7 @@ Some [plugins](https://github.com/modmail-dev/modmail/wiki/Plugins) for the amaz
 [![License](https://img.shields.io/github/license/realcyguy/modmail-plugins?style=for-the-badge)](https://github.com/RealCyGuy/modmail-plugins/blob/v4/LICENSE)
 
 ## Plugins
-[8ball](#8ball) · [anigame-channels](#anigame-channels) · [banana](#banana) · [clickthebutton](#clickthebutton) · [filebackup](#filebackup) · [hotreload](#hotreload) · [karutakeqingautoreact](#karutakeqingautoreact) · [message](#message) · [premiumsupport](#premiumsupport) · [randomvclimit](#randomvclimit) · [react-on-ping](#react-on-ping) · [remove-self-stars](#remove-self-stars) · [say](#say) · [suggest](#suggest) · [verification](#verification) · [webserver](#webserver)
+[8ball](#8ball) · [anigame-channels](#anigame-channels) · [animeguesser](#animeguesser) · [banana](#banana) · [clickthebutton](#clickthebutton) · [filebackup](#filebackup) · [hotreload](#hotreload) · [karutakeqingautoreact](#karutakeqingautoreact) · [message](#message) · [premiumsupport](#premiumsupport) · [randomvclimit](#randomvclimit) · [react-on-ping](#react-on-ping) · [remove-self-stars](#remove-self-stars) · [say](#say) · [suggest](#suggest) · [verification](#verification) · [webserver](#webserver)
 ### 8ball
 ```
 Ask Modmail a question and get an answer from a ever-growing list of answers.
@@ -23,6 +23,13 @@ Automatically rename #anigame-inactive to #anigame-active during battles!
 ```
 Source code: [`anigame-channels.py`](https://github.com/RealCyGuy/modmail-plugins/blob/v4/anigame-channels/anigame-channels.py "anigame-channels source code")  
 Install: `?plugins install realcyguy/modmail-plugins/anigame-channels@v4`
+### animeguesser
+```
+An anime guessing game plugin featuring automatically extracted random frames from anime.
+Inspired by RinBot and utilizing AniList and Enime APIs.
+```
+Source code: [`animeguesser.py`](https://github.com/RealCyGuy/modmail-plugins/blob/v4/animeguesser/animeguesser.py "animeguesser source code")  
+Install: `?plugins install realcyguy/modmail-plugins/animeguesser@v4`
 ### banana
 ```
 Reacts with a banana emoji if someone says banana.
