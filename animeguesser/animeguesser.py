@@ -13,6 +13,9 @@ from discord.ext import commands, tasks
 import m3u8
 
 from bot import ModmailBot
+from core.models import getLogger
+
+logger = getLogger(__name__)
 
 query = """
 query ($page: Int) {
@@ -63,6 +66,7 @@ def simplified_titles(title: str) -> Set[str]:
     if len(title) > 10:
         titles.update(title.split("/"))
         titles.update(title.split(":"))
+        titles.update(title.split("-"))
     for extra_word in [
         "movie",
         "ova",
@@ -177,6 +181,30 @@ class AnimeGuesser(commands.Cog):
     ):
         hint = 0
         random.shuffle(round_data["images"])
+
+        hidden_title = ""
+        hidden_characters = []
+        for i, character in enumerate(round_data["title"]):
+            if character == " ":
+                hidden_title += " "
+            else:
+                hidden_title += "_"
+                hidden_characters.append(i)
+        title_length = len(hidden_characters)
+
+        async def reveal_characters(number: int) -> None:
+            nonlocal hidden_title
+            nonlocal hidden_characters
+            for _ in range(number):
+                index = random.choice(hidden_characters)
+                hidden_characters.remove(index)
+                hidden_title = list(hidden_title)
+                hidden_title[index] = round_data["title"][index]
+                hidden_title = "".join(hidden_title)
+            embed = discord.Embed(colour=embed_colour, description=f"`{hidden_title}`")
+            await ctx.send(embed=embed)
+            await asyncio.sleep(2)
+
         for image in round_data["images"]:
             if len(image) == 0:
                 continue
@@ -188,6 +216,20 @@ class AnimeGuesser(commands.Cog):
                 embed=embed, file=discord.File(io.BytesIO(image), filename="image.png")
             )
             await asyncio.sleep(random.randint(0, 5))
+
+            if hint == 7:
+                await reveal_characters(int(title_length / 18))
+            elif hint == 10:
+                if title_length >= 11:
+                    await reveal_characters(int(title_length / 11))
+            elif hint == 13:
+                await reveal_characters(max(int(title_length / 9), 1))
+            elif hint == 16:
+                if title_length >= 7:
+                    await reveal_characters(int(title_length / 7))
+            elif hint == 19:
+                await reveal_characters(max(int(title_length / 4), 1))
+
         embed = discord.Embed(colour=embed_colour, description="5 seconds left!")
         await ctx.send(embed=embed)
         await asyncio.sleep(5)
@@ -246,7 +288,9 @@ class AnimeGuesser(commands.Cog):
                 async with session.get(m3u8_url) as resp:
                     m3u8_data = await resp.text()
                     variant_m3u8 = m3u8.loads(m3u8_data)
-                    assert variant_m3u8.is_variant
+                    if not variant_m3u8.is_variant:
+                        logger.warning(f"{m3u8_url} is not a variant m3u8! Skipping...")
+                        return
                     lowest_bandwidth = 0
                     lowest_bandwidth_playlist = None
                     for playlist in variant_m3u8.playlists:
@@ -260,8 +304,8 @@ class AnimeGuesser(commands.Cog):
                 async with session.get(lowest_bandwidth_playlist) as resp:
                     m3u8_obj = m3u8.loads(await resp.text())
                     for segment in random.choices(m3u8_obj.segments, k=count):
-                        async with session.get(segment.absolute_uri) as resp:
-                            input_stream = await resp.read()
+                        async with session.get(segment.absolute_uri) as resp_2:
+                            input_stream = await resp_2.read()
                             random_frame_time = random.uniform(0, segment.duration)
                             random_frame_time = max(0.0, random_frame_time - 0.5)
                             result, _ = (
