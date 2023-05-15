@@ -63,7 +63,16 @@ def simplified_titles(title: str) -> Set[str]:
     if len(title) > 10:
         titles.update(title.split("/"))
         titles.update(title.split(":"))
-    for extra_word in ["movie", "ova", "series", "special", "ona", "season"]:
+    for extra_word in [
+        "movie",
+        "ova",
+        "series",
+        "special",
+        "ona",
+        "season",
+        "tv",
+        "film",
+    ]:
         titles.add(title.replace(extra_word, ""))
     clean_titles = set()
     for title in titles:
