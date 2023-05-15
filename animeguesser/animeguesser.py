@@ -17,7 +17,7 @@ from bot import ModmailBot
 query = """
 query ($page: Int) {
   Page(perPage: 1, page: $page) {
-    media(type: ANIME, popularity_greater: 10000, status_not: NOT_YET_RELEASED, sort: TRENDING_DESC, isAdult: false, genre_not_in: ["Eccchi"]) {
+    media(type: ANIME, popularity_greater: 10000, status_not: NOT_YET_RELEASED, sort: TRENDING_DESC, isAdult: false, genre_not_in: ["Ecchi"]) {
       title {
         romaji
         english
