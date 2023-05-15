@@ -107,11 +107,13 @@ class AnimeGuesser(commands.Cog):
         combined_id = int(f"{ctx.guild.id}{ctx.channel.id}")
         if combined_id in self.active_channels:
             return await ctx.send("There is already a round active in this channel.")
-        self.active_channels.add(combined_id)
 
         round_data = await self.db.find_one_and_delete({})
         if not round_data:
             return await ctx.send("No round data.")
+        
+        self.active_channels.add(combined_id)
+
         embed = discord.Embed(
             colour=embed_colour, description="Round starting in 5 seconds..."
         )
