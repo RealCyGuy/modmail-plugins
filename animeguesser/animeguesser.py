@@ -111,7 +111,7 @@ class AnimeGuesser(commands.Cog):
         round_data = await self.db.find_one_and_delete({})
         if not round_data:
             return await ctx.send("No round data.")
-        
+
         self.active_channels.add(combined_id)
 
         embed = discord.Embed(
@@ -290,8 +290,8 @@ class AnimeGuesser(commands.Cog):
                 async with session.get(m3u8_url) as resp:
                     m3u8_data = await resp.text()
                     variant_m3u8 = m3u8.loads(m3u8_data)
-                    if not variant_m3u8.is_variant:
-                        logger.warning(f"{m3u8_url} is not a variant m3u8! Skipping...")
+                    if len(variant_m3u8.playlists) == 0:
+                        logger.warning(f"{m3u8_url} has 0 playlists! Anilist ID: {anilist_id} Skipping...")
                         return
                     lowest_bandwidth = 0
                     lowest_bandwidth_playlist = None
