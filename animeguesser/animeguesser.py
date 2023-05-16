@@ -13,7 +13,8 @@ from discord.ext import commands, tasks
 import m3u8
 
 from bot import ModmailBot
-from core.models import getLogger
+from core import checks
+from core.models import getLogger, PermissionLevel
 
 logger = getLogger(__name__)
 
@@ -101,6 +102,7 @@ class AnimeGuesser(commands.Cog):
     async def cog_load(self):
         await self.db.create_index("created_at", expireAfterSeconds=604800)
 
+    @checks.has_permissions(PermissionLevel.REGULAR)
     @commands.command(aliases=["ag"])
     async def animeguesser(self, ctx: commands.Context):
         """Start a round of anime guesser."""
@@ -110,7 +112,9 @@ class AnimeGuesser(commands.Cog):
 
         round_data = await self.db.find_one_and_delete({})
         if not round_data:
-            return await ctx.send("No round data.")
+            return await ctx.send(
+                f"No round data. If this persists, ffmpeg might not be installed. Run `{self.bot.prefix}ffmpeg` for more info."
+            )
 
         self.active_channels.add(combined_id)
 
@@ -291,7 +295,9 @@ class AnimeGuesser(commands.Cog):
                     m3u8_data = await resp.text()
                     variant_m3u8 = m3u8.loads(m3u8_data)
                     if len(variant_m3u8.playlists) == 0:
-                        logger.warning(f"{m3u8_url} has 0 playlists! Anilist ID: {anilist_id} Skipping...")
+                        logger.warning(
+                            f"{m3u8_url} has 0 playlists! Anilist ID: {anilist_id} Skipping..."
+                        )
                         return
                     lowest_bandwidth = 0
                     lowest_bandwidth_playlist = None
@@ -338,6 +344,53 @@ class AnimeGuesser(commands.Cog):
                     "created_at": datetime.utcnow(),
                 }
             )
+
+    @checks.has_permissions(PermissionLevel.ADMIN)
+    @commands.group(invoke_without_command=True)
+    async def ffmpeg(self, ctx: commands.Context):
+        """Instructions on how to install FFmpeg."""
+        embed = discord.Embed(
+            colour=embed_colour,
+            description="This plugin requires [FFmpeg](https://en.wikipedia.org/wiki/FFmpeg) to be installed and in path for download anime images!\n\n"
+            "To install FFmpeg, you can download it from [their website](https://ffmpeg.org/download.html).\n"
+            f"Or you can try `{self.bot.prefix}ffmpeg apt-get` to try installing with apt-get.",
+        )
+        await ctx.send(embed=embed)
+
+    @checks.has_permissions(PermissionLevel.ADMIN)
+    @ffmpeg.command(name="apt-get")
+    async def ffmpeg_apt_get(self, ctx: commands.Context):
+        """Install FFmpeg with apt-get."""
+        proc = await asyncio.create_subprocess_shell(
+            "apt-get update",
+            stdout=asyncio.subprocess.PIPE,
+            stderr=asyncio.subprocess.PIPE,
+        )
+
+        stdout, stderr = await proc.communicate()
+
+        proc2 = await asyncio.create_subprocess_shell(
+            "apt-get install ffmpeg",
+            stdout=asyncio.subprocess.PIPE,
+            stderr=asyncio.subprocess.PIPE,
+        )
+
+        stdout2, stderr2 = await proc2.communicate()
+
+        embed = discord.Embed(
+            colour=embed_colour,
+            description="View the [source code](https://github.com/RealCyGuy/modmail-plugins/blob/v4/animeguesser/animeguesser.py) to debug this more.",
+        )
+        embed.set_author(name="FFmpeg apt-get installation output")
+        embed.add_field(
+            name="apt-get update",
+            value=f"Output:\n```\u200b{stdout.decode()}```Errors:\n```\u200b{stderr.decode()}```",
+        )
+        embed.add_field(
+            name="apt-get install ffmpeg",
+            value=f"Output:\n```\u200b{stdout2.decode()}```Errors:\n```\u200b{stderr2.decode()}```",
+        )
+        await ctx.send(embed=embed)
 
 
 async def setup(bot):
