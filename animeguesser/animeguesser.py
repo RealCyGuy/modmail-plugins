@@ -102,6 +102,9 @@ class AnimeGuesser(commands.Cog):
     async def cog_load(self):
         await self.db.create_index("created_at", expireAfterSeconds=604800)
 
+    def cog_unload(self):
+        self.add_anime_loop.cancel()
+
     @checks.has_permissions(PermissionLevel.REGULAR)
     @commands.command(aliases=["ag"])
     async def animeguesser(self, ctx: commands.Context):
