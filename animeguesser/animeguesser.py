@@ -5,6 +5,7 @@ from collections import Counter
 import difflib
 from datetime import datetime
 from typing import List, Optional, Set
+import xml.etree.ElementTree as ET
 
 import aiohttp
 import discord
@@ -59,15 +60,16 @@ formats = {
     "MUSIC": "Music video",
 }
 embed_colour = 0x2B2D31
+anidb_api = "http://api.anidb.net:9001/httpapi?client=hello&clientver=1&protover=1&request=anime&aid="
 
 
 def simplified_titles(title: str) -> Set[str]:
     title = title.lower()
     titles = {title}
     if len(title) > 10:
-        titles.update(title.split("/"))
-        titles.update(title.split(":"))
-        titles.update(title.split("-"))
+        titles.add(title.split("/")[0])
+        titles.add(title.split(":")[0])
+        titles.add(title.split("-")[0])
     for extra_word in [
         "movie",
         "ova",
@@ -287,6 +289,17 @@ class AnimeGuesser(commands.Cog):
                 episodes = Counter()
                 for episode in random.choices(enime_data["episodes"], k=20):
                     episodes[episode["sources"][0]["id"]] += 1
+                anidb_id = enime_data["mappings"].get("anidb")
+            if anidb_id:
+                async with session.get(anidb_api + str(anidb_id)) as resp:
+                    if resp.ok:
+                        anidb_data = await resp.text()
+                        tree = ET.fromstring(anidb_data)
+                        for answer in tree.find("titles").findall("title"):
+                            if answer.text not in answers:
+                                answers.append(answer.text)
+                    else:
+                        logger.warning("AniDB API returned a non-200 status code!")
             images: List[bytes] = []
             for episode, count in episodes.items():
                 async with session.get(enime_api + "/source/" + episode) as resp:
