@@ -248,11 +248,15 @@ class AnimeGuesser(commands.Cog):
 
     @tasks.loop(minutes=2)
     async def add_anime_loop(self):
-        while await self.db.count_documents({}) < 10:
-            await self.add_anime()
+        try:
+            while await self.db.count_documents({}) < 10:
+                await self.add_anime()
 
-        if await self.db.count_documents({}) < 100:
-            await self.add_anime()
+            if await self.db.count_documents({}) < 100:
+                await self.add_anime()
+        except Exception as e:
+            logger.exception("add_anime_loop exception! waiting 1 minute before resuming loop")
+            await asyncio.sleep(60)
 
     async def add_anime(self):
         async with aiohttp.ClientSession() as session:
