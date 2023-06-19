@@ -84,6 +84,7 @@ K/TAC Vandal
 Monstrocity Vandal
 Nunca Olvidados Vandal
 Luxe Vandal
+Magepunk Vandal
 Silvanus Vandal
 Crimsonbeast Vandal
 Ion Vandal
@@ -101,6 +102,7 @@ Tethered Realms Vandal
 Cavalier Vandal
 Titanmail Vandal
 Standard Vandal
+NO LIMITS Vandal
 Depths Vandal
 Ego Vandal
 Wasteland Vandal
@@ -135,6 +137,7 @@ Infinity Bulldog
 Standard Bulldog
 Tilde Bulldog
 Gridcrash Bulldog
+NO LIMITS Bulldog
 Convex Bulldog
 Depths Bulldog
 Varnish Bulldog
@@ -170,6 +173,7 @@ Kingdom Phantom
 Kohaku & Matsuba Phantom
 Smite Phantom
 Celestial Phantom
+Magepunk Phantom
 Spline Phantom
 Minima Phantom
 Galleria Phantom
@@ -356,6 +360,7 @@ Recon Ghost
 Cavalier Ghost
 Standard Ghost
 Gridcrash Ghost
+NO LIMITS Ghost
 Depths Ghost
 Ego Ghost
 Vendetta Ghost
@@ -567,6 +572,7 @@ Recon Spectre
 Infinity Spectre
 Standard Spectre
 Tigris Spectre
+NO LIMITS Spectre
 Convex Spectre
 BlastX Spectre
 Wasteland Spectre
@@ -651,6 +657,7 @@ Celestial Fan
 Luxe Knife
 Magepunk Electroblade
 Magepunk Shock Gauntlet
+Magepunk Sparkswitch
 Spline Dagger
 Crimsonbeast Hammer
 Genesis Arc
@@ -676,6 +683,7 @@ Reverie Sword
 Melee
 Tilde Knife
 Hu Else
+NO LIMITS Bat
 BlastX Polymer KnifeTech Coated Knife
 Ego Knife
 Winterwunderland Candy Cane

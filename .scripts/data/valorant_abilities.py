@@ -11,4 +11,4 @@ with open_data_file("valorant_abilities") as f:
     for agent in data["data"]:
         for ability in agent["abilities"]:
             if ability["slot"] != "Passive":
-                f.write(f"{agent['displayName']}'s {ability['displayName']} \n")
+                f.write(f"{agent['displayName']}'s {ability['displayName']}\n")

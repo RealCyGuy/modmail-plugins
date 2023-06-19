@@ -423,6 +423,25 @@ FOUGHT_OFF = [
     ),
     "used the power of god and anime on",
     "deranked",
+    ("played ", lambda: random_line("brawl_stars_brawlers.txt"), " against"),
+    (
+        "advised {} to try ",
+        lambda: random_line("brawl_stars_brawlers.txt"),
+        " in ",
+        lambda: random_line("brawl_stars_maps.txt"),
+    ),
+    ("stabbed {} ", lambda: random.randint(1, 1000), " times"),
+    (
+        "taught {} that ",
+        lambda: random_line("brawl_stars_brawlers.txt"),
+        " is better than ",
+        lambda: random_line("brawl_stars_brawlers.txt"),
+    ),
+    "played a trick on",
+    "made quick work of",
+    "made slow work of",
+    "outranged",
+    "out-dpsed",
 ]
 
 SINGULAR_FOUGHT_OFF = [
@@ -447,6 +466,10 @@ SINGULAR_FOUGHT_OFF = [
         "destroyed {} with a ",
         lambda: random_line("clash_royale_cards.txt").lower(),
         " cycle deck",
+    ),
+    (
+        "won a game of duo showdown with {} on ",
+        lambda: random_line("brawl_stars_maps.txt"),
     ),
 ]
 

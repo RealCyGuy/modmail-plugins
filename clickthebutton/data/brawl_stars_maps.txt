@@ -1,0 +1,112 @@
+# https://api.brawlapi.com/v1/maps
+Open Season
+Skull Creek
+Acute Angle
+Death Loop
+Super Beach
+Flying Fantasies
+Parallel Plays
+Goldarm Gulch
+Hot Potato
+Split Second
+Cover Crowd
+Center Control
+Scorched Stone
+Solid Center
+Power Alley
+Sneaky Fields
+Layer Cake
+Rockwall Brawl
+Danger Zone
+Rustic Arcade
+Battered Battlefield
+Pinhole Punt
+Flaring Phoenix
+Open Zone
+Minecart Madness
+Hard Limits
+Smash Land
+Make It Bounce
+Iron Standoff
+Hard Rock Mine
+Feast Or Famine
+Cheeky Chokepoint
+Field Goal
+Deep End
+Iron Cover
+Gem Fort
+Double Trouble
+Victory Road
+Extra Bouncy
+Dry Season
+Acid Lakes
+Double Swoosh
+Eyes On The Ground
+Beach Ball
+Dueling Beetles
+Belles Rock
+Crystal Arcade
+Isolation Play
+Backyard Bowl
+Canal Grande
+Bridge Too Far
+Open Business
+Flowing Springs
+Last Stand
+Temple Ruins
+Temple Of Boom
+X Marks The Spot
+Snake Prairie
+Safe Zone
+Ring Of Fire
+Split
+Out In The Open
+Shooting Star
+Pit Stop
+Healthy Middle Ground
+Kaboom Canyon
+Nowhere To Hide
+Lit Match
+Four Lakes
+Metal Scrap
+Green Meadows
+Mogura Tataki
+Dancing Roof
+Iron Corridor
+Iron Core
+Circular Motion
+Rush Hour
+Basket Fort
+Lush Poles
+Deep Diner
+Middle Ground
+Four Doors
+Grim Island
+Step By Step
+Pick And Roll
+Offset Heist
+Full On
+Triumvirate
+Crossroads
+Ball Hog
+No Surrender
+Monkey Maze
+No Excuses
+Skull Creek
+Hideout
+Center Stage
+Dark Passage
+Quarter Pounder
+Warriors Way
+Controller Chaos
+Cavern Churn
+Undermine
+Gladiators
+Riverside
+Sunny Soccer
+Excel
+Swallow Cut
+New Perspective
+Petticoat Duel
+Snaked Assault
+Tornado Ring

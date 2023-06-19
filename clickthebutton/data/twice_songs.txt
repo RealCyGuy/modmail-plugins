@@ -1,175 +1,198 @@
-# https://en.wikipedia.org/wiki/List_of_songs_recorded_by_Twice
-1 to 10
-1, 3, 2
+# https://api.spotify.com/v1
+1 To 10
+1, 3, 2 (JEONGYEON, MINA, TZUYU)
 21:29
+21:29 - Japanese ver.
 24/7
-After Moon
+AFTER MOON
 Alcohol-Free
+Alcohol-Free - Japanese ver.
+BDZ
+BDZ (Korean Version)
+BEHIND THE MASK
+BELIEVER
+BETTER
+BETTER - Instrumental
+BLAME IT ON ME
+BRAND NEW GIRL
+BREAKTHROUGH (Korean Version)
+BRING IT BACK
 Baby Blue Love
 Basics
-Behind the Mask
-Believer
-The Best Thing I Ever Did
-Blame It on Me
-Brave
-Bring It Back
-Cactus
-Candy Boy
-Cheer Up
-Chillax
-Conversation
-Crazy Stupid Love
-Cruel
-Cry for Me
-Dance the Night Away
-Deja Vu
-Depend on You
-Ding Dong
-Do It Again
-Do What We Like
-Don't Call Me Again
-Don't Give Up
-Espresso
-Eye Eye Eyes
-F.I.L.A. (Fall in Love Again)
-Fancy
-Feel Special
-FFW
-Firework
-First Time
-Get Loud
-Girls Like Us
-Go Hard
-Going Crazy
-Gone
-Got the Thrills
-Handle It
-Heart Shaker
-Hell in Heaven
-Hello
-Ho!
-Hold Me Tight
-Hot
-I Can't Stop Me
-I Love You More Than Anyone
-I'll Show You
-I'm Gonna Be a Star
-Ice Cream
-Jaljayo Good Night
-Jelly Jelly
-Knock Knock
-LaLaLa
-Last Waltz
-Like a Fool
-Like Ooh-Ahh
-Likey
-Look at Me
-Love Foolish
-Love Line
-Make Me Go
-Merry & Happy
-Missing U
-More & More
-My Headphones On
-Next Page
-One in a Million
-Only You
-Oxygen
-Pit-A-Pat
-Ponytail
-Precious Love
-Push & Pull
-Queen
-Rainbow
-Real You
-Rewind
-Rollin'
-Say Something
-Say Yes
-Say You Love Me
-Scandal
-Scientist
-Set Me Free
-Shadow
-Shot Clock
-Shot Thru The Heart
-Signal
-Someone Like Me
-SOS
-Strawberry
-Stuck
-Stuck in My Head
-Sunset
-Sweet Summer Day
-Sweet Talker
-Talk That Talk
-Three Times a Day
-Touchdown
-Trick It
-Trouble
-Truth
-TT
-Tuk Tok
-Turn It Up
-Turtle
-Up No More
-Wallflower
-What Is Love?
-When We Were Kids
-Woohoo
-Wow
-Yes or Yes
-You in My Heart
-Young & Wild
-BDZ
-Be as One
 Be OK
-Better
+Be as ONE
+Be as ONE (Korean Version)
 Bitter Sweet
-Brand New Girl
+Brave
 Breakthrough
+Breakthrough - Instrumental
+Breakthrough - taalthechoi Remix
+CACTUS
+CANDY
+CHILLAX
+CRAZY STUPID LOVE
+CRUEL
+CRY FOR ME
+CRY FOR ME - Japanese ver.
 Candy Pop
+Catch a Wave
+Catch a Wave - Instrumental
 Celebrate
 Changing!
+Conversation
+DEJAVU
+DEPEND ON YOU
+DO WHAT WE LIKE
+DON’T CALL ME AGAIN
+Dance The Night Away
+Ding Dong
+Don't Give Up
 Doughnut
+Doughnut (Instrumental)
+ESPRESSO
+F.I.L.A (Fall In Love Again)
+FANCY - Japanese ver.
+FIREWORK
 Fake & True
 Fanfare
-Flow Like Waves
+Fanfare - Instrumental
+Fanfare - Lee Hae Sol Remix
+Feel Special
+Feel Special - Japanese ver.
+Ffw
+First Time
+Flow like waves
 Four-leaf Clover
+GET LOUD
+GO HARD
+GOT THE THRILLS
+Gone
 Good at Love
-Happy Happy
-How U Doin'
-In the Summer
-Just Be Yourself
+HANDLE IT
+HAPPY HAPPY
+HAPPY HAPPY - Instrumental
+HAPPY HAPPY - collapsedone Remix
+HELL IN HEAVEN
+HELLO (NAYEON, MOMO, CHAEYOUNG)
+HO!
+Hare Hare
+Hare Hare - Instrumental
+Heart Shaker
+How u doin'
+I CAN'T STOP ME
+I CAN'T STOP ME (English Version)
+I CAN'T STOP ME - Japanese ver.
+I WANT YOU BACK
+I love you more than anyone
+I love you more than anyone - Instrumental
+ICON
+Ice Cream
+In the summer
+Jaljayo Good Night
+Jelly Jelly
+Just be yourself
+Knock Knock
 Kura Kura
+Kura Kura - Instrumental
 L.O.V.E
-Luv Me
+LALALA
+LAST WALTZ
+LOVE FOOLISH
+Likey
+Look At Me
+Love Line
+MAKE ME GO
+MOONLIGHT
+MOONLIGHT SUNRISE
+MOONLIGHT SUNRISE (Club remix)
+MOONLIGHT SUNRISE (House remix)
+MOONLIGHT SUNRISE (Instrumental)
+MOONLIGHT SUNRISE (R&B remix)
+MORE & MORE
+MORE & MORE (English Version)
+MORE & MORE - Japanese ver.
+Merry & Happy
+Missing U
+Next Page
+OXYGEN
+One In A Million
 One More Time
+PIECES OF LOVE
+POLISH
+PROMISE
+PUSH & PULL (JIHYO, SANA, DAHYUN)
 Perfect World
-Pieces of Love
-Pink Lemonade
-Polish
-Promise
-The Reason Why
+Pit-a-Pat
+Ponytail
+QUEEN
+Queen of Hearts
+RAINBOW
+REAL YOU
+REWIND
+Rollin'
+SAY SOMETHING
+SAY YES
+SAY YOU LOVE ME
+SCIENTIST
+SCIENTIST (R3HAB Remix)
+SCIENTIST - Japanese ver.
+SET ME FREE
+SET ME FREE (ARMNHMR Remix) (ENG)
+SET ME FREE (ENG)
+SET ME FREE (Lindgren Remix)
+SET ME FREE (Lindgren Remix) (ENG)
+SET ME FREE (Tommy “TBHits” Brown Remix)
+SET ME FREE (Tommy “TBHits” Brown Remix) (ENG)
+SHADOW
+SHOT CLOCK
+SOS
+STAY BY MY SIDE
+STUCK
+STUCK IN MY HEAD - Japanese ver.
+SUNSET
+SWEET SUMMER DAY
+SWEET TALKER
+SWING
 Sandcastle
-Say It Again
+Say it again
+Scandal
 Scorpion
-Stay by My Side
+Scorpion - Instrumental
+Shot Thru The Heart
 Strawberry Moon
+Strawberry Moon - Instrumental
 Stronger
-Swing
-Thank You, Family
-That's All I'm Saying
-Tick Tock
+TICK TOCK
+TRICK IT
+TT
+Talk that Talk
+Thank you, Family
+That's all I'm saying
+The Best Thing I Ever Did
+The Best Thing I Ever Did - Japanese ver.
+The Feels
+The Feels (Benny Benassi Remix Extended)
+The Feels (Benny Benassi Remix – Instrumental)
+The Feels (Benny Benassi Remix)
+The Feels (Instrumental)
+The Feels (The Stereotypes Remix – Instrumental)
+The Feels (The Stereotypes Remix)
+The Feels (YVES V Remix – Instrumental)
+The Feels (YVES V Remix)
+The Reason Why
+Trouble
+Turtle
+UP NO MORE
 Voices of Delight
+WALLFLOWER
 Wake Me Up
+What You Waiting For
+What is Love
+When We Were Kids
 Wishing
 Wonderful Day
-Candy
-The Feels
-I Want You Back
-Icon
-Moonlight
-Moonlight Sunrise
-Queen of Hearts
-What You Waiting For
+Wonderful Day (Instrumental)
+Wow
+YES or YES
+YOUNG & WILD
+You In My Heart

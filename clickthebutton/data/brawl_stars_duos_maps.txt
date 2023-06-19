@@ -1,0 +1,74 @@
+# https://api.brawlapi.com/v1/maps
+Flying Fantasies
+Skull Creek
+Scorched Stone
+Rockwall Brawl
+Hard Limits
+Feast Or Famine
+Double Trouble
+Acid Lakes
+Lush Poles
+Skull Creek
+Dark Passage
+Cavern Churn
+Ghost Point
+River Rush
+Superstar
+Safety Center
+Zoomed Out
+Erratic Blocks
+Island Invasion
+Eye Of The Storm
+Outrageous Outback
+Boxed In
+Dune Drift
+Royal Runway
+Point Of View
+Canyon Rivers
+Grassy Gorge
+Eggshell
+The Mortuary
+Hot Maze
+Canyon Rivers
+Mystic Touch
+Dried Up River
+Dark Fantasies
+Risky Cliffs
+Stormy Plains
+The Galaxy
+Clash Colosseum
+Forsaken Falls
+Two Thousand Lakes
+Grassy Gorge
+Victor Valley
+Will Of The Wisp
+Eggshell
+Shadow Spirits
+Riverside Ring
+Clash Colosseum
+Victor Valley
+Dark Passage
+Nruhc Nrevac
+Treasure Hunt
+Shadow Spirits
+Will Of The Wisp
+Riverside Ring
+Cavern Churn
+Core Crumble
+Stocky Stockades
+Thousand Lakes
+Rocky Blocks
+Circular Canyon
+Eye Of The Storm
+Ghost Point
+Acid Lakes
+Critical Crossing
+Deserted Vertex
+Barren Badlands
+Hot Maze
+Two Thousand Lakes
+Ignition
+Trap Map
+Jump Park
+Brawler Speedway
+Teleport Tag
