@@ -390,7 +390,7 @@ class AnimeGuesser(commands.Cog):
         stdout, stderr = await proc.communicate()
 
         proc2 = await asyncio.create_subprocess_shell(
-            "apt-get install ffmpeg",
+            "apt-get install ffmpeg -y",
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE,
         )
