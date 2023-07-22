@@ -442,6 +442,7 @@ FOUGHT_OFF = [
     "made slow work of",
     "outranged",
     "out-dpsed",
+    ("took advantage of {}'s ", lambda: random_line("phobias.txt")),
 ]
 
 SINGULAR_FOUGHT_OFF = [
