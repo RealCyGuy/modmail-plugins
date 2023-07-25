@@ -443,6 +443,17 @@ FOUGHT_OFF = [
     "outranged",
     "out-dpsed",
     ("took advantage of {}'s ", lambda: random_line("phobias.txt")),
+    ("helped develop {}'s ", lambda: random_line("phobias.txt")),
+    ("gave {} ", lambda: random.randint(2, 59), " seconds of anxiety"),
+    "figuratively killed",
+    "ripped {} apart limb from limb, hypothetically speaking",
+    "informed {} that their paternal parent is the CEO of Earth",
+    "complained to {}'s manager",
+    "was absolutely blown away by {}'s performance",
+    "launched a nuclear missile at",
+    "shot {} up, with their incredible generosity and thoughtfulness",
+    "dropped a major truth bomb on",
+    ("spoiled the next ", lambda: random.randint(2, 30), " years of {}'s life"),
 ]
 
 SINGULAR_FOUGHT_OFF = [
