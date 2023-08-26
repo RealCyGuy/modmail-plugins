@@ -155,7 +155,6 @@ class PersistentView(BaseView):
             cum_weights=[2, 4, 12, 16, 18, 19],
         )[0]
         cooldown = random.randint(*cooldown)
-        cooldown = 6
         await asyncio.sleep(random.randint(1, 4))
         fought = ""
         fought_off_clickers = len(self.cog.clickers) - 1
