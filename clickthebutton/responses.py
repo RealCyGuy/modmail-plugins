@@ -115,9 +115,23 @@ COOLDOWN_OVER = [
     ),
     ("Hello, ", random_mention, ", could you please click the above green button?"),
     is_only_this_far_away,
-    ("If you want to be like the top clicker ", top_mention, ", you should start clicking NOW!"),
-    ("For most people, ", top_clicks, " clicks seem unreachable, but you should never give up."),
-    ('"Wow, ', top_mention, " is so cool with ", top_clicks, ' clicks! I should click right now." - you, probably.')
+    (
+        "If you want to be like the top clicker ",
+        top_mention,
+        ", you should start clicking NOW!",
+    ),
+    (
+        "For most people, ",
+        top_clicks,
+        " clicks seem unreachable, but you should never give up.",
+    ),
+    (
+        '"Wow, ',
+        top_mention,
+        " is so cool with ",
+        top_clicks,
+        ' clicks! I should click right now." - you, probably.',
+    ),
 ]
 
 
@@ -185,6 +199,15 @@ def random_line(filename):
                 continue
             line = aline
     return line.strip()
+
+
+def random_line_with_a_or_an(filename):
+    line = random_line(filename)
+    return (
+        ("an" if any(line.lower().startswith(vowel) for vowel in "aeiou") else "a")
+        + " "
+        + line
+    )
 
 
 MONTHS = [
@@ -420,7 +443,7 @@ FOUGHT_OFF = [
         '"',
     ),
     ('taught {} how to use the word "', lambda: random_line("words.txt"), '"'),
-    ("used a ", lambda: random_line("colours.txt").lower(), " knife to cut"),
+    ("used ", lambda: random_line_with_a_or_an("colours.txt").lower(), " knife to cut"),
     ("watched ", lambda: random_line("2022_anime.txt"), " with"),
     ("went to ", lambda: random_line("countries.txt"), " with"),
     ("travelled to ", lambda: random_line("countries.txt"), " to escape"),
@@ -541,12 +564,26 @@ FOUGHT_OFF = [
     "shot {} up, with their incredible generosity and thoughtfulness",
     "dropped a major truth bomb on",
     ("spoiled the next ", lambda: random.randint(2, 30), " years of {}'s life"),
+    "did not let {}'s actions slide",
+    ", a woodchuck, answered {}'s burning question concerning the amount of wood a woodchuck could chuck if a woodchuck could chuck wood",
+    "made {}'s jaw drop",
+    "sold seashells by the seashore to",
+    "went neck and neck with",
+    ("slapped {} with ", lambda: random_line_with_a_or_an("fish.txt").lower()),
+    'did not say "bless you" when {} sneezed',
+    (
+        "used ",
+        lambda: random_line("pokemon_moves.txt"),
+        " on {} (it's ",
+        lambda: random.choice(["super effective!", "not very effective"]),
+        ")",
+    ),
 ]
 
 SINGULAR_FOUGHT_OFF = [
     (
-        "performed a ",
-        lambda: random_line("instruments.txt"),
+        "performed ",
+        lambda: random_line_with_a_or_an("instruments.txt"),
         " and ",
         lambda: random_line("instruments.txt"),
         " duet cover of ",
