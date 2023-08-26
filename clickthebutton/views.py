@@ -19,6 +19,7 @@ from .responses import (
     format_deltatime,
 )
 from .silent import send_silent
+from .stats import Stats
 from .utils import event, find_data_intervals
 
 
@@ -154,6 +155,7 @@ class PersistentView(BaseView):
             cum_weights=[2, 4, 12, 16, 18, 19],
         )[0]
         cooldown = random.randint(*cooldown)
+        cooldown = 6
         await asyncio.sleep(random.randint(1, 4))
         fought = ""
         fought_off_clickers = len(self.cog.clickers) - 1
@@ -187,8 +189,9 @@ class PersistentView(BaseView):
             await asyncio.sleep(cooldown - 4)
             asyncio.create_task(
                 interaction.channel.send(
-                    random_cooldown_over(),
+                    random_cooldown_over(Stats(self.cog.streak, self.cog.leaderboard, self.cog.get_sorted_leaderboard())),
                     delete_after=0,
+                    allowed_mentions=discord.AllowedMentions.none()
                 )
             )
             await asyncio.sleep(4)

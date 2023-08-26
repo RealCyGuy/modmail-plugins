@@ -1,10 +1,49 @@
 import os
-
 import random
 from datetime import timedelta, datetime
 
-import discord
 import emoji
+
+from .stats import Stats
+
+
+def is_total_clicks_even(stats: Stats):
+    return stats.total_clicks % 2 == 0
+
+
+def players(stats: Stats):
+    return stats.players
+
+
+def total_clicks(stats: Stats):
+    return stats.total_clicks
+
+
+def streak_amount(stats: Stats) -> int:
+    return stats.streak[0]
+
+
+def streak_mention(stats: Stats) -> str:
+    return "<@" + str(stats.streak[1]) + ">"
+
+
+def random_mention(stats: Stats) -> str:
+    return "<@" + str(random.choice(list(stats.leaderboard.keys()))) + ">"
+
+
+def is_only_this_far_away(stats: Stats) -> str:
+    amount = random.randint(2, 999)
+    user_id, clicks = random.choice(list(stats.leaderboard.items()))
+    return f"<@{user_id}> is only {amount} clicks away from reaching {clicks + amount}!"
+
+
+def top_mention(stats: Stats) -> str:
+    return "<@" + str(stats.sorted_leaderboard[0][0]) + ">"
+
+
+def top_clicks(stats: Stats) -> int:
+    return stats.sorted_leaderboard[0][1]
+
 
 COOLDOWN_OVER = [
     "Button cooldown over!",
@@ -68,11 +107,60 @@ COOLDOWN_OVER = [
     "I know you're reading this. Click the button!",
     "Joke's over, click the button!",
     "The button wants your click.",
+    "D'oh! Someone can click the button right now.",
+    (
+        "There are an ",
+        lambda x: "even" if is_total_clicks_even(x) else "odd",
+        " amount of clicks, someone should fix this!",
+    ),
+    ("Hello, ", random_mention, ", could you please click the above green button?"),
+    is_only_this_far_away,
+    ("If you want to be like the top clicker ", top_mention, ", you should start clicking NOW!"),
+    ("For most people, ", top_clicks, " clicks seem unreachable, but you should never give up."),
+    ('"Wow, ', top_mention, " is so cool with ", top_clicks, ' clicks! I should click right now." - you, probably.')
 ]
 
 
-def random_cooldown_over() -> str:
-    return random.choice(COOLDOWN_OVER)
+def random_cooldown_over(stats: Stats) -> str:
+    selections = COOLDOWN_OVER.copy()
+    if stats.players > 1:
+        selections.extend(
+            [
+                (
+                    "Only ",
+                    players,
+                    " people have clicked the button. Can someone new click it?",
+                ),
+                (
+                    "There are already ",
+                    players,
+                    " happy button clickers! Please join in!",
+                ),
+            ]
+        )
+    if stats.streak:
+        selections.extend(
+            [
+                (
+                    "Someone click before ",
+                    streak_mention,
+                    " can continue their streak!",
+                ),
+                (
+                    streak_mention,
+                    ", you are one click away from reaching a streak of ",
+                    lambda x: streak_amount(x) + 1,
+                ),
+            ]
+        )
+    selected = random.choice(selections)
+    if callable(selected):
+        selected = selected(stats)
+    elif type(selected) == tuple:
+        selected = "".join(
+            [str(part(stats)) if callable(part) else part for part in selected]
+        )
+    return selected
 
 
 EMOJIS = list(emoji.EMOJI_DATA.keys())
@@ -113,7 +201,6 @@ MONTHS = [
     "November",
     "December",
 ]
-
 
 FOUGHT_OFF = [
     "fought off",
