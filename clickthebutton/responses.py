@@ -20,11 +20,11 @@ def total_clicks(stats: Stats):
 
 
 def streak_amount(stats: Stats) -> int:
-    return stats.streak[0]
+    return stats.streak[1]
 
 
 def streak_mention(stats: Stats) -> str:
-    return "<@" + str(stats.streak[1]) + ">"
+    return "<@" + str(stats.streak[0]) + ">"
 
 
 def random_mention(stats: Stats) -> str:
