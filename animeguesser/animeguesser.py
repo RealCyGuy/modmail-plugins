@@ -286,7 +286,7 @@ class AnimeGuesser(commands.Cog):
                 enime_api + "/mapping/anilist/" + str(anilist_id)
             ) as resp:
                 if not resp.ok:
-                    return
+                    raise Exception("Enime api response was not okay.")
                 enime_data = await resp.json()
                 if len(enime_data["episodes"]) == 0:
                     return
