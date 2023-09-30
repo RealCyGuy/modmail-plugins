@@ -366,7 +366,7 @@ class GraphViewer(BaseView):
         await interaction.response.defer(ephemeral=True, thinking=True)
         buffer = await self.persistent_view.create_graph(self.graph_time)
         if not buffer:
-            return await interaction.response.send_message(
+            return await interaction.followup.send(
                 "No data to graph in this time frame.", ephemeral=True
             )
         file = discord.File(buffer, filename="graph.png")
