@@ -29,12 +29,15 @@ class KarutaKeqingAutoReact(commands.Cog):
     async def on_message(self, message: discord.Message):
         if message.author.id == 646937666251915264 and message.embeds:
             embed = message.embeds[0]
-            if embed.title.startswith("Card Collection"):
-                await add_reactions(message, ["Left-Pointing Magnifying Glass", "Memo"])
-            elif embed.title in ["Character Lookup", "Character Results"]:
-                await add_reactions(message, ["🖌️", "Money Bag", "Revolving Hearts", "🎖️"])
-            elif embed.title.startswith("Bits"):
-                await add_reactions(message, ["Heavy Plus Sign"])
+            if embed.title:
+                if embed.title in ["Character Lookup", "Character Results"]:
+                    await add_reactions(message, ["🖌️", "Money Bag", "Revolving Hearts", "🎖️"])
+            if embed.author:
+                if embed.author.name.startswith("Card Collection"):
+                    await add_reactions(message, ["Left-Pointing Magnifying Glass", "Memo"])
+                elif embed.author.name.startswith("Bits"):
+                    await add_reactions(message, ["Heavy Plus Sign"])
+
 
 
 async def setup(bot):
