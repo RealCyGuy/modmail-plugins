@@ -36,7 +36,7 @@ for folder in glob.iglob(os.path.join("../", "*", "")):
     if doc:
         doc = doc.strip()
         lines = doc.splitlines()
-        lines = [line.strip() for line in lines]
+        lines = [line[4:] if line.startswith(" " * 4) else line for line in lines]
         # if len(lines) > 1:
         #     doc = f"{lines[0]}<details><summary>More details</summary>{' '.join(lines[1:])}</details>"
         # doc = " ".join(doc.split())
@@ -51,7 +51,7 @@ for folder in glob.iglob(os.path.join("../", "*", "")):
     outputstart.append(f"[{name}](#{name})")
     outputend += (
         f"### {name}\n"
-        f"```\n{doc}\n```\n"
+        f"````\n{doc}\n````\n"
         f'Source code: [`{name}.py`](https://github.com/RealCyGuy/modmail-plugins/blob/v4/{name}/{name}.py "{name} source code")  \n'
         f"Install: `?plugins install {install}`\n"
     )
