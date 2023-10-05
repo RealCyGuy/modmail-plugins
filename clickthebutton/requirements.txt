@@ -1,2 +1,2 @@
-matplotlib
+matplotlib==3.7.3
 brokenaxes==0.5.0
