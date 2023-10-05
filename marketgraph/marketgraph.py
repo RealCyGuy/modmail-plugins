@@ -7,6 +7,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 from discord.ext import commands
+import matplotlib as mpl
 from matplotlib import pyplot as plt
 from matplotlib.dates import AutoDateLocator
 from motor.core import AgnosticCollection
@@ -91,6 +92,7 @@ class MarketGraph(commands.Cog):
         db = await self.db(ctx)
         if not db:
             return
+        mpl.rcParams.update(mpl.rcParamsDefault)
         sns.set_style("darkgrid")
         sns.set_palette("deep")
         query = {"price.name": price, "item.name": item}
@@ -127,6 +129,7 @@ class MarketGraph(commands.Cog):
         g.fig.set_figheight(14)
         values = np.vstack([data["date"].values.astype("float64"), data["rate"]])
         kernel = stats.gaussian_kde(values)(values)
+        g.plot_joint(sns.kdeplot, fill=True, alpha=0.5)
         g.plot_joint(sns.scatterplot, s=70, c=kernel, cmap="magma", edgecolors=(1, 1, 1, 0.6))
         sns.lineplot(means, x=x, y=y, ax=g.ax_joint, lw=3, alpha=0.7)
         g.plot_marginals(sns.histplot, kde=True)
