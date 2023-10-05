@@ -328,7 +328,7 @@ class PersistentView(BaseView):
             facecolor=background_colour,
             pad_inches=0.3,
         )
-        plt.close()
+        plt.close(fig)
         buffer.seek(0)
         return buffer
 

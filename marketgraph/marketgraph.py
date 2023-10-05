@@ -7,6 +7,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 from discord.ext import commands
+from matplotlib import pyplot as plt
 from matplotlib.dates import AutoDateLocator
 from motor.core import AgnosticCollection
 from motor.motor_asyncio import AsyncIOMotorClient
@@ -140,6 +141,7 @@ class MarketGraph(commands.Cog):
             format="png",
         )
         buffer.seek(0)
+        plt.close(g.figure)
         file = discord.File(buffer, filename="graph.png")
         await ctx.send(file=file)
 
