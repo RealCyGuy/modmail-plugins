@@ -2,6 +2,7 @@
 Thrash
 Nightfall
 Rolling Thunder
+Annihilation
 Showstopper
 Tour De Force
 NULL/cmd
@@ -14,6 +15,7 @@ Viper's Pit
 Run it Back
 Cosmic Divide
 Orbital Strike
+Kill Contract
 Overdrive
 DIMENSIONAL DRIFT
 Resurrection

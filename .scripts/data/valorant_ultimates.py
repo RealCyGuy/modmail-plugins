@@ -11,4 +11,7 @@ with open_data_file("valorant_ultimates") as f:
     for agent in data["data"]:
         for ability in agent["abilities"]:
             if ability["slot"] == "Ultimate":
-                f.write(ability["displayName"] + "\n")
+                name = ability["displayName"]
+                if name == "Astral Form / Cosmic Divide":
+                    name = "Cosmic Divide"
+                f.write(name + "\n")

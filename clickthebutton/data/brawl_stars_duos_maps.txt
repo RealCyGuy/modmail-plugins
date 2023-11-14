@@ -1,24 +1,29 @@
 # https://api.brawlapi.com/v1/maps
-Flying Fantasies
-Skull Creek
-Scorched Stone
-Rockwall Brawl
-Hard Limits
-Feast Or Famine
-Double Trouble
 Acid Lakes
+Feast Or Famine
+Rockwall Brawl
+Flying Fantasies
+Dark Passage
+Dried Up River
+Descending Dimensions
+Vicious Vortex
+Island Invasion
+Cavern Churn
+Eye Of The Storm
+Scorched Stone
+Double Trouble
+Two Thousand Lakes
+Risky Cliffs
+Zoomed Out
+Skull Creek
+Hard Limits
 Lush Poles
 Skull Creek
-Dark Passage
-Cavern Churn
 Ghost Point
 River Rush
 Superstar
 Safety Center
-Zoomed Out
 Erratic Blocks
-Island Invasion
-Eye Of The Storm
 Outrageous Outback
 Boxed In
 Dune Drift
@@ -31,9 +36,7 @@ The Mortuary
 Hot Maze
 Canyon Rivers
 Mystic Touch
-Dried Up River
 Dark Fantasies
-Risky Cliffs
 Stormy Plains
 The Galaxy
 Clash Colosseum
@@ -66,7 +69,6 @@ Critical Crossing
 Deserted Vertex
 Barren Badlands
 Hot Maze
-Two Thousand Lakes
 Ignition
 Trap Map
 Jump Park

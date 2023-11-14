@@ -1,4 +1,9 @@
 # https://api.brawlapi.com/v1/brawlers
+Charlie
+Chuck
+Pearl
+Doug
+Cordelius
 Hank
 Maisie
 Willow

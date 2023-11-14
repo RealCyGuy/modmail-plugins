@@ -1,112 +1,120 @@
 # https://api.brawlapi.com/v1/maps
-Open Season
-Skull Creek
-Acute Angle
-Death Loop
-Super Beach
-Flying Fantasies
-Parallel Plays
-Goldarm Gulch
-Hot Potato
-Split Second
-Cover Crowd
-Center Control
-Scorched Stone
-Solid Center
-Power Alley
-Sneaky Fields
-Layer Cake
-Rockwall Brawl
-Danger Zone
-Rustic Arcade
-Battered Battlefield
-Pinhole Punt
-Flaring Phoenix
-Open Zone
-Minecart Madness
-Hard Limits
-Smash Land
-Make It Bounce
-Iron Standoff
-Hard Rock Mine
-Feast Or Famine
-Cheeky Chokepoint
-Field Goal
-Deep End
-Iron Cover
-Gem Fort
-Double Trouble
-Victory Road
-Extra Bouncy
-Dry Season
-Acid Lakes
-Double Swoosh
-Eyes On The Ground
-Beach Ball
 Dueling Beetles
-Belles Rock
-Crystal Arcade
-Isolation Play
-Backyard Bowl
-Canal Grande
-Bridge Too Far
-Open Business
-Flowing Springs
-Last Stand
-Temple Ruins
-Temple Of Boom
-X Marks The Spot
-Snake Prairie
+Into Infinity
+Sneaky Fields
+Cheeky Chokepoint
+Gem Fort
+Acid Lakes
 Safe Zone
+Waters Of Doom
+Pinhole Punt
+Shooting Star
+Crystal Arcade
+Feast Or Famine
+Split
+Healthy Middle Ground
+Eyes On The Ground
+Deadly Deflections
+Minecart Madness
+Rockwall Brawl
+Kaboom Canyon
+Out In The Open
+Slayers Paradise
+Iron Bars
+Double Swoosh
+Flying Fantasies
+Ring Of Fire
+X Marks The Spot
+Field Goal
+Devils Pass
+Hard Rock Mine
+Dark Passage
+Hot Potato
+Flaring Phoenix
+Backyard Bowl
+Infinite Doom
+Warehouse
+Dried Up River
+Belles Rock
+On The Train
+Super Beach
+Battered Battlefield
+Stacking
+Descending Dimensions
+Goldarm Gulch
+Hungry Hippos
+Layer Bake
+Stepping Stones
+Last Stop
+Vicious Vortex
+Danger Zone
+Maze Creep
+Daylight Robbery
+Trophy Trespass
+Zip Line
+Walk In Walk Out
+Island Invasion
+Open Business
+Nuts & Bolts
+Pinball Dreams
+Undermine
+Pit Stop
+Cavern Churn
+Flowing Springs
+Some Assembly Required
+Deathcap Trap
+Factory Rush
+Penalty Kick
+New Perspective
+Bot Drop
+Shooting Star
+Poison Fields
+Scorched Stone
+Beach Ball
+Rustic Arcade
+Shiver Me Timbers
+Bridge Too Far
+Slayers Paradise
+Lit Match
+Ring Of Death
+Infinite Doom
+Center Stage
+Double Trouble
+Parallel Plays
+Roundabout
+Dry Season
+Dry Season
+Deep End
+Fractions
+Layer Cake
+Deep Diner
+Layer Cake
+Iron Cover
+Metal Scrap
+Canal Grande
+Split Second
+Canal Grande
+Davy Jones Locker
+Open Zone
+Blimey
+Hideout
+Hideout
+Walk The Plank
+Temple Of Boom
+Cover Crowd
+Snake Prairie
+Center Control
+Pool Party
+Ping Pong
+Full On
+Snake Prairie
+Field Goal
+Backyard Bowl
+Hard Rock Mine
+Double Swoosh
+Belles Rock
+Goldarm Gulch
 Ring Of Fire
 Split
-Out In The Open
 Shooting Star
-Pit Stop
-Healthy Middle Ground
-Kaboom Canyon
-Nowhere To Hide
-Lit Match
-Four Lakes
-Metal Scrap
-Green Meadows
-Mogura Tataki
-Dancing Roof
-Iron Corridor
-Iron Core
-Circular Motion
-Rush Hour
-Basket Fort
-Lush Poles
-Deep Diner
-Middle Ground
-Four Doors
-Grim Island
-Step By Step
-Pick And Roll
-Offset Heist
-Full On
-Triumvirate
-Crossroads
-Ball Hog
-No Surrender
-Monkey Maze
-No Excuses
-Skull Creek
-Hideout
-Center Stage
-Dark Passage
-Quarter Pounder
-Warriors Way
-Controller Chaos
-Cavern Churn
-Undermine
-Gladiators
-Riverside
-Sunny Soccer
-Excel
-Swallow Cut
-New Perspective
-Petticoat Duel
-Snaked Assault
-Tornado Ring
+Snake Prairie

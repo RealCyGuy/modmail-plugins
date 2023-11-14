@@ -6,6 +6,7 @@ Glitchpop Odin
 Nitro Odin
 Topotek Odin
 .EXE Odin
+Neo Frontier Odin
 Prime//2.0 Odin
 Prism III Odin
 Smite Odin
@@ -13,14 +14,17 @@ Coalition: Cobra Odin
 Lightwave Odin
 Sensation Odin
 Random Favorite Skin
+Orion Odin
 Schema Odin
 Lycan's Bane Odin
 Reaver Odin
 Standard Odin
+Freehand Odin
 Aerosol Odin
 BlastX Odin
 VALORANT GO! Vol. 2 Ares
 Aristocrat Ares
+Gaia's Vengeance Ares
 Endeavour Ares
 Nebula Ares
 Doodle Buds Ares
@@ -28,6 +32,7 @@ Singularity Ares
 Rush Ares
 Hivemind Ares
 Spitfire Ares
+Digihex Ares
 Infantry Ares
 Goldwing Ares
 Outpost Ares
@@ -37,6 +42,7 @@ Nunca Olvidados Ares
 Celestial Ares
 Magepunk Ares
 Minima Ares
+Valiant Hero Ares
 Ion Ares
 Oni Ares
 9 Lives Ares
@@ -47,6 +53,7 @@ Premiere Collision Ares
 Random Favorite Skin
 Sentinels of Light Ares
 Sakura Ares
+Silhouette Ares
 Snowfall Ares
 Titanmail Ares
 Standard Ares
@@ -60,12 +67,14 @@ Aristocrat Vandal
 Gaia's Vengeance Vandal
 Endeavour Vandal
 Champions 2021 Vandal
+Champions 2023 Vandal
 Origin Vandal
 Starlit Odyssey Vandal
 Glitchpop Vandal
 ChronoVoid Vandal
 Prelude to Chaos Vandal
 Elderflame Vandal
+Imperium Vandal
 Sarmad Vandal
 Nitro Vandal
 Hivemind Vandal
@@ -85,6 +94,7 @@ Monstrocity Vandal
 Nunca Olvidados Vandal
 Luxe Vandal
 Magepunk Vandal
+Valiant Hero Vandal
 Silvanus Vandal
 Crimsonbeast Vandal
 Ion Vandal
@@ -93,16 +103,19 @@ Cryostasis Vandal
 Luna Vandal
 Sensation Vandal
 Random Favorite Skin
+Orion Vandal
 Sentinels of Light Vandal
 Sakura Vandal
 Schema Vandal
 Lycan's Bane Vandal
+Transition Vandal
 Reaver Vandal
 Tethered Realms Vandal
 Cavalier Vandal
 Titanmail Vandal
 Standard Vandal
 NO LIMITS Vandal
+Sandswept Vandal
 Depths Vandal
 Ego Vandal
 Wasteland Vandal
@@ -119,6 +132,7 @@ Glitchpop Bulldog
 Rush Bulldog
 Velocity Bulldog
 Shimmer Bulldog
+Digihex Bulldog
 Horizon Bulldog
 Black.Market Bulldog
 Bound Bulldog
@@ -126,6 +140,7 @@ K/TAC Bulldog
 Couture Bulldog
 Nunca Olvidados Bulldog
 Genesis Bulldog
+Libretto Bulldog
 Oni Bulldog
 Cryostasis Bulldog
 Hue Shift Bulldog
@@ -133,6 +148,7 @@ POLYfox Bulldog
 Protocol 781-A Bulldog
 Premiere Collision Bulldog
 Random Favorite Skin
+Transition Bulldog
 Infinity Bulldog
 Standard Bulldog
 Tilde Bulldog
@@ -146,8 +162,10 @@ RGX 11z Pro Phantom
 Xenohunter Phantom
 VALORANT GO! Vol. 1 Phantom
 Radiant Entertainment System Phantom
+Gaia's Vengeance Phantom
 Spectrum Phantom
 Piedra del Sol Phantom
+Composite Phantom
 Champions 2022 Phantom
 Radiant Crisis 001 Phantom
 Nebula Phantom
@@ -162,6 +180,7 @@ Rush Phantom
 Velocity Phantom
 Team Ace Phantom
 Topotek Phantom
+Neo Frontier Phantom
 Soulstrife Phantom
 Prime//2.0 Phantom
 Avalanche Phantom
@@ -172,6 +191,8 @@ Ruination Phantom
 Kingdom Phantom
 Kohaku & Matsuba Phantom
 Smite Phantom
+Daydreams Phantom
+RDVR Phantom
 Celestial Phantom
 Magepunk Phantom
 Spline Phantom
@@ -187,6 +208,7 @@ Artisan Phantom
 Protocol 781-A Phantom
 Lightwave Phantom
 Random Favorite Skin
+Orion Phantom
 Snowfall Phantom
 Reaver Phantom
 Recon Phantom
@@ -201,10 +223,12 @@ Undercity Judge
 Glitchpop Judge
 ChronoVoid Judge
 Elderflame Judge
+Imperium Judge
 Rush Judge
 Team Ace Judge
 Shimmer Judge
 .EXE Judge
+Digihex Judge
 Goldwing Judge
 Hydrodip Judge
 Outpost Judge
@@ -213,6 +237,7 @@ Prism III Judge
 Serenity Judge
 Kohaku & Matsuba Judge
 Smite Judge
+Daydreams Judge
 Iridian Thorn Judge
 Celestial Judge
 Luxe Judge
@@ -223,6 +248,7 @@ Divine Swine Judge
 Jigsaw Judge
 Sensation Judge
 Random Favorite Skin
+Silhouette Judge
 Snowfall Judge
 Standard Judge
 Tilde Judge
@@ -231,6 +257,7 @@ Convex Judge
 Varnish Judge
 Altitude Bucky
 Xenohunter Bucky
+Gaia's Vengeance Bucky
 Piedra del Sol Bucky
 Origin Bucky
 Radiant Crisis 001 Bucky
@@ -254,6 +281,7 @@ Artisan Bucky
 Lightwave Bucky
 Random Favorite Skin
 Gravitational Uranium Neuroblaster Bucky
+Panoramic Bucky
 Cavalier Bucky
 Titanmail Bucky
 Standard Bucky
@@ -275,6 +303,7 @@ Monarch Frenzy
 Hydrodip Frenzy
 Prime//2.0 Frenzy
 Couture Frenzy
+Blush Frenzy
 Nunca Olvidados Frenzy
 Celestial Frenzy
 Coalition: Cobra Frenzy
@@ -287,11 +316,15 @@ Divine Swine Frenzy
 Lightwave Frenzy
 Sensation Frenzy
 Random Favorite Skin
+Orion Frenzy
+Silhouette Frenzy
 Titanmail Frenzy
 Live Wire Frenzy
 Standard Frenzy
 BlastX Frenzy
+Resolution Classic
 RGX 11z Pro Classic
+Intergrade Classic
 VALORANT GO! Vol. 2 Classic
 Spectrum Classic
 Pistolinha Classic
@@ -315,6 +348,7 @@ Prism III Classic
 Kingdom Classic
 Kohaku & Matsuba Classic
 Smite Classic
+Daydreams Classic
 Spline Classic
 Galleria Classic
 Cryostasis Classic
@@ -322,6 +356,7 @@ Cryostasis Classic
 Premiere Collision Classic
 Random Favorite Skin
 Gravitational Uranium Neuroblaster Classic
+Panoramic Classic
 Sakura Classic
 Snowfall Classic
 Infinity Classic
@@ -339,6 +374,7 @@ Spitfire Ghost
 .EXE Ghost
 Hush Ghost
 Soulstrife Ghost
+Digihex Ghost
 Infantry Ghost
 Goldwing Ghost
 Outpost Ghost
@@ -347,6 +383,8 @@ Serenity Ghost
 Ruination Ghost
 Luxe Ghost
 Magepunk Ghost
+Valiant Hero Ghost
+Libretto Ghost
 Artisan Ghost
 Jigsaw Ghost
 Luna Ghost
@@ -359,6 +397,7 @@ Sovereign Ghost
 Recon Ghost
 Cavalier Ghost
 Standard Ghost
+Freehand Ghost
 Gridcrash Ghost
 NO LIMITS Ghost
 Depths Ghost
@@ -367,15 +406,19 @@ Vendetta Ghost
 Winterwunderland Ghost
 Soul Silencer Ghost
 Wayfarer Sheriff
+Mythmaker Sheriff
 Immortalized Sheriff
 Altitude Sheriff
 Aristocrat Sheriff
+Composite Sheriff
 Nebula Sheriff
 ChronoVoid Sheriff
 Abyssal Sheriff
+Imperium Sheriff
 Singularity Sheriff
 Surge Sheriff
 .SYS Sheriff
+Neo Frontier Sheriff
 Protektor Sheriff
 Prism II Sheriff
 K/TAC Sheriff
@@ -398,6 +441,7 @@ Peacekeeper Sheriff
 Schema Sheriff
 Reaver Sheriff
 Standard Sheriff
+Sandswept Sheriff
 Convex Sheriff
 Varnish Sheriff
 Wasteland Sheriff
@@ -407,6 +451,7 @@ Death Wish Sheriff
 Sidekick Shorty
 Araxys Shorty
 Neptune Shorty
+Gaia's Vengeance Shorty
 Karabasan Shorty
 Rune Stone Shorty
 Prelude to Chaos Shorty
@@ -422,6 +467,7 @@ Oni Shorty
 Snakebite Shorty
 Hue Shift Shorty
 Random Favorite Skin
+Transition Shorty
 Standard Shorty
 Aerosol Shorty
 Tilde Shorty
@@ -429,6 +475,7 @@ Tigris Shorty
 Wayfinder Shorty
 Wasteland Shorty
 RGX 11z Pro Operator
+Intergrade Operator
 VALORANT GO! Vol. 2 Operator
 Araxys Operator
 Radiant Entertainment System Operator
@@ -439,6 +486,7 @@ Red Alert Operator
 Glitchpop Operator
 Prelude to Chaos Operator
 Elderflame Operator
+Imperium Operator
 Nitro Operator
 Forsaken Operator
 Team Ace Operator
@@ -447,13 +495,17 @@ Infantry Operator
 Prism Operator
 K/TAC Operator
 Kohaku & Matsuba Operator
+Blush Operator
+Daydreams Operator
 Iridian Thorn Operator
 Luxe Operator
 Magepunk Operator
 Spline Operator
 Minima Operator
+Valiant Hero Operator
 Silvanus Operator
 Genesis Operator
+Libretto Operator
 Ion Operator
 Cryostasis Operator
 Random Favorite Skin
@@ -469,6 +521,7 @@ Tigris Operator
 Convex Operator
 Immortalized Guardian
 RGX 11z Pro Guardian
+Intergrade Guardian
 VALORANT GO! Vol. 1 Guardian
 Neptune Guardian
 Gaia's Vengeance Guardian
@@ -485,6 +538,7 @@ Infantry Guardian
 Hydrodip Guardian
 Prime Guardian
 Ruination Guardian
+Blush Guardian
 Magepunk Guardian
 Signature Guardian
 Galleria Guardian
@@ -495,6 +549,8 @@ Aero Guardian
 POLYfox Guardian
 Jigsaw Guardian
 Random Favorite Skin
+Panoramic Guardian
+Silhouette Guardian
 Reaver Guardian
 Tethered Realms Guardian
 Sovereign Guardian
@@ -505,11 +561,13 @@ Standard Guardian
 Ego Guardian
 Task Force 809 Marshal
 Gaia's Vengeance Marshal
+Composite Marshal
 Rune Stone Marshal
 Doodle Buds Marshal
 Songsteel Marshal
 Venturi Marshal
 Ruin Marshal
+Neo Frontier Marshal
 Monarch Marshal
 Avalanche Marshal
 Black.Market Marshal
@@ -529,10 +587,13 @@ Random Favorite Skin
 Sovereign Marshal
 Reverie Marshal
 Standard Marshal
+Freehand Marshal
+Sandswept Marshal
 Wasteland Marshal
 Winterwunderland Marshal
 Task Force 809 Spectre
 RGX 11z Pro Spectre
+Intergrade Spectre
 VALORANT GO! Vol. 1 Spectre
 Neptune Spectre
 Striker Spectre
@@ -554,6 +615,7 @@ Prism Spectre
 Serenity Spectre
 Ruination Spectre
 Kingdom Spectre
+Blush Spectre
 Monstrocity Spectre
 Luxe Spectre
 Magepunk Spectre
@@ -571,14 +633,17 @@ Reaver Spectre
 Recon Spectre
 Infinity Spectre
 Standard Spectre
+Freehand Spectre
 Tigris Spectre
 NO LIMITS Spectre
+Sandswept Spectre
 Convex Spectre
 BlastX Spectre
 Wasteland Spectre
 Immortalized Stinger
 RGX 11z Pro Stinger
 Aristocrat Stinger
+Composite Stinger
 Red Alert Stinger
 Prelude to Chaos Stinger
 Doodle Buds Stinger
@@ -590,11 +655,13 @@ Couture Stinger
 Signature Stinger
 Silvanus Stinger
 Moondash Stinger
+Libretto Stinger
 Sensation Stinger
 Random Favorite Skin
 Sakura Stinger
 Schema Stinger
 Lycan's Bane Stinger
+Transition Stinger
 Sovereign Stinger
 Cavalier Stinger
 Standard Stinger
@@ -607,16 +674,20 @@ RGX 11z Pro Blade
 RGX 11z Pro Firefly
 Altitude Knuckle Knife
 Xenohunter Knife
+Intergrade Blade
 VALORANT GO! Vol. 1 Knife
 Yoru's Stylish Butterfly Comb
 Araxys Bio Harvester
 Neptune Anchor
 Power Fist
 Gaia's Wrath
+Gaia's Fury
 Waveform
 Obsidiana
+Composite Knife
 Champions 2021 Karambit
 Champions 2022 Butterfly Knife
+Champions 2023 Kunai
 Origin Crescent Blade
 Striker Knife
 Radiant Crisis 001 Baseball Bat
@@ -628,6 +699,7 @@ Terminus A Quo
 Caeruleus
 Blade of Chaos
 Elderflame Dagger
+Blades of Imperium
 Singularity Knife
 Blade of Serket
 Songsteel
@@ -638,6 +710,7 @@ Forsaken Ritual Blade
 Velocity Karambit
 Ruin Dagger
 .SYS Melee
+Neo Frontier Axe
 Soulstrife Scythe
 Prime Axe
 Prime//2.0 Karambit
@@ -651,6 +724,7 @@ Kingdom Knife
 K/TAC Blade
 Equilibrium
 Smite Knife
+Daydreams Crowbar
 Catrina
 Iridian Thorn Blade
 Celestial Fan
@@ -659,6 +733,7 @@ Magepunk Electroblade
 Magepunk Shock Gauntlet
 Magepunk Sparkswitch
 Spline Dagger
+Ruyi Staff
 Crimsonbeast Hammer
 Genesis Arc
 Ion Energy Sword
@@ -671,7 +746,9 @@ Personal Administrative Melee Unit
 Luna's Descent
 Random Favorite Skin
 Gravitational Uranium Neuroblaster Baton
+Orion Sword
 Relic of the Sentinel
+Transition Knife
 Snowfall Wand
 Reaver Knife
 Reaver Karambit
@@ -684,6 +761,8 @@ Melee
 Tilde Knife
 Hu Else
 NO LIMITS Bat
+Sandswept Dagger
 BlastX Polymer KnifeTech Coated Knife
 Ego Knife
+Ignite Fan
 Winterwunderland Candy Cane

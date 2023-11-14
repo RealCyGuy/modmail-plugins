@@ -1,4 +1,24 @@
 # https://fortnite.fandom.com/wiki/Named_Locations
+Dusty Divot
+Fatal Fields
+Flush Factory
+Greasy Grove
+Haunted Hills
+Junk Junction
+Lazy Links
+Lonely Lodge
+Loot Lake
+Lucky Landing
+Paradise Palms
+Pleasant Park
+Retail Row
+Risky Reels
+Salty Springs
+Shifty Shafts
+Snobby Shores
+Tilted Towers
+Tomato Temple
+Wailing Woods
 Anvil Square
 Breakwater Bay
 Brutal Bastion
@@ -12,6 +32,12 @@ MEGA City
 Steamy Springs
 Kenjutsu Crossing
 Knotty Nets
+Shady Stilts
+Creeky Compound
+Rumble Ruins
+Sanguine Suites
+Relentless Retreat
+Eclipsed Estate
 Covert Cavern
 Command Cavern
 The Fortress
@@ -47,6 +73,7 @@ Chrome Crossroads
 Flutter Barn
 Shiny Sound
 Tainted Towers
+Chromejam Junction
 The Agency
 The Authority
 The Convergence
@@ -120,7 +147,7 @@ The Block
 Tilted Towers
 Tilted Town
 Tomato Temple
-Tomato Town
+Viking Village
 Wailing Woods
 The Plaza
 The Big Screen

@@ -152,6 +152,7 @@ dikastophobia
 dipsophobia
 Disneyphobia
 disposophobia
+dodecaphobia
 domatophobia
 domophobia
 doraphobia
@@ -282,6 +283,7 @@ kathisophobia
 kenophobia
 keraunophobia
 kleptophobia
+koinophobia
 koumpounophobia
 Kurdophobia
 lachanophobia
@@ -366,6 +368,7 @@ oneirophobia
 onomatophobia
 ophidiophobia
 ophiophobia
+ophthalmophobia
 opiophobia
 optophobia
 ornithophobia
@@ -421,6 +424,7 @@ queerphobia
 radiophobia
 ranidaphobia
 rectophobia
+rhabdophobia
 rhypophobia
 robophobia
 Romaphobia
@@ -513,6 +517,7 @@ whitephobia
 whorephobia
 Wiccaphobia
 wikiphobia
+workphobia
 xanthophobia
 xenoglossophobia
 xenophobia
