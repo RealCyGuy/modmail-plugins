@@ -605,7 +605,7 @@ SINGULAR_FOUGHT_OFF = [
     ),
     (
         "won a game of duo showdown with {} on ",
-        lambda: random_line("brawl_stars_maps.txt"),
+        lambda: random_line("brawl_stars_duos_maps.txt"),
     ),
 ]
 
