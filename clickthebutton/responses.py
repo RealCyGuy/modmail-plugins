@@ -626,6 +626,8 @@ def random_fought_off(amount: int) -> str:
         verb = random.choice(FOUGHT_OFF)
     if type(verb) == tuple:
         verb = "".join([str(part()) if callable(part) else part for part in verb])
+    if verb[0].isalpha():
+        verb = " " + verb
     if "{}" in verb:
         return verb
     if random.random() < 0.1:

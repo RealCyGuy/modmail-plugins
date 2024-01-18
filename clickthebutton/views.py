@@ -78,9 +78,9 @@ class PersistentView(BaseView):
                 for user_id in clickers
             )
             if "{}" in fought_off:
-                fought = " " + fought_off.replace("{}", mentions) + " and"
+                fought = fought_off.replace("{}", mentions) + " and"
             else:
-                fought = f" {fought_off} {mentions} and"
+                fought = f"{fought_off} {mentions} and"
         reaction = random_emoji()
 
         streak = ""
@@ -166,9 +166,9 @@ class PersistentView(BaseView):
             else:
                 fought_off_clickers = f"{fought_off_clickers} people"
             if "{}" in fought_off:
-                fought = " " + fought_off.replace("{}", fought_off_clickers) + " and"
+                fought = fought_off.replace("{}", fought_off_clickers) + " and"
             else:
-                fought = f" {fought_off} {fought_off_clickers} and"
+                fought = f"{fought_off} {fought_off_clickers} and"
         edit_task = asyncio.create_task(
             interaction.message.edit(
                 content=event(
@@ -188,9 +188,15 @@ class PersistentView(BaseView):
             await asyncio.sleep(cooldown - 4)
             asyncio.create_task(
                 interaction.channel.send(
-                    random_cooldown_over(Stats(self.cog.streak, self.cog.leaderboard, self.cog.get_sorted_leaderboard())),
+                    random_cooldown_over(
+                        Stats(
+                            self.cog.streak,
+                            self.cog.leaderboard,
+                            self.cog.get_sorted_leaderboard(),
+                        )
+                    ),
                     delete_after=0,
-                    allowed_mentions=discord.AllowedMentions.none()
+                    allowed_mentions=discord.AllowedMentions.none(),
                 )
             )
             await asyncio.sleep(4)
