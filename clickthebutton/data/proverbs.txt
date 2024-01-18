@@ -1,0 +1,1345 @@
+# https://en.wiktionary.org/w/api.php?action=query&list=categorymembers&cmtitle=Category:English_proverbs&cmlimit=500&format=json
+a bad penny always comes back
+a bad penny always turns up
+a bad tree does not yield good apples
+a bad workman always blames his tools
+a barking dog never bites
+a barking dog seldom bites
+a bird in the hand
+a bird in the hand is worth two in the bush
+a broken clock is right twice a day
+absence makes the heart grow fonder
+a buck is a buck
+a buck is a buck is a buck
+a buck's a buck
+a burnt child dreads the fire
+a camel is a horse designed by a committee
+a camel is a horse made by a committee
+a camel is a horse made by committee
+a cat can look at a king
+a cat in gloves catches no mice
+a cat may look at a king
+accidents will happen in the best regulated families
+a chain is only as strong as its weakest link
+a change is as good as a rest
+a closed mouth catches no flies
+a closed mouth gathers no feet
+a contented mind is a perpetual feast
+a creaking door hangs longest
+a creaking door hangs long on its hinges
+actions have consequences
+actions speak louder than words
+Adam and Eve not Adam and Steve
+a danger foreseen is half avoided
+a drowning man will clutch at a straw
+a dumb priest never got a parish
+a fair booty makes many a thief
+a fault confessed is half redressed
+a fool and his money are soon parted
+a foolish consistency is the hobgoblin of little minds
+a friend in need is a friend indeed
+age is just a number
+a golden key can open any door
+a good beginning makes a good ending
+a good deed is its own reward
+a hit dog will holler
+a house divided against itself cannot stand
+a house is not a home
+a journey of a thousand miles begins with a single step
+a leopard cannot change its spots
+a lie has no legs
+a little knowledge is a dangerous thing
+a little learning is a dangerous thing
+all cats are gray at night
+all cats are gray in the dark
+all cats are grey at night
+all cats are grey by night
+all cats are grey in the dark
+all good things come to an end
+all good things must come to an end
+all is fish that comes to the net
+all politics are local
+all politics is local
+all publicity is good publicity
+all roads lead to Mecca
+all roads lead to Rome
+all roads lead to Sydney
+all's fair in love and war
+all's well that ends well
+all that glisters is not gold
+all that glitters
+all that glitters is not gold
+all the world's a stage
+all things come to those who wait
+all work and no play makes Jack a dull boy
+almost doesn't count
+almost only counts in horseshoes and hand grenades
+a man is known by the company he keeps
+a man's home is his castle
+a mind is a terrible thing to waste
+a miss is as good as a mile
+a moment on the lips, a lifetime on the hips
+an apple a day keeps the doctor at bay
+an apple a day keeps the doctor away
+an army marches on its stomach
+an Englishman's home is his castle
+a new broom sweeps clean
+a new broom sweeps clean, but an old broom knows the corners
+an eye for an eye makes the whole world blind
+a nod is as good as a wink
+an old dog for a hard road
+another day, another dollar
+another day in paradise
+an ounce of prevention is better than an ounce of cure
+an ounce of prevention is better than a pound of cure
+an ounce of prevention is worth a pound of cure
+any hole's a goal
+any port in a storm
+any press is good press
+a penny saved is a penny earned
+a penny saved is a penny gained
+a picture is worth a thousand words
+a picture paints a thousand words
+appearances are deceptive
+April showers bring May flowers
+a problem shared is a problem halved
+a promise is a promise
+a promise made is a promise kept
+a prophet has no honor in his own country
+a prophet is not without honor save in his own country
+a revolution is not a dinner party
+a rising tide lifts all boats
+a rolling stone gathers no moss
+art is long, life is short
+as a dog returns to his vomit, so a fool repeats his folly
+ask a silly question, get a silly answer
+ask a stupid question, get a stupid answer
+a smooth sea never made a skilled sailor
+as one door closes, another opens
+a sorrow shared is a sorrow halved
+a spoonful of sugar helps the medicine go down
+a spoonful of sugar makes the medicine go down
+as the twig is bent, so is the tree inclined
+a stick in a bundle cannot be broken
+a stick in a bundle is unbreakable
+a stitch in time saves nine
+a stopped clock is right twice a day
+a straw shows how the wind blows
+a straw shows which way the wind blows
+as you make your bed, so you must lie in it
+as you sow, so shall you reap
+a trouble shared is a trouble halved
+attack is the best form of defence
+attack is the best form of defense
+a twig in a bundle cannot be broken
+a twig in a bundle can't be broken
+a twig in a bundle is unbreakable
+a watched kettle never boils
+a watched pot never boils
+a watched pot never boils over
+a wild goose never laid a tame egg
+a woman's work is never done
+bad money drives out good
+bad news travels fast
+bad things come in threes
+barking dogs never bite
+barking dogs seldom bite
+beauty is in the eye of the beholder
+beauty is only skin deep
+beggars can't be choosers
+behind every great man is a great woman
+behind every great man there stands a woman
+behind every successful man there stands a woman
+being poor is a mindset
+being poor is a state of mind
+bet on the jockey, not the horse
+better an egg today than a hen tomorrow
+better dead than red
+better dead than Red
+better Dead than Red
+better is the enemy of good
+better safe than sorry
+better the devil you know
+better the devil you know than the devil you don't
+better the devil you know than the devil you don't know
+better the devil you know than the one you don't
+better the devil you know than the one you don't know
+better to light a candle than to curse the darkness
+better to light a single candle than to curse the darkness
+better to light one candle than to curse the darkness
+better to light one small candle than to curse the darkness
+bet the jockey, not the horse
+beware of Greeks bearing gifts
+big things come in small packages
+bi now, gay later
+bird in the hand
+birds of a feather flock together
+birds of the feather flock together
+blood is thicker than water
+boys will be boys
+brevity is the soul of wit
+bros before hoes
+bros before hos
+business before pleasure
+buy cheap, buy twice
+buy low, sell high
+buy when it snows, sell when it goes
+buy when it snows and sell when it goes
+by failing to prepare, you are preparing to fail
+Caesar's wife must be above suspicion
+cannot live with them, cannot live without them
+can't live with 'em, can't live without 'em
+can't live with them, can't live without them
+can't live with them and can't live without them
+care killed the cat
+carpe diem
+carpe diem cras
+caveat lector
+charity begins at home
+cheaters never prosper
+cheats never prosper
+children should be seen and not heard
+Christmas comes but once a year
+claret would be port if it could
+claw me, claw thee
+cleanliness is next to godliness
+clogs to clogs in three generations
+close only counts in horseshoes
+close only counts in horseshoes and darts
+close only counts in horseshoes and hand grenades
+clothes don't make the man
+clothes maketh the man
+cobbler, keep to your last
+cold hands, warm heart
+comparison is the thief of joy
+cooler heads must prevail
+cooler heads prevail
+cooler heads will prevail
+cool heads must prevail
+cool heads prevail
+cool heads will prevail
+crime doesn't pay
+cross my heart and hope to die, stick a needle in my eye
+curiosity killed the cat
+curses, like chickens, come home to roost
+dance with the one that brought ya
+dance with the one that brought you
+dance with the one that brung ya
+dance with the one that brung you
+dance with the one what brought ya
+dance with the one what brought you
+dance with the one what brung ya
+dance with the one what brung you
+dance with the one who brought ya
+dance with the one who brought you
+dance with the one who brung ya
+dance with the one who brung you
+dead men can tell no tales
+dead men tell no tales
+death is the great leveller
+desperate times call for desperate measures
+desperate times require desperate measures
+devil is in the details
+devil lies in the details
+diamonds are a girl's best friend
+different strokes for different folks
+discretion is the better part of valor
+discretion is the better part of valour
+divide and conquer
+do as I say, not as I do
+doctors make the worst patients
+does Macy's tell Gimbel's
+dogs have masters, cats have staff
+dogs have owners, cats have staff
+don't buy green bananas
+don't change a winning team
+don't count your chickens before the eggs have hatched
+don't count your chickens before they're hatched
+don't cry over spilled milk
+don't dip your pen in company ink
+don't drive faster than your guardian angel can fly
+don't drop the soap
+don't fight the tape
+don't fish off the company dock
+don't get above your raising
+don't get mad, get even
+don't get your honey where you make your money
+don't get your hopes up
+don't get your meat where you get your bread
+don't hate the player, hate the game
+don't judge a book by its cover
+don't keep a dog and bark yourself
+don't look a gift horse in the mouth
+don't mess with success
+don't put all your eggs in one basket
+don't sell the skin till you have caught the bear
+don't shit in your own nest
+don't shit where you eat
+don't shoot the messenger
+don't sweat the small stuff
+don't teach your grandmother how to milk ducks
+don't teach your grandmother to steal sheep
+don't try to teach grandma how to suck eggs
+do unto others as you would have them do unto you
+dripping water hollows a stone
+drive for show, putt for dough
+drunk words are sober thoughts
+each to his own
+early bird catches the worm
+early to bed, early to rise, makes a man healthy, wealthy and wise
+eat, drink and be merry
+eat, drink and be merry for tomorrow we die
+eaten bread is soon forgotten
+eat to live, not live to eat
+ECREE
+empty barrels make the most noise
+empty cans make the most noise
+empty vessels make the most noise
+empty vessels make the most sound
+enough is as good as a feast
+e pluribus unum
+est modus in rebus
+even a blind pig can find an acorn
+even a blind pig can find an acorn once in a while
+even a blind squirrel can find a nut once in a while
+even a blind squirrel finds an acorn every now and then
+even a blind squirrel finds an acorn every once in a while
+even a stopped clock is right twice a day
+even a worm will turn
+even Homer nods
+even Jove nods
+every cloud has a silver lining
+every dark cloud has a silver lining
+every day is a school day
+every dog has his day
+every dog has its day
+every dog must have his day
+every dog must have its day
+every Jack has his Jill
+every law has a loophole
+every law has its loophole
+every little bit helps
+every little helps
+every man has a price
+every man has his price
+every man is the architect of his own fortune
+every miller draws water to his own mill
+every rose has a thorn
+every rose has its thorn
+every rule has an exception
+every shut eye isn't asleep
+every silver lining has a cloud
+every stick has two ends
+everything happens for a reason
+everything old is new again
+evil be to him who evil thinks
+experience is the best teacher
+extraordinary claims require extraordinary evidence
+eye for an eye, a tooth for a tooth
+fact is stranger than fiction
+facts don't care about your feelings
+facts speak louder than words
+failure to prepare is preparing to fail
+faint heart never won fair lady
+fair exchange is no robbery
+faith will move mountains
+fall seven times, stand up eight
+familiarity breeds contempt
+fat is flavor
+fat is flavour
+feed a cold, starve a fever
+finders, keepers
+finders, keepers; losers, weepers
+fine feathers make fine birds
+fine words butter no parsnips
+fingers were made before forks
+fire is a good servant but a bad master
+first catch your hare
+fish and company stink after three days
+fool me once
+fool me once, shame on you
+fool me once, shame on you; fool me twice, shame on me
+fools rush in where angels fear to tread
+forbidden fruit is the sweetest
+forewarned, forearmed
+forewarned is forearmed
+fortune favors the bold
+fortune favors the brave
+fortune favors the daring
+fortune favours the bold
+fortune favours the brave
+fortune favours the daring
+freedom ain't free
+freedom is not free
+freedom isn't free
+freedom's not free
+garbage in, garbage out
+gender is between your ears, not between your legs
+genius is one percent inspiration, ninety-nine percent perspiration
+get woke, go broke
+give a man a fish
+give a man a fish and you feed him for a day; teach a man to fish and you feed him for a lifetime
+give him enough rope and he'll hang himself
+given enough eyeballs, all bugs are shallow
+give someone an inch and someone will take a mile
+give them an inch and they'll take a mile
+give them an inch and they'll take an ell
+go hard or go home
+God helps them that help themselves
+God helps them who help themselves
+God helps those who help themselves
+God is in the detail
+God works in mysterious ways
+go fash, lose cash
+gold is where you find it
+good artists copy, great artists steal
+good fences make good neighbors
+good fences make good neighbours
+good things come in small packages
+good things come in threes
+good things come to those who wait
+good wine needs no bush
+good work ain't cheap, cheap work ain't good
+go woke, go broke
+grasp all, lose all
+great haste makes great waste
+great minds
+great minds think alike
+great oaks from little acorns grow
+hair today, gone tomorrow
+half a loaf is better than no bread
+half a loaf is better than no loaf
+half a loaf is better than none
+handsome is as handsome does
+handsome is that handsome does
+happy wife, happy life
+haste makes waste
+haters gonna hate
+health is your first wealth
+heaven helps those that help themselves
+heaven helps those who help themselves
+he laughs best that laughs last
+hell has no fury like a woman scorned
+hell hath no fury like a woman scorned
+hell is full of good meanings, but heaven is full of good works
+he that mischief hatches, mischief catches
+he who denied it supplied it
+he who digs a pit for others falls in himself
+he who fails to prepare, prepares to fail
+he who hesitates is lost
+he who laughs last laughs best
+he who laughs last laughs hardest
+he who pays the piper calls the tune
+he who said the rhyme did the crime
+he who smelt it dealt it
+he who sups with the devil should have a long spoon
+hic Rhodus, hic salta
+hindsight is 20/20
+history is written by the victors
+history repeats itself
+hoes before bros
+home is where the heart is
+home is where you hang your hat
+honesty is the best policy
+honey catches more flies than vinegar
+hope springs eternal
+hope springs eternal in the human breast
+hunger is a good sauce
+hunger is the best sauce
+hunger is the best spice
+hunt where the ducks are
+hydrate or diedrate
+IAR
+I before E, except after C
+idle hands are the devil's playthings
+idle hands are the Devil's playthings
+idle hands are the devil's tools
+idle hands are the Devil's tools
+idle hands are the devil's workshop
+idle hands are the Devil's workshop
+if all you have is a hammer, everything looks like a nail
+if all you've got is a hammer, everything looks like a nail
+if at first you don't succeed
+if at first you don't succeed, try try again
+if ifs and buts were candy and nuts, we'd all have a merry Christmas
+if it ain't broke, don't fix it
+if it ain't busted, don't fix it
+if it looks like a duck
+if it looks like a duck, swims like a duck, and quacks like a duck, then it probably is a duck
+if it looks like a duck, swims like a duck, and quacks like a duck, then it's probably a duck
+if my aunt had balls, she'd be my uncle
+if my grandmother had balls, she'd be my granddad
+if my grandmother had wheels, she'd be a wagon
+if my sister had balls, she'd be my brother
+if my uncle had tits, he'd be my aunt
+if pigs had wings they would fly
+if the mountain won't come to Muhammad
+if the mountain won't come to Muhammad, then Muhammad must go to the mountain
+if there's grass on the field, play ball
+if there's grass on the pitch, play ball
+if the shoe fits, wear it
+if we had ham we could have ham and eggs, if we had eggs
+if we had some ham we could have some ham and eggs, if we had some eggs
+if wishes were horses, beggars might ride
+if wishes were horses, beggars would ride
+if you aim at nothing, you'll hit it every time
+if you can't beat them, join them
+if you can't do the time, don't do the crime
+if you can't stand the heat, get out of the kitchen
+if you find yourself in a hole, the first thing to do is stop digging
+if you fly with the crows, you get shot with the crows
+if you go far enough left, you get your guns back
+if you lie down with dogs, you get up with fleas
+if you lie with dogs you will get fleas
+if you mess with the bull, you get the horns
+if you pay bananas, you get monkeys
+if you pay peanuts, you get monkeys
+if you torture the data long enough, it will confess to anything
+if you want a thing done well, do it yourself
+ignorance is bliss
+ignore all rules
+ill doers are ill deemers
+ill-gotten gains never prosper
+ill news spreads apace
+imitation is the sincerest form of flattery
+in for a dime, in for a dollar
+in for an inch, in for a mile
+in for a penny, in for a pound
+in like a lion, out like a lamb
+in the country of the blind, the one-eyed man is king
+in the land of the blind, the one-eyed man is king
+in the valley of the blind, the one-eyed man is king
+in unity, there is strength
+in vino veritas
+in wine, there is truth
+it is what it is
+it ain't over till it's over
+it ain't over till the fat lady sings
+it ain't over 'til the fat lady sings
+it ain't over until the fat lady sings
+it ain't the meat, it's the motion
+it ain't the whistle that pulls the train
+it doesn't matter what they say about you as long as they spell your name right
+it is always darkest before the dawn
+it is always darkest just before the dawn
+it is a wise child that knows his own father
+it is better to travel hopefully than to arrive
+it is darkest before the dawn
+it is darkest just before the dawn
+it is easier for a camel to go through the eye of a needle than for a rich man to enter into the kingdom of God
+it is easy to be wise after the event
+it is easy to find a stick to beat a dog
+it is not the whistle that pulls the train
+it isn't over till the fat lady sings
+it isn't over 'til the fat lady sings
+it isn't over until the fat lady sings
+it isn't the whistle that pulls the train
+it never rains but it pours
+it never rains but that it pours
+it pays to advertise
+it's all fun and games until someone loses an eye
+it's a long road that has no turning
+it's a man's world
+it's an ill bird that fouls its own nest
+it's an ill wind
+it's an ill wind that blows nobody any good
+it's an ill wind that blows no good
+it's an ill wind that blows no one any good
+it's a tough job, but someone's got to do it
+it's better to ask forgiveness than permission
+it's better to be judged by twelve than to be carried by six
+it's easier to ask forgiveness than to get permission
+it's lonely at the top
+it's never too late to mend
+it's not the meat, it's the motion
+it's not the whistle that pulls the train
+it's not what you know but whom you know
+it's not what you know but who you know
+it's not what you say but how you say it
+it's the hit dog that howls
+it's the thought that counts
+it takes a heap of living to make a house a home
+it takes a heap o' livin' to make a house a home
+it takes all kinds
+it takes all kinds to make a world
+it takes all sorts
+it takes all sorts to make a world
+it takes a lot of living to make a house a home
+it takes a village
+it takes a village to raise a child
+it takes one to know one
+it takes two to make a quarrel
+it takes two to quarrel
+it takes two to tango
+it took Nixon to go to China
+it wasn't only only
+I want doesn't get
+Joan's as good as my lady in the dark
+judge not, that ye be not judged
+judge not, that you be not judged
+justice delayed is justice denied
+justice is blind
+keep your friends close, and your enemies closer
+kids will be kids
+kill your heroes
+kissing goes by favor
+knee-high by the Fourth of July
+knowledge is power
+know thyself
+laugh and grow fat
+laugh before breakfast, cry before supper
+laughter is the best medicine
+least said, soonest mended
+leave it all on the field
+leaves of three, let it be
+leave with the one that brought ya
+leave with the one that brung ya
+leave with the one that brung you
+leave with the one what brought ya
+leave with the one what brought you
+leave with the one what brung ya
+leave with the one what brung you
+leave with the one who brought ya
+leave with the one who brought you
+leave with the one who brung ya
+leave with the one who brung you
+less is more
+let a thousand flowers bloom
+let George do it
+let the cobbler stick to his last
+lex dubia non obligat
+life is like a box of chocolates
+life is not all beer and skittles
+lightning never strikes twice in the same place
+like father, like son
+like father like son
+like mother, like daughter
+little pitchers have big ears
+little pitchers have long ears
+little strokes fell great oaks
+live and let live
+live by the sword, die by the sword
+live not to eat, but eat to live
+location, location, location
+long absent, soon forgotten
+long ways, long lies
+lookers-on see most of the game
+looks can be deceiving
+loose lips sink ships
+loss and gain are brothers twain
+love conquers all
+love is blind
+love is love
+love the sinner, hate the sin
+love the sinner but hate the sin
+lucky at cards, unlucky in love
+mackerel sky and mare's-tails make lofty ships carry low sails
+mackerel sky and mare's-tails make tall ships carry low sails
+make hay while the sun shines
+make it do or do without
+make lemonade
+man is a wolf to man
+manners maketh man
+man plans and God laughs
+man proposes, God disposes
+man shall not live by bread alone
+many a mickle makes a muckle
+many hands make light work
+March comes in like a lion and goes out like a lamb
+marry in haste, repent at leisure
+measure twice, cut once
+measure twice and cut once
+mess with the bull, get the horns
+mess with the bull and you get the horns
+might is right
+might makes right
+mighty oaks from little acorns grow
+mind over matter
+misery loves company
+misfortunes never come alone
+misfortunes never come singly
+mocking is catching
+money can't buy happiness
+money does not smell
+money does not stink
+money doesn't grow on trees
+money has no smell
+money is the root of all evil
+money talks
+money talks, bullshit walks
+money talks and bullshit walks
+money won is twice as sweet as money earned
+more haste, less speed
+murder will out
+my enemy's enemy is my friend
+nearly never bulled a cow
+necessity is the mother of innovation
+necessity is the mother of invention
+necessity knows no law
+needs must
+needs must when the devil drives
+ne'er cast a clout til May be out
+neither a borrower nor a lender be
+never fight a land war in Asia
+never ask the barber if you need a haircut
+never change a running system
+never interrupt your enemy when he is making a mistake
+never judge a book by its cover
+never look a gift horse in the mouth
+never meet your heroes
+never put off until tomorrow what you can do today
+never waste a crisis
+new brooms sweep clean
+nice guys finish last
+nine you're fine, ten you're mine
+nobody ever went broke underestimating the good taste of the American people
+nobody ever went broke underestimating the good taste of the American public
+nobody ever went broke underestimating the intelligence of the American people
+nobody ever went broke underestimating the intelligence of the American public
+nobody ever went broke underestimating the taste of the American people
+nobody ever went broke underestimating the taste of the American public
+no bucks, no Buck Rogers
+no gain without pain
+no good deed ever goes unpunished
+no good deed goes unpunished
+no guts, no glory
+no human being is illegal
+no human is illegal
+no hymen, no diamond
+no man is an island
+no matter how thin you slice it, it's still baloney
+no matter how thin you slice it, it's still boloney
+no matter how you slice it, it's still the same old baloney
+no mill, no meal
+no news is good news
+no one ever went broke underestimating the intelligence of the American public
+no one ever went broke underestimating the taste of the American people
+no one ever went broke underestimating the taste of the American public
+no one is born a master
+no one should be judge in his own cause
+no pain, no gain
+no peace for the weary
+no rest for the weary
+no rest for the wicked
+no rose without a thorn
+no sleep for the wicked
+no smoke without fire
+not all heroes wear capes
+nothing is said that has not been said before
+nothing new under the sun
+nothing succeeds like success
+nothing ventured, nothing gained
+no time like the present
+oil and water don't mix
+old enough to bleed, old enough to breed
+old habits die hard
+old sins cast long shadows
+old sins have long shadows
+once a man, twice a boy
+once a man, twice a child
+once a woman, twice a child
+once bitten, twice shy
+once burned, twice cautious
+once burned, twice shy
+once hurt, twice shy
+once you go black, you never go back
+one bad turn deserves another
+one cannot break a stick in a bundle
+one cannot break a twig in a bundle
+one can run but one can't hide
+one can't break a stick in a bundle
+one can't break a twig in a bundle
+one can't break sticks in a bundle
+one can't carry two watermelons under one arm
+one can't hold two watermelons in one hand
+one can't live with them, one can't live without them
+one good turn deserves another
+one hair of a woman can draw more than a hundred pair of oxen
+one hand can't hold two watermelons
+one man's fish is another man's poison
+one man's fish is another man's poisson
+one man's loss is another man's gain
+one man's meat is another man's poison
+one man's terrorist is another man's freedom fighter
+one man's trash is another man's treasure
+one may as well hang for a sheep as a lamb
+one nail drives out another
+one night with Venus, a lifetime with Mercury
+one should never meet one's heroes
+one swallow does not a spring make
+one swallow does not a summer make
+one swallow does not make a spring
+one swallow does not make a summer
+one swallow doesn't a spring make
+one swallow doesn't a summer make
+one swallow doesn't make a spring
+one swallow doesn't make a summer
+one who hesitates is lost
+one woman's trash is another woman's treasure
+only fools and horses work
+only Nixon can go to China
+only Nixon could go to China
+only the good die young
+on the Internet nobody knows you're a dog
+ontogeny recapitulates phylogeny
+opinions are like assholes
+opportunity knocks at every man's door
+opportunity makes a thief
+opportunity seldom knocks twice
+opposites attract
+other days, other ways
+out of sight, out of mind
+out of sight is out of mind
+out of the mouths of babes
+out of the mouths of babes and sucklings
+outta sight, outta mind
+patience is a virtue
+people that live in glass houses should not throw stones
+people that live in glass houses shouldn't throw stones
+people who have, get
+people who have, get more
+people who live in glass houses should not throw stones
+people who live in glass houses shouldn't throw stones
+perfection is the enemy of good
+perfect is the enemy of good
+perfect is the enemy of good enough
+physician, heal thyself
+pitchers have ears
+play stupid games, win stupid prizes
+plus ça change
+poor is a mindset
+poor is a state of mind
+poorness is a state of mind
+possession is nine points of the law
+possession is nine-tenths of the law
+poverty is a mindset
+poverty is a state of mind
+power corrupts, absolute power corrupts absolutely
+practice makes perfect
+practice makes progress
+pressure makes diamonds
+prevention is better than cure
+pride comes before a fall
+pride cometh before a fall
+pride goes before a fall
+pride goeth before a fall
+pride wenteth before a fall
+procrastination is the thief of time
+proverbs come in pairs
+proverbs go in pairs
+proverbs hunt in pairs
+proverbs often come in pairs
+proverbs run in pairs
+proverbs should be sold in pairs
+proverbs should be writ in pairs
+proverbs should come in pairs
+proverbs should go in pairs
+put one's hand to the plough
+quidquid Latine dictum sit altum videtur
+race on Sunday, sell on Monday
+ready, fire, aim
+real men don't eat quiche
+render unto Caesar the things which are Caesar's
+revenge is a dish best served cold
+revolutions are not made with rosewater
+Rome wasn't built in a day
+Rome wasn't burned in a day
+rubbish in, rubbish out
+rules are made to be broken
+rules are rules
+rules is rules
+same shit, different toilet
+sauce for the goose
+scientia potentia est
+scratch a liberal and a fascist bleeds
+scratch a liberal and you'll find a fascist
+seeing is believing
+seek and ye shall find
+see Naples and die
+self-praise is no recommendation
+sell in May
+sell in May, then go away
+sell in May, then stay away
+sell in May and go away
+sell in May and stay away
+sell in May then go away
+semper ubi sub ubi
+set a beggar on horseback and he'll ride to the Devil
+shallow brooks are noisy
+shirtsleeves to shirtsleeves in three generations
+shit rolls downhill
+shoemaker, stick to your last
+short accounts make long friends
+short reckonings make long friends
+show, don't tell
+shy bairns get noot
+shy bairns get nowt
+silence is consent
+silence is golden
+silence is oppression
+sisters before misters
+six of one, half a dozen of the other
+slow and steady wins the race
+slow but sure wins the race
+small rain lays great dust
+snitches get stitches
+snitches get stitches and end up in ditches
+snitches get stitches and wind up in ditches
+so far so good
+some days you get the bear, other days the bear gets you
+something is better than nothing
+sometimes you eat the bear and sometimes the bear eats you
+sow the wind, reap the whirlwind
+sow the wind and reap the whirlwind
+spare the rod and spoil the child
+speak of the devil and he appears
+speak softly and carry a big stick
+speech is silver, but silence is golden
+speech is silver, silence is gold
+speech is silver, silence is golden
+spitters are quitters
+squeaky wheel gets the grease
+squeaky wheels get oiled
+start from where you are
+sticks in a bundle are unbreakable
+sticks in a bundle cannot be broken
+sticks in a bundle can't be broken
+still water runs deep
+still waters run deep
+strike while the iron is hot
+stupid is as stupid does
+success depends on your backbone, not your wishbone
+success has many fathers, failure is an orphan
+sufficient unto the day is the evil thereof
+sunlight is the best disinfectant
+take care of the pence and the pounds will take care of themselves
+take care of the pennies and the pounds will take care of themselves
+takes one to know one
+take the cash and let the credit go
+take time by the forelock
+talk is cheap
+talk softly and carry a big stick
+tall oaks from little acorns grow
+teamwork makes the dream work
+tell its own story
+tempus fugit
+that's how the cookie crumbles
+that's the way it goes
+that's the way life is
+that's the way the ball bounces
+that's the way the cookie crumbles
+that's the way the mop flops
+that which doesn't kill you makes you stronger
+that which has been seen cannot be unseen
+the apple does not fall far from the stem
+the apple does not fall far from the tree
+the apple does not fall far from the trunk
+the apple doesn't fall far from the tree
+the apple never falls far from the tree
+the apples on the other side of the wall are the sweetest
+the bad penny always comes back
+the bad penny always turns up
+the best defence is attack
+the best defense is a good offense
+the best is the enemy of the good
+the best laid plans of mice and men go oft astray
+the best laid plans of mice and men often go awry
+the best things in life are free
+the better is the enemy of the good
+the bigger they are, the harder they fall
+the bigger they come, the harder they fall
+the burnt child dreads the fire
+the burnt child fears the fire
+the candle that burns twice as bright burns half as long
+the captain goes down with the ship
+the cat would eat fish but would not wet her feet
+the chickens come home to roost
+the cobbler always wears the worst shoes
+the cobbler's children are the worst shod
+the course of true love never did run smooth
+the cow knows not the worth of its tail till it loses it
+the cowl does not make the monk
+the customer is always right
+the darkest hour is always just before the dawn
+the darkest hour is just before the dawn
+the devil makes work for idle hands
+the devil we know is better than the devil we don't
+the devil we know is better than the devil we don't know
+the devil you know
+the devil you know is better than the devil you don't
+the devil you know is better than the devil you don't know
+the dogs bark, but the caravan goes on
+the dogs bark, but the caravan moves on
+the dose makes the poison
+the early bird catches the worm
+the early bird gets the worm
+the end justifies the means
+the ends justify the means
+the enemy of my enemy is my friend
+the eyes are the window to the soul
+the family that prays together stays together
+the fewer the better fare
+the first step is always the hardest
+the first turn of the screw pays all debts
+the fish rots from the head
+the fox may grow grey but never good
+the game is not worth the candle
+the good die young
+the grass is always greener
+the grass is always greener on the other side
+the grass is always greener on the other side of the fence
+the grey mare is the better horse
+the hand that rocks the cradle is the hand that rules the world
+the hand that rocks the cradle rules the world
+the heart wants what it wants
+the heart wants what the heart wants
+the house always wins
+the jug goes to the well until it breaks
+the laborer is worthy of his hire
+the law is a ass
+the law is an ass
+the longest pole knocks the persimmon
+the Lord helps those that help themselves
+the Lord helps those who help themselves
+The Lord works in mysterious ways
+the map is not the territory
+the mill cannot grind with water that is past
+the mills of the gods grind slowly
+the more the merrier
+the more things change, the more they stay the same
+the more you know, the higher you go
+them that has, gets
+them that has, gets more
+them that has gets
+them what has, gets
+them what has, gets more
+them what has gets
+the nail that sticks out gets hammered down
+the nut does not fall far from the tree
+the odds are good, but the goods are odd
+the pen is mightier than the sword
+the perfect is the enemy of the good
+the pitcher goes so often to the well that it is broken at last
+the poor we will always have with us
+the proof is in the eating
+the proof is in the pudding
+the proof of the pudding is in the eating
+there are bad apples in every orchard
+there are many ways to skin a cat
+there are more horses' asses than horses
+there are no atheists in foxholes
+there are none so blind as those who will not see
+there are plenty more fish in the sea
+there are plenty of fish in the sea
+there are two sides to every question
+there are two sides to every story
+there but for the grace of God go I
+there is a lid for every pot
+there is an exception to every rule
+there is a time and place for everything
+there is no honor among thieves
+there is no such thing as bad press
+there is no such thing as bad publicity
+there is no such thing as bad weather, only bad clothing
+there is nothing new under the sun
+there is reason in the roasting of eggs
+there is safety in numbers
+there is strength in numbers
+there may be snow on the mountaintop but there's fire in the valley
+there may be snow on the rooftop but there is fire in the furnace
+there's a lid for every pot
+there's always a bigger fish
+there's a rotten apple in every barrel
+there's a sucker born every minute
+there's many a good tune played on an old fiddle
+there's many a slip between the cup and the lip
+there's many a slip twixt cup and lip
+there's many a slip twixt the cup and the lip
+there's more than one way to cook an egg
+there's more than one way to crack an egg
+there's more than one way to feed a cat
+there's more than one way to peel an orange
+there's more than one way to skin a cat
+there's no accounting for taste
+there's no fool like an old fool
+there's no I in team
+there's none so blind as those who will not see
+there's no place like home
+there's no point crying over spilt milk
+there's no smoke without fire
+there's no time like the present
+there's no use crying over spilt milk
+there's nowt so queer as folk
+the revolution will not be televised
+the road to hell is paved with good intentions
+the screwing you get isn't worth the screwing you get
+the screwing you get isn't worth the screwing you're going to get
+the screwing you get isn't worth the screwing you take
+the shoemaker's children go barefoot
+the sky is the limit
+the sky's the limit
+the spirit is willing but the flesh is weak
+the strong do what they can, the weak suffer what they must
+the strong do what they can and the weak suffer what they must
+the tongue wounds more than a lance
+the truth is in the wine
+the voice of the people, the voice of God
+the way to a man's heart is through his stomach
+the wheel turns
+the whistle does not pull the train
+the whistle doesn't pull the train
+the winner takes it all
+the wolf may lose his teeth but never his nature
+the world is one's lobster
+the world is someone's oyster
+they're only after one thing
+third time pays for all
+third time's a charm
+third time's the charm
+this too shall pass
+this too shall pass away
+those that have, get
+those that have, get more
+those that have get
+those that have get more
+those who can't do, teach
+those who have, get
+those who have, get more
+those who have get
+those who have get more
+those who live in glass houses should not throw stones
+those who live in glass houses shouldn't throw stones
+those who say it cannot be done should not interrupt those doing it
+those who will not when they may, when they will they shall have nay
+three strikes and you're out
+three times a charm
+throw dirt enough, and some will stick
+throw enough mud at the wall, some of it will stick
+throw enough mud at the wall and some of it will stick
+time and tide
+time and tide tarry for no man
+time and tide wait for no man
+time flies when you're having fun
+time heals
+time heals all hurts
+time heals all sorrows
+time heals all things
+time heals all wounds
+time heals every wound
+time is a great healer
+time is money
+time is the great healer
+time spent laughing is time spent with the gods
+timing is everything
+to a hammer, everything looks like a nail
+today is a good day to die
+to each his own
+to each their own
+to err is human
+to err is human; to forgive, divine
+tomorrow is another day
+tomorrow never comes
+too many chefs spoil the broth
+too many cooks spoil the broth
+too many cooks spoil the soup
+too many cooks spoil the stew
+too much bed makes a dull head
+too much pudding will choke a dog
+too much water drowned the miller
+to the victor go the spoils
+to thine own self be true
+treat 'em mean to keep 'em keen
+treat them mean, keep them keen
+trust everybody, but always cut the cards
+trust everybody, but always cut the deck
+trust everybody, but cut the cards
+trust everybody, but cut the deck
+trust every man, but cut the cards
+trust your friends, but cut the cards
+truth is stranger than fiction
+truth will out
+turnabout is fair play
+two can play that game
+two heads are better than one
+two's company, three's a crowd
+two's company, three's trumpery
+two's company and three is none
+two wrongs don't make a right
+two wrongs make a right
+underpromise and overdeliver
+uneasy lies the head that wears a crown
+union is strength
+union makes strength
+united we stand, divided we fall
+unity is strength
+unity makes strength
+use it or lose it
+variety is the spice of life
+walk softly and carry a big stick
+walls have ears
+wanton kittens make sober cats
+waste not, want not
+water finds its level
+water finds its own level
+water seeks its level
+water seeks its own level
+well begun is half done
+what comes around goes around
+what doesn't kill you makes you stronger
+what goes around comes around
+what goes round comes round
+what goes up must come down
+what go round come round
+what happens in Las Vegas stays in Las Vegas
+what happens in Vegas stays in Vegas
+what happens on the road stays on the road
+what happens on tour stays on tour
+what has been seen cannot be unseen
+what's bred in the bone will come out in the flesh
+what's done cannot be undone
+what's done is done
+what's good for the goose is good for the gander
+what's old is new again
+what's sauce for the goose is sauce for the gander
+what the eye doesn't see, the heart doesn't grieve over
+what wins on Sunday sells on Monday
+what you gain on the swings you lose on the roundabouts
+what you lose on the swings you gain on the roundabouts
+what you see is what you get
+when all you have is a hammer, everything looks like a nail
+when in doubt, do nowt
+when in Rome
+when in Rome, do as the Romans
+when in Rome, do as the Romans do
+when in Rome, do like the Romans do
+when it rains, it pours
+when life gives you lemons, make lemonade
+when one door closes, another door opens
+when one door closes, another one opens
+when one door closes, another opens
+when one door shuts, another door opens
+when one door shuts, another one opens
+when one door shuts, another opens
+when the cat's away
+when the cat's away the mice play
+when the cat's away the mice will play
+when the going gets tough, the tough get going
+when the looting starts, the shooting starts
+when you find yourself in a hole, the first thing to do is stop digging
+when you hear hoofbeats, think of horses, not zebras
+when you mess with the bull, you get the horns
+when you're up to your neck in alligators, it's hard to remember that your initial objective was to drain the swamp
+where there is a will
+where there is a will there is a way
+where there's a will there's a way
+where there's muck there's brass
+where there's no sense there's no feeling
+where there's smoke, there's fire
+wherever you go, there you are
+where you stand depends on where you sit
+while the grass grows, the steed starves
+while there's life, there's hope
+whoever smelt it dealt it
+who keeps company with the wolf will learn to howl
+who keeps company with wolves, will learn to howl
+who pays the piper calls the tune
+why buy a book when you can join a library
+why buy the cow when you can get the milk for free
+why keep a dog and bark yourself
+win on Sunday, sell on Monday
+wins on Sunday, sells on Monday
+words cut deep
+work smarter, not harder
+worse things happen at sea
+wrap it before you tap it
+y'all means all
+yesterday is gone
+yesterday's gone
+you are never too old to learn
+you are what you eat
+you attract more flies with honey than vinegar
+you buy cheap, you get cheap
+you can catch more flies with honey than vinegar
+you can catch more flies with honey than with vinegar
+you can lead a horse to water, but you can't make it drink
+you can lead horses to water, but you can't make them drink
+you cannot break a stick in a bundle
+you cannot break a twig in a bundle
+you cannot break sticks in a bundle
+you cannot please everyone
+you cannot put the same shoe on every foot
+you can take the monkey out of the jungle, but you can't take the jungle out of the monkey
+you can take the person out of the place, but you can't take the place out of the person
+you can't be half pregnant
+you can't break a stick in a bundle
+you can't break a twig in a bundle
+you can't break sticks in a bundle
+you can't catch old birds with chaff
+you can't fight City Hall
+you can't fix stupid
+you can't get a quart into a pint pot
+you can't get something for nothing
+you can't go home again
+you can't judge a book by its cover
+you can't keep a good man down
+you can't live with 'em, you can't live without 'em
+you can't live with them, you can't live without them
+you can't make an omelette without breaking eggs
+you can't make a silk purse of a sow's ear
+you can't polish a turd
+you can't pour from an empty cup
+you can't put an old head on young shoulders
+you can't put a wise head on young shoulders
+you can't put the shit back in the horse
+you can't put the toothpaste back in the tube
+you can't put the toothpaste back into the tube
+you can't run with the hare and hunt with the hounds
+you can't step in the same river twice
+you can't take it with you
+you can't teach an old dog new tricks
+you can't tell a book by its cover
+you can't unring a bell
+you can't win them all
+you catch more flies with honey than vinegar
+you catch more flies with honey than with vinegar
+you don't dip your pen in company ink
+you don't dip your pen in the company's ink
+you don't dip your pen in the inkwell
+you don't fish off the company pier
+you don't get owt for nowt
+you don't get something for nothing
+you don't get your nookie where you get your cookies
+you don't look at the mantelpiece when you poke the fire
+you don't look at the mantelpiece when you're poking the fire
+you don't miss the water till the well runs dry
+you don't need a weatherman to know which way the wind blows
+you get more with a kind word and a gun than you do with a kind word alone
+you get what you pay for
+you have to be good to be lucky
+you have to be in it to win it
+you make the bed you lie in
+you miss 100% of the shots you don't take
+you must spoil before you spin
+you never know what you've got till it's gone
+you never miss the water till the well runs dry
+you never miss the water until the well runs dry
+you only get what you give
+you only go around once
+you only go around once in life
+you only live once
+you pays your money and you takes your chances
+you pays your money and you takes your choice
+you pays your nickel and you takes your chances
+you pays your nickel and you takes your choice
+you're never too old to learn
+you're only as good as your last shift
+your network is your net worth
+your net worth is your network
+your vibe attracts your tribe
+you scratch my back and I'll scratch yours
+you smelt it, you dealt it
+you snooze you lose
+you've got to be in it to win it
+you've got to crack a few eggs to make an omelette
+you win some, you lose some
+zeal without knowledge is a runaway horse

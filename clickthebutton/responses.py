@@ -578,6 +578,13 @@ FOUGHT_OFF = [
         lambda: random.choice(["super effective!", "not very effective"]),
         ")",
     ),
+    ('told {} "', lambda: random_line("proverbs.txt"), '"'),
+    ("flexed their ", lambda: random_line("valorant_skins.txt"), " on"),
+    "dueled",
+    "gave {} a slap on the wrist",
+    "made {} tremble",
+    "predicted all of {}'s moves",
+    "forgot about",
 ]
 
 SINGULAR_FOUGHT_OFF = [
@@ -607,6 +614,8 @@ SINGULAR_FOUGHT_OFF = [
         "won a game of duo showdown with {} on ",
         lambda: random_line("brawl_stars_duos_maps.txt"),
     ),
+    "won a 1v1 against",
+    ("enjoyed a {}-free ", lambda: MONTHS[datetime.now().month - 1]),
 ]
 
 

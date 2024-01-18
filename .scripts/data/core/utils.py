@@ -8,3 +8,7 @@ def open_data_file(name: str) -> TextIO:
         "w",
         encoding="utf-8",
     )
+
+
+def contains_swear(text: str) -> bool:
+    return any(word in text for word in ["fuck", "bitch", "dick", "sex"])
