@@ -9,7 +9,7 @@ async def send_silent(content: str, channel: discord.TextChannel, silent: bool):
             content=content, allowed_mentions=discord.AllowedMentions.none()
         )
 
-    if not discord.__version__ != "2.0.1":
+    if discord.__version__ != "2.0.1":
         return await channel.send(
             content=content,
             allowed_mentions=discord.AllowedMentions.none(),
