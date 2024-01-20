@@ -132,6 +132,38 @@ COOLDOWN_OVER = [
         top_clicks,
         ' clicks! I should click right now." - you, probably.',
     ),
+    (
+        "Do you suffer from ",
+        lambda x: random_line("phobias.txt"),
+        "? Click the button!",
+    ),
+    (
+        lambda x: MONTHS[datetime.now().month - 1],
+        " is the best month to click the button!",
+    ),
+    (
+        "Hey ",
+        lambda x: random_emoji(),
+        " everyone ",
+        lambda x: random_emoji(),
+        " ",
+        lambda x: random_emoji(),
+        " Would ",
+        lambda x: random_emoji(),
+        " you ",
+        lambda x: random_emoji(),
+        " be ",
+        lambda x: random_emoji(),
+        " so ",
+        lambda x: random_emoji(),
+        " kind ",
+        lambda x: random_emoji(),
+        " to click ",
+        lambda x: random_emoji() * random.randint(1, 2),
+        " the button? ",
+        lambda x: random_emoji() * random.randint(1, 2),
+        " Thank you!",
+    ),
 ]
 
 
