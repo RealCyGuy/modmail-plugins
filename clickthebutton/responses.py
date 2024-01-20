@@ -177,7 +177,11 @@ def random_cooldown_over(stats: Stats) -> str:
     return selected
 
 
-EMOJIS = list(emoji.EMOJI_DATA.keys())
+EMOJIS = [
+    key
+    for key, value in emoji.EMOJI_DATA.items()
+    if value["status"] == emoji.STATUS["fully_qualified"]
+]
 
 
 def random_emoji() -> str:
