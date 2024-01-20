@@ -6,21 +6,22 @@ from datetime import timedelta, timezone
 from enum import Enum
 from typing import Any, Optional
 
-import discord
 import brokenaxes
+import discord
 from matplotlib import dates as mdates
-from matplotlib import pyplot as plt, ticker
+from matplotlib import pyplot as plt
+from matplotlib import ticker
 
 from .responses import (
+    format_deltatime,
     random_cooldown_over,
     random_emoji,
     random_fought_off,
     random_got_a_click,
-    format_deltatime,
 )
 from .silent import send_silent
 from .stats import Stats
-from .utils import event, find_data_intervals
+from .utils import event, find_data_intervals, format_user
 
 
 class GraphTime(Enum):
@@ -172,7 +173,7 @@ class PersistentView(BaseView):
         edit_task = asyncio.create_task(
             interaction.message.edit(
                 content=event(
-                    f"{interaction.user.name}#{interaction.user.discriminator}{fought} is now at {points} clicks.",
+                    f"{format_user(interaction.user)}{fought} is now at {points} clicks.",
                     interaction.message.content,
                 ),
                 embed=await self.cog.create_leaderboard_embed(cooldown=cooldown),
@@ -236,9 +237,9 @@ class PersistentView(BaseView):
         async for click in self.cog.dbGraph.find({"timestamp": {"$gt": start_time}}):
             user_id = click["id"]
             if user_id not in user_clicks:
-                username = self.cog.bot.get_user(int(user_id))
+                username = self.cog.bot.get_user(int(user_id) + 1)
                 if username:
-                    username = f"{username.name}#{username.discriminator}"
+                    username = format_user(username)
                 user_clicks[user_id] = {
                     "clicks": [],
                     "timestamps": [],

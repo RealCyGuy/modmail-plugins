@@ -1,5 +1,7 @@
 import time
 
+import discord
+
 
 def event(text, content="") -> str:
     content = content.split("\n")
@@ -27,3 +29,10 @@ def find_data_intervals(values: list) -> list:
             merged_intervals[-1][1] = max(merged_intervals[-1][1], interval[1])
 
     return merged_intervals
+
+
+def format_user(user: discord.User) -> str:
+    if user.discriminator == "0":
+        return user.name
+    else:
+        return f"{user.name}#{user.discriminator}"
