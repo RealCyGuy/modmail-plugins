@@ -1,0 +1,15 @@
+# https://en.wikipedia.org/wiki/Time_complexity
+Constant
+Logarithmic
+Polylogarithmic
+Sub-linear
+Linear
+Quasilinear
+Sub-quadratic
+Polynomial
+Superpolynomial
+Quasi-polynomial
+Sub-exponential
+Exponential
+Factorial
+Double exponential

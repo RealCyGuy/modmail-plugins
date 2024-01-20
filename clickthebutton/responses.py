@@ -1,6 +1,6 @@
 import os
 import random
-from datetime import timedelta, datetime
+from datetime import datetime, timedelta
 
 import emoji
 
@@ -585,6 +585,15 @@ FOUGHT_OFF = [
     "made {} tremble",
     "predicted all of {}'s moves",
     "forgot about",
+    (
+        "solved {}'s problem in ",
+        lambda: random_line("time_complexities.txt").lower(),
+        " time",
+    ),
+    "soloed",
+    "one-tapped",
+    "full boxed",
+    "hit a clip on",
 ]
 
 SINGULAR_FOUGHT_OFF = [
