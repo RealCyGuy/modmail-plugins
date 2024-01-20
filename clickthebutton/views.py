@@ -115,6 +115,22 @@ class PersistentView(BaseView):
         except:
             pass
 
+        if rank == 1 and self.cog.winner_role_id:
+            role = interaction.guild.get_role(self.cog.winner_role_id)
+            if role:
+                already_has_role = False
+                for member in role.members:
+                    if member.id == interaction.user.id:
+                        already_has_role = True
+                    else:
+                        await member.remove_roles(
+                            role, reason="Not first place in click the button."
+                        )
+                if not already_has_role:
+                    await interaction.user.add_roles(
+                        role, reason="First place in click the button!"
+                    )
+
     @discord.ui.button(
         label="Click to get a point!",
         style=discord.ButtonStyle.green,

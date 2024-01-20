@@ -14,9 +14,10 @@ from matplotlib import font_manager
 
 from core import checks
 from core.models import PermissionLevel
+
 from .responses import random_divider
-from .views import PersistentView
 from .utils import event
+from .views import PersistentView
 
 
 class ClickTheButton(commands.Cog):
@@ -39,6 +40,8 @@ class ClickTheButton(commands.Cog):
         self.clickers = OrderedDict()
         self.streak = []
         self.delete_messages = {}
+
+        self.winner_role_id = 0
 
     def delete_after(self, message: discord.Message, delay: int):
         self.delete_messages[message.id] = message
@@ -101,6 +104,7 @@ class ClickTheButton(commands.Cog):
             data = await self.db.find_one({"_id": "data"}) or {}
             self.leaderboard = data.get("leaderboard", {})
             if config:
+                self.winner_role_id = config.get("winner_role", 0)
                 self.custom_id = config.get("custom_id")
                 if self.custom_id:
                     self.view = PersistentView(self)
@@ -187,6 +191,24 @@ class ClickTheButton(commands.Cog):
                 await ctx.send(
                     f"Reimbursing <@{user['id']}> with {user['cookies']} click(s). Updated clicks: {self.leaderboard[str(user['id'])]}."
                 )
+
+    @checks.has_permissions(PermissionLevel.ADMIN)
+    @commands.command()
+    async def setwinnerrole(self, ctx, role_id: int):
+        """
+        Set role for first place. Set to 0 to be none.
+        """
+        self.winner_role_id = role_id
+        await self.db.update_one(
+            {"_id": "config"},
+            {
+                "$set": {
+                    "winner_role": self.winner_role_id,
+                }
+            },
+            upsert=True,
+        )
+        await ctx.send(f"Winner role id set to `{self.winner_role_id}`")
 
 
 async def setup(bot):
