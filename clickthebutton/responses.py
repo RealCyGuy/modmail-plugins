@@ -108,26 +108,6 @@ COOLDOWN_OVER = [
     "Joke's over, click the button!",
     "The button wants your click.",
     "D'oh! Someone can click the button right now.",
-    "Click marathon, round two! The button's ready for some finger gymnastics",
-    "The button's back from its coffee break. Click it like you mean it",
-    "Button's recharged and feeling clicky. Give it some love",
-    "The cooldown's over! Unleash your clicker fury",
-    "Click alert! The button is thirsting for your touch",
-    "Button's back online. Time for a clicking fiesta",
-    "The button's had its rest. Now, pester it with clicks",
-    "Ready, set, click! The button's missed your touch",
-    "Button's up and awake! Poke it with clicks",
-    "The button's cooldown is history. Time for a clicking spree",
-    "Button's vacation is over. Time to get back to clicking",
-    "The button's nap time has ended. Wake it up with your clicks",
-    "Clickety-click! The button is ready for round two",
-    "The button's cooldown has cooled down. Click party, anyone",
-    "Button's back on duty. Give it a warm welcome with your clicks",
-    "The button's timeout is up. Click frenzy begins now",
-    "Rested and ready! The button awaits your clicking prowess",
-    "The button's back in the game. Start the clicking championship",
-    "Button's ready for some action. Let the clicking commence",
-    "Cooldown's done. The button is hungry for clicks"
     (
         "There are an ",
         lambda x: "even" if is_total_clicks_even(x) else "odd",
@@ -184,6 +164,26 @@ COOLDOWN_OVER = [
         lambda x: random_emoji() * random.randint(1, 2),
         " Thank you!",
     ),
+    "Click marathon, round two! The button's ready for some finger gymnastics",
+    "The button's back from its coffee break. Click it like you mean it",
+    "Button's recharged and feeling clicky. Give it some love",
+    "The cooldown's over! Unleash your clicker fury",
+    "Click alert! The button is thirsting for your touch",
+    "Button's back online. Time for a clicking fiesta",
+    "The button's had its rest. Now, pester it with clicks",
+    "Ready, set, click! The button's missed your touch",
+    "Button's up and awake! Poke it with clicks",
+    "The button's cooldown is history. Time for a clicking spree",
+    "Button's vacation is over. Time to get back to clicking",
+    "The button's nap time has ended. Wake it up with your clicks",
+    "Clickety-click! The button is ready for round two",
+    "The button's cooldown has cooled down. Click party, anyone",
+    "Button's back on duty. Give it a warm welcome with your clicks",
+    "The button's timeout is up. Click frenzy begins now",
+    "Rested and ready! The button awaits your clicking prowess",
+    "The button's back in the game. Start the clicking championship",
+    "Button's ready for some action. Let the clicking commence",
+    "Cooldown's done. The button is hungry for clicks",
 ]
 
 
@@ -650,7 +650,7 @@ FOUGHT_OFF = [
     "one-tapped",
     "full boxed",
     "hit a clip on",
-    "ate", 
+    "ate",
     "baked a cake with {}",
     "borrowed {}'s favorite book",
     "danced tango with {}",
@@ -669,9 +669,7 @@ FOUGHT_OFF = [
     "wrote a poem about {}",
     "had better vision than {}",
     "beat sliding game faster than {}",
-    "sent {} into a deep hole"
-    
-    
+    "sent {} into a deep hole",
 ]
 
 SINGULAR_FOUGHT_OFF = [
