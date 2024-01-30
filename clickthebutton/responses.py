@@ -787,8 +787,9 @@ DIVIDERS = [
     "⑅",
     "✳",
     "✯",
+    "𝄞",
 ]
 
 
 def random_divider() -> str:
-    return random.choice(DIVIDERS)
+    return random.choice(DIVIDERS) + "\ufe0e"
