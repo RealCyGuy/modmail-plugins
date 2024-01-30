@@ -658,7 +658,6 @@ FOUGHT_OFF = [
     "had a picnic in the park with {}",
     "traded hats with {}",
     "built a sandcastle with {}",
-    "sang a duet at karaoke with {}",
     "went on a road trip with {}",
     "cooked a gourmet meal for {}",
     "watched a meteor shower with {}",
@@ -698,6 +697,7 @@ SINGULAR_FOUGHT_OFF = [
     ),
     "won a 1v1 against",
     ("enjoyed a {}-free ", lambda: MONTHS[datetime.now().month - 1]),
+    "sang a duet at karaoke with {}",
 ]
 
 
