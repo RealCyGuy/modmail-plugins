@@ -24,4 +24,6 @@ while True:
 with open_data_file("phobias") as f:
     f.write(f"# {url}\n")
     for member in members:
+        if member.startswith("Citations:"):
+            continue
         f.write(member + "\n")
