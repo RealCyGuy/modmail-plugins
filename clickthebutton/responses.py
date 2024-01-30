@@ -668,7 +668,8 @@ FOUGHT_OFF = [
     "planted a garden with {}",
     "wrote a poem about {}",
     "had better vision than {}",
-    "L {}" #thx reddit
+    "beat sliding game faster than {}",
+    "sent {} into a deep hole"
     
     
 ]
