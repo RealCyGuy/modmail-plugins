@@ -1,120 +1,100 @@
 # https://api.brawlapi.com/v1/maps
+Dune Drift
+Flaring Phoenix
+Riverbed
+Encirclement
+Shooting Star
+Great Waves
+Close Call
+Double Trouble
+Close Quarters
+Checkered
+Machine Zone
+Power Shot
+Trials And Tribulations
+Slippery Road
+Arene En Folie
+Cavern Churn
+Bridge Too Far
+Belles Rock
+Backyard Bowl
+Layer Bake
+Arctic Extraction
+Stay In Your Lane
+The Galaxy
+Waters Of Doom
+The Great Divide
+Winter Party
+Omega
+Freezing Ripples
+Open Space
+Stormy Plains
+Tornado Ring
+Out In The Open
+Triple Dribble
+The Great Open
+Minecart Madness
+Skull Creek
+Ring Of Fire
+New Perspective
+Retina
+True Trail
+Last Stop
+Safety Center
+Safe Zone
+Healthy Middle Ground
+Off The Line
+Snake Prairie
+Hard Rock Mine
+Forsaken Falls
+Goldarm Gulch
+Open Zone
+Galaxy Arena
+Hunting Season
+Double Swoosh
+Last Stand
+Frosty Tracks
+Icy Ice Park
+Cool Shapes
+Danger Zone
+Cold Pond Quarry
+Snowman Forest
+Team Day
+X Marks The Spot
+Field Goal
+Devils Pass
+Dark Passage
+Hot Potato
+Deep Diner
+Super Beach
+Layer Cake
+Pool Party
+Temple Of Boom
+Infinite Doom
+Dried Up River
+Battered Battlefield
+Iron Bars
+Deadly Deflections
+Stacking
+Stepping Stones
+On The Train
+Over The Top
 Dueling Beetles
-Into Infinity
 Sneaky Fields
 Cheeky Chokepoint
 Gem Fort
 Acid Lakes
-Safe Zone
-Waters Of Doom
 Pinhole Punt
-Shooting Star
 Crystal Arcade
 Feast Or Famine
 Split
-Healthy Middle Ground
 Eyes On The Ground
-Deadly Deflections
-Minecart Madness
 Rockwall Brawl
 Kaboom Canyon
-Out In The Open
 Slayers Paradise
-Iron Bars
-Double Swoosh
+Snowflakes
 Flying Fantasies
-Ring Of Fire
-X Marks The Spot
-Field Goal
-Devils Pass
-Hard Rock Mine
-Dark Passage
-Hot Potato
-Flaring Phoenix
-Backyard Bowl
-Infinite Doom
-Warehouse
-Dried Up River
-Belles Rock
-On The Train
-Super Beach
-Battered Battlefield
-Stacking
-Descending Dimensions
-Goldarm Gulch
-Hungry Hippos
-Layer Bake
-Stepping Stones
-Last Stop
-Vicious Vortex
-Danger Zone
 Maze Creep
 Daylight Robbery
 Trophy Trespass
-Zip Line
-Walk In Walk Out
-Island Invasion
-Open Business
-Nuts & Bolts
-Pinball Dreams
-Undermine
-Pit Stop
-Cavern Churn
-Flowing Springs
-Some Assembly Required
-Deathcap Trap
-Factory Rush
-Penalty Kick
-New Perspective
-Bot Drop
-Shooting Star
-Poison Fields
-Scorched Stone
-Beach Ball
-Rustic Arcade
-Shiver Me Timbers
-Bridge Too Far
-Slayers Paradise
-Lit Match
-Ring Of Death
-Infinite Doom
-Center Stage
-Double Trouble
-Parallel Plays
-Roundabout
-Dry Season
-Dry Season
-Deep End
-Fractions
-Layer Cake
-Deep Diner
-Layer Cake
-Iron Cover
-Metal Scrap
-Canal Grande
-Split Second
-Canal Grande
-Davy Jones Locker
-Open Zone
-Blimey
-Hideout
-Hideout
-Walk The Plank
-Temple Of Boom
-Cover Crowd
-Snake Prairie
-Center Control
-Pool Party
-Ping Pong
-Full On
-Snake Prairie
-Field Goal
-Backyard Bowl
-Hard Rock Mine
-Double Swoosh
-Belles Rock
-Goldarm Gulch
-Ring Of Fire
-Split
-Shooting Star
-Snake Prairie
+Coarse Course

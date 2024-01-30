@@ -14,6 +14,7 @@ agoraphobia
 agraphobia
 aibohphobia
 aichmophobia
+AIDSphobia
 ailurophobia
 Albanophobia
 albuminurophobia
@@ -26,6 +27,7 @@ amaxophobia
 ambulophobia
 Americanophobia
 Americophobia
+amoebophobia
 anatidaephobia
 androphobia
 anemophobia
@@ -36,6 +38,7 @@ antlophobia
 apeirophobia
 aphenphosmphobia
 aphobia
+Citations:aphobia
 apiphobia
 aporophobia
 apotemnophobia
@@ -135,6 +138,7 @@ corticophobia
 cosmophobia
 coulrophobia
 cryophobia
+cryptophobia
 cyanophobia
 cyberphobia
 Cymrophobia
@@ -316,6 +320,7 @@ medicophobia
 megalophobia
 melanoheliophobia
 melanophobia
+melissophobia
 melophobia
 menophobia
 metallophobia

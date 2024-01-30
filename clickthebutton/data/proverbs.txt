@@ -29,7 +29,6 @@ a creaking door hangs longest
 a creaking door hangs long on its hinges
 actions have consequences
 actions speak louder than words
-Adam and Eve not Adam and Steve
 a danger foreseen is half avoided
 a drowning man will clutch at a straw
 a dumb priest never got a parish
@@ -42,6 +41,7 @@ age is just a number
 a golden key can open any door
 a good beginning makes a good ending
 a good deed is its own reward
+a healthy body is a healthy mind
 a hit dog will holler
 a house divided against itself cannot stand
 a house is not a home
@@ -50,6 +50,7 @@ a leopard cannot change its spots
 a lie has no legs
 a little knowledge is a dangerous thing
 a little learning is a dangerous thing
+all animals are equal, but some animals are more equal than others
 all cats are gray at night
 all cats are gray in the dark
 all cats are grey at night
@@ -126,11 +127,13 @@ a stitch in time saves nine
 a stopped clock is right twice a day
 a straw shows how the wind blows
 a straw shows which way the wind blows
+as you have brewed, so you must drink
 as you make your bed, so you must lie in it
 as you sow, so shall you reap
 a trouble shared is a trouble halved
 attack is the best form of defence
 attack is the best form of defense
+attitude reflects leadership
 a twig in a bundle cannot be broken
 a twig in a bundle can't be broken
 a twig in a bundle is unbreakable
@@ -139,11 +142,13 @@ a watched pot never boils
 a watched pot never boils over
 a wild goose never laid a tame egg
 a woman's work is never done
+bad facts make bad law
 bad money drives out good
 bad news travels fast
 bad things come in threes
 barking dogs never bite
 barking dogs seldom bite
+beauty fades, dumb is forever
 beauty is in the eye of the beholder
 beauty is only skin deep
 beggars can't be choosers
@@ -191,6 +196,7 @@ cannot live with them, cannot live without them
 can't live with 'em, can't live without 'em
 can't live with them, can't live without them
 can't live with them and can't live without them
+care killed a cat
 care killed the cat
 carpe diem
 carpe diem cras
@@ -242,6 +248,7 @@ desperate times require desperate measures
 devil is in the details
 devil lies in the details
 diamonds are a girl's best friend
+different clowns, same circus
 different strokes for different folks
 discretion is the better part of valor
 discretion is the better part of valour
@@ -285,7 +292,6 @@ dripping water hollows a stone
 drive for show, putt for dough
 drunk words are sober thoughts
 each to his own
-early bird catches the worm
 early to bed, early to rise, makes a man healthy, wealthy and wise
 eat, drink and be merry
 eat, drink and be merry for tomorrow we die
@@ -339,6 +345,7 @@ eye for an eye, a tooth for a tooth
 fact is stranger than fiction
 facts don't care about your feelings
 facts speak louder than words
+failure is the best teacher
 failure to prepare is preparing to fail
 faint heart never won fair lady
 fair exchange is no robbery
@@ -389,6 +396,7 @@ God helps them that help themselves
 God helps them who help themselves
 God helps those who help themselves
 God is in the detail
+gods may do what cattle may not
 God works in mysterious ways
 go fash, lose cash
 gold is where you find it
@@ -422,6 +430,7 @@ he laughs best that laughs last
 hell has no fury like a woman scorned
 hell hath no fury like a woman scorned
 hell is full of good meanings, but heaven is full of good works
+here we are
 he that mischief hatches, mischief catches
 he who denied it supplied it
 he who digs a pit for others falls in himself
@@ -496,6 +505,7 @@ if you pay bananas, you get monkeys
 if you pay peanuts, you get monkeys
 if you torture the data long enough, it will confess to anything
 if you want a thing done well, do it yourself
+if you want peace, prepare for war
 ignorance is bliss
 ignore all rules
 ill doers are ill deemers
@@ -610,6 +620,9 @@ let the cobbler stick to his last
 lex dubia non obligat
 life is like a box of chocolates
 life is not all beer and skittles
+lightning does not strike twice in the same place
+lightning doesn't strike twice in the same place
+lightning never strikes twice
 lightning never strikes twice in the same place
 like father, like son
 like father like son
@@ -655,6 +668,7 @@ might is right
 might makes right
 mighty oaks from little acorns grow
 mind over matter
+misery enjoys company
 misery loves company
 misfortunes never come alone
 misfortunes never come singly
@@ -683,7 +697,6 @@ neither a borrower nor a lender be
 never fight a land war in Asia
 never ask the barber if you need a haircut
 never change a running system
-never interrupt your enemy when he is making a mistake
 never judge a book by its cover
 never look a gift horse in the mouth
 never meet your heroes
@@ -898,7 +911,6 @@ speech is silver, but silence is golden
 speech is silver, silence is gold
 speech is silver, silence is golden
 spitters are quitters
-squeaky wheel gets the grease
 squeaky wheels get oiled
 start from where you are
 sticks in a bundle are unbreakable
@@ -916,7 +928,6 @@ take care of the pence and the pounds will take care of themselves
 take care of the pennies and the pounds will take care of themselves
 takes one to know one
 take the cash and let the credit go
-take time by the forelock
 talk is cheap
 talk softly and carry a big stick
 tall oaks from little acorns grow
@@ -982,20 +993,25 @@ the fewer the better fare
 the first step is always the hardest
 the first turn of the screw pays all debts
 the fish rots from the head
+the forbidden fruit tastes the sweetest
 the fox may grow grey but never good
+the freaks come out at night
 the game is not worth the candle
 the good die young
 the grass is always greener
 the grass is always greener on the other side
 the grass is always greener on the other side of the fence
+the grass is always greener on the other side of the road
 the grey mare is the better horse
 the hand that rocks the cradle is the hand that rules the world
 the hand that rocks the cradle rules the world
 the heart wants what it wants
 the heart wants what the heart wants
+the highest branch is not the safest roost
 the house always wins
 the jug goes to the well until it breaks
 the laborer is worthy of his hire
+the labourer is worthy of his hire
 the law is a ass
 the law is an ass
 the longest pole knocks the persimmon
@@ -1005,6 +1021,7 @@ The Lord works in mysterious ways
 the map is not the territory
 the mill cannot grind with water that is past
 the mills of the gods grind slowly
+the more one learns about people, the more one likes one's pet
 the more the merrier
 the more things change, the more they stay the same
 the more you know, the higher you go
@@ -1079,6 +1096,8 @@ the shoemaker's children go barefoot
 the sky is the limit
 the sky's the limit
 the spirit is willing but the flesh is weak
+the squeaky wheel gets the grease
+the squeaky wheel gets the oil
 the strong do what they can, the weak suffer what they must
 the strong do what they can and the weak suffer what they must
 the tongue wounds more than a lance
@@ -1179,6 +1198,7 @@ walk softly and carry a big stick
 walls have ears
 wanton kittens make sober cats
 waste not, want not
+watched toast never burns
 water finds its level
 water finds its own level
 water seeks its level
@@ -1193,7 +1213,6 @@ what go round come round
 what happens in Las Vegas stays in Las Vegas
 what happens in Vegas stays in Vegas
 what happens on the road stays on the road
-what happens on tour stays on tour
 what has been seen cannot be unseen
 what's bred in the bone will come out in the flesh
 what's done cannot be undone
@@ -1333,6 +1352,7 @@ you pays your nickel and you takes your chances
 you pays your nickel and you takes your choice
 you're never too old to learn
 you're only as good as your last shift
+your face, your fate
 your network is your net worth
 your net worth is your network
 your vibe attracts your tribe

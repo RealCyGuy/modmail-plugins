@@ -1,32 +1,33 @@
 # https://api.brawlapi.com/v1/maps
+Dune Drift
+Double Trouble
+Cavern Churn
+The Galaxy
+Stormy Plains
+Skull Creek
+Safety Center
+Forsaken Falls
+Dark Passage
+Dried Up River
 Acid Lakes
 Feast Or Famine
 Rockwall Brawl
 Flying Fantasies
-Dark Passage
-Dried Up River
-Descending Dimensions
-Vicious Vortex
 Island Invasion
-Cavern Churn
 Eye Of The Storm
 Scorched Stone
-Double Trouble
 Two Thousand Lakes
 Risky Cliffs
 Zoomed Out
-Skull Creek
 Hard Limits
 Lush Poles
 Skull Creek
 Ghost Point
 River Rush
 Superstar
-Safety Center
 Erratic Blocks
 Outrageous Outback
 Boxed In
-Dune Drift
 Royal Runway
 Point Of View
 Canyon Rivers
@@ -37,10 +38,7 @@ Hot Maze
 Canyon Rivers
 Mystic Touch
 Dark Fantasies
-Stormy Plains
-The Galaxy
 Clash Colosseum
-Forsaken Falls
 Two Thousand Lakes
 Grassy Gorge
 Victor Valley
@@ -74,3 +72,5 @@ Trap Map
 Jump Park
 Brawler Speedway
 Teleport Tag
+Vicious Vortex
+Descending Dimensions

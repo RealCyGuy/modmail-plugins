@@ -1,4 +1,7 @@
 # https://api.brawlapi.com/v1/brawlers
+Larry & Lawrie
+Kit
+Mico
 Charlie
 Chuck
 Pearl

@@ -1,6 +1,7 @@
 # https://valorant-api.com/v1/weapons/skins
 Altitude Odin
 Xenohunter Odin
+Tactiplay Odin
 Rune Stone Odin
 Glitchpop Odin
 Nitro Odin
@@ -15,6 +16,7 @@ Lightwave Odin
 Sensation Odin
 Random Favorite Skin
 Orion Odin
+Sentinels of Light Odin
 Schema Odin
 Lycan's Bane Odin
 Reaver Odin
@@ -87,6 +89,7 @@ Ruin Vandal
 Horizon Vandal
 Prime Vandal
 Avalanche Vandal
+Guardrail Vandal
 Black.Market Vandal
 Prism II Vandal
 K/TAC Vandal
@@ -95,8 +98,10 @@ Nunca Olvidados Vandal
 Luxe Vandal
 Magepunk Vandal
 Valiant Hero Vandal
+Overdrive Vandal
 Silvanus Vandal
 Crimsonbeast Vandal
+Kuronami Vandal
 Ion Vandal
 Oni Vandal
 Cryostasis Vandal
@@ -125,11 +130,14 @@ Radiant Entertainment System Bulldog
 Aristocrat Bulldog
 Endeavour Bulldog
 Spectrum Bulldog
+Tactiplay Bulldog
 Striker Bulldog
 Rune Stone Bulldog
 Undercity Bulldog
 Glitchpop Bulldog
+Emberclad Bulldog
 Rush Bulldog
+Chromedek Bulldog
 Velocity Bulldog
 Shimmer Bulldog
 Digihex Bulldog
@@ -167,16 +175,19 @@ Spectrum Phantom
 Piedra del Sol Phantom
 Composite Phantom
 Champions 2022 Phantom
+Tactiplay Phantom
 Radiant Crisis 001 Phantom
 Nebula Phantom
 Undercity Phantom
 Glitchpop Phantom
 ChronoVoid Phantom
+Emberclad Phantom
 Abyssal Phantom
 Doodle Buds Phantom
 Singularity Phantom
 Sarmad Phantom
 Rush Phantom
+Chromedek Phantom
 Velocity Phantom
 Team Ace Phantom
 Topotek Phantom
@@ -209,6 +220,7 @@ Protocol 781-A Phantom
 Lightwave Phantom
 Random Favorite Skin
 Orion Phantom
+Sentinels of Light Phantom
 Snowfall Phantom
 Reaver Phantom
 Recon Phantom
@@ -273,6 +285,7 @@ Prism II Bucky
 Kingdom Bucky
 Iridian Thorn Bucky
 Magepunk Bucky
+Overdrive Bucky
 Galleria Bucky
 Genesis Bucky
 Ion Bucky
@@ -292,6 +305,7 @@ Xenohunter Frenzy
 RagnaRocker Frenzy
 Origin Frenzy
 Glitchpop Frenzy
+Emberclad Frenzy
 Elderflame Frenzy
 Sarmad Frenzy
 Rush Frenzy
@@ -302,6 +316,7 @@ Horizon Frenzy
 Monarch Frenzy
 Hydrodip Frenzy
 Prime//2.0 Frenzy
+Guardrail Frenzy
 Couture Frenzy
 Blush Frenzy
 Nunca Olvidados Frenzy
@@ -323,6 +338,7 @@ Live Wire Frenzy
 Standard Frenzy
 BlastX Frenzy
 Resolution Classic
+Fiber Optic Classic
 RGX 11z Pro Classic
 Intergrade Classic
 VALORANT GO! Vol. 2 Classic
@@ -363,6 +379,7 @@ Infinity Classic
 Reverie Classic
 Standard Classic
 Final Chamber Classic
+Fiber Optic Ghost
 VALORANT GO! Vol. 1 Ghost
 Radiant Entertainment System Ghost
 Gaia's Vengeance Ghost
@@ -427,8 +444,10 @@ Iridian Thorn Sheriff
 Magepunk Sheriff
 Signature Sheriff
 Minima Sheriff
+Overdrive Sheriff
 Silvanus Sheriff
 Crimsonbeast Sheriff
+Kuronami Sheriff
 Ion Sheriff
 POLYfox Sheriff
 POLYfrog Sheriff
@@ -456,10 +475,12 @@ Karabasan Shorty
 Rune Stone Shorty
 Prelude to Chaos Shorty
 Doodle Buds Shorty
+Chromedek Shorty
 Hivemind Shorty
 Velocity Shorty
 Ruin Shorty
 Monarch Shorty
+Guardrail Shorty
 Prism II Shorty
 Wunderkind Shorty
 Genesis Shorty
@@ -467,6 +488,7 @@ Oni Shorty
 Snakebite Shorty
 Hue Shift Shorty
 Random Favorite Skin
+Sentinels of Light Shorty
 Transition Shorty
 Standard Shorty
 Aerosol Shorty
@@ -537,6 +559,7 @@ Soulstrife Guardian
 Infantry Guardian
 Hydrodip Guardian
 Prime Guardian
+Guardrail Guardian
 Ruination Guardian
 Blush Guardian
 Magepunk Guardian
@@ -559,12 +582,18 @@ Infinity Guardian
 Reverie Guardian
 Standard Guardian
 Ego Guardian
+Prism//Reloaded Outlaw
+Random Favorite Skin
+Standard Outlaw
+Ego Outlaw
 Task Force 809 Marshal
+Fiber Optic Marshal
 Gaia's Vengeance Marshal
 Composite Marshal
 Rune Stone Marshal
 Doodle Buds Marshal
 Songsteel Marshal
+Chromedek Marshal
 Venturi Marshal
 Ruin Marshal
 Neo Frontier Marshal
@@ -578,6 +607,7 @@ Coalition: Cobra Marshal
 Galleria Marshal
 Crimsonbeast Marshal
 Moondash Marshal
+Kuronami Marshal
 POLYfrog Marshal
 Divine Swine Marshal
 Artisan Marshal
@@ -592,6 +622,7 @@ Sandswept Marshal
 Wasteland Marshal
 Winterwunderland Marshal
 Task Force 809 Spectre
+Fiber Optic Spectre
 RGX 11z Pro Spectre
 Intergrade Spectre
 VALORANT GO! Vol. 1 Spectre
@@ -599,6 +630,7 @@ Neptune Spectre
 Striker Spectre
 Radiant Crisis 001 Spectre
 Starlit Odyssey Spectre
+Emberclad Spectre
 Abyssal Spectre
 Singularity Spectre
 Sarmad Spectre
@@ -621,6 +653,7 @@ Luxe Spectre
 Magepunk Spectre
 Spline Spectre
 Minima Spectre
+Kuronami Spectre
 Ion Spectre
 Hue Shift Spectre
 Aero Spectre
@@ -629,6 +662,7 @@ Protocol 781-A Spectre
 Luna Spectre
 Random Favorite Skin
 Gravitational Uranium Neuroblaster Spectre
+Sentinels of Light Spectre
 Reaver Spectre
 Recon Spectre
 Infinity Spectre
@@ -644,6 +678,7 @@ Immortalized Stinger
 RGX 11z Pro Stinger
 Aristocrat Stinger
 Composite Stinger
+Tactiplay Stinger
 Red Alert Stinger
 Prelude to Chaos Stinger
 Doodle Buds Stinger
@@ -653,6 +688,7 @@ Shimmer Stinger
 Prism II Stinger
 Couture Stinger
 Signature Stinger
+Overdrive Stinger
 Silvanus Stinger
 Moondash Stinger
 Libretto Stinger
@@ -696,6 +732,7 @@ Hack
 Glitchpop Dagger
 Glitchpop Axe
 Terminus A Quo
+Emberclad Hammer
 Caeruleus
 Blade of Chaos
 Elderflame Dagger
@@ -703,6 +740,7 @@ Blades of Imperium
 Singularity Knife
 Blade of Serket
 Songsteel
+Chromedek Gauntlet
 VCT LOCK//IN Misericórdia
 Hivemind Sword
 Venturi Knife
@@ -715,6 +753,7 @@ Soulstrife Scythe
 Prime Axe
 Prime//2.0 Karambit
 Outpost Melee
+Guardrail Hammer
 Black.Market Butterfly Knife
 Bound 
 Prism Knife
@@ -734,8 +773,10 @@ Magepunk Shock Gauntlet
 Magepunk Sparkswitch
 Spline Dagger
 Ruyi Staff
+Overdrive Blade
 Crimsonbeast Hammer
 Genesis Arc
+Kuronami no Yaiba
 Ion Energy Sword
 Ion Karambit
 Oni Claw
@@ -748,6 +789,7 @@ Random Favorite Skin
 Gravitational Uranium Neuroblaster Baton
 Orion Sword
 Relic of the Sentinel
+Relic Stone Daggers
 Transition Knife
 Snowfall Wand
 Reaver Knife
