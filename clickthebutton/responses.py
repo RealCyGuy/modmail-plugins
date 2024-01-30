@@ -650,6 +650,27 @@ FOUGHT_OFF = [
     "one-tapped",
     "full boxed",
     "hit a clip on",
+    "ate", 
+    "baked a cake with {}",
+    "borrowed {}'s favorite book",
+    "danced tango with {}",
+    "shared secrets under the stars with {}",
+    "got lost in a maze with {}",
+    "won a chess game against {}",
+    "painted a portrait of {}",
+    "had a picnic in the park with {}",
+    "traded hats with {}",
+    "built a sandcastle with {}",
+    "sang a duet at karaoke with {}",
+    "went on a road trip with {}",
+    "cooked a gourmet meal for {}",
+    "watched a meteor shower with {}",
+    "planted a garden with {}",
+    "wrote a poem about {}",
+    "had better vision than {}",
+    "L {}" #thx reddit
+    
+    
 ]
 
 SINGULAR_FOUGHT_OFF = [
