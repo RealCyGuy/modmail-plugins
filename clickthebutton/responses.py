@@ -729,11 +729,14 @@ ENDING_PUNCTUATION = [
     "!!",
     "!1!",
     "!?",
+    "~",
+    "...",
+    "!!!",
 ]
 
 
 def random_ending_punctuation() -> str:
-    return random.choices(ENDING_PUNCTUATION, cum_weights=(4, 5, 6, 7, 8))[0]
+    return random.choices(ENDING_PUNCTUATION, cum_weights=(4, 5, 6, 7, 8, 9, 10, 11))[0]
 
 
 GOT_A_CLICK = [
