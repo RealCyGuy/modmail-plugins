@@ -143,7 +143,10 @@ class PersistentView(BaseView):
             self.cog.clickers[interaction.user.id] = interaction.created_at
             return await interaction.response.defer()
         self.cog.clickers[interaction.user.id] = interaction.created_at
-        await interaction.response.defer()
+        try:
+            await interaction.response.defer()
+        except discord.HTTPException:
+            pass
 
         points = self.cog.leaderboard.get(user_id, 0) + 1
         self.cog.leaderboard[user_id] = points
