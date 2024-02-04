@@ -1,9 +1,11 @@
+import asyncio
 import os
 import random
 from datetime import datetime, timedelta
 
 import emoji
 
+from .api import request_oeis
 from .stats import Stats
 
 
@@ -261,6 +263,43 @@ def random_line_with_a_or_an(filename):
         + " "
         + line
     )
+
+
+def random_censored_words(style: str = r"\*", count: int = 1, random_word=True) -> str:
+    words = []
+    for x in range(count):
+        words.append(style * random.randint(*random.choice([(3, 6), (4, 8)])))
+    if random_word:
+        words.append(random_line("words.txt"))
+        random.shuffle(words)
+    return " " + " ".join(words)
+
+
+async def random_oeis_sequence() -> str:
+    try:
+        sequence, oeis_id = await request_oeis()
+    except:
+        sequence = (
+            "0, 1, 1, 1, 2, 1, 2, 1, 5, 2, 2, 1, 5, 1, 2, 1, 14, 1, 5, 1, 5, 2, 2, 1, 15, 2, 2, 5, 4, 1, 4, 1, "
+            "51, 1, 2, 1, 14, 1, 2, 2, 14, 1, 6, 1, 4, 2, 2, 1, 52, 2, 5, 1, 5, 1, 15, 2, 13, 2, 2, 1, 13, 1, "
+            "2, 4, 267, 1, 4, 1, 5, 1, 4, 1, 50, 1, 2, 3, 4, 1, 6, 1, 52, 15, 2, 1, 15, 1, 2, 1, 12, 1, 10, "
+            "1, 4, 2"
+        )
+        oeis_id = "A000001"
+    return f"[{sequence}](<https://oeis.org/{oeis_id}>)"
+
+
+def random_anime() -> str:
+    anilist_id, title = random_line("anime.txt").split(maxsplit=1)
+    return f"[{title}](<https://anilist.co/anime/{anilist_id}>)"
+
+
+def random_anime_tags() -> str:
+    anilist_id, tags = random_line("anime_tags.txt").split(maxsplit=1)
+    tags = tags.split(",")
+    random.shuffle(tags)
+    tags = tags[: random.randint(4, 10)]
+    return f"[{', '.join(tags)}](<https://anilist.co/anime/{anilist_id}>)"
 
 
 MONTHS = [
@@ -666,6 +705,21 @@ FOUGHT_OFF = [
     "had better vision than {}",
     "beat [Sliding Game](<https://realcyguy.itch.io/sliding-game>) faster than {}, achieving the [world record](<https://www.speedrun.com/sliding>),",
     "sent {} into a deep hole",
+    "differentiated",
+    (lambda: random_censored_words(count=random.randint(1, 3)),),
+    (lambda: random_censored_words(style="#", count=random.randint(1, 3)),),
+    ("compared {} to ", random_oeis_sequence),
+    (lambda: random_censored_words(count=random.randint(4, 9)),),
+    ("confused {} with the numbers ", random_oeis_sequence),
+    ("watched ", random_anime, " with"),
+    ("introduced {} to ", random_anime),
+    ("knew {} was interested in ", random_anime_tags),
+    ("diverted {} with an anime about ", random_anime_tags),
+    (
+        "provided {} with [a relevant XKCD](<https://xkcd.com/",
+        lambda: random.randint(1, 2889),
+        ">)",
+    ),
 ]
 
 SINGULAR_FOUGHT_OFF = [
@@ -701,13 +755,22 @@ SINGULAR_FOUGHT_OFF = [
 ]
 
 
-def random_fought_off(amount: int) -> str:
+async def random_fought_off(amount: int) -> str:
     if amount == 1:
         verb = random.choice(FOUGHT_OFF + SINGULAR_FOUGHT_OFF)
     else:
         verb = random.choice(FOUGHT_OFF)
-    if type(verb) == tuple:
-        verb = "".join([str(part()) if callable(part) else part for part in verb])
+    if type(verb) is tuple:
+        parts = []
+        for part in verb:
+            if callable(part):
+                part = part()
+                if asyncio.iscoroutine(part):
+                    part = await part
+                parts.append(str(part))
+            else:
+                parts.append(part)
+        verb = "".join(parts)
     if not verb[0].isalpha():
         return verb
     if "{}" in verb:

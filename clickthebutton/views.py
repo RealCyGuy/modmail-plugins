@@ -178,7 +178,7 @@ class PersistentView(BaseView):
         await asyncio.sleep(random.randint(1, 4))
         fought = ""
         fought_off_clickers = len(self.cog.clickers) - 1
-        fought_off = random_fought_off(fought_off_clickers)
+        fought_off = await random_fought_off(fought_off_clickers)
         if len(self.cog.clickers) >= 2:
             await asyncio.sleep(3)
             if fought_off_clickers == 1:
