@@ -11,11 +11,14 @@ def event(text, content="") -> str:
     return "\n".join(content)
 
 
-def find_data_intervals(values: list) -> list:
+def find_data_intervals(values: list, buffer: bool) -> list:
     intervals = []
 
     for value in values:
-        intervals.append([value["clicks"][0] - 5, value["clicks"][-1] + 5])
+        if buffer:
+            intervals.append([value["clicks"][0] - 5, value["clicks"][-1] + 5])
+        else:
+            intervals.append([value["clicks"][0], value["clicks"][-1]])
 
     # combine overlapping intervals
     merged_intervals = []

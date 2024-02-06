@@ -239,7 +239,9 @@ class PersistentView(BaseView):
         view = GraphViewer(self)
         await view.send(interaction)
 
-    async def create_graph(self, graph_time: GraphTime) -> Optional[io.BytesIO]:
+    async def create_graph(
+        self, graph_time: GraphTime, new_clicks: bool
+    ) -> Optional[io.BytesIO]:
         user_clicks = {}
 
         end_time = discord.utils.utcnow()
@@ -269,13 +271,21 @@ class PersistentView(BaseView):
                 click["timestamp"].replace(tzinfo=timezone.utc)
             )
 
+        for user_id, data in user_clicks.items():
+            data["timestamps"].append(end_time)
+            data["clicks"].append(data["clicks"][-1])
+            data["timestamps"].insert(0, start_time)
+            data["clicks"].insert(0, data["clicks"][0] - 1)
+            if new_clicks:
+                data["clicks"] = [click - data["clicks"][0] for click in data["clicks"]]
+
         if len(user_clicks) == 0:
             return None
 
         sorted_clicks = sorted(
             user_clicks.items(), key=lambda x: x[1]["clicks"][-1], reverse=True
         )
-        data_intervals = find_data_intervals(list(user_clicks.values()))
+        data_intervals = find_data_intervals(list(user_clicks.values()), not new_clicks)
 
         plt.style.use("dark_background")
         plt.set_cmap("gist_rainbow")
@@ -290,10 +300,6 @@ class PersistentView(BaseView):
         )
 
         for user_id, data in sorted_clicks:
-            data["timestamps"].append(end_time)
-            data["clicks"].append(data["clicks"][-1])
-            data["timestamps"].insert(0, start_time)
-            data["clicks"].insert(0, data["clicks"][0] - 1)
             bax.step(
                 data["timestamps"],
                 data["clicks"],
@@ -302,7 +308,11 @@ class PersistentView(BaseView):
             )
 
         bax.set_title(
-            "Button clicks this " + graph_time.name.lower() + "!", pad=25, fontsize=16
+            f"{'New b' if new_clicks else 'B'}utton clicks this "
+            + graph_time.name.lower()
+            + "!",
+            pad=25,
+            fontsize=16,
         )
         bax.legend(
             loc="center left",
@@ -361,12 +371,24 @@ class PersistentView(BaseView):
 
 class GraphViewer(BaseView):
     def __init__(
-        self, persistent_view: PersistentView, graph_time: GraphTime = GraphTime.WEEK
+        self,
+        persistent_view: PersistentView,
+        graph_time: GraphTime = GraphTime.WEEK,
+        new_clicks: bool = False,
     ):
         super().__init__(timeout=30)
         self.persistent_view = persistent_view
         self.graph_time = graph_time
         self.interaction = None
+        self.new_clicks = new_clicks
+
+    @discord.ui.button(
+        label="Total clicks", style=discord.ButtonStyle.blurple, disabled=True
+    )
+    async def total_clicks(
+        self, interaction: discord.Interaction, button: discord.ui.Button
+    ):
+        pass
 
     @discord.ui.button(label="Month", style=discord.ButtonStyle.gray)
     async def month(self, interaction: discord.Interaction, button: discord.ui.Button):
@@ -388,9 +410,47 @@ class GraphViewer(BaseView):
         view = GraphViewer(self.persistent_view, GraphTime.HOUR)
         await view.send(interaction)
 
+    @discord.ui.button(
+        label="New clicks", style=discord.ButtonStyle.blurple, disabled=True
+    )
+    async def new_clicks(
+        self, interaction: discord.Interaction, button: discord.ui.Button
+    ):
+        pass
+
+    @discord.ui.button(label="Month", style=discord.ButtonStyle.gray)
+    async def new_month(
+        self, interaction: discord.Interaction, button: discord.ui.Button
+    ):
+        view = GraphViewer(self.persistent_view, GraphTime.MONTH, new_clicks=True)
+        await view.send(interaction)
+
+    @discord.ui.button(label="Week", style=discord.ButtonStyle.gray)
+    async def new_week(
+        self, interaction: discord.Interaction, button: discord.ui.Button
+    ):
+        view = GraphViewer(self.persistent_view, new_clicks=True)
+        await view.send(interaction)
+
+    @discord.ui.button(label="Day", style=discord.ButtonStyle.gray)
+    async def new_day(
+        self, interaction: discord.Interaction, button: discord.ui.Button
+    ):
+        view = GraphViewer(self.persistent_view, GraphTime.DAY, new_clicks=True)
+        await view.send(interaction)
+
+    @discord.ui.button(label="Hour", style=discord.ButtonStyle.gray)
+    async def new_hour(
+        self, interaction: discord.Interaction, button: discord.ui.Button
+    ):
+        view = GraphViewer(self.persistent_view, GraphTime.HOUR, new_clicks=True)
+        await view.send(interaction)
+
     async def send(self, interaction: discord.Interaction):
         await interaction.response.defer(ephemeral=True, thinking=True)
-        buffer = await self.persistent_view.create_graph(self.graph_time)
+        buffer = await self.persistent_view.create_graph(
+            self.graph_time, self.new_clicks
+        )
         if not buffer:
             return await interaction.followup.send(
                 "No data to graph in this time frame.", ephemeral=True
