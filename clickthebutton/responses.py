@@ -2,6 +2,7 @@ import asyncio
 import os
 import random
 from datetime import datetime, timedelta
+from typing import Dict, List
 
 import emoji
 
@@ -868,3 +869,16 @@ DIVIDERS = [
 
 def random_divider() -> str:
     return random.choice(DIVIDERS) + "\ufe0e"
+
+
+def format_mentions(
+    clicker_ids: List[int], clickers_dict: Dict[int, datetime], edited_at: datetime
+) -> str:
+    formatted = list(
+        f"<@{user_id}> ({format_deltatime(clickers_dict[user_id] - edited_at)})"
+        for user_id in clicker_ids
+    )
+    if len(formatted) <= 2:
+        return " and ".join(formatted)
+    else:
+        return ", ".join(formatted[:-1]) + ", and " + formatted[-1]

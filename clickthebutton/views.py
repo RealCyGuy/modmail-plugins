@@ -14,6 +14,7 @@ from matplotlib import ticker
 
 from .responses import (
     format_deltatime,
+    format_mentions,
     random_cooldown_over,
     random_emoji,
     random_fought_off,
@@ -74,9 +75,8 @@ class PersistentView(BaseView):
         clickers = list(self.cog.clickers.keys())
         clickers.remove(interaction.user.id)
         if clickers:
-            mentions = ", ".join(
-                f"<@{user_id}> ({format_deltatime(self.cog.clickers[user_id] - interaction.message.edited_at)})"
-                for user_id in clickers
+            mentions = format_mentions(
+                clickers, self.cog.clickers, interaction.message.edited_at
             )
             if "{}" in fought_off:
                 fought = fought_off.replace("{}", mentions) + " and"
