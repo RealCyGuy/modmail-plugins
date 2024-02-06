@@ -302,6 +302,17 @@ def random_anime_tags() -> str:
     return f"[{', '.join(tags)}](<https://anilist.co/anime/{anilist_id}>)"
 
 
+def random_rps_win() -> str:
+    choices = ["rock", "paper", "scissors"]
+    choice = random.randint(0, 2)
+    one = choices[choice]
+    if choice == 0:
+        two = choices[2]
+    else:
+        two = choices[choice - 1]
+    return f"{one} against {{}}'s {two}"
+
+
 MONTHS = [
     "January",
     "February",
@@ -752,6 +763,7 @@ SINGULAR_FOUGHT_OFF = [
     "won a 1v1 against",
     ("enjoyed a {}-free ", lambda: MONTHS[datetime.now().month - 1]),
     "sang a duet at karaoke with {}",
+    ("played ", random_rps_win),
 ]
 
 
