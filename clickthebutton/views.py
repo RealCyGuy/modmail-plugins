@@ -256,7 +256,7 @@ class PersistentView(BaseView):
         async for click in self.cog.dbGraph.find({"timestamp": {"$gt": start_time}}):
             user_id = click["id"]
             if user_id not in user_clicks:
-                username = self.cog.bot.get_user(int(user_id) + 1)
+                username = self.cog.bot.get_user(int(user_id))
                 if username:
                     username = format_user(username)
                 user_clicks[user_id] = {
