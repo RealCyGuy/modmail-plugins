@@ -19,8 +19,12 @@ class HotReload(commands.Cog):
     async def watch_plugin(self, plugin: str):
         async for _ in awatch(Path("plugins") / "@local" / plugin, debounce=2000):
             extension = f"plugins.@local.{plugin}.{plugin}"
-            await self.bot.reload_extension(extension)
-            logger.info(f"Reloaded {extension}.")
+            try:
+                await self.bot.reload_extension(extension)
+            except Exception as e:
+                logger.info(f"Failed to reload {extension}: {e}")
+            else:
+                logger.info(f"Reloaded {extension}.")
 
     @checks.has_permissions(PermissionLevel.OWNER)
     @commands.command()
