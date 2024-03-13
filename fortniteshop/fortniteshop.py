@@ -95,7 +95,7 @@ class FortniteShop(commands.Cog):
                             (name, days)
                         )
 
-            embed = discord.Embed(colour=discord.Colour.dark_embed())
+            embed = discord.Embed(colour=0x2B2D31)
             keys = ["Outfits", "Emotes", "Pickaxes", "Gliders", "Backpacks"]
             for key in keys:
                 values = cosmetics.get(key, [])
